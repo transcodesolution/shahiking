@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary:#25452E;
+    --color-secondary: #F5F3EC;
+    --color-accent:#808080;
+
+    --gradientStart:#3F694B;
+    --gradientEnd:#25452E;
+
+    --font-heading: "Ibarra Real Nova", serif;
+
+}
+
+@layer components {
+  .display-heading {
+    font-family: var(--font-heading);
+    @apply text-[25px] leading-8.75
+           md:text-[30px] md:leading-10
+           lg:text-[35px] lg:leading-11.25
+           xl:text-[48px] xl:leading-12.5;
+  }
+
+  /* Paragraph */
+  .body-md {
+    @apply text-[14px] leading-5
+           md:text-[16px] md:leading-6.25
+           lg:text-[18px] lg:leading-6.25
+           xl:text-[20px] xl:leading-6.5;
+  }
+
+  /* Description */
+  .body-sm {
+    @apply text-[12px] leading-5
+           md:text-[14px] md:leading-5.5
+           lg:text-[16px] lg:leading-6;
+  }
+}
+
+
+/* product page in slider range css */
+
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+}
+.thumb--left {
+  z-index: 3;
+}
+
+.thumb--right {
+  z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color:white;
+  border: none;
+  border:1px solid #25452E;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin-top: 24px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color:white;
+  border: none;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin-top: 24px;
+  pointer-events: all;
+  position: relative;
+}
+
