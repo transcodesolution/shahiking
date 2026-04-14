@@ -1,5 +1,5 @@
 "use client";
-import { categoriesData, productsItem } from "@/data/products";
+import { categoriesData, productsItem } from "@/data/ui/products";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -30,7 +30,7 @@ export default function ProductDropdown() {
                 aria-controls={`panel-${cat.id}`}
                 id={`tab-${cat.id}`}
                 onClick={() => setActive(cat.id)}
-                className={`relative pb-3 body-md flex items-center gap-2 transition ${
+                className={`relative pb-3 body-md flex items-center gap-2 transition cursor-pointer ${
                   isActive ? "font-medium text-black" : "text-gray-500"
                 }`}
               >
@@ -56,12 +56,12 @@ export default function ProductDropdown() {
               aria-labelledby={`tab-${cat.id}`}
               hidden={active !== cat.id}
             >
-              {active === cat.id && (
+             {active === cat.id && (
                 <div className="grid grid-cols-4 gap-10 py-6">
                   {productsItem[cat.id]?.map((item) => (
                     <div
                       key={item.id}
-                      className="text-center border-b border-[#D2D2D2] pb-2"
+                      className="text-center border-b border-[#D2D2D2] pb-2 cursor-pointer"
                     >
                       <div className="flex justify-center">
                         <Image
@@ -69,13 +69,13 @@ export default function ProductDropdown() {
                           alt={item.name}
                           width={161}
                           height={225}
-                          className="w-auto object-cover"
+                          className="w-58 h-45 object-contain"
                         />
                       </div>
 
                       <p className="body-md mt-3">{item.name}</p>
                     </div>
-                  ))}
+                  ))} 
                 </div>
               )}
             </div>
@@ -93,6 +93,8 @@ export default function ProductDropdown() {
         </div>
       </div>
 
+      {/* mobile screen in product dropdown  */}
+      
       <div className="md:hidden">
         <div className="flex flex-col gap-2 p-4">
           {categoriesData.map((cat, index) => (

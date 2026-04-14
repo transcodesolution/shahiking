@@ -18,12 +18,12 @@ export default function GetInTouch() {
           />
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-center max-w-full md:max-w-156.75 mx-auto lg:ml-14 xl:ml-30 px-6 md:px-0">
+          <div className="absolute inset-0 flex flex-col justify-center max-w-full lg:max-w-150 xl:max-w-169 mx-auto lg:ml-14 xl:ml-30 px-6 lg:px-0">
             <h1 className="display-heading font-semibold text-secondary max-w-156.75">
               Join the Shahiking Movement
             </h1>
-
-            <p className="text-[14px] sm:text-[16px] md:text-[24px] text-secondary mt-3 mb-4">
+ 
+            <p className="text-[14px] sm:text-[16px] md:text-[24px] text-secondary mt-3 mb-4 max-w-full lg:max-w-150 xl:max-w-169">
               Be part of a community that chooses health, sustainability,
               and better living. Start your journey with Shahiking today.
             </p>

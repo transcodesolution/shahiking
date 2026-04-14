@@ -1,25 +1,26 @@
 "use client";
 
 import { useState } from "react";
-import products from "@/data/products";
 import FilterSidebar from "./FilterSidebar";
 import ProductCard from "./ProductCard";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
+import { products } from "@/data/ui/products";
 
 export default function OurProduct() {
   const [search, setSearch] = useState("");
   const [activePage, setActivePage] = useState(1);
   const [wishlist, setWishlist] = useState([]);
+  const [isChecked, setIsChecked] = useState([]);
+  const [isStock, setIsStock] = useState(null);
+  const [selectedQuantity, setSelectedQuantity] = useState("");
+  const [minVal, setMinVal] = useState(0);
+  const [maxVal, setMaxVal] = useState(2000);
 
   const toggleWishlist = (id) => {
-  setWishlist((prev) =>
-    prev.includes(id)
-      ? prev.filter((item) => item !== id)
-      : [...prev, id]
-  );
-};
-
-  const totalPages = 10;
+    setWishlist((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
+    );
+  };
 
   const handlePrev = () => {
     if (activePage > 1) setActivePage(activePage - 1);
@@ -29,8 +30,45 @@ export default function OurProduct() {
     if (activePage < totalPages) setActivePage(activePage + 1);
   };
 
-  const filteredProducts = products.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase()),
+  // FILTER
+  const filteredProducts = products.filter((item) => {
+    const matchesSearch = item.name
+      ?.toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchesCategory =
+      isChecked.length === 0 ||
+      isChecked.some(
+        (cat) => cat.toLowerCase() === item.category?.toLowerCase(),
+      );
+
+    const matchesStock = !isStock || item.availability === isStock;
+
+    const matchesQuantity =
+      !selectedQuantity || item.quantity === selectedQuantity;
+
+    const matchesPrice = item.price >= minVal && item.price <= maxVal;
+
+    return (
+      matchesSearch &&
+      matchesCategory &&
+      matchesStock &&
+      matchesQuantity &&
+      matchesPrice
+    );
+  });
+
+  // PAGINATION
+  const itemsPerPage = 12;
+
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+
+  const indexOfLastItem = activePage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+
+  const currentProducts = filteredProducts.slice(
+    indexOfFirstItem,
+    indexOfLastItem,
   );
 
   return (
@@ -38,101 +76,138 @@ export default function OurProduct() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-10">
           <div>
-            <FilterSidebar />
+            <FilterSidebar
+              isChecked={isChecked}
+              setIsChecked={setIsChecked}
+              isStock={isStock}
+              setIsStock={setIsStock}
+              selectedQuantity={selectedQuantity}
+              setSelectedQuantity={setSelectedQuantity}
+              minVal={minVal}
+              setMinVal={setMinVal}
+              maxVal={maxVal}
+              setMaxVal={setMaxVal}
+            />
           </div>
+          <div className="w-full max-w-300">
+            <div className="flex-1 border border-[#C1C1C1] rounded-xl shadow-sm bg-secondary min-h-280">
+              <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-[#C1C1C1] p-6">
+                <p className="text-accent">
+                  Showing {filteredProducts.length} results
+                </p>
 
-          <div className="flex-1 border border-[#C1C1C1] rounded-xl shadow-sm bg-secondary">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-[#C1C1C1] p-6">
-              <p className="text-accent">
-                Showing {filteredProducts.length} results
-              </p>
+                <div className="relative flex items-center border border-[#C1C1C1] rounded-full px-4 py-2 bg-[#FCFCFC] w-full sm:max-w-68.5">
+                  <input
+                    type="text"
+                    placeholder="Search product"
+                    className="outline-none w-full bg-transparent ml-6"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                   <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span className="text-[20px] text-accent"><IoMdSearch /></span>
+                   </div>
+                </div>
+              </div>
 
-              <div className="flex items-center border border-[#C1C1C1] rounded-full px-4 py-2 bg-[#FCFCFC] w-full sm:max-w-68.5">
-                <input
-                  type="text"
-                  placeholder="Search product"
-                  className="outline-none w-full bg-transparent"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                />
+              <div className="grid grid-cols-2 xl:grid-cols-4 gap-8 p-4 md:p-6 xl:p-8">
+                {currentProducts.map((item) => (
+                  <ProductCard
+                    key={item.id}
+                    item={item}
+                    isWishlisted={wishlist.includes(item.id)}
+                    onWishlistToggle={() => toggleWishlist(item.id)}
+                  />
+                ))}
               </div>
             </div>
+            {/* pagination button */}
+            <div>
+              <div className="none xl:flex justify-between items-center mt-10  gap-4 ">
+                <div className="max-w-full flex justify-center mb-2">
+                  {/* Previous */}
+                  <button
+                    onClick={handlePrev}
+                    disabled={activePage === 1}
+                    className={`px-3 py-1 border rounded-full font-medium flex items-center gap-2 w-full max-w-35 cursor-pointer ${
+                      activePage === 1
+                        ? "text-accent border-accent cursor-not-allowed"
+                        : "text-primary"
+                    }`}
+                  >
+                    <IoIosArrowBack className="text-2xl" />
+                    Previous
+                  </button>
+                </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-8 p-4 md:p-6 xl:p-8">
-              {filteredProducts.map((item) => (
-                <ProductCard
-                  key={item.id}
-                  item={item}
-                  isWishlisted={wishlist.includes(item.id)}
-                  onWishlistToggle={() => toggleWishlist(item.id)}
-                />
-              ))}
+                {/* Pages */}
+                <div className="flex justify-center items-center gap-3 max-w-full mb-2">
+                  {/* First Page */}
+                  {activePage > 3 && totalPages > 7 && (
+                    <>
+                      <button
+                        onClick={() => setActivePage(1)}
+                        className="w-10 h-10 flex items-center justify-center cursor-pointer"
+                      >
+                        1
+                      </button>
+                      <span>...</span>
+                    </>
+                  )}
+
+                  {/* Dynamic Middle Pages */}
+                  {Array.from({ length: totalPages }, (_, i) => i + 1)
+                    .filter((num) => {
+                      if (totalPages <= 7) return true;
+                      if (activePage <= 3) return num <= 5;
+                      if (activePage >= totalPages - 2)
+                        return num >= totalPages - 4;
+                      return num >= activePage - 1 && num <= activePage + 1;
+                    })
+                    .map((num) => (
+                      <button
+                        key={num}
+                        onClick={() => setActivePage(num)}
+                        className={`w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ${
+                          activePage === num
+                            ? "bg-primary text-secondary"
+                            : "text-black"
+                        }`}
+                      >
+                        {num}
+                      </button>
+                    ))}
+
+                  {/* Last Page */}
+                  {totalPages > 7 && activePage < totalPages - 2 && (
+                    <>
+                      <span>...</span>
+                      <button
+                        onClick={() => setActivePage(totalPages)}
+                        className="w-10 h-10 flex items-center justify-center cursor-pointer"
+                      >
+                        {totalPages}
+                      </button>
+                    </>
+                  )}
+                </div>
+                <div className="flex justify-center">
+                  {/* Next */}
+                  <button
+                    onClick={handleNext}
+                    disabled={activePage === totalPages}
+                    className={`px-7 py-1 border rounded-full font-medium flex items-center gap-2 w-full max-w-35 cursor-pointer ${
+                      activePage === totalPages
+                        ? "text-accent border-accent cursor-not-allowed"
+                        : "text-primary"
+                    }`}
+                  >
+                    Next
+                    <IoIosArrowForward className="text-2xl" />
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        {/* pagination button */}
-        <div className="w-full max-w-262.5 ml-auto">
-          <div className="flex justify-center md:justify-between items-center mt-10 flex-wrap gap-4">
-            {/* Previous */}
-            <button
-              onClick={handlePrev}
-              disabled={activePage === 1}
-              className={`px-4 py-1 border rounded-full flex items-center gap-2 ${
-                activePage === 1
-                  ? "text-accent border-accent cursor-not-allowed"
-                  : "text-primary"
-              }`}
-            >
-              <IoIosArrowBack />
-              Previous
-            </button>
-
-            {/* Pages */}
-            <div className="flex items-center gap-3">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <button
-                  key={num}
-                  onClick={() => setActivePage(num)}
-                  className={`w-10 h-10 flex items-center justify-center rounded-full ${
-                    activePage === num
-                      ? "bg-[#1F3D2B] text-white"
-                      : "text-black"
-                  }`}
-                >
-                  {num}
-                </button>
-              ))}
-
-              {/* Dots */}
-              <span className="px-2">...</span>
-
-              {/* Last Page */}
-              <button
-                onClick={() => setActivePage(totalPages)}
-                className={`w-10 h-10 flex items-center justify-center rounded-full ${
-                  activePage === totalPages
-                    ? "bg-[#1F3D2B] text-white"
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                {totalPages}
-              </button>
-            </div>
-
-            {/* Next */}
-            <button
-              onClick={handleNext}
-              disabled={activePage === totalPages}
-              className={`px-4 py-1 border rounded-full flex items-center gap-2 ${
-                activePage === totalPages
-                  ? "text-accent border-accent cursor-not-allowed"
-                  : "text-primary"
-              }`}
-            >
-              Next
-              <IoIosArrowForward />
-            </button>
           </div>
         </div>
       </div>

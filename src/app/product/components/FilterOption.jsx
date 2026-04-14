@@ -3,7 +3,8 @@ export default function FilterOption({
   value,
   checked,
   onChange,
-}) {
+}) 
+{
   return (
     <label className="flex gap-2 mb-2 items-center cursor-pointer">
       {/* Accessible Input */}
@@ -21,7 +22,7 @@ export default function FilterOption({
         peer-checked:bg-primary peer-checked:border-primary"
       >
         <svg
-          className="w-5 h-5 text-secondary hidden peer-checked:block"
+          className="w-5 h-5 text-secondary peer-checked:block"
           fill="none"
           stroke="currentColor"
           strokeWidth="3"

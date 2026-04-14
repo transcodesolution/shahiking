@@ -84,7 +84,7 @@ export default function FAQ() {
                     aria-expanded={activeIndex === index}
                     aria-controls={`faq-${index}`}
                   >
-                    <h3 className="body-md font-medium">
+                    <h3 className="body-md font-medium text-start">
                       {item.question}
                     </h3>
                     <IoIosArrowDown
@@ -96,7 +96,7 @@ export default function FAQ() {
 
                   {/* ANSWER */}
                   {activeIndex === index && (
-                    <p className="body-sm text-accent mt-4 leading-relaxed border-t-2 border-secondary pt-3">
+                    <p className="body-sm text-accent mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
                       {item.answer}
                     </p>
                   )}

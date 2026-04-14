@@ -23,11 +23,11 @@ export default function Hero() {
           protein-rich products, and clean ingredients designed for everyday
           wellness.
         </p>
-        <div className="flex-wrap md:flex justify-center items-center gap-4">
-          <Link href="/" className="bg-secondary body-sm font-medium text-primary px-2 py-3 rounded-full w-full md:max-w-47.5 mb-2 md:mb-0 hover:bg-primary hover:text-secondary duration-500 cursor-pointer">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
+          <Link href="/product" className="bg-secondary body-sm font-medium text-primary p-2.5 rounded-full w-full md:max-w-47.5 mb-2 md:mb-0 hover:bg-primary hover:text-secondary duration-500 cursor-pointer">
             Discover Categories
           </Link>
-          <Link href="/" className="bg-primary text-secondary body-sm font-medium px-2 py-3 rounded-full w-full md:max-w-47.5 mb-2 md:mb-0 hover:bg-secondary hover:text-primary duration-500 cursor-pointer">
+          <Link href="/product" className="bg-primary text-secondary body-sm font-medium p-2.5 rounded-full w-full md:max-w-47.5 mb-2 md:mb-0 hover:bg-secondary hover:text-primary duration-500 cursor-pointer">
             Explore Products
           </Link>
         </div>

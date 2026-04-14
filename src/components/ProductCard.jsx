@@ -1,36 +1,46 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
-export default function ProductCard({ item }) {
+export default function ProductCard({ product}) {
+  if (!product) return null;
+
   return (
-    <div className="bg-secondary rounded-[40px]">
+    <div className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col">
       {/* Image */}
-      <div className="">
+      {product?.img && (
         <Image
-          src={item.img}
-          alt={item.name}
+          src={product.img}
           width={534}
           height={260}
-          className="w-133.5 h-65 object-cover border-2 border-secondary rounded-tr-[40px] rounded-tl-[40px] shadow-sm shadow-[#0000004D]"
+          alt={product.name}
+          className="w-full h-65 object-cover rounded-t-[40px] border-2 border-secondary shadow-sm"
         />
-      </div>
+      )}
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-5 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] shadow-sm shadow-[#0000004D] rounded-b-[40px]">
-        <h3 className="font-medium body-md text-black">{item.name}</h3>
+      <div className="p-3 xl:p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col">
+        {/* Title */}
+        <h3 className="text-lg font-semibold text-primary">{product?.name}</h3>
 
-        <p className="body-sm text-black mt-2 max-w-74.25 flex-1">
-          {item.desc}
-        </p>
+        {/* Description */}
+        <p className="text-black mt-1 flex-1">{product?.desc}</p>
 
-        <div className="flex justify-between items-center mt-4">
-          <span className="text-primary text-[20px] md:text-[24px] font-bold">
-            ₹{item.price}
-          </span>
+        {/* Bottom Section */}
+        <div className="flex justify-between items-center mt-5">
+          {/* Price */}
+          <p className="text-[24px] font-bold text-gray-800">
+            ₹{product?.price}
+          </p>
 
-          <button className="bg-primary text-secondary border border-primary px-5 py-1 rounded-full text-[16px] hover:bg-secondary hover:text-primary duration-500 cursor-pointer">
-            View Details
-          </button>
+          {/* Button */}
+          {product?.slug && (
+            <Link
+              href={`/product/${product.slug}`}
+              className="bg-primary text-secondary body-sm text-center border border-primary font-medium py-2 px-7 rounded-full hover:bg-secondary hover:text-primary duration-500"
+            >
+              View Details
+            </Link>
+          )}
         </div>
       </div>
     </div>

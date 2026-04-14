@@ -5,12 +5,11 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
-import { recipeData } from "@/data/products";
+import { recipeData } from "@/data/ui/recipes";
 
 export default function Recipes() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
@@ -34,25 +33,12 @@ export default function Recipes() {
             spaceBetween={28}
             slidesPerView={1}
             loop={true}
-            autoplay={{
-              delay: 4000, // 4 seconds
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-            }}
-            onSwiper={(swiper) => {
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            onBeforeInit={(swiper) => (swiperRef.current = swiper)}
+            onSlideChange={(swiper) => {
+              setActiveIndex(swiper.realIndex);
               setIsBeginning(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
-            }}
-            onSlideChange={(swiper) => {
-              console.log(swiper.realIndex);
-            }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
             }}
             breakpoints={{
               480: { slidesPerView: 1 },
@@ -65,7 +51,7 @@ export default function Recipes() {
               <SwiperSlide key={item.id}>
                 <div className="bg-secondary rounded-[40px] h-150 md:h-162.5 lg:h-176.25 xl:h-157.5 flex flex-col shadow-sm m-2">
                   {/* Image */}
-                  <div className="relative z-10">
+                  <div className="relative z-10 cursor-pointer">
                     <video
                       className="h-123.75 md:h-130 xl:h-123.75 w-full object-cover relative z-10 border-2 border-secondary rounded-t-[40px] shadow-sm shadow-[#0000004D]"
                       autoPlay
@@ -95,22 +81,14 @@ export default function Recipes() {
           <div className="flex gap-4 justify-end mt-8">
             {/* Prev */}
             <button
-              ref={prevRef}
-              className={`bg-white p-3 rounded-full border-2 border-secondary shadow-sm transition
-              ${
-                isBeginning
-                  ? "opacity-50 cursor-not-allowed"
-                  : "hover:scale-105"
-              }`}
+              onClick={() => swiperRef.current?.slidePrev()}
+              className="bg-white p-3 rounded-full border-2 border-secondary shadow-sm shadow-[#0000004D] transition cursor-pointer"
             >
               <IoIosArrowBack className="text-[18px] md:text-[24px]" />
             </button>
-
-            {/* Next */}
             <button
-              ref={nextRef}
-              className={`bg-white p-3 rounded-full border-2 border-secondary shadow-sm transition
-              ${isEnd ? "opacity-50 cursor-not-allowed" : "hover:scale-105"}`}
+              onClick={() => swiperRef.current?.slideNext()}
+              className="bg-white p-3 rounded-full border-2 border-secondary shadow-sm shadow-[#0000004D] transition cursor-pointer"
             >
               <IoIosArrowForward className="text-[18px] md:text-[24px]" />
             </button>

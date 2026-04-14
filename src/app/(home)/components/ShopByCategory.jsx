@@ -2,9 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { categories, productsData } from "@/data/products";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import { categories, productsData } from "@/data/ui/categories";
 
 export default function ShopCategory() {
   const [activeCategory, setActiveCategory] = useState("nuts");
@@ -38,7 +38,7 @@ export default function ShopCategory() {
 
         {/* Categories */}
         <div className="mt-10 overflow-x-auto scrollbar-hide">
-          <div className="flex justify-center gap-24 min-w-max px-4">
+          <div className="flex justify-center gap-14 md:gap-24 min-w-max px-4">
             {categories.map((item, i) => (
               <div
                 key={i}
@@ -48,11 +48,7 @@ export default function ShopCategory() {
                 <div
                   className={`w-25 h-25 sm:w-27.5 sm:h-27.5 md:w-30 md:h-30 lg:w-35 lg:h-35 
                     rounded-full overflow-hidden border-2 border-secondary shadow-md shadow-[#0000004D]
-                  ${
-                    activeCategory === item.id
-                      ? "scale-105 mt-4"
-                      : "group-hover:scale-105 mt-4"
-                  }`}
+                  ${activeCategory === item.id ? "mt-4" : "mt-4"}`}
                 >
                   <Image
                     src={item.img}
@@ -74,11 +70,11 @@ export default function ShopCategory() {
         {/* Divider */}
         <div className="w-auto md:max-w-327.5 h-0.5 bg-white mt-6 mx-auto"></div>
 
-        <div className="flex justify-center gap-12 lg:gap-24 -mt-0.5">
+        <div className="flex justify-center gap-8 md:gap-24 -mt-0.5">
           {categories.map((item, i) => (
             <div key={i} className="w-35 flex justify-center">
               {activeCategory === item.id && (
-                <div className="w-20 h-0.75 bg-primary rounded-full transition-all duration-300"></div>
+                <div className="w-26 md:w-28 lg:w-24 h-0.75 bg-primary rounded-full transition-all duration-300"></div>
               )}
             </div>
           ))}
@@ -87,7 +83,13 @@ export default function ShopCategory() {
         {/* Products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {products.length > 0 ? (
-            products.map((item,i) => <ProductCard key={i} item={item} className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col"/>)
+            products.map((item, i) => (
+              <ProductCard
+                key={i}
+                product={item} // ✅ FIXED
+                className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col"
+              />
+            ))
           ) : (
             <p>No products found</p>
           )}

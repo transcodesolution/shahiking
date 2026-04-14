@@ -1,14 +1,15 @@
 "use client";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiSearchAlt } from "react-icons/bi";
 import { HiMenu, HiX } from "react-icons/hi";
-import { IoIosArrowDown, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import ProductDropdown from "@/app/product/components/ProductDropdown";
+import SearchBar from "./SearchBar";
 
-export default function Navbar({products}) {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [open,setOpen] = useState(false);
   const pathname = usePathname();
@@ -18,7 +19,8 @@ export default function Navbar({products}) {
       pathname === path
         ? "bg-primary text-secondary rounded-3xl"
         : "text-secondary hover:text-white"
-    }`;
+    }`; 
+
 
   return (
     <header className="bg-[#111313] sticky top-0 z-50">
@@ -48,11 +50,10 @@ export default function Navbar({products}) {
             >
                Product
               <span><IoIosArrowDown /></span>
-      
             </Link>
 
             {/* Dropdown Menu */}
-            <div className="absolute inset-x-0 left-0 mt-6 z-50 w-full h-125 bg-white text-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 overflow-hidden">
+            <div className="absolute inset-x-0 left-0 mt-6 z-50 w-full h-115 bg-white text-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 overflow-hidden">
               <ProductDropdown />
             </div>
           </div>
@@ -71,15 +72,8 @@ export default function Navbar({products}) {
         </nav>
 
         {/* Search Bar */}
-        <div className="bg-secondary rounded-3xl hidden lg:flex justify-between items-center px-2 w-63.75 xl:w-auto">
-          <input
-            type="text"
-            placeholder="Search"
-            className="px-2 py-2 w-full outline-none"
-          />
-          <button className="text-black px-2 py-2 rounded-3xl ">
-            <BiSearchAlt />
-          </button>
+        <div className="hidden lg:flex justify-between items-center cursor-pointer">
+          <SearchBar/>
         </div>
 
         {/* Mobile Menu Button */}
@@ -93,7 +87,7 @@ export default function Navbar({products}) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-20 left-0 w-full bg-primary border-t border-gray-700 z-50">
+        <div className="lg:hidden fixed top-21 left-0 w-full bg-primary border-t border-gray-700 z-50 transform transition-transform duration-500 .3s ease-in-out">
           <nav className="flex flex-col px-6 py-4 gap-4">
             <Link href="/" className="text-secondary border-b border-secondary py-2 text-lg">
               Home
@@ -132,15 +126,8 @@ export default function Navbar({products}) {
             </Link>
 
             {/* Search */}
-            <div className="bg-secondary rounded-3xl flex items-center px-2">
-              <input
-                type="text"
-                placeholder="Search"
-                className="px-2 py-2 w-full outline-none"
-              />
-              <button className="text-black px-2 py-2 ml-2">
-                <BiSearchAlt />
-              </button>
+            <div className="rounded-3xl flex items-center px-2">
+              <SearchBar className="w-full"/>
             </div>
           </nav>
         </div>

@@ -41,17 +41,17 @@ export default function Hero() {
             lifestyles.🌿🥗
           </p>
           <div className="flex-wrap md:flex justify-start items-center gap-4">
-            <button className="bg-secondary text-primary px-1 py-3 rounded-full w-full md:max-w-29.75 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 ">
+            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-full md:max-w-29.75 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Healthy
               </a>
             </button>
-            <button className="bg-secondary text-primary px-1 py-3 rounded-full w-full md:max-w-31 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 ">
+            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-full md:max-w-31 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Premium
               </a>
             </button>
-            <button className="bg-secondary text-primary px-1 py-3 rounded-full w-full md:max-w-35 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 ">
+            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-full md:max-w-35 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Consistent
               </a>

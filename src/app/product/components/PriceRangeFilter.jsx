@@ -16,7 +16,7 @@ export default function PriceRangeFilter({
       {/* Header */}
       <button
         onClick={onToggle}
-        className="font-semibold mb-2 text-primary flex justify-between items-center w-full"
+        className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
       >
         Price
         <span
@@ -69,7 +69,7 @@ export default function PriceRangeFilter({
           <div className="flex items-center gap-1 mt-4">
             <p className="text-[18px] text-accent font-medium">Price:</p>
             <p className="text-[18px] text-primary font-medium">
-              Rs. {minVal} - Rs. {maxVal}
+              Rs. {Number(minVal).toFixed(2)} - Rs. {Number(maxVal).toFixed(2)}
             </p>
           </div>
         </div>

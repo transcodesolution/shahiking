@@ -9,7 +9,7 @@ export default function ProductCard({
   onWishlistToggle,
 }) {
   return (
-    <div className="bg-secondary flex flex-col border border-[#C1C1C1] rounded-xl p-2 md:p-4 shadow-sm relative z-0 group">
+    <div className="bg-secondary flex flex-col border border-[#C1C1C1] rounded-xl p-2 md:p-4 shadow-sm relative z-0 group cursor-pointer">
       
       {/* Hover Gradient */}
       <div className="absolute inset-0 bg-linear-to-t from-(--gradientStart) to-(--gradientEnd) opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
@@ -33,7 +33,7 @@ export default function ProductCard({
               : `Add ${item.name} to wishlist`
           }
           aria-pressed={isWishlisted}
-          className="absolute top-0 right-0 bg-white p-1 rounded-full shadow shadow-[#0000004D]"
+          className="absolute top-0 right-0 bg-white p-1 rounded-full shadow shadow-[#0000004D] cursor-pointer"
         >
           {isWishlisted ? (
             <IoMdHeart className="text-[#D7443E] text-[22px]" />
@@ -51,13 +51,13 @@ export default function ProductCard({
       {/* Price + Rating */}
       <div className="flex justify-between items-center mt-2">
         <span className="text-accent text-[14px] md:text-[18px] group-hover:text-secondary relative z-10">
-          {item.price}
+          ₹{Number(item.price).toFixed(2)}
         </span>
 
         <div className="flex items-center gap-1 text-yellow-500 text-[14px] md:text-[18px] relative z-10">
           <FaStar />
           <span className="text-[14px] md:text-[18px] text-accent group-hover:text-secondary">
-            {item.rating}.0
+            {Number(item.rating).toFixed(1)}
           </span>
         </div>
       </div>

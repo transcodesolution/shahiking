@@ -1,13 +1,11 @@
 "use client";
-import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import FilterOption from "./FilterOption";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 import PriceRangeFilter from "./PriceRangeFilter";
-import FilterDrawer from "./FilterDrawer";
+import FilterOption from "./FilterOption";
 import { availability, productCategories, quantity } from "@/data/ui/filters";
 
-
-export default function FilterSidebar({
+export default function FilterDrawer({
   isChecked,
   setIsChecked,
   isStock,
@@ -18,16 +16,17 @@ export default function FilterSidebar({
   setMinVal,
   maxVal,
   setMaxVal,
-}) {
-  
+  isOpen,
+  onClose,
+}) 
+{
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPriceOpen, setIsPriceOpen] = useState(false);
   const [isQuantityOpen, setIsQuantityOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
   const min = 0;
   const max = 2000;
+
   // handle min change
   const handleMinChange = (e) => {
     const value = Math.min(Number(e.target.value), maxVal - 10);
@@ -40,49 +39,24 @@ export default function FilterSidebar({
     setMaxVal(value);
   };
 
-  const handleClearAll = () => {
-    setIsChecked([]);
-    setIsStock(null);
-    setSelectedQuantity("");
-    setMinVal(0);
-    setMaxVal(900);
-  };
 
   return (
-    <div className="w-full lg:w-94 h-auto bg-secondary rounded-xl shadow-sm border border-[#C1C1C1]">
-      <div className="relative flex justify-between p-4">
-        <h2 className="hidden lg:block font-semibold text-primary cursor-pointer">Filters</h2>
-        <button
-          className="lg:hidden font-semibold text-primary cursor-pointer"
-          onClick={() => setIsOpen(true)}
-        >
-          <span>Filters</span>
-        </button>
-
-        <FilterDrawer
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-          isChecked={isChecked}
-          setIsChecked={setIsChecked}
-          isStock={isStock}
-          setIsStock={setIsStock}
-          selectedQuantity={selectedQuantity}
-          setSelectedQuantity={setSelectedQuantity}
-          minVal={minVal}
-          setMinVal={setMinVal}
-          maxVal={maxVal}
-          setMaxVal={setMaxVal}
+    <>
+     {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 z-40"
+          onClick={onClose}
         />
-
-        <button
-          className="text-sm font-semibold text-primary cursor-pointer hover:underline"
-          onClick={handleClearAll}
-        >
-          Clear All
+      )}
+    <div className={`fixed top-0 left-0 h-screen w-full max-w-137.5 bg-secondary z-50 overflow-auto transform transition-transform duration-500 ease-in-out
+        ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+      <div className="flex justify-between items-center p-4">
+        <h1 className="text-2xl font-semibold text-primary">Filter</h1>
+        <button className="text-xl" onClick={onClose}>
+          <IoMdClose />
         </button>
       </div>
-
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D2D2D2] p-4">
         {/* Header */}
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -120,7 +94,7 @@ export default function FilterSidebar({
         )}
       </div>
 
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D2D2D2] p-4">
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
           className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
@@ -149,7 +123,7 @@ export default function FilterSidebar({
         )}
       </div>
 
-      <div className="hidden lg:block">
+      <div className="">
         {/* Header */}
         <PriceRangeFilter
           isOpen={isPriceOpen}
@@ -163,7 +137,7 @@ export default function FilterSidebar({
         />
       </div>
 
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D2D2D2] p-4">
         <button
           onClick={() => setIsQuantityOpen(!isQuantityOpen)}
           className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
@@ -193,5 +167,6 @@ export default function FilterSidebar({
         )}
       </div>
     </div>
+    </>
   );
 }
