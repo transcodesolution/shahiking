@@ -7,6 +7,8 @@ import ProductInfo from "@/components/product/ProductInfo";
 import { productsDetail } from "@/data/ui/productDetail";
 import { productsData } from "@/data/ui/categories";
 import RelatedProducts from "@/components/product/RelatedProducts";
+import Testimonials from "@/components/common/Testimonials";
+import GetInTouch from "@/components/common/GetInTouch";
 
 export default function Page() {
   const params = useParams();
@@ -56,6 +58,10 @@ export default function Page() {
       <div className="py-8">
         <RelatedProducts />
       </div>
+      
+        <Testimonials />
+        <GetInTouch />
+      
     </>
   );
 }

@@ -15,7 +15,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navClass = (path) =>
-    `desc font-medium py-[10px] px-[14px] xl:px-[18px] ${
+    `body-sm font-medium py-[10px] px-[14px] xl:px-[18px] ${
       pathname === path
         ? "bg-primary text-secondary rounded-3xl"
         : "text-secondary hover:text-white"
@@ -35,7 +35,7 @@ export default function Navbar() {
             className="h-15 md:h-17.5 w-auto"
           />
         </Link>
-
+ 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-3">
           <Link href="/" className={`${navClass("/")}`}>
@@ -60,7 +60,7 @@ export default function Navbar() {
           <Link href="/aboutus" className={`${navClass("/aboutus")}`}>
             About
           </Link>
-          <Link href="/recipes" className={`${navClass("/recipes")}`}>
+          <Link href="/recipe" className={`${navClass("/recipe")}`}>
             Recipes
           </Link>
           <Link href="/blog" className={`${navClass("/blog")}`}>
@@ -115,7 +115,7 @@ export default function Navbar() {
             <Link href="/aboutus" className="text-secondary text-lg border-b border-secondary py-2">
               About
             </Link>
-            <Link href="/recipes" className="text-secondary text-lg border-b border-secondary py-2">
+            <Link href="/recipe" className="text-secondary text-lg border-b border-secondary py-2">
               Recipes
             </Link>
             <Link href="/blog" className="text-secondary text-lg border-b border-secondary py-2">

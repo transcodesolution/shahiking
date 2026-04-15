@@ -11,14 +11,14 @@ import { testimonialData } from "@/data/ui/testimonial";
 import AvatarCarousel from "./AvatarCarousel";
 import TestimonialCard from "./TestimonialCard";
 
-export default function Testimonials() {
+export default function Testimonials({bg="bg-secondary"}) {
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="bg-secondary py-16 overflow-hidden">
+    <div className={`${bg} py-16 overflow-hidden`}>
       <div className="container mx-auto px-4 text-center">
         <h5 className="body-sm bg-primary text-white rounded-full px-4 py-1 inline-block">
           Testimonials

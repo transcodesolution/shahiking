@@ -38,6 +38,7 @@ export const productsData = {
   protein: [
     {
       name: "Pure Bean Fit Tofu",
+      slug: "pure-bean-fit-tofu",
       price: "350/-",
       desc: "High-protein tofu – clean plant-based protein for balanced meals.",
       img: "/Image/homepage/product_2.webp",

@@ -20,7 +20,7 @@ export default function ProductInfo({ product }) {
 
       {/* Price */}
       <div className="mt-4 mb-4 flex justify-start items-center gap-6">
-        <div className="flex flex-col justify-center items-center max-w-21 bg-primary rounded-xl py-2.5 px-4">
+        <div className="flex flex-col justify-center items-center w-full md:max-w-21 bg-primary rounded-xl py-2.5 px-4">
           <span className="body-sm text-secondary">{product.weight}</span>
           <span className="body-sm text-secondary">₹{product.price}</span>
         </div>

@@ -10,7 +10,7 @@ const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     <div className="mt-4">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center w-full cursor-pointer"
+        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center w-full cursor-pointer"
       >
         Storage Instructions
         <span
@@ -25,7 +25,7 @@ const [isDropdownOpen, setIsDropdownOpen] = useState(false);
         <div>
             {storageData.map((item,index) => (
                 <div key={index} className="flex justify-start items-center gap-2 py-1">
-                    <span className="text-[22px] text-primary"><GiCheckMark /></span>
+                    <span className="text-[18px] lg:text-[22px] text-primary"><GiCheckMark /></span>
                     <span className="body-sm">{item.name}</span>
                 </div>
             ))}

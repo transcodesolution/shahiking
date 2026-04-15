@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProductCard({ product}) {
+export default function ProductCard({ product }) {
   if (!product) return null;
 
   return (
@@ -18,13 +18,16 @@ export default function ProductCard({ product}) {
       )}
 
       {/* Content */}
-      <div className="p-3 xl:p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col">
-        {/* Title */}
-        <h3 className="text-lg font-semibold text-primary">{product?.name}</h3>
+      <div className="p-3 xl:p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
+        <div className="flex flex-col flex-1">
+          {/* Title */}
+          <h3 className="text-lg font-semibold text-primary">
+            {product?.name}
+          </h3>
 
-        {/* Description */}
-        <p className="text-black mt-1 flex-1">{product?.desc}</p>
-
+          {/* Description */}
+          <p className="text-black mt-1">{product?.desc}</p>
+        </div>
         {/* Bottom Section */}
         <div className="flex justify-between items-center mt-5">
           {/* Price */}

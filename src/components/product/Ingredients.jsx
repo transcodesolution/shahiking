@@ -8,7 +8,7 @@ export default function Ingredients() {
     <div className="mt-4">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="text-[24px] text-black font-heading font-semibold flex justify-between items-center w-full cursor-pointer mb-3"
+        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold flex justify-between items-center w-full cursor-pointer mb-3"
       >
         Ingredients
         <span

@@ -60,11 +60,11 @@ export default function ProductGallery({product}) {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`relative w-36 h-38  shrink-0 rounded-[20px] overflow-hidden border
+            className={`relative w-26 xl:w-36 h-28 xl:h-38  shrink-0 rounded-[20px] overflow-hidden border
               ${
                 activeIndex === index
                   ? "border-primary"
-                  : "border-primary "
+                  : "border-primary"
               }`}
           >
             <Image
@@ -72,7 +72,7 @@ export default function ProductGallery({product}) {
               alt={`Thumbnail ${index + 1}`}
                width={140}
                height={145}
-              className="cursor-pointer rounded-[20px] w-full h-38 object-cover "
+              className="cursor-pointer rounded-[20px] w-full h-32 xl:h-38 object-cover"
             />
           </button>
         ))}

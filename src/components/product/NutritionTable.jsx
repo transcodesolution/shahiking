@@ -10,7 +10,7 @@ const NutritionTable = () => {
     <div className="mt-4">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center w-full cursor-pointer"
+        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center text-start w-full cursor-pointer"
       >
         Nutritional Information (Per 100g Approx)
         <span
@@ -23,9 +23,9 @@ const NutritionTable = () => {
       </button>
 
       {isDropdownOpen && (
-        <div className="w-full bg-secondary rounded-[30px] p-3 ml-5 max-w-136 mt-4">
+        <div className="w-full bg-secondary rounded-[30px] p-3 ml-0 md:ml-3 xl:ml-5 max-w-136 mt-4">
           {/* Header */}
-          <div className="flex justify-between px-15 py-3 font-semibold text-black font-heading text-[24px]">
+          <div className="flex justify-between px-15 py-3 font-semibold text-black font-heading text-[18px] lg:text-[20px] xl:text-[24px]">
             <span>Nutrient</span>
             <span>Value</span>
           </div>
