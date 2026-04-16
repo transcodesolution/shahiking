@@ -18,14 +18,14 @@ export default function ShopCategory() {
           alt="category leaf img"
           width={47.42}
           height={75.05}
-          className="hidden lg:block absolute inset-y-0 top-12.5 right-60 h-30 w-17.5 object-cover rotate-[-170deg] blur-2"
+          className="hidden lg:block absolute inset-y-0 top-12.5 right-60 h-30 w-17.5 object-cover -rotate-170 blur-2"
         />
         <Image
           src="/Image/homepage/category_leaf.webp"
           alt="category leaf img"
           width={47.42}
           height={75.05}
-          className="hidden lg:block absolute inset-y-0 top-30 left-55 h-30 w-17.5 object-cover rotate-[-240deg] blur-2"
+          className="hidden lg:block absolute inset-y-0 top-30 left-55 h-30 w-17.5 object-cover -rotate-195 blur-2 translate scale-x-[-1]"
         />
 
         {/* Heading */}

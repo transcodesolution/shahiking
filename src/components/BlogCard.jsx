@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function BlogCard({ item }) {
+  if (!item) return null;
   return (
     <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-169 w-full flex flex-col">
       <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
@@ -16,7 +17,7 @@ export default function BlogCard({ item }) {
       />
       </div>
       {/* Content */}
-      <div className="p-3 md:p-5 xl:p-7 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
+      <div className="p-3 md:p-5 xl:p-7 border border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
         <div className="flex flex-col flex-1">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <p className="flex items-center gap-2 text-black ">
@@ -60,8 +61,9 @@ export default function BlogCard({ item }) {
           <p className="text-black mt-2 body-md mb-6">{item.description}</p>
         </div>
         {/* Button */}
+
         <Link
-          href="/"
+          href={`/blog/${item.slug}`}
           className="bg-primary text-secondary body-sm flex justify-center items-center gap-4 border border-primary font-medium py-2 px-4 max-w-39.5 rounded-full hover:bg-secondary hover:text-primary duration-500"
         >
           Read More <FaArrowRightLong />

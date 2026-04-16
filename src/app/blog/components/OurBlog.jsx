@@ -21,12 +21,15 @@ export default function OurBlog() {
             <BlogCard key={item.id} item={item} />
           ))}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end relative z-10">
           <Link
             href="/product"
-            className="body-sm text-primary font-medium flex items-center gap-2 underline underline-offset-3"
+            className="body-sm text-primary font-medium flex items-center gap-2 underline underline-offset-3 group cursor-pointer"
           >
-            See All Products <FaArrowRightLong />
+            See All Products
+            <span className="font-medium group-hover:translate-x-1 transition-transform duration-500">
+              <FaArrowRightLong />
+            </span>
           </Link>
         </div>
       </div>
