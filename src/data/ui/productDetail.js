@@ -2,11 +2,12 @@ export const productsDetail = [
   {
     id: "1",
     name: "Premium Raw Makhana",
+    slug:"premium-raw-makhana",
     price: 249,
     weight: "200 g",
     description: "High-Protein Healthy Snack | Premium Quality Superfood",
     details:
-      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness. Perfect for healthy snacking, roasting, fasting, and clean eating — delivering natural taste and nutrition in every bite.",
+      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
@@ -16,7 +17,27 @@ export const productsDetail = [
       "/Image/homepage/product_1.webp",
     ],
   },
+  {
+    id: "2",
+    name: "Pure Bean Fit Firm Tofu",
+    slug:"pure-bean-fit-tofu",
+    price: 249,
+    weight: "200 g",
+    description:
+      "High-Protein Plant-Based Protein | 100% Vegan | Non-GMO Soybeans",
+    details:
+      "Pure Bean Fit Firm Tofu is a premium plant-based protein made from high-quality non-GMO soybeans. With its firm texture and clean taste, it’s perfect for grilling, stir-frying, salads, and everyday healthy meals — ideal for vegan, vegetarian, and high-protein diets.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img.webp",
+    ],
+  },
 ];
+
 
 export const nutritionData = [
   { name: "Energy", value: "347 kcal" },

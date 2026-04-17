@@ -47,7 +47,7 @@ export const faqData =[
     {
         id:1,
         question:"Is plant-based protein effective for weight loss?",
-        answer:"",
+        answer:"Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
     },
     {
         id:2,
@@ -56,18 +56,18 @@ export const faqData =[
     },
     {
         id:3,
-        question:"Is plant-based protein effective for weight loss?",
-        answer:"",
+        question:"Are dry fruits good for protein?",
+        answer:"Yes. Dry fruits provide protein along with healthy fats and essential micronutrients.",
     },
     {
         id:4,
         question:"Is plant-based protein effective for weight loss?",
-        answer:"",
+        answer:"Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
     },
     {
         id:5,
         question:"Is plant-based protein effective for weight loss?",
-        answer:"",
+        answer:"Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
     },
 ]
 

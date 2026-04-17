@@ -14,17 +14,28 @@ export default function Page() {
   const params = useParams();
   const id = params?.id;
 
+  // ✅ Get product from category data (for name)
   const allProducts = Object.values(productsData).flat();
-
   const product = allProducts.find((p) => p.slug === id);
 
-  // ✅ FIXED HERE
-  const productName = product?.name || "Product";
+  // ✅ Get product detail (MAIN FIX)
+  const productDetail = productsDetail.find(
+    (item) => item.slug === id
+  );
+
+  const productName = productDetail?.name || product?.name || "Product";
+
+  // ✅ Handle not found
+  if (!productDetail) {
+    return <div className="p-10 text-center">Product not found</div>;
+  }
 
   return (
     <>
       <div className="bg-secondary py-6 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Breadcrumb */}
           <nav className="flex p-2">
             <ol className="flex items-center space-x-2">
               <li>
@@ -45,23 +56,25 @@ export default function Page() {
             </ol>
           </nav>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-4 pb">
+          {/* Product Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-4">
             <div>
-              <ProductGallery product={productsDetail[0]} />
+              <ProductGallery product={productDetail} />
             </div>
             <div>
-              <ProductInfo product={productsDetail[0]} />
+              <ProductInfo product={productDetail} />
             </div>
           </div>
+
         </div>
       </div>
+
       <div className="py-8">
         <RelatedProducts />
       </div>
-      
-        <Testimonials />
-        <GetInTouch />
-      
+
+      <Testimonials />
+      <GetInTouch />
     </>
   );
 }

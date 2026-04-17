@@ -44,7 +44,7 @@ export default function SearchBar({ className = "", onSearch }) {
     <div ref={wrapperRef} className={`relative ${className}`}>
       <form
         onSubmit={handleSearch}
-        className="bg-secondary rounded-3xl flex justify-between items-center w-full border border-gray-300  transition-all shadow-sm px-2"
+        className="bg-secondary rounded-3xl flex justify-between items-center w-full lg:max-w-65 xl:max-w-80 border border-gray-300  transition-all shadow-sm px-2"
       >
         
         <input

@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-br from-primary to-[#5CAB72] opacity-100 z-10"></div>
 
       {/* Optional Hover Effect */}
-      <div className="absolute inset-0 bg-linear-to-b from-[#66666600] to-[#396A47] opacity-100 transition duration-500 z-10"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-[#66666600] to-[#396A47] opacity-100 z-10"></div>
 
       <div className="absolute inset-0 w-141.5 h-133.5 rounded-full blur-3xl -top-59 -left-52.25 bg-linear-to-tr from-[#6EBA83] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
       <div className="absolute inset-0 w-141.5 h-133.5 rounded-full blur-3xl top-170 left-398 bg-linear-to-br from-[#6EBA83] to-[#32543B] opacity-100 transition duration-500 z-10"></div>

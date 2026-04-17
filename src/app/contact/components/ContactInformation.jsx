@@ -6,7 +6,7 @@ export default function ContactInformation() {
   return (
     <div className="py-3 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-secondary p-10 border-2 border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] rounded-[30px]">
+        <div className="bg-secondary p-5 md:p-10 border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] rounded-[30px]">
           <h1 className="display-heading text-primary font-semibold border-b border-accent pb-5">
             Contact Information
           </h1>
@@ -70,7 +70,7 @@ export default function ContactInformation() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="h-full w-full rounded-[30px] border border-secondary shadow-sm shadow-[#00000040]"
+            className="h-94 lg:h-full w-full rounded-[30px] border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040]"
           ></iframe>
         </div>
       </div>

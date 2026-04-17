@@ -4,23 +4,28 @@ import Link from "next/link";
 import Image from "next/image";
 import { BiSearchAlt } from "react-icons/bi";
 import { HiMenu, HiX } from "react-icons/hi";
-import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import ProductDropdown from "@/app/product/components/ProductDropdown";
 import SearchBar from "./SearchBar";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [open,setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
+
+  const isActive = (path) => {
+    if (path === "/") return pathname === "/";
+
+    return pathname.startsWith(path);
+  };
 
   const navClass = (path) =>
     `body-sm font-medium py-[10px] px-[14px] xl:px-[18px] ${
-      pathname === path
+      isActive(path)
         ? "bg-primary text-secondary rounded-3xl"
         : "text-secondary hover:text-white"
-    }`; 
-
+    }`;
 
   return (
     <header className="bg-[#111313] sticky top-0 z-50">
@@ -35,7 +40,7 @@ export default function Navbar() {
             className="h-15 md:h-17.5 w-auto"
           />
         </Link>
- 
+
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-3">
           <Link href="/" className={`${navClass("/")}`}>
@@ -48,8 +53,10 @@ export default function Navbar() {
               href="/product"
               className={`${navClass("/product")} flex items-center gap-1`}
             >
-               Product
-              <span><IoIosArrowDown /></span>
+              Product
+              <span>
+                <IoIosArrowDown />
+              </span>
             </Link>
 
             {/* Dropdown Menu */}
@@ -73,7 +80,7 @@ export default function Navbar() {
 
         {/* Search Bar */}
         <div className="hidden lg:flex justify-between items-center cursor-pointer">
-          <SearchBar/>
+          <SearchBar />
         </div>
 
         {/* Mobile Menu Button */}
@@ -89,45 +96,67 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden fixed top-21 left-0 w-full bg-primary border-t border-gray-700 z-50 transform transition-transform duration-500 .3s ease-in-out">
           <nav className="flex flex-col px-6 py-4 gap-4">
-            <Link href="/" className="text-secondary border-b border-secondary py-2 text-lg">
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary border-b border-secondary py-2 text-lg"
+            >
               Home
             </Link>
 
             {/* Mobile Product Dropdown */}
             <div className="relative z-0 border-b border-secondary py-2">
               <Link href="/product" className="flex items-center gap-1 text-lg">
-                <button 
-                 onClick={() =>setOpen(!open)}
-                 className="text-secondary hover:text-white flex justify-between items-center w-full cursor-pointer">
+                <button
+                  onClick={() => setOpen(!open)}
+                  className="text-secondary flex justify-between items-center w-full text-lg"
+                >
                   Product
-                  <span>
-                    {open ? <IoIosArrowUp /> : <IoIosArrowDown /> }
-                  </span>
+                  <span>{open ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
                 </button>
               </Link>
               {open && (
-                <div className="bg-secondary w-full z-10">
-                  <ProductDropdown />
+                <div className="bg-secondary">
+                  <ProductDropdown closeMenu={() => setMenuOpen(false)} />
                 </div>
               )}
             </div>
 
-            <Link href="/aboutus" className="text-secondary text-lg border-b border-secondary py-2">
+            <Link
+              href="/aboutus"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary text-lg border-b border-secondary py-2"
+            >
               About
             </Link>
-            <Link href="/recipe" className="text-secondary text-lg border-b border-secondary py-2">
+
+            <Link
+              href="/recipe"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary text-lg border-b border-secondary py-2"
+            >
               Recipes
             </Link>
-            <Link href="/blog" className="text-secondary text-lg border-b border-secondary py-2">
+
+            <Link
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary text-lg border-b border-secondary py-2"
+            >
               Blog
             </Link>
-            <Link href="/contact" className="text-secondary text-lg">
+
+            <Link
+              href="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary text-lg"
+            >
               Contact
             </Link>
 
             {/* Search */}
             <div className="rounded-3xl flex items-center px-2">
-              <SearchBar className="w-full"/>
+              <SearchBar className="w-full" />
             </div>
           </nav>
         </div>

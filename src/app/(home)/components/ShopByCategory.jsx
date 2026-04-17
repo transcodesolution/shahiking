@@ -11,7 +11,7 @@ export default function ShopCategory() {
   const products = productsData[activeCategory] || [];
 
   return (
-    <section className="bg-secondary py-8 md:py-16 relative z-0">
+    <section className="bg-secondary py-8 md:py-16 relative z-0 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Image
           src="/Image/homepage/category_leaf.webp"
