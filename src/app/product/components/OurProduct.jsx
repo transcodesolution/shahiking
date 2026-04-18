@@ -110,7 +110,7 @@ export default function OurProduct() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 xl:grid-cols-4 gap-8 p-4 md:p-6 xl:p-8">
+              <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 p-4 md:p-6 xl:p-8">
                 {currentProducts.map((item) => (
                   <ProductCard
                     key={item.id}

@@ -6,6 +6,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const NutritionTable = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const {id} = nutritionData[0];
+  const product = nutritionData.find((p) => p.id === id);
   return (
     <div className="mt-4">
       <button
@@ -23,27 +25,36 @@ const NutritionTable = () => {
       </button>
 
       {isDropdownOpen && (
-        <div className="w-full bg-secondary rounded-[30px] p-3 ml-0 md:ml-3 xl:ml-5 max-w-136 mt-4">
-          {/* Header */}
-          <div className="flex justify-between px-15 py-3 font-semibold text-black font-heading text-[18px] lg:text-[20px] xl:text-[24px]">
-            <span>Nutrient</span>
-            <span>Value</span>
-          </div>
+        <div>
+          <div className="w-full bg-secondary rounded-[30px] p-3 ml-0 md:ml-3 xl:ml-5 max-w-136 mt-4">
+            {/* Header */}
+            <div className="flex justify-between px-15 py-3 font-semibold text-black font-heading text-[18px] lg:text-[20px] xl:text-[24px]">
+              <span>Nutrient</span>
+              <span>Value</span>
+            </div>
 
-          {/* Rows */}
-          <div className="">
-            {nutritionData.map((item, index) => (
-              <div
-                key={index}
-                className={`flex justify-between items-center mx-auto rounded-full px-15 py-3 body-sm 
+            {/* Rows */}
+            <div className="">
+              {product?.nutrition?.map((item, index) => (
+                <div
+                  key={index}
+                  className={`flex justify-between items-center mx-auto rounded-full px-15 py-3 body-sm 
                 ${index % 2 === 0 ? "bg-[#FCFCFC]" : "bg-secondary"}
               `}
-              >
-                <span className="text-black">{item.name}</span>
-                <span className="text-black">{item.value}</span>
-              </div>
-            ))}
+                >
+                  <span className="text-black text-start ">
+                    {item.name}
+                  </span>
+                  <span className="text-black w-16.25 text-start">
+                    {item.value}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
+          <p className="body-sm text-black my-3">
+            (Values may very slightly due to natural sourcing.)
+          </p>
         </div>
       )}
     </div>

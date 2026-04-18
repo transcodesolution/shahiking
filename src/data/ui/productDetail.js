@@ -40,13 +40,36 @@ export const productsDetail = [
 
 
 export const nutritionData = [
-  { name: "Energy", value: "347 kcal" },
-  { name: "Protein", value: "9.7 g" },
-  { name: "Carbohydrates", value: "76 g" },
-  { name: "Dietary Fiber", value: "7.6 g" },
-  { name: "Fat", value: "0.1 g" },
-  { name: "Calcium", value: "60 g" },
-  { name: "Iron", value: "1.4 g" },
+   {
+    id: "1",
+    name: "Premium Raw Makhana",
+    nutrition: [
+      { name: "Energy", value: "347 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.1 g" },
+      { name: "Calcium", value: "60 g" },
+      { name: "Iron", value: "1.4 g" },
+    ],
+  },
+  {
+    id: "2",
+    name: "Pure Bean Fit Firm Tofu",
+    nutrition: [
+      { name: "Energy", value: "169 kcal" },
+      { name: "Protein", value: "15.04 g" },
+      { name: "Total Carbohydrates", value: "4.3 g" },
+      { name: "Sugar", value: "1.1 g" },
+      { name: "Total Fat", value: "4.41 g" },
+      { name: "Saturated Fat", value: "1.2 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Cholesterol", value: "0 g" },
+      { name: "Sodium", value: "46 g" },
+      { name: "Calcium", value: "38 g" },
+      { name: "Iron", value: "2.4 g" },
+    ],
+  },
 ];
 
 export const benefitData = [

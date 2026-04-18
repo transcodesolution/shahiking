@@ -8,8 +8,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 export default function ProductDropdown() {
   const [active, setActive] = useState("nuts");
-  const [openIndex, setOpenIndex] = useState(null)
-
+  const [openIndex, setOpenIndex] = useState(null);
+  
   return (
     <>
       <div className="hidden md:block w-full">

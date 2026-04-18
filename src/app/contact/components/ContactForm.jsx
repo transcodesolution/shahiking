@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,8 +12,6 @@ export default function ContactForm() {
     message: "",
     agree: false,
   });
-
-  const [errors, setErrors] = useState({});
 
   // Handle input change
   const handleChange = (e) => {
@@ -24,60 +23,42 @@ export default function ContactForm() {
     });
   };
 
-  // Validation
-  const validate = () => {
-    let newErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
-    } else if (!/^[0-9]{10}$/.test(formData.phone)) {
-      newErrors.phone = "Enter valid 10 digit number";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Invalid email";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
-    if (!formData.agree) {
-      newErrors.agree = "You must accept privacy policy";
-    }
-
-    return newErrors;
-  };
-
   // Submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const validationErrors = validate();
-    setErrors(validationErrors);
-
-    if (Object.keys(validationErrors).length === 0) {
-      console.log("Form Submitted:", formData);
-
-      // reset form
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-        agree: false,
-      });
+    // check empty fields
+    if (
+      !formData.name ||
+      !formData.phone ||
+      !formData.email ||
+      !formData.message
+    ) {
+      toast.error("Please fill all the fields");
+      return;
     }
+
+    // checkbox validation
+    if (!formData.agree) {
+      toast.error("Please accept privacy policy");
+      return;
+    }
+
+    // ✅ success
+    toast.success("Message sent successfully");
+
+    // reset form
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+      agree: false,
+    });
   };
 
   return (
-    <div className="py-6 relative z-10">
+    <div className="py-8 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* FORM */}
         <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-5 md:p-10 rounded-[30px]">
@@ -97,7 +78,6 @@ export default function ContactForm() {
                   placeholder="Enter your name*"
                   className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
-                {errors.name && <p className="text-red-500">{errors.name}</p>}
               </div>
 
               {/* Phone */}
@@ -111,7 +91,6 @@ export default function ContactForm() {
                   placeholder="Enter your phone number*"
                   className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
-                {errors.phone && <p className="text-red-500">{errors.phone}</p>}
               </div>
             </div>
 
@@ -126,7 +105,6 @@ export default function ContactForm() {
                 placeholder="Enter your email*"
                 className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
               />
-              {errors.email && <p className="text-red-500">{errors.email}</p>}
             </div>
 
             {/* Message */}
@@ -140,34 +118,46 @@ export default function ContactForm() {
                 rows={6}
                 className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
               />
-              {errors.message && (
-                <p className="text-red-500">{errors.message}</p>
-              )}
             </div>
 
             {/* Checkbox */}
             <div className="flex items-center mt-4 mb-2">
-              <input
-                type="checkbox"
-                name="agree"
-                checked={formData.agree}
-                onChange={handleChange}
-                className="w-6 h-6 cursor-pointer"
-              />
-              <label className="ml-2 body-md">
-                I agree to with friendly{" "}
-                <span className="underline underline-offset-5">
-                  {" "}
-                  privacy policy.
+              <label className="flex items-center gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="agree"
+                  checked={formData.agree}
+                  onChange={handleChange}
+                  className="hidden peer"
+                />
+
+                {/* Custom Box */}
+                <div className="w-6 h-6 rounded-md border-2 border-gray-400 flex items-center justify-center peer-checked:bg-primary peer-checked:border-primary transition-all">
+                  {/* Tick Icon */}
+                  <svg
+                    className="w-5 h-5 text-secondary peer-checked:block"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+
+                <span className="body-md text-black">
+                  I agree to with friendly
+                  <span className="underline underline-offset-4 decoration-accent decoration-1">
+                    privacy policy.
+                  </span>
                 </span>
               </label>
             </div>
-            {errors.agree && <p className="text-red-500">{errors.agree}</p>}
 
             {/* Button */}
             <button
               type="submit"
-              className="mt-5 bg-primary text-secondary border border-primary px-6 py-2 rounded-full w-full max-w-85 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
+              className="mt-5 bg-primary text-secondary font-medium border border-primary px-6 py-2 rounded-full w-full max-w-85 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
             >
               Send Message
             </button>
@@ -188,4 +178,3 @@ export default function ContactForm() {
     </div>
   );
 }
-

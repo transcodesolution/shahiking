@@ -48,12 +48,12 @@ export default function ProductGallery({ product }) {
       </div>
 
       {/* Thumbnails */}
-      <div className="flex gap-4 overflow-x-scroll md:overflow-x-auto pb-2 mt-8 scrollbar-w-none scrollbar-snap-x relative">
+      <div className="flex gap-4 overflow-x-auto md:overflow-visible pb-2 mt-8 snap-x snap-mandatory">
         {images.map((img, index) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`relative w-26 xl:w-36 h-28 xl:h-38 shrink-0 rounded-[20px] overflow-hidden border scrollbar-align-start cursor-pointer
+            className={`relative w-26 xl:w-36 h-28 xl:h-38 shrink-0 rounded-[20px] overflow-hidden border snap-start cursor-pointer
               ${activeIndex === index ? "border-primary" : "border-primary"}`}
           >
             <Image
