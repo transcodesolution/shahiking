@@ -42,37 +42,37 @@ export default function Footer() {
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
                 <Link
                   href="/"
-                  className="text-primary font-medium cursor-pointer"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Home
                 </Link>
                 <Link
                   href="/product"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Product
                 </Link>
                 <Link
                   href="/aboutus"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   About
                 </Link>
                 <Link
                   href="/recipes"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Recipes
                 </Link>
                 <Link
                   href="/blog"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Blog
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Contact Us
                 </Link>
@@ -86,25 +86,25 @@ export default function Footer() {
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
                 <Link
                   href="/"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Shipping Policy
                 </Link>
                 <Link
                   href="/"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Refund & Return
                 </Link>
                 <Link
                   href="/"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   href="/"
-                  className="text-primary font-medium"
+                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Terms of Service
                 </Link>
@@ -117,8 +117,8 @@ export default function Footer() {
               </h2>
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
                 <a
-                  href=""
-                  className="text-primary font-medium flex items-center gap-1"
+                  href="#"
+                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
                     <FaFacebookSquare />
@@ -126,8 +126,8 @@ export default function Footer() {
                   Facebook
                 </a>
                 <a
-                  href=""
-                  className="text-primary font-medium flex items-center gap-1"
+                  href="#"
+                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
                     <FaSquareXTwitter />
@@ -135,8 +135,8 @@ export default function Footer() {
                   Twitter
                 </a>
                 <a
-                  href=""
-                  className="text-primary font-medium flex items-center gap-1"
+                  href="#"
+                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
                     <FaSquareInstagram />
@@ -144,8 +144,8 @@ export default function Footer() {
                   Instagram
                 </a>
                 <a
-                  href=""
-                  className="text-primary font-medium flex items-center gap-1"
+                  href="#"
+                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
                     <FaLinkedin />

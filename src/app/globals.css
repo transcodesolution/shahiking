@@ -84,3 +84,19 @@
   pointer-events: all;
   position: relative;
 }
+
+/* product details page image */
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}

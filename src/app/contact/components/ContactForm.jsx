@@ -146,9 +146,9 @@ export default function ContactForm() {
                 </div>
 
                 <span className="body-md text-black">
-                  I agree to with friendly
+                  I agree to with friendly {" "}
                   <span className="underline underline-offset-4 decoration-accent decoration-1">
-                    privacy policy.
+                  privacy policy.
                   </span>
                 </span>
               </label>

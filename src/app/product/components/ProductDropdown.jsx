@@ -9,7 +9,9 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 export default function ProductDropdown() {
   const [active, setActive] = useState("nuts");
   const [openIndex, setOpenIndex] = useState(null);
-  
+
+  const [currentProducts, setCurrentProducts] = useState([]);
+
   return (
     <>
       <div className="hidden md:block w-full">
@@ -56,11 +58,21 @@ export default function ProductDropdown() {
               aria-labelledby={`tab-${cat.id}`}
               hidden={active !== cat.id}
             >
-             {active === cat.id && (
+              {active === cat.id && (
                 <div className="grid grid-cols-4 gap-10 py-6">
                   {productsItem[cat.id]?.map((item) => (
                     <div
                       key={item.id}
+                      onClick={() => {
+                        const allProducts = Object.values(productsItem).flat();
+
+                        const related = allProducts.filter(
+                          (p) =>
+                            p.category === item.category && p.id !== item.id,
+                        );
+
+                        setCurrentProducts(related);
+                      }}
                       className="text-center border-b border-[#D2D2D2] pb-2 cursor-pointer"
                     >
                       <div className="flex justify-center">
@@ -75,7 +87,7 @@ export default function ProductDropdown() {
 
                       <p className="body-md mt-3">{item.name}</p>
                     </div>
-                  ))} 
+                  ))}
                 </div>
               )}
             </div>
@@ -94,7 +106,7 @@ export default function ProductDropdown() {
       </div>
 
       {/* mobile screen in product dropdown  */}
-      
+
       <div className="md:hidden">
         <div className="flex flex-col gap-2 p-4">
           {categoriesData.map((cat, index) => (
@@ -106,11 +118,7 @@ export default function ProductDropdown() {
               >
                 <p className="text-lg font-medium">{cat.name}</p>
                 <span>
-                  {openIndex === index ? (
-                    <IoIosArrowUp />
-                  ) : (
-                    <IoIosArrowDown />
-                  )}
+                  {openIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </span>
               </button>
               {/* Products */}

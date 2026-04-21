@@ -10,7 +10,7 @@ export default function FAQ() {
         alt="Faq background" 
         width={1920}
         height={802}
-        className="h-200 w-full object-cover absolute inset-0 z-10 overflow-hidden opacity-10"
+        className="h-200 w-full object-cover absolute inset-0 z-10 overflow-hidden"
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className='relative z-10'>

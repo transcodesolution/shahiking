@@ -104,9 +104,11 @@ export default function OurProduct() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                   />
-                   <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <span className="text-[20px] text-accent"><IoMdSearch /></span>
-                   </div>
+                  <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span className="text-[20px] text-accent">
+                      <IoMdSearch />
+                    </span>
+                  </div>
                 </div>
               </div>
 

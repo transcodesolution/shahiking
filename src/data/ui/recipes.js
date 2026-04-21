@@ -145,4 +145,16 @@ export const recipeData = [
       details:"Herbs & Spices"
     },
   ]
+
+  export const recipeNutritionData =[
+
+      { name: "Energy", value: "347 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.1 g" },
+      { name: "Calcium", value: "60 g" },
+      { name: "Iron", value: "1.4 g" },
+
+  ];
   
