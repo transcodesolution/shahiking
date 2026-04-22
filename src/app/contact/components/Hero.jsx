@@ -15,7 +15,7 @@ export default function Hero() {
         />
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center'>
-            <h1 className='text-[64px] font-semibold text-primary font-heading'>Contact Us</h1>
+            <h1 className='text-[36px] md:text-[48px] xl:text-[64px] font-semibold text-primary font-heading'>Contact Us</h1>
             <p className='body-md text-black max-w-175 mx-auto'>Have questions about our healthy and vegan products? Want to partner with us? Reach out and our team will get back to you as soon as possible.</p>
         </div>
         <div>

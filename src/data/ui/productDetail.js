@@ -19,6 +19,42 @@ export const productsDetail = [
   },
   {
     id: "2",
+    name: "Peri Peri Makhana",
+    slug:"peri-peri-makhana",
+    price: 249,
+    weight: "200 g",
+    description: "High-Protein Healthy Snack | Premium Quality Superfood",
+    details:
+      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
+    contact_detail:
+      "For wholesale & bulk packaging inquiries, please contact our distribution team.",
+    image: [
+      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_5.webp",
+      "/Image/homepage/product_1.webp",
+    ],
+  },
+  {
+    id: "3",
+    name: "Himalayan Salt Makhana",
+    slug:"himalayan-salt-makhana",
+    price: 249,
+    weight: "200 g",
+    description: "High-Protein Healthy Snack | Premium Quality Superfood",
+    details:
+      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
+    contact_detail:
+      "For wholesale & bulk packaging inquiries, please contact our distribution team.",
+    image: [
+      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_5.webp",
+      "/Image/homepage/product_1.webp",
+    ],
+  },
+  {
+    id: "4",
     name: "Pure Bean Fit Firm Tofu",
     slug:"pure-bean-fit-tofu",
     price: 249,
@@ -54,7 +90,7 @@ export const nutritionData = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     name: "Pure Bean Fit Firm Tofu",
     nutrition: [
       { name: "Energy", value: "169 kcal" },

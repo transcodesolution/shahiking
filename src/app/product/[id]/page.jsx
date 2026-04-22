@@ -37,7 +37,7 @@ export default function Page() {
           
           {/* Breadcrumb */}
           <nav className="flex p-2">
-            <ol className="flex items-center space-x-2">
+            <ol className="flex items-center">
               <li>
                 <Link
                   href="/"
@@ -48,7 +48,7 @@ export default function Page() {
               </li>
 
               <li className="flex items-center">
-                <span className="mx-2">/</span>
+                <span className="mx-1 body-md">/</span>
                 <span className="font-semibold text-primary font-heading body-md">
                   {productName}
                 </span>

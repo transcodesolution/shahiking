@@ -1,7 +1,8 @@
 "use client";
-import { categoriesData, productsItem } from "@/data/ui/products";
+import { categoriesData, products, productsItem } from "@/data/ui/products";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -10,7 +11,7 @@ export default function ProductDropdown() {
   const [active, setActive] = useState("nuts");
   const [openIndex, setOpenIndex] = useState(null);
 
-  const [currentProducts, setCurrentProducts] = useState([]);
+  const router = useRouter();
 
   return (
     <>
@@ -64,14 +65,7 @@ export default function ProductDropdown() {
                     <div
                       key={item.id}
                       onClick={() => {
-                        const allProducts = Object.values(productsItem).flat();
-
-                        const related = allProducts.filter(
-                          (p) =>
-                            p.category === item.category && p.id !== item.id,
-                        );
-
-                        setCurrentProducts(related);
+                        router.push(`/product?slug=${item.slug}`);
                       }}
                       className="text-center border-b border-[#D2D2D2] pb-2 cursor-pointer"
                     >

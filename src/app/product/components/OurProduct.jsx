@@ -5,6 +5,8 @@ import FilterSidebar from "./FilterSidebar";
 import ProductCard from "./ProductCard";
 import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
 import { products } from "@/data/ui/products";
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 export default function OurProduct() {
   const [search, setSearch] = useState("");
@@ -15,6 +17,9 @@ export default function OurProduct() {
   const [selectedQuantity, setSelectedQuantity] = useState("");
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(2000);
+
+  const searchParams = useSearchParams();
+  const slug = searchParams.get("slug");
 
   const toggleWishlist = (id) => {
     setWishlist((prev) =>
@@ -32,31 +37,34 @@ export default function OurProduct() {
 
   // FILTER
   const filteredProducts = products.filter((item) => {
-    const matchesSearch = item.name
-      ?.toLowerCase()
-      .includes(search.toLowerCase());
+  const matchesSlug = !slug || item.slug === slug;
 
-    const matchesCategory =
-      isChecked.length === 0 ||
-      isChecked.some(
-        (cat) => cat.toLowerCase() === item.category?.toLowerCase(),
-      );
+  const matchesSearch = item.name
+    ?.toLowerCase()
+    .includes(search.toLowerCase());
 
-    const matchesStock = !isStock || item.availability === isStock;
-
-    const matchesQuantity =
-      !selectedQuantity || item.quantity === selectedQuantity;
-
-    const matchesPrice = item.price >= minVal && item.price <= maxVal;
-
-    return (
-      matchesSearch &&
-      matchesCategory &&
-      matchesStock &&
-      matchesQuantity &&
-      matchesPrice
+  const matchesCategory =
+    isChecked.length === 0 ||
+    isChecked.some(
+      (cat) => cat.toLowerCase() === item.category?.toLowerCase(),
     );
-  });
+
+  const matchesStock = !isStock || item.availability === isStock;
+
+  const matchesQuantity =
+    !selectedQuantity || item.quantity === selectedQuantity;
+
+  const matchesPrice = item.price >= minVal && item.price <= maxVal;
+
+  return (
+    matchesSlug &&
+    matchesSearch &&
+    matchesCategory &&
+    matchesStock &&
+    matchesQuantity &&
+    matchesPrice
+  );
+});
 
   // PAGINATION
   const itemsPerPage = 12;
@@ -90,7 +98,7 @@ export default function OurProduct() {
             />
           </div>
           <div className="w-full max-w-300">
-            <div className="flex-1 border border-[#C1C1C1] rounded-xl shadow-sm bg-secondary min-h-280">
+            <div className="flex-1 border border-[#C1C1C1] rounded-xl shadow-sm bg-secondary min-h-screen">
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-[#C1C1C1] p-6">
                 <p className="text-accent">
                   Showing {filteredProducts.length} results
@@ -114,12 +122,14 @@ export default function OurProduct() {
 
               <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 p-4 md:p-6 xl:p-8">
                 {currentProducts.map((item) => (
+                  <Link key={item.id} href={`/product/${item.slug}`}>
                   <ProductCard
                     key={item.id}
                     item={item}
                     isWishlisted={wishlist.includes(item.id)}
                     onWishlistToggle={() => toggleWishlist(item.id)}
                   />
+                  </Link>
                 ))}
               </div>
             </div>
