@@ -32,6 +32,7 @@ export default function ProductCard({
         <button
           onClick={(e) => {
             e.stopPropagation(); // ✅ prevent card click
+            e.preventDefault();
             onWishlistToggle();
           }}
           className="absolute top-0 right-0 bg-white p-1 rounded-full shadow shadow-[#0000004D] cursor-pointer"

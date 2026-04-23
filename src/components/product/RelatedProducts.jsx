@@ -11,7 +11,7 @@ export default function RelatedProducts() {
   ];
 
   return (
-    <div className="bg-white py-8 relative z-0">
+    <div className="bg-white py-8 relative z-0 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Leaf Images */}
         <Image
@@ -19,7 +19,7 @@ export default function RelatedProducts() {
           alt="leaf"
           width={47.42}
           height={75.05}
-          className="hidden lg:block absolute top-0 right-55 object-cover h-30 w-17.5 -rotate-170 blur-2"
+          className="hidden lg:block absolute top-0 right-55 object-cover h-30 w-17.5 -rotate-170 blur-2 z-10"
         />
 
         <Image
@@ -27,7 +27,7 @@ export default function RelatedProducts() {
           alt="leaf"
           width={47.42}
           height={75.05}
-          className="hidden lg:block absolute top-0 left-55 object-cover h-30 w-17.5 -rotate-195 blur-2 translate scale-x-[-1]"
+          className="hidden lg:block absolute top-0 left-55 object-cover h-30 w-17.5 -rotate-195 blur-2 translate scale-x-[-1] z-10"
         />
 
         <h2 className="display-heading font-semibold text-primary text-center">

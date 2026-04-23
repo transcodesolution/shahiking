@@ -1,6 +1,6 @@
 export const productsDetail = [
   {
-    id: "1",
+    id: 1,
     name: "Premium Raw Makhana",
     slug:"premium-raw-makhana",
     price: 249,
@@ -18,7 +18,7 @@ export const productsDetail = [
     ],
   },
   {
-    id: "2",
+    id: 2,
     name: "Peri Peri Makhana",
     slug:"peri-peri-makhana",
     price: 249,
@@ -29,14 +29,14 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/homepage/product_1.webp",
-      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_3.webp",
+      "/Image/homepage/product_3.webp",
       "/Image/homepage/product_5.webp",
-      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_3.webp",
     ],
   },
   {
-    id: "3",
+    id: 3,
     name: "Himalayan Salt Makhana",
     slug:"himalayan-salt-makhana",
     price: 249,
@@ -47,14 +47,14 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/homepage/product_1.webp",
-      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_4.webp",
+      "/Image/homepage/product_4.webp",
       "/Image/homepage/product_5.webp",
-      "/Image/homepage/product_1.webp",
+      "/Image/homepage/product_4.webp",
     ],
   },
   {
-    id: "4",
+    id: 4,
     name: "Pure Bean Fit Firm Tofu",
     slug:"pure-bean-fit-tofu",
     price: 249,
@@ -77,8 +77,9 @@ export const productsDetail = [
 
 export const nutritionData = [
    {
-    id: "1",
+    id: 1,
     name: "Premium Raw Makhana",
+    slug:"premium-raw-makhana",
     nutrition: [
       { name: "Energy", value: "347 kcal" },
       { name: "Protein", value: "9.7 g" },
@@ -90,8 +91,37 @@ export const nutritionData = [
     ],
   },
   {
-    id: "3",
+    id: 2,
+    name: "Peri Peri Makhana",
+    slug:"peri-peri-makhana",
+    nutrition: [
+      { name: "Energy", value: "347 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.1 g" },
+      { name: "Calcium", value: "60 g" },
+      { name: "Iron", value: "1.4 g" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Himalayan Salt Makhana",
+    slug:"himalayan-salt-makhana",
+    nutrition: [
+      { name: "Energy", value: "347 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.1 g" },
+      { name: "Calcium", value: "60 g" },
+      { name: "Iron", value: "1.4 g" },
+    ],
+  },
+  {
+    id: 4,
     name: "Pure Bean Fit Firm Tofu",
+    slug:"pure-bean-fit-tofu",
     nutrition: [
       { name: "Energy", value: "169 kcal" },
       { name: "Protein", value: "15.04 g" },

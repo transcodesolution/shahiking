@@ -19,13 +19,13 @@ export default function ProductGallery({ product }) {
   return (
     <div className="w-full">
       {/* MAIN IMAGE */}
-      <div className="relative rounded-[30px] overflow-hidden">
+      <div className="relative rounded-[30px] overflow-hidden border border-primary">
         <Image
           src={images[activeIndex]}
           alt="product"
           width={872}
           height={642}
-          className="object-cover transition-all ease-in-out w-full h-125 duration-700 rounded-[30px] border border-primary"
+          className="object-cover transition-all ease-in-out w-full h-125 duration-700 rounded-[30px]"
         />
 
         {/* LEFT BUTTON */}
@@ -51,14 +51,14 @@ export default function ProductGallery({ product }) {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`shrink-0 w-25 xl:w-34 h-25 xl:h-34 rounded-[20px] overflow-hidden border snap-start
+            className={`shrink-0 w-25 xl:w-34 h-25 xl:h-36 rounded-[20px] overflow-hidden border snap-start
         ${activeIndex === index ? "border-primary" : "border-gray-300"}`}
           >
             <Image
               src={img}
               alt="thumb"
-              width={140}
-              height={145}
+              width={162}
+              height={170}
               className="w-full h-full object-cover rounded-[20px]"
             />
           </button>

@@ -13,6 +13,11 @@ export default function Recipes() {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
+  const getEmbedUrl = (url) => {
+  const match = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([^&?]+)/);
+  return match ? `https://www.youtube.com/embed/${match[1]}` : url;
+};
+
   return (
     <div className="bg-secondary py-8 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,22 +54,20 @@ export default function Recipes() {
           >
             {recipeData.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="bg-secondary rounded-[40px] h-150 md:h-162.5 lg:h-176.25 xl:h-157.5 flex flex-col shadow-sm m-2">
+                <div className="bg-secondary rounded-[40px] h-150 md:h-162.5 lg:h-176.25 xl:h-157.5 flex flex-col shadow-sm m-2 shadow-[#0000004D]">
                   {/* Image */}
-                  <div className="relative z-10 cursor-pointer">
-                    <video
-                      className="h-123.75 md:h-130 xl:h-123.75 w-full object-cover relative z-10 border-2 border-secondary rounded-t-[40px] shadow-sm shadow-[#0000004D]"
-                      autoPlay
-                      loop
-                      muted
-                      controls
-                    >
-                      <source src={item.video} type="video/mp4" />
-                    </video>
+                  <div className="relative z-10 rounded-t-[40px] cursor-pointer border-2 border-secondary shadow-sm shadow-[#0000004D]">
+                    <iframe
+                      src={getEmbedUrl(item.video)}
+                      className="w-full h-120  relative z-10 rounded-t-[40px]"
+                      allow="autoplay"
+                      allowFullScreen
+                      title={item.title}
+                    />
                   </div>
 
                   {/* Content */}
-                  <div className="p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px]">
+                  <div className="p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] h-full">
                     <h2 className="body-md font-medium text-black">
                       {item.title}
                     </h2>

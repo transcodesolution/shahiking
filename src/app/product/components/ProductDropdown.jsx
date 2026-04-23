@@ -122,6 +122,9 @@ export default function ProductDropdown() {
                     productsItem[cat.id]?.map((item) => (
                       <div
                         key={item.id}
+                         onClick={() => {
+                        router.push(`/product?slug=${item.slug}`);
+                      }}
                         className="flex flex-col items-center gap-3 pb-2"
                       >
                         <Image

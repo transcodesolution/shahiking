@@ -1,37 +1,11 @@
 "use client";
+import { faq } from "@/data/ui/faq";
 import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const faqs = [
-    {
-      question: "What is Shahiking?",
-      answer:
-        "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Flavored Makhana, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living.",
-    },
-    {
-      question: "What healthy products can I buy online from Shahiking?",
-      answer:
-        "You can buy dry fruits, protein powders, healthy snacks, makhana, and more.",
-    },
-    {
-      question: "Are Shahiking products natural and preservative-free?",
-      answer:
-        "Yes, all products are made with natural ingredients and are preservative-free.",
-    },
-    {
-      question: "Are your products good for weight loss and fitness?",
-      answer:
-        "Yes, our products are designed for healthy lifestyle and fitness goals.",
-    },
-    {
-      question: "Do you offer doorstep delivery across India?",
-      answer: "Yes, we deliver across India.",
-    },
-  ];
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -48,34 +22,34 @@ export default function FAQ() {
         />
       <div className="container mx-auto px-4 lg:px-8 py-8 md:py-0">
         
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center relative z-10 pt-0 md:pt-10">
+        <div className="lg:flex justify-between gap-12 items-center relative z-10 pt-0 md:pt-10">
 
           {/* LEFT IMAGE */}
-          <div className="hidden md:flex justify-center">
+          <div className="flex justify-center w-full lg:max-w-140">
             <Image
               src="/Image/homepage/faq_section_bg.webp"
               alt="faq"
               width={572}
               height={772}
-              className="object-contain h-160 xl:h-193 w-143"
+              className="object-contain h-120 md:h-160 xl:h-193 w-full"
             />
           </div>
 
           {/* RIGHT CONTENT */}
-          <div>
+          <div className="w-full lg:max-w-200 mt-3 lg:mt-0">
             <h2 className="display-heading font-semibold text-primary text-center lg:text-start">
               Find the answer to your confusion
             </h2>
-            <p className="body-md text-accent mt-3 text-center lg:text-start">
+            <p className="body-md text-accent mt-3 text-center lg:text-start pb-4">
               Find answers to common questions about our products and brand
             </p>
 
             {/* FAQ LIST */}
             <div className="mt-8 space-y-4 mb-6">
-              {faqs.map((item, index) => (
+              {faq.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-4xl px-4 md:px-8 py-5 shadow-sm border-2 border-secondary transition"
+                  className="bg-white rounded-4xl px-4 md:px-8 py-5 shadow-sm border-2 border-secondary transition shadow-[#0000004D]"
                 >
                   {/* QUESTION */}
                   <button
