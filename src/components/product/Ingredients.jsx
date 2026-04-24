@@ -1,9 +1,16 @@
 "use client";
 import { IoIosArrowDown } from "react-icons/io";
 import React, { useState } from "react";
+import { useParams } from "next/navigation";
+import { ingredientsData } from "@/data/ui/productDetail";
 
 export default function Ingredients() {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const params = useParams();
+  const id = params?.id;
+
+  const product = ingredientsData.find((p) => p.slug === id);
   return (
     <div className="mt-4">
       <button
@@ -21,8 +28,13 @@ export default function Ingredients() {
       </button>
       {isDropdownOpen && (
         <div className="mt-2">
-            <p className="body-sm text-black">100% Premium Grade Raw Makhana | No added preservatives | No artificial flavors | No additives.</p>
-        </div>    
+          {product?.ingredient?.length > 0 &&
+            product.ingredient.map((item, index) => (
+              <div key={index}>
+                <p className="body-sm text-black">{item.detail}</p>
+              </div>
+            ))}
+        </div>
       )}
     </div>
   );

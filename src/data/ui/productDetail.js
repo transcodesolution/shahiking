@@ -2,7 +2,7 @@ export const productsDetail = [
   {
     id: 1,
     name: "Premium Raw Makhana",
-    slug:"premium-raw-makhana",
+    slug: "premium-raw-makhana",
     price: 249,
     weight: "200 g",
     description: "High-Protein Healthy Snack | Premium Quality Superfood",
@@ -20,12 +20,13 @@ export const productsDetail = [
   {
     id: 2,
     name: "Peri Peri Makhana",
-    slug:"peri-peri-makhana",
+    slug: "peri-peri-makhana",
     price: 249,
-    weight: "200 g",
-    description: "High-Protein Healthy Snack | Premium Quality Superfood",
+    weight: "55 g",
+    description:
+      "High-Protein Roasted Fox Nuts | Healthy Peri Peri Snack for Weight Loss & Fitness",
     details:
-      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
+      "Perfect for office breaks, travel munching, or post-workout cravings, Peri Peri Makhana delivers crunch, flavor, and nutrition—without compromising your health goals.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
@@ -38,12 +39,12 @@ export const productsDetail = [
   {
     id: 3,
     name: "Himalayan Salt Makhana",
-    slug:"himalayan-salt-makhana",
+    slug: "himalayan-salt-makhana",
     price: 249,
-    weight: "200 g",
-    description: "High-Protein Healthy Snack | Premium Quality Superfood",
+    weight: "55 g",
+    description: "High-Protein Roasted Fox Nuts | Clean, Lightly Salted Healthy Snack",
     details:
-      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
+      "Ideal for those searching for healthy low-calorie snacks, clean eating options, gluten-free snacks, and light evening snacks, this variant keeps it pure, balanced, and nourishing.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
@@ -56,7 +57,7 @@ export const productsDetail = [
   {
     id: 4,
     name: "Pure Bean Fit Firm Tofu",
-    slug:"pure-bean-fit-tofu",
+    slug: "pure-bean-fit-tofu",
     price: 249,
     weight: "200 g",
     description:
@@ -74,12 +75,11 @@ export const productsDetail = [
   },
 ];
 
-
 export const nutritionData = [
-   {
+  {
     id: 1,
     name: "Premium Raw Makhana",
-    slug:"premium-raw-makhana",
+    slug: "premium-raw-makhana",
     nutrition: [
       { name: "Energy", value: "347 kcal" },
       { name: "Protein", value: "9.7 g" },
@@ -93,27 +93,27 @@ export const nutritionData = [
   {
     id: 2,
     name: "Peri Peri Makhana",
-    slug:"peri-peri-makhana",
+    slug: "peri-peri-makhana",
     nutrition: [
-      { name: "Energy", value: "347 kcal" },
-      { name: "Protein", value: "9.7 g" },
-      { name: "Carbohydrates", value: "76 g" },
-      { name: "Dietary Fiber", value: "7.6 g" },
-      { name: "Fat", value: "0.1 g" },
-      { name: "Calcium", value: "60 g" },
-      { name: "Iron", value: "1.4 g" },
+      { name: "Energy", value: "360 kcal" },
+      { name: "Protein", value: "9.5 g" },
+      { name: "Carbohydrates", value: "75 g" },
+      { name: "Dietary Fiber", value: "7.8 g" },
+      { name: "Fat", value: "1.5 g" },
+      { name: "Calcium", value: "65 mg" },
+      { name: "Iron", value: "1.3 mg" },
     ],
   },
   {
     id: 3,
     name: "Himalayan Salt Makhana",
-    slug:"himalayan-salt-makhana",
+    slug: "himalayan-salt-makhana",
     nutrition: [
-      { name: "Energy", value: "347 kcal" },
+      { name: "Energy", value: "340 kcal" },
       { name: "Protein", value: "9.7 g" },
       { name: "Carbohydrates", value: "76 g" },
       { name: "Dietary Fiber", value: "7.6 g" },
-      { name: "Fat", value: "0.1 g" },
+      { name: "Fat", value: "0.8 g" },
       { name: "Calcium", value: "60 g" },
       { name: "Iron", value: "1.4 g" },
     ],
@@ -121,7 +121,7 @@ export const nutritionData = [
   {
     id: 4,
     name: "Pure Bean Fit Firm Tofu",
-    slug:"pure-bean-fit-tofu",
+    slug: "pure-bean-fit-tofu",
     nutrition: [
       { name: "Energy", value: "169 kcal" },
       { name: "Protein", value: "15.04 g" },
@@ -138,6 +138,50 @@ export const nutritionData = [
   },
 ];
 
+export const ingredientsData = [
+  {
+    id: 1,
+    name: "Premium Raw Makhana",
+    slug: "premium-raw-makhana",
+    ingredient: [
+      {
+        detail:
+          "100% Premium Grade Raw Makhana | No added preservatives | No artificial flavors | No additives.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Peri Peri Makhana",
+    slug: "peri-peri-makhana",
+    ingredient: [
+      {
+        detail:"Premium Grade Raw Makhana | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free"
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Himalayan Salt Makhana",
+    slug: "himalayan-salt-makhana",
+    ingredient: [
+      {
+        detail:"Premium Grade Raw Makhana | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free"
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Pure Bean Fit Firm Tofu",
+    slug: "pure-bean-fit-tofu",
+    ingredient: [
+      {
+        detail:
+          "100% Premium Grade Raw Makhana | No added preservatives | No artificial flavors | No additives.",
+      },
+    ],
+  },
+];
 export const benefitData = [
   {
     name: "Rich in plant-based protein",

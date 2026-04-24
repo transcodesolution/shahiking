@@ -8,15 +8,15 @@ export default function ProductCard({ product }) {
     <div className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col">
       {/* Image */}
       <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
-      {product?.img && (
-        <Image
-          src={product.img}
-          width={534}
-          height={260}
-          alt={product.name}
-          className="w-full h-65 object-cover rounded-t-[40px] shadow-sm hover:scale-110 transition-transform duration-500 cursor-pointer"
-        />
-      )}
+        {product?.img && (
+          <Image
+            src={product.img}
+            width={534}
+            height={260}
+            alt={product.name}
+            className="w-full h-65 object-cover rounded-t-[40px] shadow-sm hover:scale-110 transition-transform duration-500 cursor-pointer"
+          />
+        )}
       </div>
       {/* Content */}
       <div className="p-3 xl:p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">

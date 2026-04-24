@@ -5,7 +5,7 @@ import { benefitData, storageData } from "@/data/ui/productDetail";
 import { GiCheckMark } from "react-icons/gi";
 
 export default function StorageInstruction() {
-const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <div className="mt-4">
       <button
@@ -23,12 +23,17 @@ const [isDropdownOpen, setIsDropdownOpen] = useState(false);
       </button>
       {isDropdownOpen && (
         <div>
-            {storageData.map((item,index) => (
-                <div key={index} className="flex justify-start items-center gap-2 py-1">
-                    <span className="text-[18px] lg:text-[22px] text-primary"><GiCheckMark /></span>
-                    <span className="body-sm">{item.name}</span>
-                </div>
-            ))}
+          {storageData.map((item, index) => (
+            <div
+              key={index}
+              className="flex justify-start items-center gap-2 py-1"
+            >
+              <span className="text-[18px] lg:text-[22px] text-primary">
+                <GiCheckMark />
+              </span>
+              <span className="body-sm">{item.name}</span>
+            </div>
+          ))}
         </div>
       )}
     </div>

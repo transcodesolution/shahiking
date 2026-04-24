@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { BsEnvelope } from "react-icons/bs";
 
 export default function ContactInformation() {
   return (
@@ -24,7 +23,7 @@ export default function ContactInformation() {
               </p>
               <div>
                 <p className="body-md text-black font-medium">Phone</p>
-                <p className="body-md text-black ">+91 74359 17404</p>
+                <p className="body-md text-black">+91 74359 17404</p>
               </div>
             </div>
             <div className="flex gap-2">

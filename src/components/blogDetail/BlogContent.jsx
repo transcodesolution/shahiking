@@ -19,21 +19,21 @@ export default function BlogContent({ item }) {
         width={118}
         height={70}
         className="h-17.5 object-cover hidden xl:block absolute top-50 left-22 z-10 overflow-hidden rotate-46 blur-3"
-        />
-       <Image
+      />
+      <Image
         src="/Image/blogpage/blog_detail_leaf1.webp"
         alt="blog detail leaf"
         width={101}
         height={161}
         className="h-50 object-cover hidden xl:block absolute top-200 right-22 z-10 overflow-hidden rotate-198 blur-3"
-        />
-        <Image
+      />
+      <Image
         src="/Image/blogpage/blog_detail_leaf1.webp"
         alt="blog detail leaf"
         width={101}
         height={161}
         className="h-50 object-cover hidden xl:block 1 absolute bottom-100 left-22 z-10 overflow-hidden -rotate-25 blur-3 translate scale-x-[-1]"
-        />
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 py-6 mx-auto max-w-280">
           {item?.sections?.map((section, i) => (

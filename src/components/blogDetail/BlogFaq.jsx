@@ -19,8 +19,8 @@ export default function BlogFaq() {
         height={70}
         className="h-17.5 object-cover hidden xl:block absolute bottom-1 -left-10 z-10 overflow-hidden rotate-40 blur-2"
       />
-       <div>
-        <FAQ/>
+      <div>
+        <FAQ />
       </div>
     </div>
   );

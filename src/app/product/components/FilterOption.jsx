@@ -1,10 +1,4 @@
-export default function FilterOption({
-  label,
-  value,
-  checked,
-  onChange,
-}) 
-{
+export default function FilterOption({ label, value, checked, onChange }) {
   return (
     <label className="flex gap-2 mb-2 items-center cursor-pointer">
       {/* Accessible Input */}
@@ -17,7 +11,8 @@ export default function FilterOption({
       />
 
       {/* Custom Checkbox */}
-      <div className="h-6 w-6 border border-gray-400 rounded-md 
+      <div
+        className="h-6 w-6 border border-gray-400 rounded-md 
         flex items-center justify-center
         peer-checked:bg-primary peer-checked:border-primary"
       >

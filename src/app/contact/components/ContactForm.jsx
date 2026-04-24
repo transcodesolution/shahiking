@@ -76,7 +76,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name*"
-                  className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter your phone number*"
-                  className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your email*"
-                className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
               />
             </div>
 
@@ -116,7 +116,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Leave us a message..."
                 rows={6}
-                className="w-full mt-4 py-3 px-5 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
+                className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
               />
             </div>
 

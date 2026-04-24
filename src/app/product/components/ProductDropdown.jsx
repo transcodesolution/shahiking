@@ -12,7 +12,7 @@ export default function ProductDropdown() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const router = useRouter();
-
+  
   return (
     <>
       <div className="hidden md:block w-full">
@@ -65,7 +65,7 @@ export default function ProductDropdown() {
                     <div
                       key={item.id}
                       onClick={() => {
-                        router.push(`/product?slug=${item.slug}`);
+                        router.push(`/product/${item.slug}`);
                       }}
                       className="text-center border-b border-[#D2D2D2] pb-2 cursor-pointer"
                     >
@@ -122,9 +122,9 @@ export default function ProductDropdown() {
                     productsItem[cat.id]?.map((item) => (
                       <div
                         key={item.id}
-                         onClick={() => {
-                        router.push(`/product?slug=${item.slug}`);
-                      }}
+                        onClick={() => {
+                          router.push(`/product/${item.slug}`);
+                        }}
                         className="flex flex-col items-center gap-3 pb-2"
                       >
                         <Image

@@ -12,12 +12,12 @@ const NutritionTable = () => {
   const id = params?.id;
 
   const product = nutritionData.find((p) => p.slug === id);
-  
+
   return (
     <div className="mt-4">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center w-full"
+        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between text-start items-center w-full"
       >
         Nutritional Information (Per 100g Approx)
         <span
@@ -36,7 +36,6 @@ const NutritionTable = () => {
           ) : (
             <>
               <div className="w-full bg-secondary rounded-[30px] p-3 ml-0 md:ml-3 xl:ml-5 max-w-136 mt-4">
-                
                 {/* Header */}
                 <div className="flex justify-between px-15 py-3 font-semibold text-black font-heading text-[18px] lg:text-[20px] xl:text-[24px]">
                   <span>Nutrient</span>
@@ -52,8 +51,12 @@ const NutritionTable = () => {
                         className={`flex justify-between items-center mx-auto rounded-full px-15 py-3 body-sm 
                         ${index % 2 === 0 ? "bg-[#FCFCFC]" : "bg-secondary"}`}
                       >
-                        <span className="text-black text-start">{item.name}</span>
-                        <span className="text-black w-16.25 text-start">{item.value}</span>
+                        <span className="text-black text-start">
+                          {item.name}
+                        </span>
+                        <span className="text-black w-17 text-start">
+                          {item.value}
+                        </span>
                       </div>
                     ))
                   ) : (

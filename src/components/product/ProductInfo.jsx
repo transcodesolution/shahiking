@@ -22,8 +22,9 @@ export default function ProductInfo({ product }) {
       <div className="mt-4 mb-4 flex justify-start items-center gap-6">
         <div className="flex flex-col justify-center items-center w-full md:max-w-21 bg-primary rounded-xl py-2.5 px-4">
           <span className="body-sm text-secondary">{product.weight}</span>
-          <span className="body-sm text-secondary">₹{product.price}</span>
+          {/* <span className="body-sm text-secondary">₹{product.price}</span> */}
         </div>
+        
         {/* Button */}
         <Link
           href="/"
@@ -36,21 +37,20 @@ export default function ProductInfo({ product }) {
       <p className="body-sm text-black mt-2 mb-4">{product.contact_detail}</p>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-            <NutritionTable/>
+        <NutritionTable />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-           <Ingredients/>
+        <Ingredients />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-           <KeyBenefits/>
+        <KeyBenefits />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-           <StorageInstruction/>
+        <StorageInstruction />
       </div>
-
     </div>
   );
 }

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from "react";
-import { BiSearchAlt} from "react-icons/bi";
+import { BiSearchAlt } from "react-icons/bi";
 import { products } from "../data/ui/products";
 import { useRouter } from "next/navigation";
 
@@ -11,9 +11,10 @@ export default function SearchBar({ className = "", onSearch }) {
   const wrapperRef = useRef(null);
 
   // Filter products
-  const suggestions = products.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase()) ||
-    item.category.toLowerCase().includes(search.toLowerCase())
+  const suggestions = products.filter(
+    (item) =>
+      item.name.toLowerCase().includes(search.toLowerCase()) ||
+      item.category.toLowerCase().includes(search.toLowerCase()),
   );
 
   // Click outside
@@ -34,7 +35,7 @@ export default function SearchBar({ className = "", onSearch }) {
     if (onSearch) onSearch();
 
     if (search.trim()) {
-      router.push(`/product?search=${(search.trim())}`);
+      router.push(`/product?search=${search.trim()}`);
     } else {
       router.push(`/product`);
     }
@@ -46,7 +47,6 @@ export default function SearchBar({ className = "", onSearch }) {
         onSubmit={handleSearch}
         className="bg-secondary rounded-3xl flex justify-between items-center w-full lg:max-w-65 xl:max-w-80 border border-gray-300  transition-all shadow-sm px-2"
       >
-        
         <input
           type="text"
           placeholder="Search"
@@ -91,7 +91,7 @@ export default function SearchBar({ className = "", onSearch }) {
                         setSearch(item.name);
                         setShowSuggestions(false);
                         if (onSearch) onSearch();
-                        router.push(`/product?search=${(item.name)}`);
+                        router.push(`/product?search=${item.name}`);
                       }}
                       className="w-full text-left px-3 py-3 hover:bg-gray-100 rounded-xl flex items-center justify-between transition-colors group mb-1"
                     >

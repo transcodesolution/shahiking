@@ -26,7 +26,8 @@ export default function BlogSection({ item }) {
           </div>
           <div>
             <h1 className="display-heading text-primary font-semibold md:leading:13 xl:leading-14 w-full max-w-150">
-              {item?.title}<span className="block">{item?.subtitle}</span>
+              {item?.title}
+              <span className="block">{item?.subtitle}</span>
             </h1>
             <div className="flex flex-wrap items-center gap-6 py-4">
               <p className="flex items-center gap-2 text-black ">
@@ -63,9 +64,9 @@ export default function BlogSection({ item }) {
                 <span className="body-sm">By Shahiking Team</span>
               </p>
             </div>
-             <p className="body-md text-black mb-4">{item?.detail_1}</p>
-             <p className="body-md text-black mb-4">{item?.detail_2}</p>
-             <p className="body-md text-black">{item?.detail_3}</p>
+            <p className="body-md text-black mb-4">{item?.detail_1}</p>
+            <p className="body-md text-black mb-4">{item?.detail_2}</p>
+            <p className="body-md text-black">{item?.detail_3}</p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function FaqAccordion() {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className={`bg-white rounded-4xl px-4 md:px-10 py-4 shadow-sm border transition
+            className={`bg-white rounded-4xl px-4 md:px-10 py-5 shadow-sm border transition
               ${activeIndex === index ? "border-primary" : "border-secondary"}`}
           >
             {/* QUESTION */}

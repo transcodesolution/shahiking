@@ -14,18 +14,16 @@ export default function Page() {
   const params = useParams();
   const id = params?.id;
 
-  // ✅ Get product from category data (for name)
+  // Get product from category data (for name)
   const allProducts = Object.values(productsData).flat();
   const product = allProducts.find((p) => p.slug === id);
 
-  // ✅ Get product detail (MAIN FIX)
-  const productDetail = productsDetail.find(
-    (item) => item.slug === id
-  );
+  // Get product detail (MAIN FIX)
+  const productDetail = productsDetail.find((item) => item.slug === id);
 
   const productName = productDetail?.name || product?.name || "Product";
 
-  // ✅ Handle not found
+  // Handle not found
   if (!productDetail) {
     return <div className="p-10 text-center">Product not found</div>;
   }
@@ -34,7 +32,6 @@ export default function Page() {
     <>
       <div className="bg-secondary py-6 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          
           {/* Breadcrumb */}
           <nav className="flex p-2">
             <ol className="flex items-center">
@@ -65,7 +62,6 @@ export default function Page() {
               <ProductInfo product={productDetail} />
             </div>
           </div>
-
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import FilterSidebar from "./FilterSidebar";
 import ProductCard from "./ProductCard";
 import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
 import { products } from "@/data/ui/products";
-import { useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function OurProduct() {
@@ -18,8 +18,8 @@ export default function OurProduct() {
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(2000);
 
-  const searchParams = useSearchParams();
-  const slug = searchParams.get("slug");
+  const { slug } = useParams();
+  const product = products.find((item) => item.slug === slug);
 
   const toggleWishlist = (id) => {
     setWishlist((prev) =>

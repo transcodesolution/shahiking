@@ -8,7 +8,7 @@ export default function ProductCard({
   item,
   isWishlisted,
   onWishlistToggle,
-  onClick, // optional for navigation
+  onClick,
 }) {
   return (
     <div
@@ -19,19 +19,19 @@ export default function ProductCard({
       <div className="absolute inset-0 bg-linear-to-t from-(--gradientStart) to-(--gradientEnd) opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
 
       {/* Image */}
-      <div className="relative border-b border-[#C1C1C1] pb-4 z-10">
+      <div className="relative border-b border-[#D2D2D2] pb-4 z-10">
         <Image
           src={item.img}
           alt={item.name}
           width={96}
           height={148}
-          className="mx-auto w-18 md:w-24 h-30 md:h-36 object-contain"
+          className="mx-auto w-18 md:w-24 h-30 md:h-36 object-contain mt-4"
         />
 
         {/* Wishlist Button */}
         <button
           onClick={(e) => {
-            e.stopPropagation(); // ✅ prevent card click
+            e.stopPropagation();
             e.preventDefault();
             onWishlistToggle();
           }}

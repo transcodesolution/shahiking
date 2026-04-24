@@ -6,7 +6,6 @@ import PriceRangeFilter from "./PriceRangeFilter";
 import FilterDrawer from "./FilterDrawer";
 import { availability, productCategories, quantity } from "@/data/ui/filters";
 
-
 export default function FilterSidebar({
   isChecked,
   setIsChecked,
@@ -19,7 +18,6 @@ export default function FilterSidebar({
   maxVal,
   setMaxVal,
 }) {
-  
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPriceOpen, setIsPriceOpen] = useState(false);
@@ -51,7 +49,9 @@ export default function FilterSidebar({
   return (
     <div className="w-full lg:w-94 h-auto bg-secondary rounded-xl shadow-sm border border-[#C1C1C1]">
       <div className="relative flex justify-between p-4">
-        <h2 className="hidden lg:block font-semibold text-primary cursor-pointer">Filters</h2>
+        <h2 className="hidden lg:block font-semibold text-primary cursor-pointer">
+          Filters
+        </h2>
         <button
           className="lg:hidden font-semibold text-primary cursor-pointer"
           onClick={() => setIsOpen(true)}

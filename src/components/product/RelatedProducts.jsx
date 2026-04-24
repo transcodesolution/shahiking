@@ -6,9 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function RelatedProducts() {
   // ✅ Convert object to array
-  const products = [
-    ...productsData.nuts,
-  ];
+  const products = [...productsData.nuts];
 
   return (
     <div className="bg-white py-8 relative z-0 overflow-hidden">
