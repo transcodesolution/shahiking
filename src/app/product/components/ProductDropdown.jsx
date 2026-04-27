@@ -7,7 +7,7 @@ import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-export default function ProductDropdown() {
+export default function ProductDropdown({closeMenu}) {
   const [active, setActive] = useState("nuts");
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -120,11 +120,10 @@ export default function ProductDropdown() {
                 <div className="flex flex-col gap-3 mt-3">
                   {Array.isArray(productsItem[cat.id]) &&
                     productsItem[cat.id]?.map((item) => (
-                      <div
+                      <Link
                         key={item.id}
-                        onClick={() => {
-                          router.push(`/product/${item.slug}`);
-                        }}
+                        onClick={closeMenu}
+                        href={`/product/${item.slug}`}
                         className="flex flex-col items-center gap-3 pb-2"
                       >
                         <Image
@@ -135,7 +134,7 @@ export default function ProductDropdown() {
                           className="w-18 h-18 object-contain"
                         />
                         <p className="text-sm border-b">{item.name}</p>
-                      </div>
+                      </Link>
                     ))}
                 </div>
               )}

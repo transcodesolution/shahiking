@@ -52,7 +52,7 @@ export default function OurProduct() {
   const matchesStock = !isStock || item.availability === isStock;
 
   const matchesQuantity =
-    !selectedQuantity || item.quantity === selectedQuantity;
+  !selectedQuantity || item.quantity.includes(selectedQuantity);
 
   const matchesPrice = item.price >= minVal && item.price <= maxVal;
 

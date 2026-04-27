@@ -38,9 +38,9 @@ export default function FaqAccordion() {
 
             {/* ANSWER */}
             {activeIndex === index && (
-              <p className="body-sm text-accent mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
-                {item.answer}
-              </p>
+              <div className="mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
+                <p className="w-full max-w-120 body-sm text-accent">{item.answer}</p>
+              </div>
             )}
           </div>
         ))}

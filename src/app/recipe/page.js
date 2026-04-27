@@ -1,18 +1,16 @@
-import React from 'react'
-import RecipeDetails from './components/RecipeDetails'
-import Testimonials from '@/components/common/Testimonials'
-import Recipes from '../(home)/components/Recipes'
-import RelatedProducts from '@/components/product/RelatedProducts'
-import GetInTouch from '@/components/common/GetInTouch'
+import React from "react";
+import Testimonials from "@/components/common/Testimonials";
+import GetInTouch from "@/components/common/GetInTouch";
+import Hero from "./components/Hero";
+import OurRecipe from "./components/OurRecipe";
 
 export default function page() {
   return (
     <React.Fragment>
-       <RecipeDetails/> 
-       <Testimonials bg='bg-white'/>
-       <Recipes/>
-       <RelatedProducts/>
-       <GetInTouch/>
+      <Hero />
+      <OurRecipe />
+      <Testimonials bg="bg-white" />
+      <GetInTouch />
     </React.Fragment>
-  )
+  );
 }

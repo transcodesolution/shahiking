@@ -4,6 +4,7 @@ import NutritionTable from "./NutritionTable";
 import Ingredients from "./Ingredients";
 import KeyBenefits from "./KeyBenefits";
 import StorageInstruction from "./StorageInstruction";
+import Usage from "./Usage";
 
 export default function ProductInfo({ product }) {
   return (
@@ -22,8 +23,12 @@ export default function ProductInfo({ product }) {
       <div className="mt-4 mb-4 flex justify-start items-center gap-6">
         <div className="flex flex-col justify-center items-center w-full md:max-w-21 bg-primary rounded-xl py-2.5 px-4">
           <span className="body-sm text-secondary">{product.weight}</span>
-          {/* <span className="body-sm text-secondary">₹{product.price}</span> */}
+          <span className="body-sm text-secondary">{product.weight_1}</span>
         </div>
+
+        {/* <div className="flex justify-center items-center w-full md:max-w-21 bg-primary rounded-xl py-2.5 px-4">
+          <span className="body-sm text-secondary">{product.weight_1}</span>
+        </div> */}
         
         {/* Button */}
         <Link
@@ -50,6 +55,10 @@ export default function ProductInfo({ product }) {
 
       <div className="border-t border-[#AEAEAE] mb-2">
         <StorageInstruction />
+      </div>
+
+      <div className="border-t border-[#AEAEAE] mb-2">
+        <Usage/>
       </div>
     </div>
   );

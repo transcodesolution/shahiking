@@ -3,8 +3,8 @@ export const productsDetail = [
     id: 1,
     name: "Premium Raw Makhana",
     slug: "premium-raw-makhana",
-    price: 249,
-    weight: "200 g",
+    price: 250,
+    weight_1: "200 g",
     description: "High-Protein Healthy Snack | Premium Quality Superfood",
     details:
       "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
@@ -21,7 +21,7 @@ export const productsDetail = [
     id: 2,
     name: "Peri Peri Makhana",
     slug: "peri-peri-makhana",
-    price: 249,
+    price: 134,
     weight: "55 g",
     description:
       "High-Protein Roasted Fox Nuts | Healthy Peri Peri Snack for Weight Loss & Fitness",
@@ -40,9 +40,10 @@ export const productsDetail = [
     id: 3,
     name: "Himalayan Salt Makhana",
     slug: "himalayan-salt-makhana",
-    price: 249,
+    price: 134,
     weight: "55 g",
-    description: "High-Protein Roasted Fox Nuts | Clean, Lightly Salted Healthy Snack",
+    description:
+      "High-Protein Roasted Fox Nuts | Clean, Lightly Salted Healthy Snack",
     details:
       "Ideal for those searching for healthy low-calorie snacks, clean eating options, gluten-free snacks, and light evening snacks, this variant keeps it pure, balanced, and nourishing.",
     contact_detail:
@@ -58,8 +59,9 @@ export const productsDetail = [
     id: 4,
     name: "Pure Bean Fit Firm Tofu",
     slug: "pure-bean-fit-tofu",
-    price: 249,
-    weight: "200 g",
+    price: 350,
+    weight:"200 g",
+    weight_1:"500 g", 
     description:
       "High-Protein Plant-Based Protein | 100% Vegan | Non-GMO Soybeans",
     details:
@@ -156,7 +158,8 @@ export const ingredientsData = [
     slug: "peri-peri-makhana",
     ingredient: [
       {
-        detail:"Premium Grade Raw Makhana | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free"
+        detail:
+          "Premium Grade Raw Makhana | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
       },
     ],
   },
@@ -166,7 +169,8 @@ export const ingredientsData = [
     slug: "himalayan-salt-makhana",
     ingredient: [
       {
-        detail:"Premium Grade Raw Makhana | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free"
+        detail:
+          "Premium Grade Raw Makhana | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
       },
     ],
   },
@@ -184,36 +188,132 @@ export const ingredientsData = [
 ];
 export const benefitData = [
   {
-    name: "Rich in plant-based protein",
+    id: 1,
+    name: "Premium Raw Makhana",
+    slug: "premium-raw-makhana",
+    benefit: [
+      { detail: "Rich in plant-based protein" },
+      { detail: "Low-calorie healthy snack" },
+      { detail: "Gluten-free & cholesterol-free" },
+      { detail: "High in fiber for digestion support" },
+      { detail: "Ideal for fasting & diet-friendly meals" },
+      { detail: "Suitable for kids, adults & fitness enthusiasts" },
+    ],
   },
   {
-    name: "Low-calorie healthy snack",
+    id: 2,
+    name: "Per Peri Makhana",
+    slug: "peri-peri-makhana",
+    benefit: [
+      { detail: "High-protein healthy snack for muscle recovery & fitness" },
+      { detail: "Low-calorie snack for weight loss & calorie-conscious diets" },
+      { detail: "Gluten-free roasted snack—perfect for clean eating" },
+      { detail: "Rich in antioxidants that support overall wellness" },
+      { detail: "Diabetic-friendly snack option with low glycemic load" },
+      { detail: "Supports digestion with natural dietary fiber" },
+      { detail: "Ideal for fasting (vrat), vegan diets & keto-friendly routines" },
+    ],
   },
   {
-    name: "Gluten-free & cholesterol-free",
+    id: 3,
+    name: "Himalayan Salt Makhana",
+    slug: "himalayan-salt-makhana",
+    benefit: [
+      { detail: "Low-calorie healthy snack for weight management" },
+      { detail: "High-protein plant-based snack for daily nutrition" },
+      { detail: "High-protein plant-based snack for daily nutrition" },
+      { detail: "Gluten-free & roasted (not fried)" },
+      { detail: "Supports digestion & gut health" },
+      { detail: "Lightly salted—perfect for those avoiding spicy snacks" },
+      { detail: "Suitable for fasting (vrat), vegan & balanced diets" },
+    ],
   },
   {
-    name: "High in fiber for digestion support",
-  },
-  {
-    name: "Ideal for fasting & diet-friendly meals",
-  },
-  {
-    name: "Suitable for kids, adults & fitness enthusiasts",
+    id: 4,
+    name: "Pure Bean Fit Firm Tofu",
+    slug: "pure-bean-fit-tofu",
+    benefit: [
+      { detail: "High-protein vegetarian food" },
+      { detail: "100% vegan & cholesterol-free" },
+      { detail: "Made from non-GMO soybeans" },
+      { detail: "Firm texture – perfect for grilling & stir fry" },
+      { detail: "Low sugar & balanced fat content" },
+      { detail: "Supports muscle growth & weight management" },
+      { detail: "Ideal for gym, fitness & clean eating diets" },
+    ],
   },
 ];
 
 export const storageData = [
-  {
-    name: "Store in a cool, dry place",
+  { id:1,
+    name: "Premium Raw Makhana",
+    slug: "premium-raw-makhana",
+    storage:[
+      { detail: "Store in a cool, dry place"},
+      { detail: "Keep away from direct sunlight"},
+      { detail: "Once opened, store in an airtight container"},
+      {detail:"Consume within recommended period for best freshness"}
+    ]
   },
-  {
-    name: "Keep away from direct sunlight",
+  { id:2,
+    name: "Peri Peri Makhana",
+    slug: "peri-peri-makhana",
+    storage:[
+      { detail: "Store in a cool, dry place"},
+      { detail: "Keep away from direct sunlight"},
+      { detail: "Once opened, store in an airtight container"},
+      {detail:"Consume within recommended period for best freshness"}
+    ]
   },
-  {
-    name: "Once opened, store in an airtight container",
+  { id:3,
+    name: "Himalayan Salt Makhana",
+    slug: "himalayan-salt-makhana",
+    storage:[
+      { detail: "Store in a cool, dry place"},
+      { detail: "Keep away from direct sunlight"},
+      { detail: "Once opened, store in an airtight container"},
+      {detail:"Consume within recommended period for best freshness"}
+    ]
   },
-  {
-    name: "Consume within recommended period for best freshness",
+  { id:4,
+    name: "Pure Bean Fit Firm Tofu",
+    slug: "pure-bean-fit-tofu",
+    storage:[
+      { detail: "Keep refrigerated below 5°C"},
+      { detail: "Do not freeze"},
+      { detail: "Once opened, keep submerged in fresh water"},
+      {detail:"Change water daily"},
+      {detail:"Consume within 2 days after opening"},
+    ]
   },
 ];
+
+export const usageData = [
+  { id:1,
+    name: "Premium Raw Makhana",
+    slug: "premium-raw-makhana",
+    usage:[]
+  },
+  { id:2,
+    name: "Peri Peri Makhana",
+    slug: "peri-peri-makhana",
+    usage:[]
+  },
+  { id:3,
+    name: "Himalayan Salt Makhana",
+    slug: "himalayan-salt-makhana",
+    usage:[]
+  },
+  { id:4,
+    name: "Pure Bean Fit Firm Tofu",
+    slug: "pure-bean-fit-tofu",
+    usage:[
+      { detail: "🔥 Grilling"},
+      { detail: "🥗 Salads"},
+      { detail: "🍳 Sauté"},
+      {detail:"🍜 Stir Fry"},
+      {detail:" 🥘 Asian & Indian Recipes"},
+    ]
+  },
+];
+

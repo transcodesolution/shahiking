@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa6";
 
 export default function TestimonialCard({ item, isActive }) {
   return (
@@ -28,16 +29,36 @@ export default function TestimonialCard({ item, isActive }) {
 
       {/* Rating */}
       <div className="flex items-center gap-1 mb-3">
-        {[1, 2, 3, 4, 5].map((star, i) => {
+        {[...Array(5)].map((_, i) => {
+          const star = i + 1;
+
           if (item.rating >= star) {
-            return <FaStar key={i} className="text-[#FFC107] w-4.5 md:w-6 h-4.5 md:h-6" />;
+            return (
+              <FaStar
+                key={i}
+                className="text-[#FFC107] w-4.5 md:w-6 h-4.5 md:h-6"
+              />
+            );
           } else if (item.rating >= star - 0.5) {
-            return <FaStarHalfAlt key={i} className="text-[#FFC107] w-4.5 md:w-6 h-4.5 md:h-6" />;
+            return (
+              <FaStarHalfAlt
+                key={i}
+                className="text-[#FFC107] w-4.5 md:w-6 h-4.5 md:h-6"
+              />
+            );
           } else {
-            return <FaStar key={i} className="text-accent w-4.5 md:w-6 h-4.5 md:h-6" />;
+            return (
+              <FaRegStar
+                key={i}
+                className="text-[#FFC107] w-4.5 md:w-6 h-4.5 md:h-6"
+              />
+            );
           }
         })}
-        <span className="text-accent text-[14px] md:text-[18px] ml-2">{item.rating.toFixed(1)}</span>
+
+        <span className="text-accent text-[14px] md:text-[18px] ml-2">
+          {Number(item.rating).toFixed(1)}
+        </span>
       </div>
 
       {/* Review */}

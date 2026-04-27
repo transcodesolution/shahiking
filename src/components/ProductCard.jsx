@@ -5,7 +5,7 @@ export default function ProductCard({ product }) {
   if (!product) return null;
 
   return (
-    <div className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col">
+    <div className="bg-secondary rounded-[40px] shadow-sm h-full min-h-114 flex flex-col">
       {/* Image */}
       <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
         {product?.img && (
@@ -32,7 +32,7 @@ export default function ProductCard({ product }) {
         {/* Bottom Section */}
         <div className="flex justify-between items-center mt-5">
           {/* Price */}
-          <p className="text-[24px] font-bold text-gray-800">
+          <p className="text-[20px] lg:text-[24px] font-bold text-gray-800">
             ₹{product?.price}
           </p>
 

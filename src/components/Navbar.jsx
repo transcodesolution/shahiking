@@ -117,7 +117,11 @@ export default function Navbar() {
               </Link>
               {open && (
                 <div className="bg-secondary">
-                  <ProductDropdown closeMenu={() => setMenuOpen(false)} />
+                  <ProductDropdown closeMenu={() => {
+                    setOpen(false);
+                    setMenuOpen(false);
+                  }}
+                  />
                 </div>
               )}
             </div>

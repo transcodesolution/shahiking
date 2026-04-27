@@ -10,11 +10,11 @@ export default function RecipeVideoDetails({ product }) {
     <div>
       <div className="bg-white p-3 md:p-6 xl:p-8 rounded-[30px] shadow-brand">
         <h1 className="display-heading text-primary font-semibold">
-          {product.title}
-          <span className="block">{product.title1}</span>
+          {product.name}
+          <span className="block">{product.name_1}</span>
         </h1>
         <div className="flex flex-wrap items-center gap-5 py-2 mt-2">
-          <p className="flex items-center gap-2 text-black  border-r pr-4">
+          <p className="flex items-center gap-2 text-black border-r pr-4">
             <span>
               <Image
                 src="/Image/recipe/timing_icon.webp"
@@ -63,7 +63,7 @@ export default function RecipeVideoDetails({ product }) {
           {product.details}
         </p>
 
-        <div className="flex items-start gap-4 py-2">
+        <div className="flex items-start gap-6 py-2">
           {/* Button */}
           <Link href="/" className="cursor-pointer">
             <Image
@@ -71,6 +71,7 @@ export default function RecipeVideoDetails({ product }) {
               alt="whatsapp icon"
               width={42}
               height={42}
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
             />
           </Link>
           <Link href="/" className="cursor-pointer">
@@ -79,6 +80,7 @@ export default function RecipeVideoDetails({ product }) {
               alt="instagram icon"
               width={42}
               height={42}
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
             />
           </Link>
           <Link href="/" className="cursor-pointer">
@@ -87,14 +89,16 @@ export default function RecipeVideoDetails({ product }) {
               alt="facebook icon"
               width={42}
               height={42}
+              className="w-8 md:w-10.5 h-8 md:h-10.5"
             />
           </Link>
-          <Link href="/" className="cursor-pointer">
+          <Link href="/" className="cursor-pointer object-cover">
             <Image
               src="/Image/recipe/pinterest.webp"
               alt="pinterest icon"
               width={42}
               height={42}
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
             />
           </Link>
         </div>

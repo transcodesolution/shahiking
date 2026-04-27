@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function BlogCard({ item }) {
   if (!item) return null;
   return (
-    <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-169 w-full flex flex-col">
+    <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-full min-h-169 w-full flex flex-col">
       <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
       {/* Image */}
       <Image

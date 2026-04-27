@@ -1,7 +1,7 @@
 export const productCategories = [
     { id: 1, name: "Berries" },
     { id: 2, name: "Roasted Seeds" },
-    { id: 3, name: "Anjeer" },
+    { id: 3, name: "Vegan Protein" },
     { id: 4, name: "Healthy Snacks" },
     { id: 5, name: "Makhana" },
     { id: 6, name: "Flavoured Makhana" },
@@ -11,11 +11,10 @@ export const productCategories = [
   ];
 
   export const quantity = [
-    { id: 1, name: "40g" },
+    { id: 1, name: "55g" },
     { id: 2, name: "100g" },
     { id: 3, name: "200g" },
-    { id: 4, name: "250g" },
-    { id: 5, name: "300g" },
+    { id: 4, name: "500g" },
   ];
 
   export const availability = [
