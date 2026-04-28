@@ -3,15 +3,17 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="bg-primary relative z-0 overflow-hidden h-auto xl:h-245 py-35 md:py-62 lg:py-0">
+    <div className="bg-primary relative z-0 overflow-hidden h-auto xl:h-230 py-35 md:py-62 lg:py-0">
       {/* Background Image */}
+      <div className="absolute inset-0 z-10">
       <Image
         src="/Image/aboutpage/hero_bg.webp"
         alt="Hero Background"
         width={1920}
         height={1080} 
-        className="w-full h-162.5 xl:h-245 object-cover"
+        className="w-full h-full object-cover"
       />
+      </div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-br from-primary to-[#5CAB72] opacity-100 z-10"></div>
@@ -27,7 +29,7 @@ export default function Hero() {
 
       {/* Content (optional) */}
 
-      <div className="absolute inset-0 flex flex-col lg:flex-row gap-10 items-center justify-center text-center px-4 md:px-6 lg:px-8 z-10">
+      <div className="absolute inset-0 flex flex-col lg:flex-row gap-10 items-center justify-center text-center mt-2 lg:mt-0 px-4 md:px-6 lg:px-8 z-10">
         <div className="w-full max-w-2xl">
           <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] xl:text-[64px] font-bold text-start text-secondary mx-auto leading:8 md:leading-12.5 lg:leading-18">
             Nourishing Modern

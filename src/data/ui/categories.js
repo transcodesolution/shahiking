@@ -14,7 +14,7 @@ export const categories = [
 export const productsData = {
   nuts: [
     {
-      name: "Premium Row Makhana",
+      name: "Premium Raw Makhana",
       slug: "premium-raw-makhana",
       price: "250/-",
       desc: "Light & crunchy healthy snack, perfect for roasting and daily nutrition.",

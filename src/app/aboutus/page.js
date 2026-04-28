@@ -4,6 +4,7 @@ import OurStory from './components/OurStory'
 import Testimonials from '@/components/common/Testimonials'
 import GetInTouch from '@/components/common/GetInTouch'
 
+
 export default function page() {
   return (
     <React.Fragment>

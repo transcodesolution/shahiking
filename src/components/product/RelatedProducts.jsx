@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function RelatedProducts() {
-  // ✅ Convert object to array
+  // Convert object to array
   const products = [...productsData.nuts];
 
   return (
@@ -13,7 +13,7 @@ export default function RelatedProducts() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Leaf Images */}
         <Image
-          src="/Image/homepage/category_leaf.webp"
+          src="/Image/productpage/product_leaf.webp"
           alt="leaf"
           width={47.42}
           height={75.05}
@@ -21,7 +21,7 @@ export default function RelatedProducts() {
         />
 
         <Image
-          src="/Image/homepage/category_leaf.webp"
+          src="/Image/productpage/product_leaf.webp"
           alt="leaf"
           width={47.42}
           height={75.05}

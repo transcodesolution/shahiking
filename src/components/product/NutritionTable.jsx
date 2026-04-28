@@ -17,11 +17,11 @@ const NutritionTable = () => {
     <div className="mt-4">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between text-start items-center w-full"
+        className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between text-start items-center w-full cursor-pointer"
       >
         Nutritional Information (Per 100g Approx)
         <span
-          className={`transition-transform duration-300 ${
+          className={`text-[18px] transition-transform duration-300 ${
             isDropdownOpen ? "rotate-180" : ""
           }`}
         >

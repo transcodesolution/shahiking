@@ -1,5 +1,4 @@
 import React from "react";
-import { recipeDetailData} from "@/data/ui/recipes";
 import NutritionBox from "../components/NutritionBox";
 import RecipeVideo from "../components/RecipeVideo";
 import RecipeVideoDetails from "../components/RecipeVideoDetails";
@@ -21,7 +20,7 @@ export default function page() {
             </div>
           </div>
           <div>
-            <RecipeVideoDetails product={recipeDetailData[0]} />
+            <RecipeVideoDetails/>
           </div>
         </div>
       </div>

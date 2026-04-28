@@ -12,9 +12,9 @@ export const productsDetail = [
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
       "/Image/homepage/product_1.webp",
-      "/Image/homepage/product_1.webp",
       "/Image/homepage/product_5.webp",
-      "/Image/homepage/product_1.webp",
+      "/Image/productpage/raw_makhana_img1.webp",
+      "/Image/productpage/raw_makhana_img2.webp",
     ],
   },
   {
@@ -26,14 +26,14 @@ export const productsDetail = [
     description:
       "High-Protein Roasted Fox Nuts | Healthy Peri Peri Snack for Weight Loss & Fitness",
     details:
-      "Perfect for office breaks, travel munching, or post-workout cravings, Peri Peri Makhana delivers crunch, flavor, and nutrition—without compromising your health goals.",
+      "Turn your everyday snacking into a bold, healthy experience with Peri Peri Makhana (Roasted Fox Nuts)—a nutrient-dense and  healthy Indian snacks, weight loss snacks, and protein-rich evening snacks.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
       "/Image/homepage/product_3.webp",
-      "/Image/homepage/product_3.webp",
-      "/Image/homepage/product_5.webp",
-      "/Image/homepage/product_3.webp",
+      "/Image/productpage/peri_peri_makhana1.webp",
+      "/Image/productpage/peri_peri_makhana2.webp",
+      "/Image/productpage/peri_peri_makhana3.webp",
     ],
   },
   {
@@ -45,14 +45,14 @@ export const productsDetail = [
     description:
       "High-Protein Roasted Fox Nuts | Clean, Lightly Salted Healthy Snack",
     details:
-      "Ideal for those searching for healthy low-calorie snacks, clean eating options, gluten-free snacks, and light evening snacks, this variant keeps it pure, balanced, and nourishing.",
+      "Experience simplicity at its best with Himalayan Salt Makhana (Roasted Fox Nuts)—a clean and Ideal for those searching for healthy low-calorie snacks, clean eating options, gluten-free snacks, and light evening snacks, this variant keeps it pure, balanced, and nourishing.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
       "/Image/homepage/product_4.webp",
-      "/Image/homepage/product_4.webp",
-      "/Image/homepage/product_5.webp",
-      "/Image/homepage/product_4.webp",
+      "/Image/productpage/himalayan_salt_img1.webp",
+      "/Image/productpage/himalayan_salt_img2.webp",
+      "/Image/productpage/himalayan_salt_img3.webp",
     ],
   },
   {
@@ -70,9 +70,9 @@ export const productsDetail = [
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
       "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img3.webp",
     ],
   },
 ];
@@ -88,8 +88,8 @@ export const nutritionData = [
       { name: "Carbohydrates", value: "76 g" },
       { name: "Dietary Fiber", value: "7.6 g" },
       { name: "Fat", value: "0.1 g" },
-      { name: "Calcium", value: "60 g" },
-      { name: "Iron", value: "1.4 g" },
+      { name: "Calcium", value: "60 mg" },
+      { name: "Iron", value: "1.4 mg" },
     ],
   },
   {
@@ -116,8 +116,8 @@ export const nutritionData = [
       { name: "Carbohydrates", value: "76 g" },
       { name: "Dietary Fiber", value: "7.6 g" },
       { name: "Fat", value: "0.8 g" },
-      { name: "Calcium", value: "60 g" },
-      { name: "Iron", value: "1.4 g" },
+      { name: "Calcium", value: "60 mg" },
+      { name: "Iron", value: "1.4 mg" },
     ],
   },
   {
@@ -132,10 +132,10 @@ export const nutritionData = [
       { name: "Total Fat", value: "4.41 g" },
       { name: "Saturated Fat", value: "1.2 g" },
       { name: "Trans Fat", value: "0.0 g" },
-      { name: "Cholesterol", value: "0 g" },
-      { name: "Sodium", value: "46 g" },
-      { name: "Calcium", value: "38 g" },
-      { name: "Iron", value: "2.4 g" },
+      { name: "Cholesterol", value: "0 mg" },
+      { name: "Sodium", value: "46 mg" },
+      { name: "Calcium", value: "38 mg" },
+      { name: "Iron", value: "2.4 mg" },
     ],
   },
 ];

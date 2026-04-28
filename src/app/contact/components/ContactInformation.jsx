@@ -39,7 +39,7 @@ export default function ContactInformation() {
               </p>
               <div>
                 <p className="body-md text-black font-medium">Email</p>
-                <p className="body-md text-black ">info@shahiking.in</p>
+                <p className="body-md text-black">info@shahiking.in</p>
               </div>
             </div>
             <div className="flex gap-2">

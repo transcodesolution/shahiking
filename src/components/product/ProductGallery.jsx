@@ -51,7 +51,7 @@ export default function ProductGallery({ product }) {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`shrink-0 w-25 xl:w-34 h-25 xl:h-36 rounded-[20px] overflow-hidden border snap-start
+            className={`shrink-0 w-25 xl:w-34 h-25 xl:h-36 rounded-[20px] overflow-hidden border snap-start cursor-pointer
             ${activeIndex === index ? "border-primary" : "border-primary"}`}
           >
             <Image

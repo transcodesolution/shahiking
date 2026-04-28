@@ -44,7 +44,7 @@ export default function ContactForm() {
       return;
     }
 
-    // ✅ success
+    // success
     toast.success("Message sent successfully");
 
     // reset form

@@ -49,17 +49,33 @@ export const recipeData = [
   },
 ];
 
-export const recipeDetailData = [
+export const recipeCardData = [
   {
     id: 1,
-    img: "/Image/recipe/recipe_img1.webp",
-    name: "High-Protein ",
-    name_1: "Makhana Pizza Wreath",
+    name: "High-Protein Makhana Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
-    time: 40,
+    img: "/Image/recipe/recipe_img1.webp",
     details:
       "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana and Superfood ingredients.",
   },
+];
+
+export const recipeDetailsData = [
+  {
+    id: 1,
+    name: "High-Protein Makhana Pizza Wreath",
+    slug: "high-protein-makhana-pizza-wreath",
+    videoData: [
+      {
+        video: "/Video/makhana_pizza.mp4",
+        title: "High-Protein",
+        title_1: "Makhana Pizza Wreath",
+        time: 40,
+        details:
+        "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana and Superfood ingredients.",
+      }
+    ]
+  }
 ];
 
 export const recipeOverviewData = [

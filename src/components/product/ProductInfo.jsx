@@ -26,10 +26,6 @@ export default function ProductInfo({ product }) {
           <span className="body-sm text-secondary">{product.weight_1}</span>
         </div>
 
-        {/* <div className="flex justify-center items-center w-full md:max-w-21 bg-primary rounded-xl py-2.5 px-4">
-          <span className="body-sm text-secondary">{product.weight_1}</span>
-        </div> */}
-        
         {/* Button */}
         <Link
           href="/"

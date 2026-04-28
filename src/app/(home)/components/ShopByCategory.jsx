@@ -86,7 +86,7 @@ export default function ShopCategory() {
             products.map((item, i) => (
               <ProductCard
                 key={i}
-                product={item} // ✅ FIXED
+                product={item} 
                 className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col"
               />
             ))
