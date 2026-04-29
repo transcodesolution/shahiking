@@ -30,7 +30,7 @@ export default function BlogSection({ item }) {
               <span className="block">{item?.subtitle}</span>
             </h1>
             <div className="flex flex-wrap items-center gap-6 py-4">
-              <p className="flex items-center gap-2 text-black ">
+              <p className="flex items-center gap-2 text-black">
                 <span>
                   <Image
                     src="/Image/blogpage/read_icon.webp"

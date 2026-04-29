@@ -12,7 +12,7 @@ export default function Hero() {
         className="w-full h-105 lg:h-88.75 object-cover"
       />
       <span className="absolute top-0 left-0 w-full h-full bg-[#00000080]"></span>
-      <div className="absolute inset-0 top-35  text-center px-4 md:px-6 lg:px-8">
+      <div className="absolute inset-0 top-35 text-center px-4 md:px-6 lg:px-8">
         <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-bold text-secondary mx-auto leading:[40px] sm:leading-12.5 lg:leading-18">
           Blog
         </h1>

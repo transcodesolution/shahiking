@@ -77,7 +77,7 @@ export default function BlogContent({ item }) {
           ))}
           <div className="mt-5">
             <Link
-              href="/"
+              href="/product"
               className="bg-primary text-white body-sm flex justify-center items-center gap-4 border border-primary font-medium py-2 px-4 max-w-65.5 rounded-full hover:bg-white hover:text-primary duration-500"
             >
               <span className="text-[24px]">

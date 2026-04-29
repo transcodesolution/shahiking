@@ -12,10 +12,31 @@ export default function Recipes() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const iframeRefs = useRef([]);
 
   const getEmbedUrl = (url) => {
-  const match = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([^&?]+)/);
-  return match ? `https://www.youtube.com/embed/${match[1]}` : url;
+    const match = url.match(
+      /(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([^&?]+)/,
+    );
+
+    return match
+      ? `https://www.youtube.com/embed/${match[1]}?enablejsapi=1&mute=1&playsinline=1`
+      : url;
+  };
+
+  const controlVideos = (activeIdx) => {
+  iframeRefs.current.forEach((iframe, index) => {
+    if (!iframe) return;
+
+    iframe.contentWindow.postMessage(
+      JSON.stringify({
+        event: "command",
+        func: index === activeIdx ? "playVideo" : "pauseVideo",
+        args: [],
+      }),
+      "*"
+    );
+  });
 };
 
   return (
@@ -41,9 +62,11 @@ export default function Recipes() {
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             onBeforeInit={(swiper) => (swiperRef.current = swiper)}
             onSlideChange={(swiper) => {
+              const currentIndex = swiper.realIndex;
               setActiveIndex(swiper.realIndex);
               setIsBeginning(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
+              controlVideos(currentIndex);
             }}
             breakpoints={{
               480: { slidesPerView: 1 },
@@ -52,12 +75,13 @@ export default function Recipes() {
               1024: { slidesPerView: 4 },
             }}
           >
-            {recipeData.map((item) => (
+            {recipeData.map((item,index) => (
               <SwiperSlide key={item.id}>
                 <div className="bg-secondary rounded-[40px] h-150 md:h-162.5 lg:h-176.25 xl:h-157.5 flex flex-col shadow-sm m-2 shadow-[#0000004D]">
                   {/* Image */}
                   <div className="relative z-10 rounded-t-[40px] cursor-pointer border-2 border-secondary shadow-sm shadow-[#0000004D]">
                     <iframe
+                      ref={(e) => (iframeRefs.current[index] = e)}
                       src={getEmbedUrl(item.video)}
                       className="w-full h-120  relative z-10 rounded-t-[40px]"
                       allow="autoplay"

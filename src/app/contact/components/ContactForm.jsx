@@ -64,7 +64,7 @@ export default function ContactForm() {
         <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-5 md:p-10 rounded-[30px]">
           <form onSubmit={handleSubmit}>
             <h1 className="display-heading text-primary font-semibold border-b border-accent pb-5">
-              Let’s Get in Touch
+              Let&apos;s Get in Touch
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-3">
               <div>

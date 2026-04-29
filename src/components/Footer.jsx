@@ -30,7 +30,7 @@ export default function Footer() {
               className="w-25 md:w-32.25 h-16.25 md:h-19.5 object-contain"
             />
             <p className="mt-4 body-md text-primary font-medium">
-              India's premium plant-based protein destination. We bring royalty
+              India&apos;s premium plant-based protein destination. We bring royalty
               to your table without compromising your health.
             </p>
           </div>

@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div className="relative bg-white overflow-hidden z-0">
       {/* Background Image */}
       <Image
         src="/Image/aboutpage/ourstory_bg.webp"
         alt="our story bg"
         width={1920}
         height={994}
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-10 "
       />
 
       {/* Leaf Image */}
