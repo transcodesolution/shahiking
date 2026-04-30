@@ -72,7 +72,7 @@ export const productsDetail = [
       "/Image/productpage/tofu_img.webp",
       "/Image/productpage/tofu_img1.webp",
       "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img3.webp",
+      "/Image/productpage/tofu_img4.webp",
     ],
   },
 ];
@@ -181,7 +181,7 @@ export const ingredientsData = [
     ingredient: [
       {
         detail:
-          "100% Premium Grade Raw Makhana | No added preservatives | No artificial flavors | No additives.",
+          "Soybeans ,Water ,Coagulant | No added preservatives | No artificial preservatives. |No added colors.",
       },
     ],
   },

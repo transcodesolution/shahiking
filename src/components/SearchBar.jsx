@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { products } from "../data/ui/products";
@@ -24,18 +25,19 @@ export default function SearchBar({ className = "", onSearch }) {
         setShowSuggestions(false);
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
+    const query = search.trim();
     setShowSuggestions(false);
+    setSearch("");
     if (onSearch) onSearch();
 
-    if (search.trim()) {
-      router.push(`/product?search=${search.trim()}`);
+    if (query) {
+      router.push(`/product?search=${query}`);
     } else {
       router.push(`/product`);
     }
@@ -58,15 +60,15 @@ export default function SearchBar({ className = "", onSearch }) {
           }}
           onFocus={() => setShowSuggestions(true)}
         />
-
         <button
           type="button"
           onClick={() => {
             setShowSuggestions(false);
+            setSearch("");
             if (onSearch) onSearch();
             router.push("/product");
           }}
-          className="text-accent text-xl px-3 py-2 cursor-pointer "
+          className="text-accent text-xl px-3 py-2 cursor-pointer"
           title="Advanced Filters"
         >
           <BiSearchAlt />
@@ -74,12 +76,12 @@ export default function SearchBar({ className = "", onSearch }) {
       </form>
 
       {/* Suggestions */}
+
       {showSuggestions && search.trim().length > 0 && (
         <div className="absolute top-full right-0 lg:left-0 mt-2 w-full lg:w-65 xl:w-102 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50">
           <div className="px-5 py-4 text-sm font-medium text-gray-500">
             Search Suggestions
           </div>
-
           <div className="max-h-[60vh] overflow-y-auto pb-2">
             {suggestions.length > 0 ? (
               <ul className="px-2">
@@ -88,7 +90,7 @@ export default function SearchBar({ className = "", onSearch }) {
                     <button
                       type="button"
                       onClick={() => {
-                        setSearch(item.name);
+                        setSearch("");
                         setShowSuggestions(false);
                         if (onSearch) onSearch();
                         router.push(`/product?search=${item.name}`);
@@ -101,7 +103,6 @@ export default function SearchBar({ className = "", onSearch }) {
                           alt={item.name}
                           className="w-12 h-12 rounded-full object-cover border border-gray-200"
                         />
-
                         <div>
                           <div className="font-semibold text-gray-900 text-base">
                             {item.name}
@@ -112,7 +113,6 @@ export default function SearchBar({ className = "", onSearch }) {
                           </div>
                         </div>
                       </div>
-
                       <div className="text-sm font-medium text-gray-700 pr-2">
                         ₹ {item.price}
                       </div>

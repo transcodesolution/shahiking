@@ -12,7 +12,7 @@ export default function Hero() {
         height={1080}
         className="w-full h-162.5 lg:h-245 object-cover"
       />
-      <div className="absolute inset-0 top-37.5 lg:top-60 text-center px-4 md:px-6 lg:px-8">
+      <div className="absolute inset-0 top-30 md:top-37.5 lg:top-60 text-center px-4 md:px-6 lg:px-8">
         <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-bold text-secondary mx-auto leading:[40px] sm:leading-12.5 lg:leading-18">
           Eat Clean. Live Pure.
           <span className="block">Feel Powerful.</span>{" "}
@@ -23,7 +23,7 @@ export default function Hero() {
           protein-rich products, and clean ingredients designed for everyday
           wellness.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
+        <div className="flex  justify-center items-center gap-2 md:gap-4">
           <Link href="/product" className="bg-secondary body-sm font-medium text-primary p-2.5 rounded-full w-full md:max-w-47.5 mb-2 md:mb-0 hover:bg-primary hover:text-secondary duration-500 cursor-pointer">
             Discover Categories
           </Link>

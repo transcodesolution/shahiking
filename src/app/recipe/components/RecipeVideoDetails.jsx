@@ -14,7 +14,8 @@ export default function RecipeVideoDetails() {
 
   const product = recipeDetailsData.find(
   (p) => p.slug?.toLowerCase() === id?.toLowerCase()
-);
+  );
+
   return (
     <div>
       <div className="bg-white p-3 md:p-6 xl:p-8 rounded-[30px] shadow-brand">
@@ -37,7 +38,7 @@ export default function RecipeVideoDetails() {
               </span>
               <span className="body-md">{item.time} mins</span>
             </p>
-            <p className="flex items-center gap-2 text-black  border-r pr-4">
+            <p className="flex items-center gap-2 text-black border-r pr-4">
               <span>
                 <Image
                   src="/Image/recipe/serving_icon.webp"
@@ -48,7 +49,7 @@ export default function RecipeVideoDetails() {
               </span>
               <span className="body-md">Servings</span>
             </p>
-            <p className="flex items-center gap-2 text-black  border-r pr-4">
+            <p className="flex items-center gap-2 text-black border-r pr-4">
               <span>
                 <Image
                   src="/Image/recipe/protein_icon.webp"
@@ -59,7 +60,7 @@ export default function RecipeVideoDetails() {
               </span>
               <span className="body-md">High Protein</span>
             </p>
-            <p className="flex items-center gap-2 text-black ">
+            <p className="flex items-center gap-2 text-black">
               <span>
                 <Image
                   src="/Image/recipe/vegan_icon.webp"

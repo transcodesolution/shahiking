@@ -65,7 +65,7 @@ export default function ContactInformation() {
         </div>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8386097921216!2d72.88554337600243!3d21.23824748054903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f5100c5afcd%3A0xf0c8c348ba866c82!2sAmbika%20Pinnacle!5e0!3m2!1sen!2sin!4v1776338668805!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8364454633947!2d72.88551507600228!3d21.238333280546147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f1cf89aa199%3A0x51b7475766080238!2sShahiKing%20Foods!5e0!3m2!1sen!2sin!4v1777546816420!5m2!1sen!2sin"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

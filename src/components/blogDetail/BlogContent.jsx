@@ -11,7 +11,7 @@ export default function BlogContent({ item }) {
         alt="blog detail content bg"
         width={1920}
         height={2361}
-        className="h-590 w-full object-cover absolute inset-0 z-10 overflow-hidden opacity-15"
+        className="h-full w-full object-cover absolute inset-0 z-10 overflow-hidden opacity-15"
       />
       <Image
         src="/Image/blogpage/blog_detail_leaf.webp"

@@ -15,7 +15,7 @@ export default function NutritionBox() {
         Nutritional Information Box
       </button>
 
-      <div className="w-full bg-[#FCFCFC] rounded-[30px] border border-accent p-3 max-w-160 mt-5">
+      <div className="w-full bg-[#FCFCFC] rounded-[30px] border border-accent p-5 max-w-160 mt-5">
         {/* Header */}
         <div className="flex justify-between px-12 md:px-22 py-3 font-semibold text-black font-heading text-[18px] lg:text-[20px] xl:text-[24px]">
           <span className="w-35 text-start">Nutrient</span>
@@ -29,7 +29,7 @@ export default function NutritionBox() {
             <div
               key={index}
               className={`flex justify-between items-center mx-auto rounded-full px-12 md:px-22 py-3 body-sm 
-                ${index % 2 === 0 ? "bg-[#FCFCFC]" : "bg-secondary"}
+                ${index % 2 === 0 ? "bg-secondary" : "bg-[#FCFCFC]"}
               `}
             >
               <span className="text-black text-start">{item.name}</span>

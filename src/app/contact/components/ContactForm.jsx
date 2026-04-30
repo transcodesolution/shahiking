@@ -63,10 +63,10 @@ export default function ContactForm() {
         {/* FORM */}
         <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-5 md:p-10 rounded-[30px]">
           <form onSubmit={handleSubmit}>
-            <h1 className="display-heading text-primary font-semibold border-b border-accent pb-5">
+            <h1 className="display-heading text-primary font-semibold border-b border-accent pb-2 md:pb-5">
               Let&apos;s Get in Touch
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-1 md:py-3">
               <div>
                 {/* Name */}
                 <label className="block body-md text-black">Name</label>
@@ -76,7 +76,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name*"
-                  className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter your phone number*"
-                  className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your email*"
-                className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
               />
             </div>
 
@@ -116,7 +116,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Leave us a message..."
                 rows={6}
-                className="w-full mt-4 py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
+                className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
               />
             </div>
 
@@ -157,7 +157,7 @@ export default function ContactForm() {
             {/* Button */}
             <button
               type="submit"
-              className="mt-5 bg-primary text-secondary font-medium border border-primary px-6 py-2 rounded-full w-full max-w-85 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
+              className="mt-3 md:mt-5 bg-primary text-secondary font-medium border border-primary px-6 py-2 rounded-full w-full max-w-85 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
             >
               Send Message
             </button>

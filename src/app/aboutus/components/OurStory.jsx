@@ -1,5 +1,4 @@
 import React from "react";
-import { GiCheckMark } from "react-icons/gi";
 import TimelineSection from "./TimelineSection";
 import Image from "next/image";
 
@@ -12,7 +11,7 @@ export default function OurStory() {
         alt="our story bg"
         width={1920}
         height={994}
-        className="absolute inset-0 w-full h-full object-cover z-10 "
+        className="absolute inset-0 w-full h-full object-cover z-10"
       />
 
       {/* Leaf Image */}

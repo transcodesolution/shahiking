@@ -14,11 +14,11 @@ export default function Page() {
   const params = useParams();
   const id = params?.id;
 
-  // Get product from category data (for name)
+  // Get product from category data
   const allProducts = Object.values(productsData).flat();
   const product = allProducts.find((p) => p.slug === id);
 
-  // Get product detail (MAIN FIX)
+  // Get product detail
   const productDetail = productsDetail.find((item) => item.slug === id);
 
   const productName = productDetail?.name || product?.name || "Product";

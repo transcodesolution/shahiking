@@ -20,7 +20,7 @@ export default function BlogCard({ item }) {
       <div className="p-3 md:p-5 xl:p-7 border border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
         <div className="flex flex-col flex-1">
           <div className="flex flex-wrap items-center gap-2 mb-3">
-            <p className="flex items-center gap-2 text-black ">
+            <p className="flex items-center gap-2 text-black">
               <span>
                 <Image
                   src="/Image/blogpage/read_icon.webp"

@@ -135,7 +135,7 @@ export default function OurProduct() {
             </div>
             {/* pagination button */}
             <div>
-              <div className="none xl:flex justify-between items-center mt-10  gap-4 ">
+              <div className="none xl:flex justify-between items-center mt-10 gap-4">
                 <div className="max-w-full flex justify-center mb-2">
                   {/* Previous */}
                   <button

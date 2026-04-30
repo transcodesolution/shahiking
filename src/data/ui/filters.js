@@ -1,13 +1,9 @@
 export const productCategories = [
-    { id: 1, name: "Berries" },
-    { id: 2, name: "Roasted Seeds" },
-    { id: 3, name: "Vegan Protein" },
-    { id: 4, name: "Healthy Snacks" },
-    { id: 5, name: "Makhana" },
-    { id: 6, name: "Flavoured Makhana" },
-    { id: 7, name: "Dates" },
-    { id: 8, name: "Whole Spices" },
-    { id: 9, name: "Combo" },
+    { id: 1, name: "Vegan Protein" },
+    { id: 2, name: "Healthy Snacks" },
+    { id: 3, name: "Makhana" },
+    { id: 4, name: "Flavoured Makhana" },
+    { id: 5, name: "Combo" },
   ];
 
   export const quantity = [

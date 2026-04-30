@@ -43,7 +43,7 @@ export default function GetInTouch() {
             alt="side"
             width={429}
             height={472}
-            className="h-87.5 xl:h-118 object-contain"
+            className="h-87.5 xl:h-118  object-contain"
           />
         </div>
 

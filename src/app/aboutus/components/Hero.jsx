@@ -3,29 +3,17 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="bg-primary relative z-0 overflow-hidden h-screen ">
+    <div className="bg-primary relative z-0 overflow-hidden h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-10">
         <Image
-          src="/Image/aboutpage/hero_bg.webp"
+          src="/Image/aboutpage/about_hero_bg.webp"
           alt="Hero Background"
           width={1920}
-          height={1080}
+          height={980}
           className="w-full h-full object-cover"
         />
       </div>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-r from-primary to-primary opacity-100 z-10"></div>
-
-      {/* Optional Hover Effect */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#66666600] to-[#396A47] opacity-100 z-10"></div>
-
-      <div className="absolute inset-0 w-141.5 h-133.5 rounded-full blur-3xl -top-70 -left-55 bg-linear-to-br from-[#6EBA83] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
-      <div className="absolute inset-0 w-141.5 h-133.5 rounded-full blur-3xl top-170 left-398 bg-linear-to-tr from-[#6EBA83] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
-      <div className="absolute inset-y-0 w-453 h-45 -rotate-49 rounded-full blur-3xl top-40 left-65 bg-linear-to-br from-[#396A47] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
-      <div className="absolute inset-y-0 w-453 h-45 -rotate-49 rounded-full blur-3xl top-30 left-196 bg-linear-to-br from-[#396A47] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
-      <div className="absolute inset-y-0 w-453 h-45 -rotate-49 rounded-full blur-3xl top-20 -left-80 bg-linear-to-br from-[#396A47] to-[#32543B] opacity-100 transition duration-500 z-10"></div>
 
       {/* Content (optional) */}
 
@@ -42,7 +30,7 @@ export default function Hero() {
             authentic taste, and strict quality standards to support healthy,
             balanced lifestyles.🌿🥗
           </p>
-          <div className="flex-wrap md:flex justify-start items-center gap-4">
+          <div className="flex justify-start items-center gap-2 md:gap-4">
             <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-full md:max-w-29.75 mb-2 md:mb-0 hover:bg-primary hover:text-[#FFFFFF] duration-500 cursor-pointer">
               <a href="/aboutus" className="text-[16px] font-medium">
                 Healthy

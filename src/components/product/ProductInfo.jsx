@@ -54,7 +54,7 @@ export default function ProductInfo({ product }) {
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <Usage/>
+        <Usage />
       </div>
     </div>
   );

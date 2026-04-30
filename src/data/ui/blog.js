@@ -31,18 +31,6 @@ export const faqData = [
     answer:
       "Yes. Dry fruits provide protein along with healthy fats and essential micronutrients.",
   },
-  {
-    id: 4,
-    question: "Is plant-based protein effective for weight loss?",
-    answer:
-      "Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
-  },
-  {
-    id: 5,
-    question: "Is plant-based protein effective for weight loss?",
-    answer:
-      "Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
-  },
 ];
 
 export const blogDetailData = [
@@ -129,7 +117,7 @@ export const blogContentData = {
       title: "How Much Protein Do You Need Daily?",
       content: "Your daily protein requirement depends on activity level:",
       list: [
-        "Sedentary adults :-  0.8g per kg body weight",
+        "Sedentary adults :- 0.8g per kg body weight",
         "Active individuals :- 1.2–2.0g per kg body weight",
       ],
       content_1: "For best results, spread protein intake across meals.",

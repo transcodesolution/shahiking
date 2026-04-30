@@ -141,13 +141,11 @@ export const recipeNutritionData = [
     name: "High-Protein Makhana Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     nutrition: [
-      { name: "Energy", value: "347 kcal" },
-      { name: "Protein", value: "9.7 g" },
-      { name: "Carbohydrates", value: "76 g" },
-      { name: "Dietary Fiber", value: "7.6 g" },
-      { name: "Fat", value: "0.1 g" },
-      { name: "Calcium", value: "60 g" },
-      { name: "Iron", value: "1.4 g" },
+      { name: "Calories", value: "280 kcal" },
+      { name: "Protein", value: "14 g" },
+      { name: "Fiber", value: "6 g" },
+      { name: "Carbs", value: "30 g" },
+      { name: "Healthy Fat", value: "9 g" },
     ],
   },
 ];
