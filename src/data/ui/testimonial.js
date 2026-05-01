@@ -33,7 +33,7 @@ export const testimonialData = [
       rating: 4.0,
       img: "/Image/homepage/testimonial_img4.webp",
       review:
-        "If you’re looking for wholesome and plant-based meals, Shahiking Foods is the best choice. Great flavors without compromising health.",
+        "If you're looking for wholesome and plant-based meals, Shahiking Foods is the best choice. Great flavors without compromising health.",
     },
     {
       id: 5,

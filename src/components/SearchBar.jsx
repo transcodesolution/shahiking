@@ -93,7 +93,7 @@ export default function SearchBar({ className = "", onSearch }) {
                         setSearch("");
                         setShowSuggestions(false);
                         if (onSearch) onSearch();
-                        router.push(`/product?search=${item.name}`);
+                        router.push(`/product/${item.slug}`);
                       }}
                       className="w-full text-left px-3 py-3 hover:bg-gray-100 rounded-xl flex items-center justify-between transition-colors group mb-1"
                     >

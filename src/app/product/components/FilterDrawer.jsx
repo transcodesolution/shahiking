@@ -84,6 +84,7 @@ export default function FilterDrawer({
                         ? prev.filter((c) => c !== cat.name)
                         : [...prev, cat.name],
                     );
+                   onClose(); 
                   }}
                 />
               ))}
@@ -113,7 +114,9 @@ export default function FilterDrawer({
                   label={item.name}
                   value={item.name}
                   checked={isStock === item.name}
-                  onChange={(e) => setIsStock(e.target.value)}
+                  onChange={(e) =>{setIsStock(e.target.value);
+                    onClose();
+                  }}
                 />
               ))}
             </div>
@@ -157,7 +160,9 @@ export default function FilterDrawer({
                   label={q.name}
                   value={q.name}
                   checked={selectedQuantity === q.name}
-                  onChange={(e) => setSelectedQuantity(e.target.value)}
+                  onChange={(e) => {setSelectedQuantity(e.target.value);
+                    onClose();
+                  }}
                 />
               ))}
             </div>

@@ -117,7 +117,7 @@ export default function Footer() {
               </h2>
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/ShahiKingFoods"
                   className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
@@ -126,7 +126,7 @@ export default function Footer() {
                   Facebook
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/ShahiKing_Foods"
                   className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
@@ -135,7 +135,7 @@ export default function Footer() {
                   Twitter
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/shahiking_foods"
                   className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">

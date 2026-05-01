@@ -59,13 +59,13 @@ export const productsDetail = [
     id: 4,
     name: "Pure Bean Fit Firm Tofu",
     slug: "pure-bean-fit-tofu",
-    price: 350,
+    price: 275,
     weight:"200 g",
     weight_1:"500 g", 
     description:
       "High-Protein Plant-Based Protein | 100% Vegan | Non-GMO Soybeans",
     details:
-      "Pure Bean Fit Firm Tofu is a premium plant-based protein made from high-quality non-GMO soybeans. With its firm texture and clean taste, it’s perfect for grilling, stir-frying, salads, and everyday healthy meals — ideal for vegan, vegetarian, and high-protein diets.",
+      "Pure Bean Fit Firm Tofu is a premium plant-based protein made from high-quality non-GMO soybeans. With its firm texture and clean taste, it's perfect for grilling, stir-frying, salads, and everyday healthy meals — ideal for vegan, vegetarian, and high-protein diets.",
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
@@ -236,7 +236,7 @@ export const benefitData = [
       { detail: "High-protein vegetarian food" },
       { detail: "100% vegan & cholesterol-free" },
       { detail: "Made from non-GMO soybeans" },
-      { detail: "Firm texture – perfect for grilling & stir fry" },
+      { detail: "Firm texture - perfect for grilling & stir fry" },
       { detail: "Low sugar & balanced fat content" },
       { detail: "Supports muscle growth & weight management" },
       { detail: "Ideal for gym, fitness & clean eating diets" },
@@ -308,11 +308,11 @@ export const usageData = [
     name: "Pure Bean Fit Firm Tofu",
     slug: "pure-bean-fit-tofu",
     usage:[
-      { detail: "🔥 Grilling"},
-      { detail: "🥗 Salads"},
-      { detail: "🍳 Sauté"},
-      {detail:"🍜 Stir Fry"},
-      {detail:" 🥘 Asian & Indian Recipes"},
+      { detail:"🔥 Grilling"},
+      { detail:"🥗 Salads"},
+      { detail:"🍳 Sauté"},
+      { detail:"🍜 Stir Fry"},
+      { detail:" 🥘 Asian & Indian Recipes"},
     ]
   },
 ];

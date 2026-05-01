@@ -25,8 +25,8 @@ export default function BlogCard({ item }) {
                 <Image
                   src="/Image/blogpage/read_icon.webp"
                   alt="read icon"
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                 />
               </span>
               <span className="body-sm">{item.time} Min Read</span>
@@ -36,8 +36,8 @@ export default function BlogCard({ item }) {
                 <Image
                   src="/Image/blogpage/update_icon.webp"
                   alt="update icon"
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                 />
               </span>
               <span className="body-sm">Updated 2026</span>
@@ -47,8 +47,8 @@ export default function BlogCard({ item }) {
                 <Image
                   src="/Image/blogpage/admin_icon.webp"
                   alt="admin icon"
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                 />
               </span>
               <span className="body-sm">By Shahiking Team</span>

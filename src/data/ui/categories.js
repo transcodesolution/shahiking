@@ -31,7 +31,7 @@ export const productsData = {
       name: "Himalayan Salt Makhana",
       slug: "himalayan-salt-makhana",
       price: "134/-",
-      desc: "High-protein tofu – clean plant-based protein for balanced meals.",
+      desc: "Light & crunchy healthy snack, perfect for roasting and daily nutrition",
       img: "/Image/homepage/product_4.webp",
     }
   ],
@@ -39,8 +39,8 @@ export const productsData = {
     {
       name: "Pure Bean Fit Tofu",
       slug: "pure-bean-fit-tofu",
-      price: "350/-",
-      desc: "High-protein tofu – clean plant-based protein for balanced meals.",
+      price: "275/-",
+      desc: "High-protein tofu - clean plant-based protein for balanced meals.",
       img: "/Image/homepage/product_2.webp",
     },
   ],

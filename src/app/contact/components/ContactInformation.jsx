@@ -11,7 +11,7 @@ export default function ContactInformation() {
           </h1>
           <div className="mt-6 flex flex-col space-y-4">
             <div className="flex gap-2">
-              <p className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px]">
                   <Image
                     src="/Image/contactpage/email_icon.webp"
@@ -20,14 +20,14 @@ export default function ContactInformation() {
                     height={24}
                   />
                 </span>
-              </p>
+              </div>
               <div>
                 <p className="body-md text-black font-medium">Phone</p>
                 <p className="body-md text-black">+91 74359 17404</p>
               </div>
             </div>
             <div className="flex gap-2">
-              <p className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px]">
                   <Image
                     src="/Image/contactpage/mobile_icon.webp"
@@ -36,15 +36,15 @@ export default function ContactInformation() {
                     height={24}
                   />
                 </span>
-              </p>
+              </div>
               <div>
                 <p className="body-md text-black font-medium">Email</p>
                 <p className="body-md text-black">info@shahiking.in</p>
               </div>
             </div>
             <div className="flex gap-2">
-              <p className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
-                <span className="text-[24px]">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
+                <span className="text-[24px] w-12.5 flex justify-center items-center">
                   <Image
                     src="/Image/contactpage/location_icon.webp"
                     alt="location_icon"
@@ -52,12 +52,12 @@ export default function ContactInformation() {
                     height={24}
                   />
                 </span>
-              </p>
-              <div>
+              </div>
+              <div className="max-w-120">
                 <p className="body-md text-black font-medium">Location</p>
-                <p className="body-md text-black w-full max-w-120">
-                  Ambika Pinnacle, 301, beside Lajamni Chowk, Mota Varachha,
-                  Surat, Gujarat 394101
+                <p className="body-md text-black">
+                  Ambika Pinnacle, 301, beside Lajamni Chowk,
+                  Mota Varachha,Surat, Gujarat 394101
                 </p>
               </div>
             </div>

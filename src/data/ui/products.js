@@ -39,7 +39,7 @@ export const products = [
     category:"Vegan Protein",
     availability: "In Stock", 
     quantity: ["200g", "500g"], 
-    price: 350,
+    price: 275,
     rating: 5.0,
     img: "/Image/productpage/protein_img1.webp",
   },

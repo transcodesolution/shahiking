@@ -102,18 +102,12 @@ export const recipePreparationsData = [
     slug: "high-protein-makhana-pizza-wreath",
     preparation: [
       { title: "Step 1", details: "Preheat oven to 180°C." },
-      {
-        title: "Step 2",
-        details: "Mix flour and plant-based protein in a bowl.",
-      },
+      { title: "Step 2", details: "Mix flour and plant-based protein in a bowl." },
       { title: "Step 3", details: "Add olive oil and knead into soft dough." },
       { title: "Step 4", details: "Shape into wreath form." },
       { title: "Step 5", details: "Top with makhana and dry fruits." },
-      { title: "Step 6", details: "Bake for 25–30 minutes." },
-      {
-        title: "Step 7",
-        details: "Garnish with superfood seeds and serve warm.",
-      },
+      { title: "Step 6", details: "Bake for 25-30 minutes." },
+      { title: "Step 7", details: "Garnish with superfood seeds and serve warm." },
     ],
   },
 ];

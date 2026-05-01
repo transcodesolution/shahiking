@@ -5,6 +5,7 @@ import FilterOption from "./FilterOption";
 import PriceRangeFilter from "./PriceRangeFilter";
 import FilterDrawer from "./FilterDrawer";
 import { availability, productCategories, quantity } from "@/data/ui/filters";
+import Image from "next/image";
 
 export default function FilterSidebar({
   isChecked,
@@ -43,19 +44,37 @@ export default function FilterSidebar({
     setIsStock(null);
     setSelectedQuantity("");
     setMinVal(0);
-    setMaxVal(900);
+    setMaxVal(2000);
   };
 
   return (
     <div className="w-full lg:w-94 h-auto bg-secondary rounded-xl shadow-sm border border-[#C1C1C1]">
       <div className="relative flex justify-between p-4">
-        <h2 className="hidden lg:block font-semibold text-primary cursor-pointer">
+        <h2 className="hidden lg:flex items-center gap-2 font-semibold text-primary cursor-pointer">
+          <span>
+            <Image
+            src="/Image/productpage/filter_icon.webp"
+            alt="filter icon image"
+            width={24}
+            height={24}
+            className="w-6 h-6 object-contain"
+          />
+          </span>
           Filters
         </h2>
         <button
-          className="lg:hidden font-semibold text-primary cursor-pointer"
+          className="lg:hidden flex items-center gap-2 font-semibold text-primary cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
+          <span>
+            <Image
+            src="/Image/productpage/filter_icon.webp"
+            alt="filter icon image"
+            width={24}
+            height={24}
+            className="w-6 h-6 object-contain"
+          />
+          </span>
           <span>Filters</span>
         </button>
 

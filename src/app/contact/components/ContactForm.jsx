@@ -171,7 +171,7 @@ export default function ContactForm() {
             alt="contact form"
             width={778}
             height={610}
-            className="h-full lg:h-152 w-full"
+            className="h-full lg:h-130 xl:h-152 w-full"
           />
         </div>
       </div>

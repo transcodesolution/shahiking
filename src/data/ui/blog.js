@@ -48,7 +48,7 @@ export const blogDetailData = [
     detail_2:
       "Plant-based protein is one of the fastest-growing nutrition trends in India. From vegan protein sources to healthy high-protein snacks, more people are choosing clean, sustainable nutrition.",
     detail_3:
-      "In this guide, you’ll discover the benefits, best sources, daily protein needs, and how to include plant-based protein in your routine using dry fruits, makhana, and superfoods.",
+      "In this guide, you'll discover the benefits, best sources, daily protein needs, and how to include plant-based protein in your routine using dry fruits, makhana, and superfoods.",
   },
 ];
 
@@ -118,7 +118,7 @@ export const blogContentData = {
       content: "Your daily protein requirement depends on activity level:",
       list: [
         "Sedentary adults :- 0.8g per kg body weight",
-        "Active individuals :- 1.2–2.0g per kg body weight",
+        "Active individuals :- 1.2-2.0g per kg body weight",
       ],
       content_1: "For best results, spread protein intake across meals.",
     },

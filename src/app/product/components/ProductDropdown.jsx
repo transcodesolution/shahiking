@@ -24,7 +24,6 @@ export default function ProductDropdown({closeMenu}) {
         >
           {categoriesData.map((cat) => {
             const isActive = active === cat.id;
-
             return (
               <div
                 key={cat.id}
@@ -34,7 +33,7 @@ export default function ProductDropdown({closeMenu}) {
                 id={`tab-${cat.id}`}
                 onClick={() => setActive(cat.id)}
                 className={`relative pb-3 body-md flex items-center gap-2 transition cursor-pointer ${
-                  isActive ? "font-medium text-black" : "text-gray-500"
+                  isActive ? "font-medium text-black" : "text-accent"
                 }`}
               >
                 {cat.name}
