@@ -4,7 +4,7 @@ import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 export default function TestimonialCard({ item, isActive }) {
   return (
     <div
-      className={`bg-white rounded-[40px] p-5 border border-accent transition-all duration-300
+      className={`bg-white rounded-[40px] p-3 xl:p-5 border border-accent transition-all duration-300
       ${isActive ? "h-109 md:h-92 xl:h-79" : "h-105 md:h-88 xl:h-77 mt-4 xl:mt-2"}`}
     >
       {/* User */}
@@ -20,7 +20,7 @@ export default function TestimonialCard({ item, isActive }) {
         </div>
         <div>
           <h4 className="body-md font-medium text-black">{item.name}</h4>
-          <p className="text-[14px] md:text-[18px] text-accent">
+          <p className="text-[14px] md:text-[16px] xl:text-[18px] text-accent">
             {item.company}
           </p>
         </div>

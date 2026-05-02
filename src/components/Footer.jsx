@@ -30,11 +30,11 @@ export default function Footer() {
               className="w-25 md:w-32.25 h-16.25 md:h-19.5 object-contain"
             />
             <p className="mt-4 body-md text-primary font-medium">
-              India&apos;s premium plant-based protein destination. We bring royalty
-              to your table without compromising your health.
+              India&apos;s premium plant-based protein destination. We bring
+              royalty to your table without compromising your health.
             </p>
           </div>
-          <div className=" col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-10">
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-10">
             <div className="py-2">
               <h2 className="body-md text-primary font-semibold font-heading pb-2">
                 Quick Links
@@ -144,7 +144,7 @@ export default function Footer() {
                   Instagram
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/shahiking"
                   className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
@@ -164,18 +164,21 @@ export default function Footer() {
               Subscribe for loyal recipes and exclusive offers.
             </p>
             <form>
-            <div className="bg-[#D9D9D9] rounded-3xl flex justify-between items-center mt-5">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="px-4 py-2 w-full outline-none"
-              />
-              <button className="bg-primary text-white px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer">
-                <a href="/">
+              <div className="bg-[#D9D9D9] rounded-3xl flex justify-between items-center mt-5">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  className="px-4 py-2 w-full outline-none"
+                />
+                {/* join button  */}
+                <Link
+                  href="/"
+                  className="bg-primary text-white px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block"
+                >
                   Join
-                </a>
-              </button>
-            </div>
+                </Link>
+              </div>
             </form>
           </div>
         </div>

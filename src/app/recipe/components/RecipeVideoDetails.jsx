@@ -89,7 +89,7 @@ export default function RecipeVideoDetails() {
               className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
             />
           </Link>
-          <Link href="/" className="cursor-pointer">
+          <Link href="https://www.instagram.com/shahiking_foods" className="cursor-pointer">
             <Image
               src="/Image/recipe/instagram.webp"
               alt="instagram icon"
@@ -98,7 +98,7 @@ export default function RecipeVideoDetails() {
               className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
             />
           </Link>
-          <Link href="/" className="cursor-pointer">
+          <Link href="https://www.facebook.com/ShahiKingFoods" className="cursor-pointer">
             <Image
               src="/Image/recipe/facebook.webp"
               alt="facebook icon"

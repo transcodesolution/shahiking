@@ -69,7 +69,6 @@ export default function SearchBar({ className = "", onSearch }) {
             router.push("/product");
           }}
           className="text-accent text-xl px-3 py-2 cursor-pointer"
-          title="Advanced Filters"
         >
           <BiSearchAlt />
         </button>
@@ -79,7 +78,7 @@ export default function SearchBar({ className = "", onSearch }) {
 
       {showSuggestions && search.trim().length > 0 && (
         <div className="absolute top-full right-0 lg:left-0 mt-2 w-full lg:w-65 xl:w-102 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50">
-          <div className="px-5 py-4 text-sm font-medium text-gray-500">
+          <div className="px-5 py-4 text-sm font-medium text-accent">
             Search Suggestions
           </div>
           <div className="max-h-[60vh] overflow-y-auto pb-2">
