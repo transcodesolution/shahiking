@@ -36,25 +36,49 @@ export default function OurProduct() {
   };
 
   // FILTER
-  const filteredProducts = products.filter((item) => {
+ const filteredProducts = products.filter((item) => {
+  const searchText = search?.toLowerCase().trim() || "";
+
+  // SLUG
   const matchesSlug = !slug || item.slug === slug;
 
-  const matchesSearch = item.name
-    ?.toLowerCase()
-    .includes(search.toLowerCase());
-
+  // SEARCH 
+  const matchesSearch =
+    !searchText ||
+    item.name?.toLowerCase().includes(searchText) 
+  //  CATEGORY FILTER
   const matchesCategory =
     isChecked.length === 0 ||
-    isChecked.some(
-      (cat) => cat.toLowerCase() === item.category?.toLowerCase(),
-    );
+    isChecked.some((cat) => {
+      const value = cat.toLowerCase().trim();
 
-  const matchesStock = !isStock || item.availability === isStock;
+      if (Array.isArray(item.category)) {
+        return item.category.some(
+          (c) => c.toLowerCase().trim() === value
+        );
+      }
 
+      if (typeof item.category === "string") {
+        return item.category.toLowerCase().trim() === value;
+      }
+      
+      return false;
+    });
+
+  //STOCK
+  const matchesStock =
+    !isStock || item.availability === isStock;
+
+  // QUANTITY
   const matchesQuantity =
-  !selectedQuantity || item.quantity.includes(selectedQuantity);
+    !selectedQuantity ||
+    (Array.isArray(item.quantity)
+      ? item.quantity.includes(selectedQuantity)
+      : item.quantity === selectedQuantity);
 
-  const matchesPrice = item.price >= minVal && item.price <= maxVal;
+  // PRICE
+  const matchesPrice =
+    item.price >= minVal && item.price <= maxVal;
 
   return (
     matchesSlug &&
@@ -65,7 +89,6 @@ export default function OurProduct() {
     matchesPrice
   );
 });
-
   // PAGINATION
   const itemsPerPage = 12;
 

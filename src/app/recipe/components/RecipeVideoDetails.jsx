@@ -107,7 +107,7 @@ export default function RecipeVideoDetails() {
               className="w-8 md:w-10.5 h-8 md:h-10.5"
             />
           </Link>
-          <Link href="/" className="cursor-pointer object-cover">
+          <Link href="https://in.pinterest.com/Shahiking_Foods" className="cursor-pointer object-cover">
             <Image
               src="/Image/recipe/pinterest.webp"
               alt="pinterest icon"

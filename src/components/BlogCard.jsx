@@ -25,37 +25,37 @@ export default function BlogCard({ item }) {
                 <Image
                   src="/Image/blogpage/read_icon.webp"
                   alt="read icon"
-                  width={22}
-                  height={22}
+                  width={20}
+                  height={20}
                 />
               </span>
-              <span className="body-sm">{item.time} Min Read</span>
+              <span className="text-[14px]">{item.time} Min Read</span>
             </p>
             <p className="flex items-center gap-2 text-black">
               <span>
                 <Image
                   src="/Image/blogpage/update_icon.webp"
                   alt="update icon"
-                  width={22}
-                  height={22}
+                  width={20}
+                  height={20}
                 />
               </span>
-              <span className="body-sm">Updated 2026</span>
+              <span className="text-[14px]">{item.date}</span>
             </p>
             <p className="flex items-center gap-2 text-black">
               <span>
                 <Image
                   src="/Image/blogpage/admin_icon.webp"
                   alt="admin icon"
-                  width={22}
-                  height={22}
+                  width={20}
+                  height={20}
                 />
               </span>
-              <span className="body-sm">By Shahiking Team</span>
+              <span className="text-[14px]">By Shahiking Team</span>
             </p>
           </div>
           {/* Title */}
-          <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-medium text-black leading-7">{item.title}</h3>
+          <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-heading font-semibold text-black leading-7">{item.title}</h3>
 
           {/* Description */}
           <p className="text-black mt-2 body-md mb-6">{item.description}</p>

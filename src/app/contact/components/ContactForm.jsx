@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   // Initialize EmailJS (IMPORTANT FIX)
   useEffect(() => {
-    emailjs.init("sLWv3lgz4PtjtJdEd"); // your public key
+    emailjs.init(""); // your public key
   }, []);
 
   // Handle input change
@@ -54,15 +54,15 @@ export default function ContactForm() {
 
     emailjs
       .send(
-        "service_j2m07ue", // your service ID
-        "template_v9zmkk8", // your template ID
+        "", // your service ID
+        "", // your template ID
         {
           user_name: formData.name,
           user_email: formData.email,
           user_phone: formData.phone,
           message: formData.message,
         },
-        "sLWv3lgz4PtjtJdEd", // your public key
+        "", // your public key
       )
       .then((result) => {
         console.log("SUCCESS:", result);
@@ -159,9 +159,8 @@ export default function ContactForm() {
                   onChange={handleChange}
                   className="hidden peer"
                 />
-                {/* Custom Box */}
+                {/* Custom Checkbox Box */}
                 <div className="w-6 h-6 rounded-md border-2 border-gray-400 flex items-center justify-center peer-checked:bg-primary peer-checked:border-primary transition-all">
-                  {/* Tick Icon */}
                   <svg
                     className="w-5 h-5 text-secondary peer-checked:block"
                     fill="none"

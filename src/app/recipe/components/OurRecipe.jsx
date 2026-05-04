@@ -22,7 +22,7 @@ export default function OurRecipe() {
             <RecipeCard key={item.id} item={item} />
           ))}
         </div>
-        <div className="flex justify-end relative z-10">
+        {/* <div className="flex justify-end relative z-10">
           <Link
             href="/product"
             className="body-sm text-primary font-medium flex items-center gap-2 underline underline-offset-3 group cursor-pointer"
@@ -32,7 +32,7 @@ export default function OurRecipe() {
               <FaArrowRightLong />
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

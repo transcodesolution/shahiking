@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaSquareInstagram,
   FaSquareXTwitter,
+  FaSquareYoutube,
 } from "react-icons/fa6";
 
 export default function Footer() {
@@ -152,6 +153,15 @@ export default function Footer() {
                   </span>
                   LinkedIn
                 </a>
+                <a
+                  href="https://www.youtube.com/@ShahiKing-Food"
+                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                >
+                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                    <FaSquareYoutube />
+                  </span>
+                   Youtube
+                </a>
               </div>
             </div>
           </div>
@@ -169,12 +179,12 @@ export default function Footer() {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="px-4 py-2 w-full outline-none"
+                  className="px-4 py-2 w-full outline-none rounded-3xl"
                 />
                 {/* join button  */}
                 <Link
                   href="/"
-                  className="bg-primary text-white px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block"
+                  className="bg-primary text-white px-6 lg:px-4 xl:px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block"
                 >
                   Join
                 </Link>

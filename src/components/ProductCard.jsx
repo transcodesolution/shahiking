@@ -22,7 +22,7 @@ export default function ProductCard({ product }) {
       <div className="p-3 xl:p-6 border-2 border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
         <div className="flex flex-col flex-1">
           {/* Title */}
-          <h3 className="text-lg font-semibold text-primary">
+          <h3 className="body-md font-heading font-semibold text-primary">
             {product?.name}
           </h3>
 

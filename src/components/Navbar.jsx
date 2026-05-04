@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { BiSearchAlt } from "react-icons/bi";
 import { HiMenu, HiX } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { usePathname } from "next/navigation";
@@ -60,7 +59,7 @@ export default function Navbar() {
             </Link>
 
             {/* Dropdown Menu */}
-            <div className="absolute inset-x-0 left-0 mt-6 z-50 w-full h-115 bg-white text-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 overflow-hidden">
+            <div className="absolute inset-x-0 left-0 mt-6 z-50 w-full h-92 bg-white text-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 overflow-hidden">
               <ProductDropdown />
             </div>
           </div>

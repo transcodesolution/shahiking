@@ -46,7 +46,7 @@ export default function ProductCard({
       </div>
 
       {/* Title */}
-      <h3 className="mt-2 text-[14px] md:text-[18px] font-medium text-primary group-hover:text-secondary relative z-10 flex-1 line-clamp-2">
+      <h3 className="mt-2 text-[14px] md:text-[18px] font-heading font-medium text-primary group-hover:text-secondary relative z-10 flex-1 line-clamp-2">
         {item.name}
       </h3>
 

@@ -14,8 +14,7 @@ export default function SearchBar({ className = "", onSearch }) {
   // Filter products
   const suggestions = products.filter(
     (item) =>
-      item.name.toLowerCase().includes(search.toLowerCase()) ||
-      item.category.toLowerCase().includes(search.toLowerCase()),
+      item.name.toLowerCase().includes(search.toLowerCase())
   );
 
   // Click outside
@@ -105,10 +104,6 @@ export default function SearchBar({ className = "", onSearch }) {
                         <div>
                           <div className="font-semibold text-gray-900 text-base">
                             {item.name}
-                          </div>
-                          <div className="text-sm text-gray-500">
-                            {item.category} |
-                            <span className="ml-1">{item.quantity}</span>
                           </div>
                         </div>
                       </div>

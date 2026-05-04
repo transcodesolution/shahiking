@@ -20,7 +20,7 @@ export default function ProductDropdown({closeMenu}) {
         <div
           role="tablist"
           aria-label="Product Categories"
-          className="flex justify-center gap-16 overflow-x-auto no-scrollbar py-5 mt-5 border-b border-[#2A2A2A33]"
+          className="flex justify-center gap-16 overflow-x-auto no-scrollbar py-2 border-b border-[#2A2A2A33]"
         >
           {categoriesData.map((cat) => {
             const isActive = active === cat.id;
@@ -32,8 +32,8 @@ export default function ProductDropdown({closeMenu}) {
                 aria-controls={`panel-${cat.id}`}
                 id={`tab-${cat.id}`}
                 onClick={() => setActive(cat.id)}
-                className={`relative pb-3 body-md flex items-center gap-2 transition cursor-pointer ${
-                  isActive ? "font-medium text-black" : "text-accent"
+                className={`relative pb-1 body-sm font-heading flex items-center gap-2 transition cursor-pointer ${
+                  isActive ? "text-black" : "text-accent"
                 }`}
               >
                 {cat.name}
@@ -41,7 +41,7 @@ export default function ProductDropdown({closeMenu}) {
 
                 {/* Active Border */}
                 {isActive && (
-                  <span className="absolute left-0 right-0 -bottom-5 h-px bg-black"></span>
+                  <span className="absolute left-0 right-0 -bottom-2 h-px bg-black"></span>
                 )}
               </div>
             );
@@ -59,7 +59,7 @@ export default function ProductDropdown({closeMenu}) {
               hidden={active !== cat.id}
             >
               {active === cat.id && (
-                <div className="grid grid-cols-4 gap-10 py-6">
+                <div className="grid grid-cols-4 gap-10 py-5">
                   {productsItem[cat.id]?.map((item) => (
                     <div
                       key={item.id}
@@ -78,7 +78,7 @@ export default function ProductDropdown({closeMenu}) {
                         />
                       </div>
 
-                      <p className="body-md mt-3">{item.name}</p>
+                      <p className="body-sm mt-3 font-heading">{item.name}</p>
                     </div>
                   ))}
                 </div>
