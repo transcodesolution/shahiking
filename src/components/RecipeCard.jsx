@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function RecipeCard({ item }) {
   if (!item) return null;
   return (
-    <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-full min-h-140 w-full flex flex-col">
+    <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-130 md:min-h-140 w-full flex flex-col">
       <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
       {/* Image */}
       <Image
@@ -23,7 +23,7 @@ export default function RecipeCard({ item }) {
           <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-heading font-semibold text-black leading-7">{item.name}<span>{item.name_1}</span></h3>
 
           {/* Description */}
-          <p className="text-black mt-2 body-md mb-6">{item.details}</p>
+          <p className="text-black mt-3 body-md mb-6">{item.details}</p>
         </div>
         {/* Button */}
         <Link

@@ -1,15 +1,51 @@
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
+import React, { useState } from "react";
 import {
   FaLinkedin,
+  FaSquareFacebook,
   FaSquareInstagram,
   FaSquareXTwitter,
   FaSquareYoutube,
 } from "react-icons/fa6";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleJoin = (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      toast.error("Please enter email");
+      return;
+    }
+
+    const templateParams = {
+      email: email,
+    };
+
+    // Send Auto Reply to User
+    emailjs
+      .send(
+        "YOUR_SERVICE_ID", // your service ID
+        "YOUR_TEMPLATE_ID", // your template ID
+        templateParams,
+        "YOUR_PUBLIC_KEY", // your public key
+      )
+      .then(() => {
+        toast.success("Joined successfully ");
+        setEmail("");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Something went wrong");
+      });
+  };
+
   return (
     <div className="bg-primary py-12 md:py-16 relative z-0 h-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -122,7 +158,7 @@ export default function Footer() {
                   className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaFacebookSquare />
+                    <FaSquareFacebook />
                   </span>
                   Facebook
                 </a>
@@ -160,7 +196,7 @@ export default function Footer() {
                   <span className="text-[20px] md:text-[22px] xl:text-[24px]">
                     <FaSquareYoutube />
                   </span>
-                   Youtube
+                  Youtube
                 </a>
               </div>
             </div>
@@ -173,21 +209,20 @@ export default function Footer() {
             <p className="pt-2 text-primary text-[14px] md:text-[18px] font-medium w-full max-w-92.5">
               Subscribe for loyal recipes and exclusive offers.
             </p>
-            <form>
+            <form onSubmit={handleJoin}>
               <div className="bg-[#D9D9D9] rounded-3xl flex justify-between items-center mt-5">
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   className="px-4 py-2 w-full outline-none rounded-3xl"
                 />
                 {/* join button  */}
-                <Link
-                  href="/"
-                  className="bg-primary text-white px-6 lg:px-4 xl:px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block"
-                >
+                <button className="bg-primary text-white px-6 lg:px-4 xl:px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block">
                   Join
-                </Link>
+                </button>
               </div>
             </form>
           </div>

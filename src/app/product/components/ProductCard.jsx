@@ -16,8 +16,7 @@ export default function ProductCard({
       className="bg-secondary flex flex-col h-full border border-[#C1C1C1] rounded-xl p-2 md:p-4 shadow-sm relative group cursor-pointer overflow-hidden"
     >
       {/* Hover Gradient */}
-      <div className="absolute inset-0 bg-linear-to-t from-(--gradientStart) to-(--gradientEnd) opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
-
+     <div className="absolute inset-0 bg-[radial-gradient(circle,var(--gradientStart)0%,var(--gradientEnd)100%)] opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
       {/* Image */}
       <div className="relative border-b border-[#D2D2D2] pb-4 z-10">
         <Image
@@ -56,7 +55,7 @@ export default function ProductCard({
           ₹{Number(item.price).toFixed(2)}
         </span>
 
-        <div className="flex items-center gap-1 text-yellow-500">
+        <div className="flex items-center gap-1 text-[#FFC107]">
           <FaStar className="text-[16px] md:text-[18px] xl:text-[20px]"/>
           <span className="text-accent group-hover:text-secondary text-[14px] md:text-[16px] xl:text-[18px]">
             {Number(item.rating).toFixed(1)}

@@ -9,7 +9,7 @@ export const blogCardData = [
     description:
       "Learn how plant-based protein supports muscle recovery, weight loss, and overall wellness.",
     time: 5,
-    date:"01 May,2026",
+    date:"May 01,2026",
   },
 ];
 
