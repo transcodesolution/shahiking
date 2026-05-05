@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
           {/* Description */}
           <p className="text-black mt-1">{product?.desc}</p>
         </div>
-        {/* Bottom Section */}
+
         <div className="flex justify-between items-center mt-5">
           {/* Price */}
           <p className="text-[20px] lg:text-[24px] font-bold text-gray-800">

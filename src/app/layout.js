@@ -17,7 +17,7 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <head>
+      <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1882HQ0N75"
           strategy="afterInteractive"
@@ -30,8 +30,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-1882HQ0N75');
           `}
         </Script>
-      </head>
-      <body>
+        
         <Navbar/>
         {children}
         <Footer/>
