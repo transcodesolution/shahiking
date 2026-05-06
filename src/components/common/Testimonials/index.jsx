@@ -18,7 +18,7 @@ export default function Testimonials({bg="bg-secondary"}) {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className={`${bg} py-16 overflow-hidden`}>
+    <div className={`${bg} py-12 md:py-16 overflow-hidden`}>
       <div className="container mx-auto px-4 text-center">
         <h5 className="body-sm bg-primary text-white rounded-full px-4 py-1 inline-block">
           Testimonials
@@ -39,11 +39,11 @@ export default function Testimonials({bg="bg-secondary"}) {
       />
 
       {/* Swiper */}
-      <div className="py-6">
+      <div className="py-6 px-2 md:px-0">
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={20}
-          slidesPerView={2}
+          slidesPerView={1}
           centeredSlides
           loop
           autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -71,7 +71,7 @@ export default function Testimonials({bg="bg-secondary"}) {
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-center gap-5 mt-10">
+      <div className="flex justify-center gap-5 mt-6 md:mt-10">
         <button 
          onClick={() => swiperRef.current?.slidePrev()}
          className="bg-white p-3 rounded-full border-2 border-secondary shadow-sm shadow-[#0000004D] transition cursor-pointer"

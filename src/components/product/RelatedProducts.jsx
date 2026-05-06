@@ -15,16 +15,16 @@ export default function RelatedProducts() {
         <Image
           src="/Image/productpage/product_leaf.webp"
           alt="leaf"
-          width={47.42}
-          height={75.05}
+          width={72}
+          height={128}
           className="hidden lg:block absolute top-0 right-55 object-cover h-30 w-17.5 -rotate-170 blur-2 z-10"
         />
 
         <Image
           src="/Image/productpage/product_leaf.webp"
           alt="leaf"
-          width={47.42}
-          height={75.05}
+          width={72}
+          height={128}
           className="hidden lg:block absolute top-0 left-55 object-cover h-30 w-17.5 -rotate-195 blur-2 translate scale-x-[-1] z-10"
         />
 

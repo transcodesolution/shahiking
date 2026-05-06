@@ -1,9 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import { blogCardData } from "@/data/ui/blog";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function OurBlog() {
   return (

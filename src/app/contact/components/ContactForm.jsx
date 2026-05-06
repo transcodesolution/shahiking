@@ -112,9 +112,7 @@ export default function ContactForm() {
               </div>
               {/* Phone */}
               <div>
-                <label className="block body-md text-black">
-                  Phone Number
-                </label>
+                <label className="block body-md text-black">Phone Number</label>
                 <input
                   type="tel"
                   name="phone"

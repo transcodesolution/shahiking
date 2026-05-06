@@ -10,25 +10,25 @@ import GetInTouch from "@/components/common/GetInTouch";
 export default function page() {
   return (
     <>
-    <div className="bg-secondary">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
-          <div>
-            <RecipeVideo />
-            <div className="py-5">
-              <NutritionBox />
+      <div className="bg-secondary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
+            <div>
+              <RecipeVideo />
+              <div className="py-5">
+                <NutritionBox />
+              </div>
             </div>
-          </div>
-          <div>
-            <RecipeVideoDetails/>
+            <div>
+              <RecipeVideoDetails />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <Testimonials  bg="white"/>
-    <Recipes/>
-    <RelatedProducts/>
-    <GetInTouch/>
+      <Testimonials bg="white" />
+      <Recipes />
+      <RelatedProducts />
+      <GetInTouch />
     </>
   );
 }

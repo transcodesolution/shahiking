@@ -5,10 +5,10 @@ export default function TestimonialCard({ item, isActive }) {
   return (
     <div
       className={`bg-white rounded-[40px] p-3 xl:p-5 border border-accent transition-all duration-300
-      ${isActive ? "h-109 md:h-92 xl:h-79" : "h-105 md:h-88 xl:h-77 mt-4 xl:mt-2"}`}
+      ${isActive ? "h-62 md:h-92 xl:h-82" : "h-60 md:h-88 xl:h-80 mt-4 xl:mt-2"}`}
     >
       {/* User */}
-      <div className="none md:flex items-start gap-4 mb-4">
+      <div className="flex items-start gap-4 mb-4">
         <div className="rounded-full overflow-hidden border-2 border-primary w-17.5 md:w-20 xl:w-25 h-17.5 md:h-20 xl:h-25">
           <Image
             src={item.img}

@@ -56,8 +56,8 @@ export default function ContactInformation() {
               <div className="max-w-120">
                 <p className="body-md text-black font-medium">Location</p>
                 <p className="body-md text-black">
-                  Ambika Pinnacle, 301, beside Lajamni Chowk,
-                  Mota Varachha,Surat, Gujarat 394101
+                  Ambika Pinnacle, 301, beside Lajamni Chowk, Mota
+                  Varachha,Surat, Gujarat 394101
                 </p>
               </div>
             </div>
@@ -75,4 +75,6 @@ export default function ContactInformation() {
       </div>
     </div>
   );
+
+  363
 }

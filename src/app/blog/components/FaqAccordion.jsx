@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { faqData } from "@/data/ui/blog";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -16,7 +16,7 @@ export default function FaqAccordion() {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className={`bg-white rounded-4xl px-4 md:px-10 py-5 shadow-sm border transition
+            className={`bg-white rounded-4xl px-4 md:px-10 py-5 shadow-sm border transition .35s ease-in 
               ${activeIndex === index ? "border-primary" : "border-secondary"}`}
           >
             {/* QUESTION */}
@@ -30,7 +30,7 @@ export default function FaqAccordion() {
                 {item.question}
               </h3>
               <IoIosArrowDown
-                className={`text-xl transition-transform ${
+                className={`text-xl transition-transform duration-300 ${
                   activeIndex === index ? "rotate-180" : ""
                 }`}
               />
@@ -39,7 +39,9 @@ export default function FaqAccordion() {
             {/* ANSWER */}
             {activeIndex === index && (
               <div className="mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
-                <p className="w-full max-w-120 body-sm text-accent">{item.answer}</p>
+                <p className="w-full max-w-120 body-sm text-accent">
+                  {item.answer}
+                </p>
               </div>
             )}
           </div>

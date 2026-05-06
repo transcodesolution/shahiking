@@ -1,6 +1,12 @@
 import { GiCheckMark } from "react-icons/gi";
 
-export default function TimelineSection({ title, description, points, details, align = "left" }) {
+export default function TimelineSection({
+  title,
+  description,
+  points,
+  details,
+  align = "left",
+}) {
   const isRight = align === "right";
 
   return (
@@ -29,7 +35,9 @@ export default function TimelineSection({ title, description, points, details, a
 
         <p
           className={`body-md mt-4 ${
-            isRight ? "mr-8 ml-4 md:ml-0 text-start md:text-end" : "ml-4 md:ml-8"
+            isRight
+              ? "mr-8 ml-4 md:ml-0 text-start md:text-end"
+              : "ml-4 md:ml-8"
           }`}
         >
           {description}
@@ -64,9 +72,15 @@ export default function TimelineSection({ title, description, points, details, a
           </ul>
         )}
 
-        <p className={`body-md mt-4 ${
-            isRight ? "mr-8 ml-4 md:ml-0 text-start md:text-end" : "ml-4 md:ml-8"
-          }`}>{details}</p>
+        <p
+          className={`body-md mt-4 ${
+            isRight
+              ? "mr-8 ml-4 md:ml-0 text-start md:text-end"
+              : "ml-4 md:ml-8"
+          }`}
+        >
+          {details}
+        </p>
       </div>
 
       {/* Right Empty or Content */}

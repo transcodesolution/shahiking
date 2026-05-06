@@ -25,19 +25,19 @@ export default function Recipes() {
   };
 
   const controlVideos = (activeIdx) => {
-  iframeRefs.current.forEach((iframe, index) => {
-    if (!iframe) return;
+    iframeRefs.current.forEach((iframe, index) => {
+      if (!iframe) return;
 
-    iframe.contentWindow.postMessage(
-      JSON.stringify({
-        event: "command",
-        func: index === activeIdx ? "playVideo" : "pauseVideo",
-        args: [],
-      }),
-      "*"
-    );
-  });
-};
+      iframe.contentWindow.postMessage(
+        JSON.stringify({
+          event: "command",
+          func: index === activeIdx ? "playVideo" : "pauseVideo",
+          args: [],
+        }),
+        "*",
+      );
+    });
+  };
 
   return (
     <div className="bg-secondary py-8 md:py-16">
@@ -75,7 +75,7 @@ export default function Recipes() {
               1024: { slidesPerView: 4 },
             }}
           >
-            {recipeData.map((item,index) => (
+            {recipeData.map((item, index) => (
               <SwiperSlide key={item.id}>
                 <div className="bg-secondary rounded-[40px] h-150 md:h-162.5 lg:h-176.25 xl:h-157.5 flex flex-col shadow-sm m-2 shadow-[#0000004D]">
                   {/* Image */}

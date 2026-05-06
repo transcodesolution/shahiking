@@ -49,7 +49,7 @@ export default function FAQ() {
               {faq.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-4xl px-4 md:px-8 py-5 shadow-sm border-2 border-secondary transition shadow-[#0000004D]"
+                  className="bg-white rounded-4xl px-4 md:px-8 py-5 drop-shadow-xs border-2 border-secondary transition .35s ease-in drop-shadow-[#0000004D]"
                 >
                   {/* QUESTION */}
                   <button
