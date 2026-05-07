@@ -54,15 +54,15 @@ export default function ContactForm() {
 
     emailjs
       .send(
-        "", // your service ID
-        "", // your template ID
+        "YOUR_SERVICE_ID", // your service ID
+        "YOUR_TEMPLATE_ID", // your template ID
         {
           user_name: formData.name,
           user_email: formData.email,
           user_phone: formData.phone,
           message: formData.message,
         },
-        "", // your public key
+        "YOUR_PUBLIC_KEY", // your public key
       )
       .then((result) => {
         console.log("SUCCESS:", result);
@@ -100,13 +100,13 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-1 md:py-3">
               {/* Name */}
               <div>
-                <label className="block body-md text-black">Name</label>
+                <label className="block body-md text-black">Full Name</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Enter your name*"
+                  placeholder="Enter your fullname*"
                   className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>

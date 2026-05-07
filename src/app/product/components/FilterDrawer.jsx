@@ -123,7 +123,7 @@ export default function FilterDrawer({
           )}
         </div>
 
-        <div className="">
+        <div>
           {/* Header */}
           <PriceRangeFilter
             isOpen={isPriceOpen}

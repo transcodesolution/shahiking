@@ -20,7 +20,7 @@ export default function BlogSection({ item }) {
                 alt={item.title}
                 width={840}
                 height={594}
-                className="w-full h-140 rounded-[30px] border border-accent object-cover"
+                className="rounded-[30px] border border-accent object-cover"
               />
             )}
           </div>
@@ -50,7 +50,7 @@ export default function BlogSection({ item }) {
                     height={24}
                   />
                 </span>
-                <span className="body-sm">Updated 2026</span>
+                <span className="body-sm">{item?.date}</span>
               </p>
               <p className="flex items-center gap-2 text-black">
                 <span>

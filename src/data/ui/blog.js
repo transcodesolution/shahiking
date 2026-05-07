@@ -42,8 +42,9 @@ export const blogDetailData = [
     image: "/Image/blogpage/blog_detail_img1.webp",
     title: "Plant-Based Protein:",
     subtitle:
-      "The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
+    "The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
     time: "5",
+    date:"May 01, 2026",
     detail_1:
       "Looking for a high-protein diet that supports muscle growth, weight loss, and overall health — without relying on animal products?",
     detail_2:

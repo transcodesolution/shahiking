@@ -61,10 +61,12 @@ export default function Footer() {
         {/* Content */}
         <div className="absolute inset-0 z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-0 gap-x-8 px-10 md:px-22.5 py-7.5 md:py-10 lg:py-15">
           <div className="w-full lg:max-w-68.75">
-            <img
+            <Image
               src="/Image/footer_logo.webp"
               alt="Footer Logo"
-              className="w-25 md:w-32.25 h-16.25 md:h-19.5 object-contain"
+              width={129}
+              height={78}
+              className="object-contain"
             />
             <p className="mt-4 body-md text-primary font-medium">
               India&apos;s premium plant-based protein destination. We bring
@@ -216,7 +218,7 @@ export default function Footer() {
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder="Your Email Address."
                   className="px-4 py-2 w-full outline-none rounded-3xl"
                 />
                 {/* join button  */}

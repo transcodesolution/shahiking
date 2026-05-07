@@ -80,7 +80,7 @@ export default function RecipeVideoDetails() {
 
         <div className="flex items-start gap-6 py-2">
           {/* Button */}
-          <Link href="/" className="cursor-pointer">
+          <Link href="https://wa.me/c/917435917404" className="cursor-pointer">
             <Image
               src="/Image/recipe/whatsapp.webp"
               alt="whatsapp icon"

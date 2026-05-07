@@ -25,7 +25,7 @@ export default function ProductGallery({ product }) {
           alt="product"
           width={760}
           height={760}
-          className="object-cover transition .5s ease-in-out w-120 h-120 md:w-150 md:h-150 duration-500 rounded-[30px] border border-primary"
+          className="object-cover transition .35s ease-in-out w-120 h-120 md:w-150 md:h-150 duration-500 rounded-[30px] border border-primary"
         />
 
         {/* LEFT BUTTON */}

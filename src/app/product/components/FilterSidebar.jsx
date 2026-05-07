@@ -203,7 +203,7 @@ export default function FilterSidebar({
           <div className="mt-2">
             {quantity.map((q) => (
               <FilterOption
-                key={q.id} // ✅ must be unique
+                key={q.id} // must be unique
                 label={q.name}
                 value={q.name}
                 checked={selectedQuantity === q.name}

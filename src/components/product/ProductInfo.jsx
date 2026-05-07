@@ -28,7 +28,7 @@ export default function ProductInfo({ product }) {
 
         {/* Button */}
         <Link
-          href="#"
+          href="https://wa.me/c/917435917404"
           className="bg-primary text-secondary body-sm text-center font-medium p-2.5 rounded-full w-full md:max-w-38.5 mb-2 md:mb-0 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
         >
           Buy it now
