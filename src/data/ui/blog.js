@@ -157,3 +157,25 @@ export const blogContentData = {
     },
   ],
 };
+
+
+
+export const blogMetadata = [
+  {
+    slug: "plant-based-protein-guide",
+
+    metaTitle:
+      "Plant Based Protein Guide for Muscle Growth & Weight Loss",
+
+    metaDescription:
+      "Discover plant-based protein benefits for muscle growth, weight loss & clean nutrition with healthy foods, dry fruits & vegan protein tips.",
+
+    image:
+      "https://shahiking.in/blog/plant-based-protein.jpg",
+
+    name:
+      "Plant Based Protein Guide",
+
+    publishedAt: "2026-05-01",
+  },
+];

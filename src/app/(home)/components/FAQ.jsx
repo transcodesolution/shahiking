@@ -22,7 +22,7 @@ export default function FAQ() {
         />
       <div className="container mx-auto px-4 lg:px-8 py-8 md:py-0">
         
-        <div className="lg:flex justify-between gap-12 items-center relative z-10 pt-0 md:pt-10">
+        <div className="lg:flex justify-between gap-12 items-center relative z-50 pt-0 md:pt-10">
 
           {/* LEFT IMAGE */}
           <div className="flex justify-center w-full lg:max-w-140">

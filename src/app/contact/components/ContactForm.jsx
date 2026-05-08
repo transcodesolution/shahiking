@@ -92,12 +92,12 @@ export default function ContactForm() {
     <div className="py-8 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* FORM */}
-        <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-5 md:p-10 rounded-[30px]">
+        <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-4 md:p-8 rounded-[30px]">
           <form onSubmit={handleSubmit}>
-            <h1 className="display-heading text-primary font-semibold border-b border-accent pb-2 md:pb-5">
+            <h1 className="display-heading text-primary font-semibold border-b border-accent pb-2 md:pb-4">
               Let&apos;s Get in Touch
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-1 md:py-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-1 md:py-2">
               {/* Name */}
               <div>
                 <label className="block body-md text-black">Full Name</label>
@@ -107,7 +107,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your fullname*"
-                  className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
               {/* Phone */}
@@ -119,12 +119,12 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter your phone number*"
-                  className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                  className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
                 />
               </div>
             </div>
             {/* Email */}
-            <div className="mt-3">
+            <div className="mt-2">
               <label className="block body-md text-black">Email</label>
               <input
                 type="email"
@@ -132,23 +132,23 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your email*"
-                className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
+                className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
               />
             </div>
             {/* Message */}
-            <div className="mt-4">
+            <div className="mt-3">
               <label className="block body-md text-black">Your Message</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Leave us a message..."
-                rows={6}
-                className="w-full mt-2 md:mt-4 py-2 md:py-4 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
+                rows={5}
+                className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
               />
             </div>
             {/* Checkbox */}
-            <div className="flex items-center mt-4 mb-2">
+            <div className="flex items-center mt-3 mb-2">
               <label className="flex items-center gap-3 cursor-pointer">
                 <input
                   type="checkbox"

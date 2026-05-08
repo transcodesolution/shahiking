@@ -143,3 +143,46 @@ export const recipeNutritionData = [
     ],
   },
 ];
+
+
+export const recipeMetadata= [
+  { 
+    slug: "high-protein-makhana-pizza-wreath",
+
+    metaTitle:
+      "High Protein Makhana Pizza Recipe | Healthy Snack",
+
+    metaDescription:
+      "Make a high-protein makhana pizza wreath with healthy vegan ingredients, superfoods & crispy fox nuts for nutritious guilt-free snacking.",
+
+    image:
+      "https://shahiking.in/recipe/makhana-pizza-wreath.jpg",
+
+    name: "High-Protein Makhana Pizza Wreath",
+
+    description:
+      "A delicious high-protein makhana pizza wreath made with healthy vegan ingredients.",
+
+    prepTime: "PT15M",
+
+    cookTime: "PT25M",
+
+    totalTime: "PT40M",
+
+    recipeYield: "4 servings",
+
+    calories: "280 kcal",
+
+    protein: "14 g",
+
+    ingredients: [
+      "1 cup flavored makhana",
+      "1/2 cup whole wheat flour",
+    ],
+
+    instructions: [
+      "Preheat oven to 180°C.",
+      "Mix flour and plant protein.",
+    ],
+  },
+];

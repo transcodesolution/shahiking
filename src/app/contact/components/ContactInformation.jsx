@@ -5,11 +5,11 @@ export default function ContactInformation() {
   return (
     <div className="py-3 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-secondary p-5 md:p-10 border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] rounded-[30px]">
-          <h1 className="display-heading text-primary font-semibold border-b border-accent pb-5">
+        <div className="bg-secondary p-4 md:p-8 border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] rounded-[30px]">
+          <h1 className="display-heading text-primary font-semibold border-b border-accent pb-3">
             Contact Information
           </h1>
-          <div className="mt-6 flex flex-col space-y-4">
+          <div className="mt-4 flex flex-col space-y-3">
             <div className="flex gap-2">
               <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px]">

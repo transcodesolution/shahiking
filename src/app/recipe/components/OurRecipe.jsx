@@ -17,7 +17,7 @@ export default function OurRecipe() {
         className="w-full h-full object-cover opacity-15 absolute top-0 left-0 z-10"
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-10">
+        <div className="relative z-50 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-10">
           {recipeCardData.map((item) => (
             <RecipeCard key={item.id} item={item} />
           ))}

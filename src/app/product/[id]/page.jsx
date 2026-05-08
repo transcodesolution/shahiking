@@ -1,35 +1,100 @@
-"use client";
-
 import Link from "next/link";
-import { useParams } from "next/navigation";
+
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
-import { productsDetail } from "@/data/ui/productDetail";
+
+import { productsDetail, productsMetadata } from "@/data/ui/productDetail";
+
 import { productsData } from "@/data/ui/categories";
+
 import RelatedProducts from "@/components/product/RelatedProducts";
 import Testimonials from "@/components/common/Testimonials";
 import GetInTouch from "@/components/common/GetInTouch";
 
-export default function Page() {
-  const params = useParams();
-  const id = params?.id;
+import ProductSchema from "../schema";
 
-  // Get product from category data
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+
+  const product = productsMetadata.find((item) => item.slug === id);
+
+  if (!product) {
+    return {
+      title: "Product Not Found",
+
+      description: "This product does not exist.",
+    };
+  }
+
+  return {
+    title: product.metaTitle,
+
+    description: product.metaDescription,
+
+    alternates: {
+      canonical: `https://shahiking.in/product/${product.slug}`,
+    },
+
+    openGraph: {
+      title: product.metaTitle,
+
+      description: product.metaDescription,
+
+      url: `https://shahiking.in/product/${product.slug}`,
+
+      type: "website",
+
+      images: [
+        {
+          url: product.image,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+
+      title: product.metaTitle,
+
+      description: product.metaDescription,
+
+      images: [product.image],
+    },
+  };
+}
+
+
+export default async function Page({ params }) {
+  const { id } = await params;
+
+  // All products
   const allProducts = Object.values(productsData).flat();
+
+  // Product from category
   const product = allProducts.find((p) => p.slug === id);
 
-  // Get product detail
+  // Product detail
   const productDetail = productsDetail.find((item) => item.slug === id);
 
+  // Product name
   const productName = productDetail?.name || product?.name || "Product";
 
-  // Handle not found
+  // Not found
   if (!productDetail) {
-    return <div className="p-10 text-center">Product not found</div>;
+    return (
+      <div className="p-10 text-center text-2xl font-bold">
+        Product not found
+      </div>
+    );
   }
 
   return (
     <>
+      <ProductSchema product={productDetail} />
+
       <div className="bg-secondary py-6 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
@@ -37,7 +102,7 @@ export default function Page() {
             <ol className="flex items-center">
               <li>
                 <Link
-                  href="/"
+                  href="/product"
                   className="font-semibold text-primary font-heading body-md"
                 >
                   All Categories
@@ -46,6 +111,7 @@ export default function Page() {
 
               <li className="flex items-center">
                 <span className="mx-1 body-md">/</span>
+
                 <span className="font-semibold text-primary font-heading body-md">
                   {productName}
                 </span>
@@ -58,6 +124,7 @@ export default function Page() {
             <div>
               <ProductGallery product={productDetail} />
             </div>
+
             <div>
               <ProductInfo product={productDetail} />
             </div>
@@ -70,6 +137,7 @@ export default function Page() {
       </div>
 
       <Testimonials />
+
       <GetInTouch />
     </>
   );
