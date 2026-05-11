@@ -7,15 +7,10 @@ export default function BlogSchema({
     "@context": "https://schema.org",
 
     "@type": "BlogPosting",
-
     headline: blog.metaTitle,
-
     description: blog.metaDescription,
-
     image: [blog.image],
-
     datePublished: blog.publishedAt,
-
     dateModified: blog.publishedAt,
 
     author: {
@@ -27,10 +22,8 @@ export default function BlogSchema({
       "@type": "Organization",
 
       name: "Shahiking",
-
       logo: {
         "@type": "ImageObject",
-
         url:
           "https://shahiking.in/logo.webp",
       },
@@ -38,7 +31,6 @@ export default function BlogSchema({
 
     mainEntityOfPage: {
       "@type": "WebPage",
-
       "@id":
         `https://shahiking.in/blog/${blog.slug}`,
     },

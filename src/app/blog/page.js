@@ -8,10 +8,8 @@ import BlogSchema from './schema'
 export const metadata = {
   title:
     "Healthy Food Blog | Nutrition Tips & Clean Eating Guide",
-
   description:
-    "Explore Shahiking’s healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
-
+    "Explore Shahiking's healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
   alternates: {
     canonical: "https://shahiking.in/blog",
   },
@@ -19,14 +17,10 @@ export const metadata = {
   openGraph: {
     title:
       "Healthy Food Blog | Nutrition Tips & Clean Eating Guide",
-
     description:
-      "Explore Shahiking’s healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
-
+      "Explore Shahiking's healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
     url: "https://shahiking.in/blog",
-
     type: "website",
-
     images: [
       {
         url: "https://shahiking.in/Image/blog-banner.jpg",
@@ -38,13 +32,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title:
       "Healthy Food Blog | Nutrition Tips & Clean Eating Guide",
-
     description:
-      "Explore Shahiking’s healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
-
+      "Explore Shahiking's healthy food blog for nutrition tips, vegan recipes, clean eating ideas & high-protein lifestyle guidance every day.",
     images: [
       "https://shahiking.in/Image/blog-banner.jpg",
     ],

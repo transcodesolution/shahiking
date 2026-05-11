@@ -139,7 +139,6 @@ export const blogContentData = {
       content_1:
         "Small daily changes can significantly improve your nutrition.",
     },
-
     {
       type: "text",
       title: "Final Thoughts",
@@ -148,7 +147,6 @@ export const blogContentData = {
       detail:
         "By including high-protein healthy snacks, dry fruits, makhana, and superfoods in your daily routine, you can support muscle growth, improve digestion, and manage weight naturally.",
     },
-
     {
       type: "text",
       title: "Upgrade Your High-Protein Diet Today",
@@ -163,19 +161,14 @@ export const blogContentData = {
 export const blogMetadata = [
   {
     slug: "plant-based-protein-guide",
-
     metaTitle:
       "Plant Based Protein Guide for Muscle Growth & Weight Loss",
-
     metaDescription:
       "Discover plant-based protein benefits for muscle growth, weight loss & clean nutrition with healthy foods, dry fruits & vegan protein tips.",
-
     image:
       "https://shahiking.in/blog/plant-based-protein.jpg",
-
     name:
       "Plant Based Protein Guide",
-
     publishedAt: "2026-05-01",
   },
 ];

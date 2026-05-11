@@ -22,7 +22,7 @@ export default function RecipeVideo() {
               muted
               loop
             >
-              <source src={item.video} ype="video/mp4" />
+              <source src={item.video} type="video/mp4" />
             </video>
           </div>
         ))}

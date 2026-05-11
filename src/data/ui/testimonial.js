@@ -10,7 +10,7 @@ export const testimonialData = [
     },
     {
       id: 2,
-      name: " Krish",
+      name: "Krish",
       date: "01/12/2025",
       rating: 5.0,
       img: "/Image/homepage/testimonial_img2.webp",
@@ -37,8 +37,8 @@ export const testimonialData = [
     },
     {
       id: 5,
-      name: " Kapil Lathiya",
-      date: " 03/12/2025",
+      name: "Kapil Lathiya",
+      date: "03/12/2025",
       rating: 5.0,
       img: "/Image/homepage/testimonial_img5.webp",
       review:
@@ -60,7 +60,7 @@ export const testimonialData = [
       rating: 4.0,
       img: "/Image/homepage/testimonial_review7.webp",
       review:
-        "Mart paneer recipe ma use karyu ane khub saro result malyo. Freshness ane packing banne perfect hata. Healthy lifestyle mate highly recommended che.",
+        "Mast paneer recipe ma use karyu ane khub saro result malyo. Freshness ane packing banne perfect hata. Healthy lifestyle mate highly recommended che.",
     },
     {
       id: 8,

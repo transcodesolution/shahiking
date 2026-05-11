@@ -21,7 +21,7 @@ export default function OurStory() {
           alt="leaf"
           width={436}
           height={421}
-          className="w-50 lg:w-87.5 object-contain"
+          className="object-contain"
         />
       </div>
 

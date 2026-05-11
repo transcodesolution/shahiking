@@ -61,7 +61,6 @@ export default function BlogCard({ item }) {
           <p className="text-black mt-3 body-md mb-6">{item.description}</p>
         </div>
         {/* Button */}
-
         <Link
           href={`/blog/${item.slug}`}
           className="bg-primary text-secondary body-sm flex justify-center items-center gap-4 border border-primary font-medium py-2 px-4 max-w-39.5 rounded-full hover:bg-secondary hover:text-primary duration-500"

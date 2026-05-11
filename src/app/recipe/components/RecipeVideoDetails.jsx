@@ -86,7 +86,7 @@ export default function RecipeVideoDetails() {
               alt="whatsapp icon"
               width={42}
               height={42}
-              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
             />
           </Link>
           <Link href="https://www.instagram.com/shahiking_foods" className="cursor-pointer">
@@ -95,7 +95,7 @@ export default function RecipeVideoDetails() {
               alt="instagram icon"
               width={42}
               height={42}
-              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
             />
           </Link>
           <Link href="https://www.facebook.com/ShahiKingFoods" className="cursor-pointer">
@@ -104,7 +104,7 @@ export default function RecipeVideoDetails() {
               alt="facebook icon"
               width={42}
               height={42}
-              className="w-8 md:w-10.5 h-8 md:h-10.5"
+              className="w-8 md:w-10.5 h-8 md:h-10.5 hover:scale-105 transition-transform duration-500 cursor-pointer"
             />
           </Link>
           <Link href="https://in.pinterest.com/Shahiking_Foods" className="cursor-pointer object-cover">
@@ -113,7 +113,7 @@ export default function RecipeVideoDetails() {
               alt="pinterest icon"
               width={42}
               height={42}
-              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover"
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
             />
           </Link>
         </div>

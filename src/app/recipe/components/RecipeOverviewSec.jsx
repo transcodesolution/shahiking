@@ -21,7 +21,7 @@ export default function RecipeOverviewSec() {
             <div key={index} className="flex flex-col space-y-2">
               <p className="body-md text-black">
                 <span className="font-medium">Author: </span>
-                {item.title}
+                {item.author}
               </p>
               <p className="body-md text-black">
                 <span className="font-medium">Cuisine: </span>

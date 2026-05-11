@@ -1,18 +1,12 @@
 import Link from "next/link";
-
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
-
 import { productsDetail, productsMetadata } from "@/data/ui/productDetail";
-
 import { productsData } from "@/data/ui/categories";
-
 import RelatedProducts from "@/components/product/RelatedProducts";
 import Testimonials from "@/components/common/Testimonials";
 import GetInTouch from "@/components/common/GetInTouch";
-
 import ProductSchema from "../schema";
-
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -22,29 +16,22 @@ export async function generateMetadata({ params }) {
   if (!product) {
     return {
       title: "Product Not Found",
-
       description: "This product does not exist.",
     };
   }
 
   return {
     title: product.metaTitle,
-
     description: product.metaDescription,
-
     alternates: {
       canonical: `https://shahiking.in/product/${product.slug}`,
     },
 
     openGraph: {
       title: product.metaTitle,
-
       description: product.metaDescription,
-
       url: `https://shahiking.in/product/${product.slug}`,
-
       type: "website",
-
       images: [
         {
           url: product.image,
@@ -56,11 +43,8 @@ export async function generateMetadata({ params }) {
 
     twitter: {
       card: "summary_large_image",
-
       title: product.metaTitle,
-
       description: product.metaDescription,
-
       images: [product.image],
     },
   };

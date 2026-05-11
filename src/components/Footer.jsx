@@ -98,7 +98,7 @@ export default function Footer() {
                   About
                 </Link>
                 <Link
-                  href="/recipes"
+                  href="/recipe"
                   className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                 >
                   Recipes
