@@ -23,7 +23,7 @@ export default function ContactForm() {
 
   // Handle input change
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type, checked } = e.target; 
 
     setFormData({
       ...formData,

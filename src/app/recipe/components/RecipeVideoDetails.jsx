@@ -82,7 +82,7 @@ export default function RecipeVideoDetails() {
           {/* Button */}
           <Link href="https://wa.me/c/917435917404" className="cursor-pointer">
             <Image
-              src="/Image/recipe/whatsapp.webp"
+              src="/Image/recipe/whatsapp_icon.webp"
               alt="whatsapp icon"
               width={42}
               height={42}
@@ -100,11 +100,11 @@ export default function RecipeVideoDetails() {
           </Link>
           <Link href="https://www.facebook.com/ShahiKingFoods" className="cursor-pointer">
             <Image
-              src="/Image/recipe/facebook.webp"
+              src="/Image/recipe/facebook_icon.webp"
               alt="facebook icon"
               width={42}
               height={42}
-              className="w-8 md:w-10.5 h-8 md:h-10.5 hover:scale-105 transition-transform duration-500 cursor-pointer"
+              className="w-8 md:w-10.5 h-8 md:h-10.5 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
             />
           </Link>
           <Link href="https://in.pinterest.com/Shahiking_Foods" className="cursor-pointer object-cover">

@@ -10,7 +10,7 @@ export const testimonialData = [
     },
     {
       id: 2,
-      name: "Krish",
+      name: "Krish Patel",
       date: "01/12/2025",
       rating: 5.0,
       img: "/Image/homepage/testimonial_img2.webp",
@@ -42,7 +42,7 @@ export const testimonialData = [
       rating: 5.0,
       img: "/Image/homepage/testimonial_img5.webp",
       review:
-        "I made paneer bhurji using this tofu and it turned out amazing. The taste, texture, and freshness were all top quality. It’s definitely a product worth including in your daily diet. ",
+        "I made paneer bhurji using this tofu and it turned out amazing. The taste, texture, and freshness were all top quality. It's definitely a product worth including in your daily diet. ",
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ export const testimonialData = [
     },
     {
       id: 8,
-      name: "Chandrikaben",
+      name: "Chandrika Ben",
       date: "03/12/2025",
       rating: 5.0,
       img: "/Image/homepage/testimonial_review8.webp",

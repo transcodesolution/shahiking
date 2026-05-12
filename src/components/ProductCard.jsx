@@ -32,7 +32,7 @@ export default function ProductCard({ product }) {
 
         <div className="flex justify-between items-center mt-5">
           {/* Price */}
-          <p className="text-[20px] lg:text-[24px] font-bold text-gray-800">
+          <p className="text-[20px] lg:text-[24px] font-bold text-primary">
             ₹{product?.price}
           </p>
 

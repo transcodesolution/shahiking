@@ -10,7 +10,7 @@ export default function ContactInformation() {
             Contact Information
           </h1>
           <div className="mt-4 flex flex-col space-y-3">
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px]">
                   <Image
@@ -22,11 +22,11 @@ export default function ContactInformation() {
                 </span>
               </div>
               <div>
-                <p className="body-md text-black font-medium">Phone</p>
-                <p className="body-md text-black">+91 74359 17404</p>
+                <p className="body-md text-black font-medium">Email</p>
+                <p className="body-md text-black">info@shahiking.in</p>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px]">
                   <Image
@@ -35,14 +35,14 @@ export default function ContactInformation() {
                     width={24}
                     height={24}
                   />
-                </span>
+                </span> 
               </div>
               <div>
-                <p className="body-md text-black font-medium">Email</p>
-                <p className="body-md text-black">info@shahiking.in</p>
+                <p className="body-md text-black font-medium">Phone</p>
+                <p className="body-md text-black">+91 74359 17404</p>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
                 <span className="text-[24px] w-12.5 flex justify-center items-center">
                   <Image

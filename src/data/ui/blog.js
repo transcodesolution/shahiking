@@ -143,7 +143,7 @@ export const blogContentData = {
       type: "text",
       title: "Final Thoughts",
       content:
-        "Plant-based protein isn’t just a trend — it’s a smarter, cleaner approach to modern nutrition.",
+        "Plant-based protein isn't just a trend — it's a smarter, cleaner approach to modern nutrition.",
       detail:
         "By including high-protein healthy snacks, dry fruits, makhana, and superfoods in your daily routine, you can support muscle growth, improve digestion, and manage weight naturally.",
     },
