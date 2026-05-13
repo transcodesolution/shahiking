@@ -9,17 +9,10 @@ import Recipes from "@/app/(home)/components/Recipes";
 import RelatedProducts from "@/components/product/RelatedProducts";
 import GetInTouch from "@/components/common/GetInTouch";
 
-import RecipeSchema from "../schema";
-
 import { recipeMetadata } from "@/data/ui/recipes";
 
-export async function generateMetadata({
-  params,
-}) {
-
-  const recipe = recipeMetadata.find(
-    (item) => item.id === params.id
-  );
+export async function generateMetadata({ params }) {
+  const recipe = recipeMetadata.find((item) => item.id === params.id);
 
   if (!recipe) {
     return {
@@ -33,25 +26,62 @@ export async function generateMetadata({
     description: recipe.metaDescription,
 
     alternates: {
-      canonical:
-        `https://shahiking.in/recipe/${recipe.slug}`,
+      canonical: `https://shahiking.in/recipe/${recipe.slug}`,
     },
   };
 }
 
 export default function Page({ params }) {
-
-  const recipe = recipeMetadata.find(
-    (item) => item.id === params.id
-  );
+  const recipe = recipeMetadata.find((item) => item.id === params.id);
 
   if (!recipe) {
     return <div>Recipe Not Found</div>;
   }
 
+  const schema = {
+    "@context": "https://schema.org",
+
+    "@type": "Recipe",
+
+    name: recipe.name,
+
+    image: [recipe.image],
+
+    description: recipe.description,
+
+    prepTime: recipe.prepTime,
+
+    cookTime: recipe.cookTime,
+
+    totalTime: recipe.totalTime,
+
+    recipeYield: recipe.recipeYield,
+
+    nutrition: {
+      "@type": "NutritionInformation",
+
+      calories: recipe.calories,
+
+      proteinContent: recipe.protein,
+    },
+
+    recipeIngredient: recipe.ingredients,
+
+    recipeInstructions: recipe.instructions.map((step) => ({
+      "@type": "HowToStep",
+
+      text: step,
+    })),
+  };
+
   return (
     <>
-      <RecipeSchema recipe={recipe} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
 
       <div className="bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

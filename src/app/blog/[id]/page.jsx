@@ -1,18 +1,13 @@
-import BlogContent from '@/components/blogDetail/BlogContent'
-import BlogHero from '@/components/blogDetail/BlogHero'
-import BlogSection from '@/components/blogDetail/BlogSection'
-import { blogContentData, blogDetailData, blogMetadata } from '@/data/ui/blog'
-import React from 'react'
-import GetInTouch from '@/components/common/GetInTouch'
-import BlogFaq from '@/components/blogDetail/BlogFaq'
+import BlogContent from "@/components/blogDetail/BlogContent";
+import BlogHero from "@/components/blogDetail/BlogHero";
+import BlogSection from "@/components/blogDetail/BlogSection";
+import { blogContentData, blogDetailData, blogMetadata } from "@/data/ui/blog";
+import React from "react";
+import GetInTouch from "@/components/common/GetInTouch";
+import BlogFaq from "@/components/blogDetail/BlogFaq";
 
-export async function generateMetadata({
-  params,
-}) {
-
-  const blog = blogMetadata.find(
-    (item) => item.id === params.id
-  );
+export async function generateMetadata({ params }) {
+  const blog = blogMetadata.find((item) => item.id === params.id);
 
   if (!blog) {
     return {
@@ -26,8 +21,7 @@ export async function generateMetadata({
     description: blog.metaDescription,
 
     alternates: {
-      canonical:
-        `https://shahiking.in/blog/${blog.slug}`,
+      canonical: `https://shahiking.in/blog/${blog.slug}`,
     },
 
     openGraph: {
@@ -35,8 +29,7 @@ export async function generateMetadata({
 
       description: blog.metaDescription,
 
-      url:
-        `https://shahiking.in/blog/${blog.slug}`,
+      url: `https://shahiking.in/blog/${blog.slug}`,
 
       type: "article",
 
@@ -61,23 +54,56 @@ export async function generateMetadata({
   };
 }
 
-
-export default function page({params}) {
-
-  const blog = blogMetadata.find(
-    (item) => item.id === params.id
-  );
+export default function page({ params }) {
+  const blog = blogMetadata.find((item) => item.id === params.id);
 
   if (!blog) {
     return <div>Blog Not Found</div>;
   }
+
+  const schema = {
+    "@context": "https://schema.org",
+
+    "@type": "BlogPosting",
+    headline: blog.metaTitle,
+    description: blog.metaDescription,
+    image: [blog.image],
+    datePublished: blog.publishedAt,
+    dateModified: blog.publishedAt,
+
+    author: {
+      "@type": "Organization",
+      name: "Shahiking Team",
+    },
+
+    publisher: {
+      "@type": "Organization",
+
+      name: "Shahiking",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://shahiking.in/logo.webp",
+      },
+    },
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://shahiking.in/blog/${blog.slug}`,
+    },
+  };
   return (
     <div>
-        <BlogHero/>
-        <BlogSection item={blogDetailData[0]}/>
-        <BlogContent item={blogContentData}/>
-        <BlogFaq/>
-        <GetInTouch/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
+      <BlogHero />
+      <BlogSection item={blogDetailData[0]} />
+      <BlogContent item={blogContentData} />
+      <BlogFaq />
+      <GetInTouch />
     </div>
-  )
+  );
 }

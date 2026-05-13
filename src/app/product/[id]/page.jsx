@@ -6,7 +6,6 @@ import { productsData } from "@/data/ui/categories";
 import RelatedProducts from "@/components/product/RelatedProducts";
 import Testimonials from "@/components/common/Testimonials";
 import GetInTouch from "@/components/common/GetInTouch";
-import ProductSchema from "../schema";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -50,7 +49,6 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
 export default async function Page({ params }) {
   const { id } = await params;
 
@@ -75,9 +73,39 @@ export default async function Page({ params }) {
     );
   }
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: [product.image],
+    description: product.metaDescription,
+    brand: {
+      "@type": "Brand",
+      name: "Shahiking",
+    },
+
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: product.price,
+      availability: "https://schema.org/InStock",
+    },
+
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating,
+      bestRating: "5",
+      ratingCount: "50",
+    },
+  };
   return (
     <>
-      <ProductSchema product={productDetail} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
 
       <div className="bg-secondary py-6 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
