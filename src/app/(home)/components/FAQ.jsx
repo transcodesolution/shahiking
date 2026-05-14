@@ -40,7 +40,7 @@ export default function FAQ() {
             <h2 className="display-heading font-semibold text-primary text-center lg:text-start">
               Find the answer to your confusion
             </h2>
-            <p className="body-md text-accent mt-3 text-center lg:text-start pb-4">
+            <p className="body-md text-black mt-3 text-center lg:text-start pb-4">
               Find answers to common questions about our products and brand
             </p>
 

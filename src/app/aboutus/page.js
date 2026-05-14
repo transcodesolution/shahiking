@@ -65,12 +65,9 @@ export default function page() {
       "@id": "https://shahiking.in/aboutus#aboutpage",
 
       url: "https://shahiking.in/aboutus",
-
       name: "About Shahiking",
-
       description:
         "Learn about Shahiking, a trusted healthy food brand offering premium snacks, vegan foods and protein-rich nutrition for modern lifestyles.",
-
       inLanguage: "en",
       isPartOf: {
         "@id": "https://shahiking.in/#website",

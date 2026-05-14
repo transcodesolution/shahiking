@@ -12,7 +12,7 @@ export const productsDetail = [
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
       "/Image/homepage/product_1.webp",
-      "/Image/homepage/product_5.webp",
+      "/Image/productpage/raw_makhana_img4.webp",
       "/Image/productpage/raw_makhana_img1.webp",
       "/Image/productpage/raw_makhana_img2.webp",
     ],
@@ -31,8 +31,8 @@ export const productsDetail = [
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
       "/Image/homepage/product_3.webp",
-      "/Image/productpage/peri_peri_makhana1.webp",
-      "/Image/productpage/peri_peri_makhana2.webp",
+      "/Image/productpage/peri_peri_makhana_img1.webp",
+      "/Image/productpage/peri_peri_makhana_img2.webp",
       "/Image/productpage/peri_peri_makhana3.webp",
     ],
   },
@@ -49,9 +49,9 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/homepage/product_4.webp",
-      "/Image/productpage/himalayan_salt_img1.webp",
-      "/Image/productpage/himalayan_salt_img2.webp",
+      "/Image/productpage/himalayan_salt_4.webp",
+      "/Image/productpage/himalayan_salt_2.webp",
+      "/Image/productpage/himalayan_salt_3.webp",
       "/Image/productpage/himalayan_salt_img3.webp",
     ],
   },

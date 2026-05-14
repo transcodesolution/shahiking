@@ -68,31 +68,21 @@ export default function page() {
 
         contactPoint: {
           "@type": "ContactPoint",
-
           telephone: "+91-7435917404",
-
           contactType: "customer support",
-
           areaServed: "IN",
-
           availableLanguage: ["English", "Hindi"],
         },
       },
 
       {
         "@type": "WebPage",
-
         "@id": "https://shahiking.in/product#webpage",
-
         url: "https://shahiking.in/product",
-
         name: "Healthy Snacks | Buy Plant-Based Foods",
-
         description:
           "Shop healthy snacks, makhana & tofu online. Discover plant-based, protein-rich foods for a clean lifestyle.",
-
         inLanguage: ["en", "hi"],
-
         isPartOf: {
           "@id": "https://shahiking.in/#website",
         },
@@ -100,41 +90,27 @@ export default function page() {
 
       {
         "@type": "ItemList",
-
         name: "Healthy Snacks Products",
-
         url: "https://shahiking.in/product",
-
         numberOfItems: 4,
-
         itemListElement: [
           {
             "@type": "Product",
-
             position: 1,
-
             name: "Premium Raw Makhana",
-
             image:
               "https://shahiking.in/product/makhana1.jpg",
-
             aggregateRating: {
               "@type": "AggregateRating",
-
               ratingValue: "4.8",
-
               bestRating: "5",
-
               ratingCount: "50",
             },
 
             offers: {
               "@type": "Offer",
-
               priceCurrency: "INR",
-
               price: "250",
-
               availability:
                 "https://schema.org/InStock",
             },
@@ -142,31 +118,22 @@ export default function page() {
 
           {
             "@type": "Product",
-
             position: 2,
-
             name: "Peri-Peri Makhana",
-
             image:
               "https://shahiking.in/product/makhana2.jpg",
 
             aggregateRating: {
               "@type": "AggregateRating",
-
               ratingValue: "4.7",
-
               bestRating: "5",
-
               ratingCount: "40",
             },
 
             offers: {
               "@type": "Offer",
-
               priceCurrency: "INR",
-
               price: "134",
-
               availability:
                 "https://schema.org/InStock",
             },
@@ -176,30 +143,23 @@ export default function page() {
 
       {
         "@type": "FAQPage",
-
         "@id": "https://shahiking.in/product#faq",
 
         mainEntity: [
           {
             "@type": "Question",
-
             name: "Are makhana snacks healthy?",
-
             acceptedAnswer: {
               "@type": "Answer",
-
               text: "Yes, makhana is a low calorie and high protein snack rich in antioxidants.",
             },
           },
 
           {
             "@type": "Question",
-
             name: "Is tofu a good protein source?",
-
             acceptedAnswer: {
               "@type": "Answer",
-
               text: "Yes, tofu is an excellent plant-based protein source.",
             },
           },
@@ -208,27 +168,20 @@ export default function page() {
 
       {
         "@type": "BreadcrumbList",
-
         "@id": "https://shahiking.in/product#breadcrumb",
 
         itemListElement: [
           {
             "@type": "ListItem",
-
             position: 1,
-
             name: "Home",
-
             item: "https://shahiking.in/",
           },
 
           {
             "@type": "ListItem",
-
             position: 2,
-
             name: "Products",
-
             item: "https://shahiking.in/product",
           },
         ],
