@@ -7,7 +7,7 @@ import GetInTouch from "@/components/common/GetInTouch";
 import BlogFaq from "@/components/blogDetail/BlogFaq";
 
 export async function generateMetadata({ params }) {
-  const blog = blogMetadata.find((item) => item.id === params.id);
+  const blog = blogMetadata.find((item) => item.id === params.slug);
 
   if (!blog) {
     return {
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function page({ params }) {
-  const blog = blogMetadata.find((item) => item.id === params.id);
+  const blog = blogMetadata.find((item) => item.id === params.slug);
 
   if (!blog) {
     return <div>Blog Not Found</div>;

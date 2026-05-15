@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-center text-left px-4 sm:px-6 lg:px-8 py-10 lg:py-0 z-10 min-h-screen gap-8 lg:gap-12">
         {/* LEFT CONTENT */}
         <div className="w-full max-w-3xl">
-          <h1 className="font-heading text-[28px] sm:text-[34px] md:text-[44px] lg:text-[54px] xl:text-[64px] font-bold text-secondary leading-tight md:leading-snug lg:leading-tight">
+          <h1 className="font-heading text-[28px] sm:text-[34px] md:text-[44px] lg:text-[54px] xl:text-[64px] font-bold text-shadow-md text-shadow-[#000000D9] text-secondary leading-tight md:leading-snug lg:leading-tight">
             Nourishing Modern
             <span className="block">Lifestyles with</span>
             Premium Health Foods

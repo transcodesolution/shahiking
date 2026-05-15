@@ -16,7 +16,7 @@ export default function PriceRangeFilter({
       {/* Header */}
       <button
         onClick={onToggle}
-        className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
+        className="font-semibold mb-2 body-md text-primary flex justify-between items-center w-full cursor-pointer"
       >
         Price
         <span

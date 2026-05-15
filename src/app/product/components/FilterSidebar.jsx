@@ -50,7 +50,7 @@ export default function FilterSidebar({
   return (
     <div className="w-full lg:w-94 h-auto bg-secondary rounded-xl shadow-sm border border-[#C1C1C1]">
       <div className="relative flex justify-between p-4">
-        <h2 className="hidden lg:flex items-center gap-2 font-semibold text-primary cursor-pointer">
+        <h2 className="hidden lg:flex items-center gap-2 body-md font-semibold text-primary cursor-pointer">
           <span>
             <Image
             src="/Image/productpage/filter_icon.webp"
@@ -94,7 +94,7 @@ export default function FilterSidebar({
         />
 
         <button
-          className="text-sm font-semibold text-primary cursor-pointer hover:underline"
+          className="text-[18px] font-semibold text-primary cursor-pointer hover:underline"
           onClick={handleClearAll}
         >
           Clear All
@@ -105,7 +105,7 @@ export default function FilterSidebar({
         {/* Header */}
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
+          className="font-semibold mb-2 body-md text-primary flex justify-between items-center w-full cursor-pointer"
         >
           Categories
           <span
@@ -142,7 +142,7 @@ export default function FilterSidebar({
       <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
-          className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
+          className="font-semibold mb-2 text-primary body-md flex justify-between items-center w-full cursor-pointer"
         >
           Availability
           <span
@@ -187,7 +187,7 @@ export default function FilterSidebar({
       <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
         <button
           onClick={() => setIsQuantityOpen(!isQuantityOpen)}
-          className="font-semibold mb-2 text-primary flex justify-between items-center w-full cursor-pointer"
+          className="font-semibold mb-2 body-md text-primary flex justify-between items-center w-full cursor-pointer"
         >
           Quantity
           <span
