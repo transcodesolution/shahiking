@@ -51,7 +51,7 @@ export default function SearchBar({ className = "", onSearch }) {
         <input
           type="text"
           placeholder="Search"
-          className="px-2 py-2 w-full outline-none text-accent"
+          className="px-2 py-2 w-full outline-none placeholder-text-accent"
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
@@ -67,7 +67,7 @@ export default function SearchBar({ className = "", onSearch }) {
             if (onSearch) onSearch();
             router.push("/product");
           }}
-          className="text-accent text-xl px-3 py-2 cursor-pointer"
+          className="text-black text-xl px-3 py-2 cursor-pointer"
         >
           <BiSearchAlt />
         </button>
