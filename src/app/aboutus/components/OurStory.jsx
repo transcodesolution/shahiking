@@ -59,7 +59,7 @@ export default function OurStory() {
 
         <TimelineSection
           title="Our Vision"
-          description="To become a trusted national brand in the premium healthy food and plant-based nutrition segment, delivering innovation, quality, and value across multiple product categories."
+          description="To become a trusted national brand in the premium healthy food and plant-based nutrition segment, delivering innovation, quality and value across multiple product categories."
         />
       </div>
     </div>

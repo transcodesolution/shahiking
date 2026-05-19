@@ -25,7 +25,7 @@ export default function WhatIsShahiking() {
             />
           </div>
           <div className="max-w-full lg:max-w-115 xl:max-w-145 text-left relative z-50">
-            <h1 className="display-heading text-secondary font-bold mb-3">
+            <h1 className="display-heading text-secondary font-semibold mb-3">
               What Is Shahiking?
             </h1>
             <p className="body-md text-secondary mb-8">

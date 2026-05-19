@@ -25,7 +25,7 @@ export default function BlogSection({ item }) {
             )}
           </div>
           <div>
-            <h1 className="display-heading text-primary font-semibold md:leading:13 xl:leading-14 w-full max-w-150">
+            <h1 className="display-heading text-primary font-bold md:leading:13 xl:leading-14 w-full max-w-150">
               {item?.title}
               <span className="block">{item?.subtitle}</span>
             </h1>

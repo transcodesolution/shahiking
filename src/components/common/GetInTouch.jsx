@@ -18,7 +18,7 @@ export default function GetInTouch() {
 
           {/* Content */}
           <div className="absolute inset-0 flex flex-col justify-center max-w-full lg:max-w-150 xl:max-w-169 mx-auto lg:ml-14 xl:ml-30 px-6 lg:px-0">
-            <h1 className="display-heading font-semibold text-secondary max-w-156.75">
+            <h1 className="display-heading font-semibold text-secondary max-w-169">
               Join the Shahiking Movement
             </h1>
 

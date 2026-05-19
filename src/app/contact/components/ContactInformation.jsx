@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { FiMail, FiPhone } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
 
 export default function ContactInformation() {
   return (
@@ -10,15 +12,10 @@ export default function ContactInformation() {
             Contact Information
           </h1>
           <div className="mt-4 flex flex-col space-y-3">
-            <div className="flex gap-3">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
-                <span className="text-[24px]">
-                  <Image
-                    src="/Image/contactpage/email_icon.webp"
-                    alt="email_icon"
-                    width={24}
-                    height={24}
-                  />
+            <div className="flex gap-3 group cursor-pointer">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
+                <span className="text-[24px] group-hover:text-white transition-colors">
+                  <FiMail />
                 </span>
               </div>
               <div>
@@ -26,15 +23,10 @@ export default function ContactInformation() {
                 <p className="body-md text-black">info@shahiking.in</p>
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
-                <span className="text-[24px]">
-                  <Image
-                    src="/Image/contactpage/mobile_icon.webp"
-                    alt="email_icon"
-                    width={24}
-                    height={24}
-                  />
+            <div className="flex gap-3 group cursor-pointer">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
+                <span className="text-[24px] group-hover:text-white transition-colors">
+                  <FiPhone />
                 </span> 
               </div>
               <div>
@@ -42,15 +34,10 @@ export default function ContactInformation() {
                 <p className="body-md text-black">+91 74359 17404</p>
               </div>
             </div>
-            <div className="flex gap-3">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border border-secondary shadow-sm inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center">
-                <span className="text-[24px] w-12.5 flex justify-center items-center">
-                  <Image
-                    src="/Image/contactpage/location_icon.webp"
-                    alt="location_icon"
-                    width={24}
-                    height={24}
-                  />
+            <div className="flex gap-3 group cursor-pointer">
+              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
+                <span className="text-[24px] group-hover:text-white transition-colors">
+                  <GrLocation />
                 </span>
               </div>
               <div className="max-w-120">
@@ -75,6 +62,4 @@ export default function ContactInformation() {
       </div>
     </div>
   );
-
-  363
 }

@@ -12,7 +12,7 @@ import GetInTouch from "@/components/common/GetInTouch";
 import { recipeMetadata } from "@/data/ui/recipes";
 
 export async function generateMetadata({ params }) {
-  const recipe = recipeMetadata.find((item) => item.id === params.id);
+  const recipe = recipeMetadata.find((item) => item.id === params.slug);
 
   if (!recipe) {
     return {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Page({ params }) {
-  const recipe = recipeMetadata.find((item) => item.id === params.id);
+  const recipe = recipeMetadata.find((item) => item.id === params.slug);
 
   if (!recipe) {
     return <div>Recipe Not Found</div>;

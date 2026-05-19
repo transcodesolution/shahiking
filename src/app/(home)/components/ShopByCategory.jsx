@@ -37,7 +37,7 @@ export default function ShopCategory() {
         </div>
 
         {/* Categories */}
-        <div className="mt-10 overflow-x-auto scrollbar-hide">
+        <div className="mt-5 overflow-x-auto scrollbar-hide">
           <div className="flex justify-center gap-14 md:gap-24 min-w-max px-4">
             {categories.map((item, i) => (
               <div

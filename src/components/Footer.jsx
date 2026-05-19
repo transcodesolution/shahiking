@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
           <div className="col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-10">
             <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-2">
+              <h2 className="body-md text-primary font-semibold font-heading pb-3">
                 Quick Links
               </h2>
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
@@ -119,7 +119,7 @@ export default function Footer() {
             </div>
 
             <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-2">
+              <h2 className="body-md text-primary font-semibold font-heading pb-3">
                 Trust & Safety
               </h2>
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
@@ -151,8 +151,8 @@ export default function Footer() {
             </div>
 
             <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-2">
-                Social
+              <h2 className="body-md text-primary font-semibold font-heading pb-3">
+                Social Media
               </h2>
               <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
                 <a

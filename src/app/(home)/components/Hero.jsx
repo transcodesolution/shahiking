@@ -13,7 +13,7 @@ export default function Hero() {
         className="w-full h-162.5 lg:h-245 object-cover"
       />
       <div className="absolute inset-0 top-30 md:top-37.5 lg:top-60 text-center px-4 md:px-6 lg:px-8">
-        <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-bold text-secondary mx-auto leading:[40px] sm:leading-12.5 lg:leading-18">
+        <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-semibold text-secondary mx-auto leading:[40px] sm:leading-12.5 lg:leading-18">
           Eat Clean. Live Pure.
           <span className="block">Feel Powerful.</span>{" "}
         </h1>

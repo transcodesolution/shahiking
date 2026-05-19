@@ -32,7 +32,7 @@ export default function ProductDropdown({closeMenu}) {
                 aria-controls={`panel-${cat.id}`}
                 id={`tab-${cat.id}`}
                 onClick={() => setActive(cat.id)}
-                className={`relative pb-1 body-sm font-heading flex items-center gap-2 transition cursor-pointer ${
+                className={`relative pb-1 body-sm font-heading font-medium flex items-center gap-2 transition cursor-pointer ${
                   isActive ? "text-black" : "text-accent"
                 }`}
               >
@@ -78,7 +78,7 @@ export default function ProductDropdown({closeMenu}) {
                         />
                       </div>
 
-                      <p className="body-sm mt-3 font-heading">{item.name}</p>
+                      <p className="body-sm mt-3 font-heading font-medium">{item.name}</p>
                     </div>
                   ))}
                 </div>
