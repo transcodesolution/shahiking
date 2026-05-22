@@ -93,7 +93,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-21 left-0 w-full bg-primary border-t border-gray-700 z-50 transform transition-transform duration-500 .3s ease-in-out">
+        <div className="lg:hidden fixed top-21 left-0 w-full bg-primary border-t border-gray-700 z-50 transform transition-all duration-500 ease-in-out">
           <nav className="flex flex-col px-6 py-4 gap-4">
             <Link
               href="/"
@@ -107,7 +107,7 @@ export default function Navbar() {
             <div className="relative z-0 border-b border-secondary py-2">
               <Link href="/product" className="flex items-center gap-1 text-lg">
                 <button
-                  onClick={() => setOpen(!open)}
+                  onClick={() => {setOpen(!open);setMenuOpen(false)}}
                   className="text-secondary flex justify-between items-center w-full text-lg"
                 >
                   Product

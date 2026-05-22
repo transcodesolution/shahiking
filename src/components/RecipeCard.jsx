@@ -21,7 +21,6 @@ export default function RecipeCard({ item }) {
         <div className="flex flex-col flex-1">
           {/* Title */}
           <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-heading font-semibold text-black leading-7">{item.name}<span>{item.name_1}</span></h3>
-
           {/* Description */}
           <p className="text-black mt-3 body-md mb-6">{item.details}</p>
         </div>

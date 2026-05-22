@@ -56,7 +56,6 @@ export default function BlogCard({ item }) {
           </div>
           {/* Title */}
           <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-heading font-semibold text-black leading-5 md:leading-7">{item.title}</h3>
-
           {/* Description */}
           <p className="text-black mt-3 body-md mb-6">{item.description}</p>
         </div>
