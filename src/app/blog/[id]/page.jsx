@@ -17,22 +17,16 @@ export async function generateMetadata({ params }) {
 
   return {
     title: blog.metaTitle,
-
     description: blog.metaDescription,
-
     alternates: {
       canonical: `https://shahiking.in/blog/${blog.slug}`,
     },
 
     openGraph: {
       title: blog.metaTitle,
-
       description: blog.metaDescription,
-
       url: `https://shahiking.in/blog/${blog.slug}`,
-
       type: "article",
-
       images: [
         {
           url: blog.image,
@@ -44,11 +38,8 @@ export async function generateMetadata({ params }) {
 
     twitter: {
       card: "summary_large_image",
-
       title: blog.metaTitle,
-
       description: blog.metaDescription,
-
       images: [blog.image],
     },
   };

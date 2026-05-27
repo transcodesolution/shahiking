@@ -46,13 +46,9 @@ export default function page() {
     "@graph": [
       {
         "@type": "Organization",
-
         "@id": "https://shahiking.in/#organization",
-
         name: "Shahiking",
-
         url: "https://shahiking.in/",
-
         logo:
           "https://shahiking.in/_next/image?url=%2FImage%2Flogo.webp&w=256&q=75",
 

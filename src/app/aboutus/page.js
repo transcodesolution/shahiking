@@ -7,24 +7,18 @@ import GetInTouch from "@/components/common/GetInTouch";
 
 export const metadata = {
   title: "About Shahiking | Premium Healthy Snacks & Vegan Foods",
-
   description:
     "Learn about Shahiking, a trusted healthy food brand offering premium snacks, vegan foods & protein-rich nutrition for modern lifestyles.",
-
   alternates: {
     canonical: "https://shahiking.in/aboutus",
   },
 
   openGraph: {
     title: "About Shahiking | Premium Healthy Snacks & Vegan Foods",
-
     description:
       "Learn about Shahiking, a trusted healthy food brand offering premium snacks, vegan foods & protein-rich nutrition.",
-
     url: "https://shahiking.in/aboutus",
-
     siteName: "Shahiking",
-
     images: [
       {
         url: "https://shahiking.in/Image/logo.webp",
@@ -39,11 +33,8 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "About Shahiking",
-
     description: "Premium healthy snacks & vegan foods.",
-
     images: ["https://shahiking.in/Image/logo.webp"],
   },
 };

@@ -3,22 +3,17 @@ import Hero from "./components/Hero";
 
 export const metadata = {
   title: "Contact Shahiking | Healthy Snacks & Vegan Food Support",
-
   description:
     "Contact Shahiking for healthy snacks, vegan foods, bulk orders, partnerships & customer support.",
-
   alternates: {
     canonical: "https://shahiking.in/contact",
   },
 
   openGraph: {
     title: "Contact Shahiking | Healthy Snacks & Vegan Food Support",
-
     description:
       "Contact Shahiking for healthy snacks, vegan foods, bulk orders & customer support.",
-
     url: "https://shahiking.in/contact",
-
     type: "website",
   },
 };
