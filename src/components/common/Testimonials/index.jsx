@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import { testimonialData } from "@/data/ui/testimonial";
-import AvatarCarousel from "./AvatarCarousel";
 import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonials({bg="bg-secondary"}) {
@@ -30,13 +29,6 @@ export default function Testimonials({bg="bg-secondary"}) {
           Real stories from real people!
         </p>
       </div>
-
-      {/* Avatar Carousel */}
-      <AvatarCarousel
-        data={testimonialData}
-        activeIndex={activeIndex}
-        onClick={(index) => swiperRef.current?.slideToLoop(index)}
-      />
 
       {/* Swiper */}
       <div className="py-6 px-2 md:px-0">
