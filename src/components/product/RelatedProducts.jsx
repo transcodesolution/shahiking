@@ -4,9 +4,13 @@ import ProductCard from "../ProductCard";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export default function RelatedProducts() {
+export default function RelatedProducts({currentSlug}) {
   // Convert object to array
-  const products = [...productsData.nuts];
+   const products = Object.values(productsData).flat();
+
+  const relatedProducts = products
+    .filter((product) => product.slug !== currentSlug)
+    .slice(0, 3);
 
   return (
     <div className="bg-white py-8 relative z-0 overflow-hidden">
@@ -34,17 +38,13 @@ export default function RelatedProducts() {
 
         {/* Products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {products.length > 0 ? (
-            products.map((item, i) => (
-              <ProductCard
-                key={i}
-                product={item}
-                className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col"
-              />
-            ))
-          ) : (
-            <p>No products found</p>
-          )}
+          {relatedProducts.map((product) => (
+            <ProductCard
+              key={product.slug}
+              product={product}
+              className="bg-secondary rounded-[40px] shadow-sm h-114 flex flex-col"
+            />
+          ))}
         </div>
 
         {/* See All */}

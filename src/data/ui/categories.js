@@ -16,6 +16,7 @@ export const productsData = {
     {
       name: "Premium Raw Makhana",
       slug: "premium-raw-makhana",
+      category:"nuts",
       price: "250/-",
       desc: "Light & crunchy healthy snack, perfect for roasting and daily nutrition.",
       img: "/Image/homepage/product_1.webp",
@@ -23,6 +24,7 @@ export const productsData = {
     {
       name: "Peri-Peri Makhana",
       slug: "peri-peri-makhana",
+      category:"nuts",
       price: "134/-",
       desc: "Light & crunchy healthy snack, perfect for roasting and daily nutrition.",
       img: "/Image/homepage/product_3.webp",
@@ -30,6 +32,7 @@ export const productsData = {
     {
       name: "Himalayan Salt Makhana",
       slug: "himalayan-salt-makhana",
+      category:"nuts",
       price: "134/-",
       desc: "Light & crunchy healthy snack, perfect for roasting and daily nutrition",
       img: "/Image/homepage/product_4.webp",
@@ -39,6 +42,7 @@ export const productsData = {
     {
       name: "Pure Bean Fit Tofu",
       slug: "pure-bean-fit-tofu",
+      category:"protein",
       price: "275/-",
       desc: "High-protein tofu - clean plant-based protein for balanced meals.",
       img: "/Image/homepage/product_2.webp",

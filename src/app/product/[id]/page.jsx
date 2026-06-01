@@ -51,7 +51,6 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { id } = await params;
-
   // All products
   const allProducts = Object.values(productsData).flat();
 
@@ -145,7 +144,7 @@ export default async function Page({ params }) {
       </div>
 
       <div className="py-8">
-        <RelatedProducts />
+        <RelatedProducts currentSlug={id}/>
       </div>
 
       <Testimonials />
