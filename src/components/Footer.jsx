@@ -31,10 +31,10 @@ export default function Footer() {
     // Send Auto Reply to User
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // your service ID
-        "YOUR_TEMPLATE_ID", // your template ID
+        "service_433a5yr", // your service ID
+        "template_1e8a3qw", // your template ID
         templateParams,
-        "YOUR_PUBLIC_KEY", // your public key
+        "mrYnEJl1pHHZ6wjmX", // your public key
       )
       .then(() => {
         toast.success("Joined successfully ");

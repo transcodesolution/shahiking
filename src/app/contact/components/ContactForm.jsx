@@ -54,15 +54,15 @@ export default function ContactForm() {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // your service ID
-        "YOUR_TEMPLATE_ID", // your template ID
+        "service_433a5yr", // your service ID
+        "template_4wdubdk", // your template ID
         {
           user_name: formData.name,
           user_email: formData.email,
           user_phone: formData.phone,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY", // your public key
+        "mrYnEJl1pHHZ6wjmX", // your public key
       )
       .then((result) => {
         console.log("SUCCESS:", result);
