@@ -13,17 +13,15 @@ export default function FAQ() {
 
   return (
     <div className="bg-white relative z-0">
-        <Image 
-        src="/Image/homepage/faq_bg.webp" 
-        alt="Faq background" 
-        width={1920}
-        height={1402}
-        className="h-full w-full object-cover absolute inset-0 z-10 overflow-hidden"
-        />
+      <Image
+        src="/Image/homepage/faq_bg.webp"
+        alt="Faq background"
+        fill
+        priority
+        className=" object-cover absolute inset-0 z-10 overflow-hidden"
+      />
       <div className="container mx-auto px-4 lg:px-8 py-8 md:py-0">
-        
         <div className="lg:flex justify-between gap-12 items-center relative z-50 pt-0 md:pt-10">
-
           {/* LEFT IMAGE */}
           <div className="flex justify-center w-full lg:max-w-140">
             <Image
@@ -49,36 +47,42 @@ export default function FAQ() {
               {faq.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-4xl px-4 md:px-8 py-5 drop-shadow-xs border-2 border-secondary transition .35s ease-in drop-shadow-[#0000004D]"
+                  className="bg-white rounded-4xl px-4 md:px-8 py-5 drop-shadow-xs border-2 border-secondary transition-all duration-300 ease-in-out drop-shadow-[#0000004D]"
                 >
                   {/* QUESTION */}
                   <button
-                    className="flex justify-between items-center cursor-pointer w-full"
                     onClick={() => toggleFAQ(index)}
-                    aria-expanded={activeIndex === index}
-                    aria-controls={`faq-${index}`}
+                    className="flex items-center justify-between w-full cursor-pointer"
                   >
                     <h3 className="body-md font-medium text-start">
                       {item.question}
                     </h3>
+
                     <IoIosArrowDown
-                      className={`text-xl transition-transform ${
+                      className={`text-xl transition-transform duration-300 ${
                         activeIndex === index ? "rotate-180" : ""
                       }`}
                     />
                   </button>
 
                   {/* ANSWER */}
-                  {activeIndex === index && (
-                    <p className="body-sm text-accent mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
-                      {item.answer}
-                    </p>
-                  )}
+                  <div
+                    className={`grid transition-all duration-500 ease-in-out ${
+                      activeIndex === index
+                        ? "grid-rows-[1fr] opacity-100 mt-4"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="body-sm text-accent leading-relaxed border-t-2 border-secondary pt-3">
+                        {item.answer}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -4,16 +4,16 @@ import FaqAccordion from "./FaqAccordion";
 
 export default function FAQ() {
   return (
-    <div className="bg-secondary h-full relative z-0 py-10">
+    <div className="bg-secondary relative py-10 overflow-hidden ">
       <Image
         src="/Image/blogpage/faq_bg.webp"
         alt="Faq background"
-        width={1920}
-        height={802}
-        className="h-200 w-full object-cover absolute inset-0 z-10 overflow-hidden"
+        fill
+        priority
+        className="object-cover z-10"
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative z-10">
+        <div>
           <h1 className="display-heading text-primary font-semibold text-center py-2">
             Frequently Asked Questions
           </h1>

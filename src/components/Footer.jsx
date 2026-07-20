@@ -47,186 +47,186 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-primary py-12 md:py-16 relative z-0 h-auto">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="bg-primary py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FCFCFC] relative rounded-2xl md:rounded-[30px] overflow-hidden">
           <Image
             src="/Image/footer_bg.webp"
             alt="Footer Background"
-            width={1720}
-            height={359}
-            className="w-full h-[120vh] sm:h-[115vh] md:h-170 lg:h-90 object-cover"
+            fill
+            priority
+            className="object-cover"
           />
-        </div>
-        {/* Content */}
-        <div className="absolute inset-0 z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-0 gap-x-8 px-10 md:px-22.5 py-7.5 md:py-10 lg:py-15">
-          <div className="w-full lg:max-w-68.75">
-            <Image
-              src="/Image/footer_logo.webp"
-              alt="Footer Logo"
-              width={129}
-              height={78}
-              className="object-contain"
-            />
-            <p className="mt-4 body-md text-primary font-medium">
-              India&apos;s premium plant-based protein destination. We bring
-              royalty to your table without compromising your health.
-            </p>
-          </div>
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-10">
-            <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-3">
-                Quick Links
-              </h2>
-              <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
-                <Link
-                  href="/"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/product"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Product
-                </Link>
-                <Link
-                  href="/aboutus"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  About
-                </Link>
-                <Link
-                  href="/recipe"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Recipes
-                </Link>
-                <Link
-                  href="/blog"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Blog
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Contact Us
-                </Link>
+          {/* Content */}
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-0 gap-x-8 px-10 md:px-22.5 py-7.5 md:py-10 lg:py-15">
+            <div className="w-full lg:max-w-68.75">
+              <Image
+                src="/Image/footer_logo.webp"
+                alt="Footer Logo"
+                width={129}
+                height={78}
+                className="object-contain"
+              />
+              <p className="mt-4 body-md text-primary font-medium">
+                India&apos;s premium plant-based protein destination. We bring
+                royalty to your table without compromising your health.
+              </p>
+            </div>
+            <div className="col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-10">
+              <div className="py-2">
+                <h2 className="body-md text-primary font-semibold font-heading pb-3">
+                  Quick Links
+                </h2>
+                <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
+                  <Link
+                    href="/"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    href="/product"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Product
+                  </Link>
+                  <Link
+                    href="/aboutus"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    About
+                  </Link>
+                  <Link
+                    href="/recipe"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Recipes
+                  </Link>
+                  <Link
+                    href="/blog"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Blog
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+
+              <div className="py-2">
+                <h2 className="body-md text-primary font-semibold font-heading pb-3">
+                  Trust & Safety
+                </h2>
+                <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
+                  <Link
+                    href="/"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Shipping Policy
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Refund & Return
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Terms of Service
+                  </Link>
+                </div>
+              </div>
+
+              <div className="py-2">
+                <h2 className="body-md text-primary font-semibold font-heading pb-3">
+                  Social Media
+                </h2>
+                <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
+                  <a
+                    href="https://www.facebook.com/ShahiKingFoods"
+                    className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                      <FaSquareFacebook />
+                    </span>
+                    Facebook
+                  </a>
+                  <a
+                    href="https://x.com/ShahiKing_Foods"
+                    className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                      <FaSquareXTwitter />
+                    </span>
+                    Twitter
+                  </a>
+                  <a
+                    href="https://www.instagram.com/shahiking_foods"
+                    className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                      <FaSquareInstagram />
+                    </span>
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/shahiking"
+                    className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                      <FaLinkedin />
+                    </span>
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@ShahiKing-Food"
+                    className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    <span className="text-[20px] md:text-[22px] xl:text-[24px]">
+                      <FaSquareYoutube />
+                    </span>
+                    Youtube
+                  </a>
+                </div>
               </div>
             </div>
 
             <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-3">
-                Trust & Safety
+              <h2 className="body-md text-primary font-semibold font-heading pb-2">
+                Newsletter
               </h2>
-              <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
-                <Link
-                  href="/"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Shipping Policy
-                </Link>
-                <Link
-                  href="/"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Refund & Return
-                </Link>
-                <Link
-                  href="/"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Privacy Policy
-                </Link>
-                <Link
-                  href="/"
-                  className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  Terms of Service
-                </Link>
-              </div>
+              <p className="pt-2 text-primary text-[14px] md:text-[18px] font-medium w-full max-w-92.5">
+                Subscribe for loyal recipes and exclusive offers.
+              </p>
+              <form onSubmit={handleJoin}>
+                <div className="bg-[#D9D9D9] rounded-3xl flex justify-between items-center mt-5">
+                  <input
+                    type="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your Email Address."
+                    className="px-4 py-2 w-full outline-none rounded-3xl"
+                  />
+                  {/* join button  */}
+                  <button className="bg-primary text-white px-6 lg:px-4 xl:px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block">
+                    Join
+                  </button>
+                </div>
+              </form>
             </div>
-
-            <div className="py-2">
-              <h2 className="body-md text-primary font-semibold font-heading pb-3">
-                Social Media
-              </h2>
-              <div className="flex flex-col gap-2 text-[14px] md:text-[16px] xl:text-[18px]">
-                <a
-                  href="https://www.facebook.com/ShahiKingFoods"
-                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaSquareFacebook />
-                  </span>
-                  Facebook
-                </a>
-                <a
-                  href="https://x.com/ShahiKing_Foods"
-                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaSquareXTwitter />
-                  </span>
-                  Twitter
-                </a>
-                <a
-                  href="https://www.instagram.com/shahiking_foods"
-                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaSquareInstagram />
-                  </span>
-                  Instagram
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/shahiking"
-                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaLinkedin />
-                  </span>
-                  LinkedIn
-                </a>
-                <a
-                  href="https://www.youtube.com/@ShahiKing-Food"
-                  className="text-primary font-medium flex items-center gap-1 hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
-                >
-                  <span className="text-[20px] md:text-[22px] xl:text-[24px]">
-                    <FaSquareYoutube />
-                  </span>
-                  Youtube
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="py-2">
-            <h2 className="body-md text-primary font-semibold font-heading pb-2">
-              Newsletter
-            </h2>
-            <p className="pt-2 text-primary text-[14px] md:text-[18px] font-medium w-full max-w-92.5">
-              Subscribe for loyal recipes and exclusive offers.
-            </p>
-            <form onSubmit={handleJoin}>
-              <div className="bg-[#D9D9D9] rounded-3xl flex justify-between items-center mt-5">
-                <input
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your Email Address."
-                  className="px-4 py-2 w-full outline-none rounded-3xl"
-                />
-                {/* join button  */}
-                <button className="bg-primary text-white px-6 lg:px-4 xl:px-6 py-1 rounded-3xl mr-1 border border-primary hover:bg-white hover:text-primary duration-500 cursor-pointer inline-block">
-                  Join
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

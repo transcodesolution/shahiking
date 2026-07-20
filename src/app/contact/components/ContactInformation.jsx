@@ -27,24 +27,25 @@ export default function ContactInformation() {
               <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
                 <span className="text-[24px] group-hover:text-white transition-colors">
                   <FiPhone />
-                </span> 
+                </span>
               </div>
               <div>
                 <p className="body-md text-black font-medium">Phone</p>
                 <p className="body-md text-black">+91 74359 17404</p>
               </div>
             </div>
-            <div className="flex gap-3 group cursor-pointer">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
-                <span className="text-[24px] group-hover:text-white transition-colors">
+            <div className="flex items-start gap-3 group cursor-pointer">
+              <div className="shrink-0 h-12 w-12 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
+                <span className="text-2xl group-hover:text-white transition-colors">
                   <GrLocation />
                 </span>
               </div>
-              <div className="max-w-120">
+
+              <div className="flex-1">
                 <p className="body-md text-black font-medium">Location</p>
-                <p className="body-md text-black">
-                  Ambika Pinnacle, 301, beside Lajamni Chowk, Mota
-                  Varachha,Surat, Gujarat 394101
+                <p className="body-md text-black wrap-break-words">
+                  Ambika Pinnacle, 301, beside Lajamni Chowk, Mota Varachha,
+                  Surat, Gujarat 394101
                 </p>
               </div>
             </div>

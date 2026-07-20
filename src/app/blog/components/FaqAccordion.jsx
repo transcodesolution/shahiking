@@ -21,14 +21,13 @@ export default function FaqAccordion() {
           >
             {/* QUESTION */}
             <button
-              className="flex justify-between items-center cursor-pointer w-full"
               onClick={() => toggleFAQ(index)}
-              aria-expanded={activeIndex === index}
-              aria-controls={`faq-${index}`}
+              className="flex items-center justify-between w-full cursor-pointer"
             >
               <h3 className="body-md font-medium text-start">
                 {item.question}
               </h3>
+
               <IoIosArrowDown
                 className={`text-xl transition-transform duration-300 ${
                   activeIndex === index ? "rotate-180" : ""
@@ -37,13 +36,19 @@ export default function FaqAccordion() {
             </button>
 
             {/* ANSWER */}
-            {activeIndex === index && (
-              <div className="mt-4 text-start leading-relaxed border-t-2 border-secondary pt-3">
-                <p className="w-full max-w-120 body-sm text-accent">
+            <div
+              className={`grid transition-all duration-500 ease-in-out ${
+                activeIndex === index
+                  ? "grid-rows-[1fr] opacity-100 mt-4"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <p className="body-sm text-accent leading-relaxed border-t-2 border-secondary pt-3">
                   {item.answer}
                 </p>
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>
