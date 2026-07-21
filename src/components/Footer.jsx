@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-0 gap-x-8 px-10 md:px-22.5 py-7.5 md:py-10 lg:py-15">
             <div className="w-full lg:max-w-68.75">
               <Image
-                src="/Image/footer_logo.webp"
+                src="/Image/footer_logo_brown.webp"
                 alt="Footer Logo"
                 width={129}
                 height={78}

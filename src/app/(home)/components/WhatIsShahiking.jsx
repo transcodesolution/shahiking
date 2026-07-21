@@ -17,7 +17,7 @@ export default function WhatIsShahiking() {
         <div className="block lg:flex justify-center items-center py-8 gap-12 lg:gap-20 xl:gap-37.5">
           <div className="mb-5 lg:mb-0">
             <Image
-              src="/Image/homepage/whatis_main_bg.webp"
+              src="/Image/homepage/whatis_bg.webp"
               alt="what is main bg"
               width={924}
               height={616}

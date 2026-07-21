@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
             >
               <div className="py-4 px-5 border-2 w-full md:max-w-124.5 rounded-[40px] border-secondary shadow-xs shadow-[#0000004D]">
                 <p className="body-md text-black font-medium flex justify-center items-center gap-2">
-                  <span className="text-[#02BC7D]">
+                  <span className="text-[#7C6013]">
                     <SiTicktick />
                   </span>
                   {item.name}
