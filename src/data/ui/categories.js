@@ -14,7 +14,7 @@ export const categories = [
 export const productsData = {
   nuts: [
     {
-      name: "Premium Raw Makhana",
+      name: "Premium Raw Makhana (Foxnuts)",
       slug: "premium-raw-makhana",
       category:"nuts",
       price: "250/-",
@@ -22,7 +22,7 @@ export const productsData = {
       img: "/Image/homepage/product_1.webp",
     },
     {
-      name: "Peri-Peri Makhana",
+      name: "Peri-Peri Makhana (Foxnuts)",
       slug: "peri-peri-makhana",
       category:"nuts",
       price: "134/-",
@@ -30,7 +30,7 @@ export const productsData = {
       img: "/Image/homepage/product_3.webp",
     },
     {
-      name: "Himalayan Salt Makhana",
+      name: "Himalayan Salt Makhana (Foxnuts)",
       slug: "himalayan-salt-makhana",
       category:"nuts",
       price: "134/-",

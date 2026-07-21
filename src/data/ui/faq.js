@@ -2,12 +2,12 @@
     {
       question: "What is Shahiking?",
       answer:
-        "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Flavored Makhana, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living.",
+        "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Flavored Makhana (Foxnuts), Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living.",
     },
     {
       question: "What healthy products can I buy online from Shahiking?",
       answer:
-        "You can buy dry fruits, protein powders, healthy snacks, makhana, and more.",
+        "You can buy dry fruits, protein powders, healthy snacks, makhana(foxnuts), and more.",
     },
     {
       question: "Are Shahiking products natural and preservative-free?",

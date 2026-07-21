@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug:"premium-raw-makhana",
     category:["Makhana","Healthy Snacks"],
     availability: "In Stock", 
@@ -12,7 +12,7 @@ export const products = [
   },
   {
     id: 2,
-    name: "Peri-Peri Makhana",
+    name: "Peri-Peri Makhana (Foxnuts)",
     slug:"peri-peri-makhana",
     category:["Makhana","Healthy Snacks","Flavoured Makhana"],
     availability: "In Stock", 
@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug:"himalayan-salt-makhana",
     category:["Makhana","Healthy Snacks","Flavoured Makhana"],
     availability: "In Stock", 
@@ -56,19 +56,19 @@ export const products = [
     nuts: [
       {
         id: 1,
-        name: "Himalayan Salt Makhana",
+        name: "Himalayan Salt Makhana (Foxnuts)",
         slug:"himalayan-salt-makhana",
         img: "/Image/productpage/product_img3.webp",
       },
       {
         id: 2,
-        name: "Peri-Peri Makhana",
+        name: "Peri-Peri Makhana (Foxnuts)",
         slug:"peri-peri-makhana",
         img: "/Image/productpage/product_img2.webp",
       },
       {
         id: 3,
-        name: "Premium Raw Makhana",
+        name: "Premium Raw Makhana (Foxnuts)",
         slug:"premium-raw-makhana",
         img: "/Image/productpage/product_img1.webp",
       },

@@ -1,8 +1,8 @@
 export const productCategories = [
     { id: 1, name: "Vegan Protein" },
     { id: 2, name: "Healthy Snacks" },
-    { id: 3, name: "Makhana" },
-    { id: 4, name: "Flavoured Makhana" },
+    { id: 3, name: "Makhana (Foxnuts)" },
+    { id: 4, name: "Flavoured Makhana (Foxnuts) " },
     { id: 5, name: "Combo" },
   ];
 

@@ -7,9 +7,9 @@ export const recipeData = [
   },
   {
     id: 2,
-    title: "Roasted Makhana",
+    title: "Roasted Makhana (Foxnuts)",
     video: "https://www.youtube.com/shorts/f7yEv98EGPk",
-    details: "Healthy Makhana in 5 Min, Weight loss snack",
+    details: "Healthy Makhana(Foxnuts) in 5 Min, Weight loss snack",
   },
   {
     id: 3,
@@ -19,9 +19,9 @@ export const recipeData = [
   },
   {
     id: 4,
-    title: "Makhana Tikki",
+    title: "Makhana(Foxnuts) Tikki",
     video: "https://www.youtube.com/shorts/M6VbVQgVnn4",
-    details: "Makhana Tikki for Weight Loss, Crispy & healthy",
+    details: "Makhana(Foxnuts) Tikki for Weight Loss, Crispy & healthy",
   },
   {
     id: 5,
@@ -52,27 +52,27 @@ export const recipeData = [
 export const recipeCardData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     img: "/Image/recipe/recipe_img1.webp",
     details:
-      "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana and Superfood ingredients.",
+      "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana(Foxnuts) and Superfood ingredients.",
   },
 ];
 
 export const recipeDetailsData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     videoData: [
       {
         video: "/Video/makhana_pizza.mp4",
         title: "High-Protein",
-        title_1: "Makhana Pizza Wreath",
+        title_1: "Makhana (Foxnuts) Pizza Wreath",
         time: 40,
         details:
-        "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana and Superfood ingredients.",
+        "A delicious, high-protein plant-based pizza wreath made using Shahiking Flavored Makhana(Foxnuts) and Superfood ingredients.",
       }
     ]
   }
@@ -81,7 +81,7 @@ export const recipeDetailsData = [
 export const recipeOverviewData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     overview: [
       {
@@ -89,7 +89,7 @@ export const recipeOverviewData = [
         cuisine: "Healthy Fusion",
         best_for: "High-Protein Snack / Party Appetizer",
         details:
-          "This healthy pizza wreath combines crispy makhana, plant-based protein, and superfood toppings for a guilt-free indulgence packed with nutrition.",
+          "This healthy pizza wreath combines crispy makhana(foxnuts), plant-based protein, and superfood toppings for a guilt-free indulgence packed with nutrition.",
       },
     ],
   },
@@ -98,14 +98,14 @@ export const recipeOverviewData = [
 export const recipePreparationsData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     preparation: [
       { title: "Step 1", details: "Preheat oven to 180°C." },
       { title: "Step 2", details: "Mix flour and plant-based protein in a bowl." },
       { title: "Step 3", details: "Add olive oil and knead into soft dough." },
       { title: "Step 4", details: "Shape into wreath form." },
-      { title: "Step 5", details: "Top with makhana and dry fruits." },
+      { title: "Step 5", details: "Top with makhana(foxnuts) and dry fruits." },
       { title: "Step 6", details: "Bake for 25-30 minutes." },
       { title: "Step 7", details: "Garnish with superfood seeds and serve warm." },
     ],
@@ -115,10 +115,10 @@ export const recipePreparationsData = [
 export const recipeIngredientsData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     ingredient: [
-      { details: "1 cup Flavored Makhana" },
+      { details: "1 cup Flavored Makhana(Foxnuts)" },
       { details: "½ cup Whole Wheat Flour" },
       { details: "1 scoop Plant-Based Protein" },
       { details: "2 tbsp Mixed Dry Fruits" },
@@ -132,7 +132,7 @@ export const recipeIngredientsData = [
 export const recipeNutritionData = [
   {
     id: 1,
-    name: "High-Protein Makhana Pizza Wreath",
+    name: "High-Protein Makhana (Foxnuts) Pizza Wreath",
     slug: "high-protein-makhana-pizza-wreath",
     nutrition: [
       { name: "Calories", value: "280 kcal" },
@@ -149,14 +149,14 @@ export const recipeMetadata= [
   { 
     slug: "high-protein-makhana-pizza-wreath",
     metaTitle:
-      "High Protein Makhana Pizza Recipe | Healthy Snack",
+      "High Protein Makhana (Foxnuts) Pizza Recipe | Healthy Snack",
     metaDescription:
-      "Make a high-protein makhana pizza wreath with healthy vegan ingredients, superfoods & crispy fox nuts for nutritious guilt-free snacking.",
+      "Make a high-protein makhana(foxnuts) pizza wreath with healthy vegan ingredients, superfoods & crispy fox nuts for nutritious guilt-free snacking.",
     image:
       "https://shahiking.in/recipe/makhana-pizza-wreath.jpg",
     name: "High-Protein Makhana Pizza Wreath",
     description:
-      "A delicious high-protein makhana pizza wreath made with healthy vegan ingredients.",
+      "A delicious high-protein makhana(foxnuts) pizza wreath made with healthy vegan ingredients.",
     prepTime: "PT15M",
     cookTime: "PT25M",
     totalTime: "PT40M",

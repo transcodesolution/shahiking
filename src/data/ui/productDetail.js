@@ -1,13 +1,13 @@
 export const productsDetail = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     price: 250,
     weight_1: "200 g",
     description: "High-Protein Healthy Snack | Premium Quality Superfood",
     details:
-      "ShahiKing Premium Raw Makhana is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
+      "ShahiKing Premium Raw Makhana(Foxnuts) is a high-protein, low-calorie superfood sourced from trusted farms and hygienically packed for freshness.",
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
@@ -19,7 +19,7 @@ export const productsDetail = [
   },
   {
     id: 2,
-    name: "Peri Peri Makhana",
+    name: "Peri Peri Makhana (Foxnuts)",
     slug: "peri-peri-makhana",
     price: 134,
     weight: "55 g",
@@ -38,7 +38,7 @@ export const productsDetail = [
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     price: 134,
     weight: "55 g",
@@ -80,7 +80,7 @@ export const productsDetail = [
 export const nutritionData = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     nutrition: [
       { name: "Energy", value: "347 kcal" },
@@ -94,7 +94,7 @@ export const nutritionData = [
   },
   {
     id: 2,
-    name: "Peri Peri Makhana",
+    name: "Peri Peri Makhana (Foxnuts)",
     slug: "peri-peri-makhana",
     nutrition: [
       { name: "Energy", value: "360 kcal" },
@@ -108,7 +108,7 @@ export const nutritionData = [
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     nutrition: [
       { name: "Energy", value: "340 kcal" },
@@ -143,34 +143,34 @@ export const nutritionData = [
 export const ingredientsData = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     ingredient: [
       {
         detail:
-          "100% Premium Grade Raw Makhana | No added preservatives | No artificial flavors | No additives.",
+          "100% Premium Grade Raw Makhana(Foxnuts) | No added preservatives | No artificial flavors | No additives.",
       },
     ],
   },
   {
     id: 2,
-    name: "Peri Peri Makhana",
+    name: "Peri Peri Makhana (Foxnuts)",
     slug: "peri-peri-makhana",
     ingredient: [
       {
         detail:
-          "Premium Grade Raw Makhana | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
+          "Premium Grade Raw Makhana(Foxnuts) | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
       },
     ],
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     ingredient: [
       {
         detail:
-          "Premium Grade Raw Makhana | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
+          "Premium Grade Raw Makhana(Foxnuts) | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
       },
     ],
   },
@@ -189,7 +189,7 @@ export const ingredientsData = [
 export const benefitData = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     benefit: [
       { detail: "Rich in plant-based protein" },
@@ -202,7 +202,7 @@ export const benefitData = [
   },
   {
     id: 2,
-    name: "Per Peri Makhana",
+    name: "Per Peri Makhana (Foxnuts)",
     slug: "peri-peri-makhana",
     benefit: [
       { detail: "High-protein healthy snack for muscle recovery & fitness" },
@@ -219,7 +219,7 @@ export const benefitData = [
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     benefit: [
       { detail: "Low-calorie healthy snack for weight management" },
@@ -250,7 +250,7 @@ export const benefitData = [
 export const storageData = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     storage: [
       { detail: "Store in a cool, dry place" },
@@ -261,7 +261,7 @@ export const storageData = [
   },
   {
     id: 2,
-    name: "Peri Peri Makhana",
+    name: "Peri Peri Makhana (Foxnuts)",
     slug: "peri-peri-makhana",
     storage: [
       { detail: "Store in a cool, dry place" },
@@ -272,7 +272,7 @@ export const storageData = [
   },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     storage: [
       { detail: "Store in a cool, dry place" },
@@ -298,14 +298,14 @@ export const storageData = [
 export const usageData = [
   {
     id: 1,
-    name: "Premium Raw Makhana",
+    name: "Premium Raw Makhana (Foxnuts)",
     slug: "premium-raw-makhana",
     usage: [],
   },
-  { id: 2, name: "Peri Peri Makhana", slug: "peri-peri-makhana", usage: [] },
+  { id: 2, name: "Peri Peri Makhana (Foxnuts)", slug: "peri-peri-makhana", usage: [] },
   {
     id: 3,
-    name: "Himalayan Salt Makhana",
+    name: "Himalayan Salt Makhana (Foxnuts)",
     slug: "himalayan-salt-makhana",
     usage: [],
   },
