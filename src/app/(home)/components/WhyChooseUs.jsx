@@ -8,32 +8,32 @@ export default function WhyChooseUs() {
   return (
     <div className="bg-white relative z-0">
       <Image
-        src="/Image/homepage/whychoose_bgleft.webp"
+        src="/Image/homepage/whychoose_left.webp"
         alt="why choose bg left"
         width={416.81}
         height={342}
         className="hidden xl:block absolute top-31.75 left-0 h-85.5"
       />
       <Image
-        src="/Image/homepage/whychoose_bgleft1.webp"
+        src="/Image/homepage/why_img_left.webp"
         alt="why choose bg left1"
         width={250.8}
         height={250.8}
-        className="hidden xl:block absolute top-43 left-50"
+        className="hidden xl:block absolute top-43 left-56"
       />
       <Image
-        src="/Image/homepage/whychoose_bgright.webp"
+        src="/Image/homepage/whychoose_right.webp"
         alt="why choose bg right"
         width={416.81}
         height={342}
         className="hidden xl:block absolute top-31.75 right-0 h-85.5"
       />
       <Image
-        src="/Image/homepage/whychoose_bgright1.webp"
+        src="/Image/homepage/why_img_right.webp"
         alt="why choose bg right1"
         width={250.8}
         height={250.8}
-        className="hidden xl:block absolute top-43 right-50"
+        className="hidden xl:block absolute top-43 right-56"
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-15 relative z-10">

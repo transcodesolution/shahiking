@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center relative z-0">
       <Image
-        src="/Image/productpage/hero_bg.webp"
+        src="/Image/productpage/hero_bg_img.webp"
         alt="Hero Background"
         width={1920}
         height={355}
