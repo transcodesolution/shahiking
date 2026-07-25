@@ -39,7 +39,7 @@ export default function GetInTouch() {
         {/* Right Side Image */}
         <div className="hidden lg:block absolute -bottom-42.5 xl:-bottom-58.75 right-10 xl:right-20 transform -translate-y-1/2">
           <Image
-            src="/Image/homepage/getintouch_img.webp"
+            src="/Image/homepage/get_in_img.webp"
             alt="side"
             width={429}
             height={472}

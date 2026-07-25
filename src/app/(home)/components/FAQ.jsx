@@ -25,7 +25,7 @@ export default function FAQ() {
           {/* LEFT IMAGE */}
           <div className="flex justify-center w-full lg:max-w-140">
             <Image
-              src="/Image/homepage/faq_section_bg.webp"
+              src="/Image/homepage/faq_sec_img.webp"
               alt="faq"
               width={572}
               height={772}

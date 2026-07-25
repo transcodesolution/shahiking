@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/Image/aboutpage/about_hero_img.webp"
+        src="/Image/aboutpage/about_hero_bg_img.webp"
         alt="Hero Background"
         fill
         priority

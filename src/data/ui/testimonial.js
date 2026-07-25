@@ -4,7 +4,7 @@ export const testimonialData = [
       name: "Vishal Vadi",
       date: "28/11/2025",
       rating: 4.0,
-      img: "/Image/homepage/testimonial_img1.webp",
+      img: "/Image/homepage/testimonial_men.webp",
       review:
         "It was my first time trying tofu, and honestly it turned out even better than expected. The taste was soft and fresh, especially in sambhar and curry dishes. It’s healthy and I didn’t face any digestion issues either. ",
     },
@@ -13,7 +13,7 @@ export const testimonialData = [
       name: "Krish Patel",
       date: "01/12/2025",
       rating: 5.0,
-      img: "/Image/homepage/testimonial_img2.webp",
+      img: "/Image/homepage/testimonial_men.webp",
       review:
         "Tofu bahut soft aur fresh tha. Paneer karta pan vadhu healthy option lage che. Taste ane quality banne mast che. Definitely again order karis.",
     },
@@ -22,7 +22,7 @@ export const testimonialData = [
       name: "Pravin Bhai",
       date: "01/12/2025",
       rating: 4.5,
-      img: "/Image/homepage/testimonial_img3.webp",
+      img: "/Image/homepage/testimonial_men.webp",
       review:
         "The quality was really impressive. The tofu was fresh and maintained a perfect texture even after frying. It feels like a healthy option and a great product for daily use.",
     },
@@ -31,7 +31,7 @@ export const testimonialData = [
       name: "Vaghela Sneha",
       date: "01/12/2025",
       rating: 4.0,
-      img: "/Image/homepage/testimonial_img4.webp",
+      img: "/Image/homepage/testimonial_women.webp",
       review:
         "Paneer chilli banavyu hatu ane taste bahut amazing aavyo. Tofu perfectly absorb thai gayu ane texture pan mast hatu. Healthy ane tasty combo.",
     },
@@ -40,7 +40,7 @@ export const testimonialData = [
       name: "Kapil Lathiya",
       date: "03/12/2025",
       rating: 5.0,
-      img: "/Image/homepage/testimonial_img5.webp",
+      img: "/Image/homepage/testimonial_men.webp",
       review:
         "I made paneer bhurji using this tofu and it turned out amazing. The taste, texture, and freshness were all top quality. It's definitely a product worth including in your daily diet. ",
     },
@@ -49,7 +49,7 @@ export const testimonialData = [
       name: "Naben Patoliya",
       date: "01/12/2025",
       rating: 4.5,
-      img: "/Image/homepage/testimonial_img6.webp",
+      img: "/Image/homepage/testimonial_women.webp",
       review:
         "It felt like the perfect alternative to paneer. I used it in palak paneer and bhurji, and the taste was amazing. My family loved it too.",
     },
@@ -58,7 +58,7 @@ export const testimonialData = [
       name: "Sonal Ben",
       date: "03/12/2025",
       rating: 4.0,
-      img: "/Image/homepage/testimonial_review7.webp",
+      img: "/Image/homepage/testimonial_women.webp",
       review:
         "Mast paneer recipe ma use karyu ane khub saro result malyo. Freshness ane packing banne perfect hata. Healthy lifestyle mate highly recommended che.",
     },
@@ -67,7 +67,7 @@ export const testimonialData = [
       name: "Chandrika Ben",
       date: "03/12/2025",
       rating: 5.0,
-      img: "/Image/homepage/testimonial_review8.webp",
+      img: "/Image/homepage/testimonial_women.webp",
       review:
         "Paneer tikka banavyu ane family ne bahu pasand aavyu. Tofu soft, tasty ane fresh hatu. Protein mate best option che.",
     },
@@ -76,7 +76,7 @@ export const testimonialData = [
       name: "Chetna Ben",
       date: "03/12/2025",
       rating: 5.0,
-      img: "/Image/homepage/testimonial_review9.webp",
+      img: "/Image/homepage/testimonial_women.webp",
       review:
         "Paneer tikka masala ma use karyu ane honestly normal paneer karta pan better lagyu. Healthy ane light feel thayu. Service pan fast hati.",
     },

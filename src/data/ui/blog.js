@@ -1,7 +1,7 @@
 export const blogCardData = [
   {
     id: 1,
-    img: "/Image/blogpage/blog_img1.webp",
+    img: "/Image/blogpage/blog_1.webp",
     name:"Plant-Based Protein",
     slug:"plant-based-protein",
     title:
@@ -39,7 +39,7 @@ export const blogDetailData = [
     id: 1,
     name:"Plant-Based Protein",
     slug:"plant-based-protein",
-    image: "/Image/blogpage/blog_detail_img1.webp",
+    image: "/Image/blogpage/blog_detail_1.webp",
     title: "Plant-Based Protein:",
     subtitle:
     "The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
