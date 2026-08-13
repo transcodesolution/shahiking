@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   const navClass = (path) =>
-    `body-sm font-medium py-[10px] px-[14px] xl:px-[18px] ${
+    `body-sm font-medium py-[8px] px-[12px] xl:px-[16px] ${
       isActive(path)
         ? "bg-primary text-secondary rounded-3xl"
         : "text-secondary hover:text-white"
@@ -41,7 +41,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-3">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-3">
           <Link href="/" className={`${navClass("/")}`}>
             Home
           </Link>
@@ -63,6 +63,9 @@ export default function Navbar() {
               <ProductDropdown />
             </div>
           </div>
+          <Link href="/export" className={`${navClass("/export")}`}>
+            Export
+          </Link>
           <Link href="/aboutus" className={`${navClass("/aboutus")}`}>
             About
           </Link>
@@ -124,6 +127,14 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            <Link
+              href="/export"
+              onClick={() => setMenuOpen(false)}
+              className="text-secondary text-lg border-b border-secondary py-2"
+            >
+              Export
+            </Link>
 
             <Link
               href="/aboutus"
