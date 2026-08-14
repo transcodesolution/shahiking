@@ -91,6 +91,12 @@ export default function Footer() {
                     Product
                   </Link>
                   <Link
+                    href="/export"
+                    className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
+                  >
+                    Export
+                  </Link>
+                  <Link
                     href="/aboutus"
                     className="text-primary font-medium hover:text-shadow-sm/30 hover:text-shadow-primary transition-transform duration-700 cursor-pointer"
                   >

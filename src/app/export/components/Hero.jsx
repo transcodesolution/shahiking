@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2 mt-8">
-            <button className="text-secondary bg-primary px-1 py-2 rounded-full w-full max-w-59 mb-2 md:mb-0 hover:bg-white hover:text-primary hover:border hover:border-primary duration-500 cursor-pointer">
+            <button className="text-secondary bg-primary px-1 py-2 rounded-full w-full max-w-59 mb-2 md:mb-0 hover:bg-secondary hover:text-primary hover:border hover:border-primary duration-500 cursor-pointer">
               <a
                 href="#"
                 className="text-[16px] font-medium flex justify-center items-center gap-2"
@@ -95,7 +95,7 @@ export default function Hero() {
                 </span>
               </a>
             </button>
-            <button className="bg-secondary text-primary border border-primary px-1 py-2 rounded-full w-full max-w-56 mb-2 md:mb-0 hover:bg-primary hover:text-white duration-500 cursor-pointer">
+            <button className="bg-secondary text-primary border border-primary px-1 py-2 rounded-full w-full max-w-56 mb-2 md:mb-0 hover:bg-primary hover:text-secondary duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Become a Distributor
               </a>
