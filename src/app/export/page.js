@@ -6,6 +6,7 @@ import CustomProductSolution from "./components/CustomProductSolution";
 import GlobalMarkets from "./components/GlobalMarkets";
 import OurExportProcess from "./components/OurExportProcess";
 import GetInTouch from "./components/GetInTouch";
+import GlobalDeliveryPartner from "./components/GlobalDeliveryPartner";
 
 export default function page() {
   
@@ -18,6 +19,7 @@ export default function page() {
        <GlobalMarkets />
        <OurExportProcess />
        <GetInTouch />
+       <GlobalDeliveryPartner />
     </React.Fragment>
   );
 }
