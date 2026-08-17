@@ -26,9 +26,9 @@ export default function GlobalDeliveryPartner() {
                 and businesses worldwide.
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-10 py-6 mt-6 xl:mt-10">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 py-6 mt-6 xl:mt-10">
               <div className="flex flex-col items-center gap-4">
-                <div className="bg-white w-32 h-32 border border-primary rounded-full flex justify-center items-center">
+                <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
                     src="/image/exportpage/fssai_logo.webp"
                     alt="FSSAI"
@@ -40,7 +40,7 @@ export default function GlobalDeliveryPartner() {
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <div className="bg-white w-32 h-32 border border-primary rounded-full flex justify-center items-center">
+                <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
                     src="/image/exportpage/haccp_img.webp"
                     alt="FSSAI"
@@ -52,7 +52,7 @@ export default function GlobalDeliveryPartner() {
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <div className="bg-white w-32 h-32 border border-primary rounded-full flex justify-center items-center">
+                <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
                     src="/image/exportpage/brcgs_logo.webp"
                     alt="FSSAI"
@@ -64,7 +64,7 @@ export default function GlobalDeliveryPartner() {
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <div className="bg-white w-32 h-32 border border-primary rounded-full flex justify-center items-center">
+                <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
                     src="/image/exportpage/apeda_logo.webp"
                     alt="FSSAI"
@@ -76,7 +76,7 @@ export default function GlobalDeliveryPartner() {
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <div className="bg-white w-32 h-32 border border-primary rounded-full flex justify-center items-center">
+                <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
                     src="/image/exportpage/iec_logo.webp"
                     alt="FSSAI"

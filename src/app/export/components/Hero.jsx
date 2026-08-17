@@ -19,7 +19,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto min-h-screen flex items-center px-5 sm:px-8 lg:px-12">
-        <div className="max-w-3xl">
+        <div className="w-full max-w-3xl">
           <div className="max-w-25 mb-1">
             <h6 className="bg-[#7C601333] border border-primary rounded-3xl font-semibold py-1 px-4 text-center">EXPORT</h6>
           </div>
@@ -36,7 +36,7 @@ export default function Hero() {
             proudly manufactured in India and trusted by international buyers.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2 mt-6">
+          <div className="flex flex-wrap gap-1 md:gap-3 pt-2 mt-6">
              <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3 backdrop-blur-sm">
                 <div className="flex justify-center">
                 <Image
@@ -48,7 +48,7 @@ export default function Hero() {
                 </div>
                 <p className="text-[14px] md:text-[18px] font-bold text-[#414844] text-center mt-2 pt-2">PREMIUM QUALITY</p>
              </div>
-             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3 backdrop-blur-sm">
+             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3.5 backdrop-blur-sm">
                 <div className="flex justify-center">
                 <Image
                  src="/Image/exportpage/export_ready_icon.webp"
@@ -83,7 +83,7 @@ export default function Hero() {
              </div>
           </div>
 
-          <div className="flex flex-wrap gap-3 pt-2 mt-8">
+          <div className="flex flex-wrap gap-1 md:gap-3 pt-2 mt-8">
             <button className="text-secondary bg-primary px-1 py-2 rounded-full w-full max-w-59 mb-2 md:mb-0 hover:bg-secondary hover:text-primary hover:border hover:border-primary duration-500 cursor-pointer">
               <a
                 href="#"
