@@ -100,7 +100,7 @@ export default function GlobalDeliveryPartner() {
 
                 <p className="body-md text-primary font-semibold w-full max-w-56 mb-2">Fast & Reliable International Shipping</p>  
 
-                <p className="body-sm w-full  max-w-66 text-[#333333]">Express delivery solutions for international samples, parcels, and commercial shipments.</p>
+                <p className="body-sm w-full max-w-66 text-[#333333]">Express delivery solutions for international samples, parcels, and commercial shipments.</p>
               </div>
               <div>
                 <Image

@@ -16,7 +16,6 @@ export default function OurExportProcess() {
     },
     {
       step: "Step 2",
-      title: "",
       description: "Receive Quotation & Samples",
       icon: FaRegComments,
     },
@@ -72,7 +71,7 @@ export default function OurExportProcess() {
                       transition-all duration-300
                       ${
                         item.active
-                          ? "border-[#8C6913] text-[#8C6913]"
+                          ? "border-primary text-primary"
                           : "border-[#BFC3C0] text-black"
                       }
                     `}
@@ -84,7 +83,7 @@ export default function OurExportProcess() {
                   <div
                     className={`
                       mt-1 body-md font-semibold leading-5
-                      ${item.active ? "text-[#8C6913]" : "text-[#111111]"}
+                      ${item.active ? "text-primary" : "text-[#111111]"}
                     `}
                   >
                     {item.step}
@@ -123,7 +122,7 @@ export default function OurExportProcess() {
                         rounded-full border bg-white
                         ${
                           item.active
-                            ? "border-[#8C6913] text-[#8C6913]"
+                            ? "border-primary text-primary"
                             : "border-[#BFC3C0] text-black"
                         }
                       `}
@@ -136,7 +135,7 @@ export default function OurExportProcess() {
                       <div
                         className={`
                           body-md font-semibold
-                          ${item.active ? "text-[#8C6913]" : "text-[#111111]"}
+                          ${item.active ? "text-primary" : "text-[#111111]"}
                         `}
                       >
                         {item.step}
