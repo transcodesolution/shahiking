@@ -30,7 +30,7 @@ export default function GlobalDeliveryPartner() {
               <div className="flex flex-col items-center gap-4">
                 <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
-                    src="/image/exportpage/fssai_logo.webp"
+                    src="/Image/exportpage/fssai_logo.webp"
                     alt="FSSAI"
                     width={65}
                     height={49}
@@ -42,8 +42,8 @@ export default function GlobalDeliveryPartner() {
               <div className="flex flex-col items-center gap-4">
                 <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
-                    src="/image/exportpage/haccp_img.webp"
-                    alt="FSSAI"
+                    src="/Image/exportpage/haccp_img.webp"
+                    alt="HACCP"
                     width={92}
                     height={92}
                   />
@@ -54,8 +54,8 @@ export default function GlobalDeliveryPartner() {
               <div className="flex flex-col items-center gap-4">
                 <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
-                    src="/image/exportpage/brcgs_logo.webp"
-                    alt="FSSAI"
+                    src="/Image/exportpage/brcgs_logo.webp"
+                    alt="BRCGS"
                     width={110}
                     height={100}
                   />
@@ -66,8 +66,8 @@ export default function GlobalDeliveryPartner() {
               <div className="flex flex-col items-center gap-4">
                 <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
-                    src="/image/exportpage/apeda_logo.webp"
-                    alt="FSSAI"
+                    src="/Image/exportpage/apeda_logo.webp"
+                    alt="APEDA"
                     width={80}
                     height={80}
                   />
@@ -78,8 +78,8 @@ export default function GlobalDeliveryPartner() {
               <div className="flex flex-col items-center gap-4">
                 <div className="bg-white w-26 md:w-32 h-26 md:h-32 border border-primary rounded-full flex justify-center items-center">
                   <Image
-                    src="/image/exportpage/iec_logo.webp"
-                    alt="FSSAI"
+                    src="/Image/exportpage/iec_logo.webp"
+                    alt="IEC"
                     width={65}
                     height={49}
                   />
@@ -92,7 +92,7 @@ export default function GlobalDeliveryPartner() {
             <div className="bg-secondary border border-[#C1C8C2] rounded-[30px] p-8 flex flex-wrap justify-between items-enter ">
                <div>
                  <Image
-                  src="/image/exportpage/fedex_icon.webp"
+                  src="/Image/exportpage/fedex_icon.webp"
                   alt="FedEx"
                   width={180}
                   height={120}
@@ -104,7 +104,7 @@ export default function GlobalDeliveryPartner() {
               </div>
               <div>
                 <Image
-                  src="/image/exportpage/fedex_parcel.webp"
+                  src="/Image/exportpage/fedex_parcel.webp"
                   alt="FedEx"
                   width={355}
                   height={237}
@@ -115,8 +115,8 @@ export default function GlobalDeliveryPartner() {
             <div className="bg-secondary border border-[#C1C8C2] rounded-[30px] p-8 flex flex-wrap justify-between items-enter">
                <div>
                  <Image
-                  src="/image/exportpage/dhl_logo.webp"
-                  alt="FedEx"
+                  src="/Image/exportpage/dhl_logo.webp"
+                  alt="DHL"
                   width={180}
                   height={120}
                   />
@@ -127,8 +127,8 @@ export default function GlobalDeliveryPartner() {
               </div>
               <div>
                 <Image
-                  src="/image/exportpage/dhl_parcel.webp"
-                  alt="FedEx"
+                  src="/Image/exportpage/dhl_parcel.webp"
+                  alt="DHL"
                   width={355}
                   height={237}
                   />

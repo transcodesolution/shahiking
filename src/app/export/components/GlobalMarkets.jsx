@@ -17,18 +17,18 @@ export default function GlobalMarkets() {
   ];
 
   const countries = [
-    { name: "USA", code: "us", image:"/image/exportpage/USA.webp"},
-    { name: "Canada", code: "ca", image:"/image/exportpage/canada.webp" },
-    { name: "United Kingdom", code: "gb" ,image:"/image/exportpage/uk.webp" },
-    { name: "Australia", code: "au",image:"/image/exportpage/australia.webp" },
-    { name: "Germany", code: "de",image:"/image/exportpage/germany.webp" },
-    { name: "France", code: "fr",image:"/image/exportpage/france.webp" },
-    { name: "Netherlands", code: "nl",image:"/image/exportpage/netherland.webp" },
-    { name: "Singapore", code: "sg",image:"/image/exportpage/singapore.webp" },
-    { name: "UAE", code: "ae",image:"/image/exportpage/UAE.webp" },
-    { name: "Saudi Arabia", code: "sa",image:"/image/exportpage/saudi_arabia.webp" },
-    { name: "Malaysia", code: "my",image:"/image/exportpage/malaysia.webp" },
-    { name: "New Zealand", code: "nz",image:"/image/exportpage/new_zealand.webp" },
+    { name: "USA", code: "us", image:"/Image/exportpage/USA.webp"},
+    { name: "Canada", code: "ca", image:"/Image/exportpage/canada.webp" },
+    { name: "United Kingdom", code: "gb" ,image:"/Image/exportpage/uk.webp" },
+    { name: "Australia", code: "au",image:"/Image/exportpage/australia.webp" },
+    { name: "Germany", code: "de",image:"/Image/exportpage/germany.webp" },
+    { name: "France", code: "fr",image:"/Image/exportpage/france.webp" },
+    { name: "Netherlands", code: "nl",image:"/Image/exportpage/netherland.webp" },
+    { name: "Singapore", code: "sg",image:"/Image/exportpage/singapore.webp" },
+    { name: "UAE", code: "ae",image:"/Image/exportpage/UAE.webp" },
+    { name: "Saudi Arabia", code: "sa",image:"/Image/exportpage/saudi_arabia.webp" },
+    { name: "Malaysia", code: "my",image:"/Image/exportpage/malaysia.webp" },
+    { name: "New Zealand", code: "nz",image:"/Image/exportpage/new_zealand.webp" },
   ];
   return (
     <div className="py-6 md:py-8">
