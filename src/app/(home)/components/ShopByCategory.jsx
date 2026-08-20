@@ -81,7 +81,7 @@ export default function ShopCategory() {
         </div>
 
         {/* Products */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
           {products.length > 0 ? (
             products.map((item, i) => (
               <ProductCard
@@ -96,7 +96,7 @@ export default function ShopCategory() {
         </div>
 
         {/* See All */}
-        <div className="text-right mt-6 py-4 flex justify-end">
+        {/* <div className="text-right mt-6 py-4 flex justify-end">
           <Link
             href="/product"
             className="body-sm text-primary font-medium flex items-center gap-2 underline underline-offset-3 group cursor-pointer"
@@ -106,7 +106,7 @@ export default function ShopCategory() {
               <FaArrowRightLong />
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

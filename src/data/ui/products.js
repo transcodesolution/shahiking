@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "Premium Raw Makhana (Foxnuts)",
     slug:"premium-raw-makhana",
-    category:["Makhana","Healthy Snacks"],
+    category:["Makhana (Foxnuts)","Healthy Snacks"],
     availability: "In Stock", 
     quantity: "200g",
     price: 250,
@@ -14,7 +14,7 @@ export const products = [
     id: 2,
     name: "Peri-Peri Makhana (Foxnuts)",
     slug:"peri-peri-makhana",
-    category:["Makhana","Healthy Snacks","Flavoured Makhana"],
+    category:["Makhana (Foxnuts)","Healthy Snacks","Flavoured Makhana (Foxnuts)"],
     availability: "In Stock", 
     quantity: "55g",
     price: 134,
@@ -25,7 +25,7 @@ export const products = [
     id: 3,
     name: "Himalayan Salt Makhana (Foxnuts)",
     slug:"himalayan-salt-makhana",
-    category:["Makhana","Healthy Snacks","Flavoured Makhana"],
+    category:["Makhana (Foxnuts)","Healthy Snacks","Flavoured Makhana (Foxnuts)"],
     availability: "In Stock", 
     quantity: "55g",
     price: 134,
@@ -50,6 +50,7 @@ export const products = [
  export const categoriesData = [
     { id: "nuts", name: "Nuts & Snacks" },
     { id: "protein", name: "Plant-Based Protein" },
+    { id: "spices", name: "Spices" }
   ];
   
   export const productsItem = {
@@ -74,6 +75,14 @@ export const products = [
       },
     ],
     protein: [
+      {
+        id: 1,
+        name: "Pure Bean Fit Tofu",
+        slug:"pure-bean-fit-tofu",
+        img: "/Image/productpage/protein_img1.webp",
+      },
+    ],
+    spices: [
       {
         id: 1,
         name: "Pure Bean Fit Tofu",
