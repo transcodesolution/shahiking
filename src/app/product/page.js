@@ -195,7 +195,7 @@ export default function page() {
       }}
     />
       <Hero />
-      <OurProduct/>
+      <OurProduct />
       <GetInTouch/>     
     </React.Fragment>
   )
