@@ -52,7 +52,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/lemon_taste_seasoning.webp",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/cheddar_cheesy_seasoning.webp",
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/tangy_tomato_seasoning.webp",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/pudina_burst_seasoning.webp",
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/pizza_pasta_seasoning.webp",
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/jain_peri_peri_seasoning.webp",
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/peri_peri_seasoning.webp",
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/garlic_bread_seasoning.webp",
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/tomato_cheese_seasoning.webp",
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/chat_masala.webp",
   },
   {
     id: 15,
@@ -162,8 +162,9 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
-  },{
+    img: "/Image/productpage/chhas_masala.webp",
+  },
+  {
     id: 16,
     name: "Chhole Masala",
     slug:"chhole-masala",
@@ -172,7 +173,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/chhole_masala.webp",
   },
   {
     id: 17,
@@ -183,7 +184,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/garam_masala.webp",
   },
   {
     id: 18,
@@ -194,7 +195,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/kitchen_king_masala.webp",
   },
   {
     id: 19,
@@ -205,7 +206,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/pani_puri_masala.webp",
   },
   {
     id: 20,
@@ -216,7 +217,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/pav_bhaji_masala.webp",
   },
   {
     id: 21,
@@ -227,7 +228,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/punjabi_gravy_masala.webp",
   },
   {
     id: 22,
@@ -238,7 +239,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/sambhar_masala.webp",
   },
   {
     id: 23,
@@ -249,7 +250,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_seasoning.webp",
+    img: "/Image/productpage/shahi_biryani_masala.webp",
   },
   {
     id: 24,
@@ -464,7 +465,7 @@ export const products = [
     id: 43,
     name: "Coriander Cumin ",
     slug:"coriander-cumin",
-    category:"Pure Powdwe Spices",
+    category:"Pure Powder Spices",
     availability: "In Stock", 
     quantity: ["100g"], 
     price: 300,
@@ -475,7 +476,7 @@ export const products = [
     id: 44,
     name: "Kashmiri Chilli",
     slug:"kashmiri-chilli",
-    category:"Pure Powdwe Spices",
+    category:"Pure Powder Spices",
     availability: "In Stock", 
     quantity: ["100g"], 
     price: 300,
@@ -486,7 +487,7 @@ export const products = [
     id: 45,
     name: "Red Chilli",
     slug:"red-chilli",
-    category:"Pure Powdwe Spices",
+    category:"Pure Powder Spices",
     availability: "In Stock", 
     quantity: ["100g"], 
     price: 300,
@@ -497,7 +498,7 @@ export const products = [
     id: 46,
     name: "Spicy Red Chilli",
     slug:"spicy-red-chilli",
-    category:"Pure Powdwe Spices",
+    category:"Pure Powder Spices",
     availability: "In Stock", 
     quantity: ["100g"], 
     price: 300,
@@ -508,7 +509,7 @@ export const products = [
     id: 47,
     name: "Turmeric Powder",
     slug:"turmeric-powder",
-    category:"Pure Powdwe Spices",
+    category:"Pure Powder Spices",
     availability: "In Stock", 
     quantity: ["100g"], 
     price: 300,
@@ -559,7 +560,25 @@ export const products = [
         id: 1,
         name: "Lemon Taste Seasoning",
         slug:"lemon-taste",
-        img: "/Image/productpage/lemon_seasoning.webp",
+        img: "/Image/productpage/lemon_taste_seasoning.webp",
+      },
+      {
+        id: 2,
+        name: "Chaat Masala",
+        slug:"chaat-masala",
+        img: "/Image/productpage/chat_masala.webp",
+      },
+      {
+        id: 3,
+        name: "Black Pepper",
+        slug:"black_pepper",
+        img: "/Image/productpage/black_pepper.webp",
+      },
+      {
+        id: 4,
+        name: "Chilli Flakes",
+        slug:"chilli-flakes",
+        img: "/Image/productpage/chilli_flakes.webp",
       },
     ],
   };

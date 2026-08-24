@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   // Initialize EmailJS (IMPORTANT FIX)
   useEffect(() => {
-    emailjs.init(""); // your public key
+    emailjs.init("mrYnEJl1pHHZ6wjmX"); // your public key
   }, []);
 
   // Handle input change

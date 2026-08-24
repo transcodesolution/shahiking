@@ -7,7 +7,7 @@ export const productCategories = [
     { id: 6, name: "Blended Spices" },
     { id: 7, name: "Whole Spices" },
     { id: 8, name: "Exotic Range" },
-    { id: 9, name: "Pure Powdwe Spices" },
+    { id: 9, name: "Pure Powder Spices" },
     { id: 10, name: "Combo" }
   ];
 
