@@ -24,7 +24,7 @@ export const productsDetail = [
     price: 134,
     weight: "55 g",
     description:
-      "High-Protein Roasted For Nuts | Healthy Peri Peri Snack for Weight Loss & Fitness",
+      "High-Protein Roasted Fox Nuts | Healthy Peri Peri Snack for Weight Loss & Fitness",
     details:
       "Turn your everyday snacking into a bold, healthy experience with Peri Peri Makhana (Roasted Fox Nuts)—a nutrient-dense and  healthy Indian snacks, weight loss snacks, and protein-rich evening snacks.",
     contact_detail:
@@ -211,10 +211,7 @@ export const benefitData = [
       { detail: "Rich in antioxidants that support overall wellness" },
       { detail: "Diabetic-friendly snack option with low glycemic load" },
       { detail: "Supports digestion with natural dietary fiber" },
-      {
-        detail:
-          "Ideal for fasting (vrat), vegan diets & keto-friendly routines",
-      },
+      { detail: "Ideal for fasting (vrat), vegan diets & keto-friendly routines" },
     ],
   },
   {

@@ -2,12 +2,12 @@ export const categories = [
   {
     id: "nuts",
     name: "Nuts & Snacks",
-    img: "/Image/homepage/category_Img1.webp",
+    img: "/Image/homepage/category_nuts.webp",
   },
   {
     id: "protein",
     name: "Plant-Based Protein",
-    img: "/Image/homepage/category_Img2.webp",
+    img: "/Image/homepage/category_protein.webp",
   },
   {
     id: "spices",

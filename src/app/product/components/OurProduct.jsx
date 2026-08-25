@@ -7,6 +7,7 @@ import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
 import { products } from "@/data/ui/products";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import GetInTouch from "@/components/common/GetInTouch";
 
 export default function OurProduct() {
   const [search, setSearch] = useState("");
@@ -36,59 +37,54 @@ export default function OurProduct() {
   };
 
   // FILTER
- const filteredProducts = products.filter((item) => {
-  const searchText = search?.toLowerCase().trim() || "";
+  const filteredProducts = products.filter((item) => {
+    const searchText = search?.toLowerCase().trim() || "";
 
-  // SLUG
-  const matchesSlug = !slug || item.slug === slug;
+    // SLUG
+    const matchesSlug = !slug || item.slug === slug;
 
-  // SEARCH 
-  const matchesSearch =
-    !searchText ||
-    item.name?.toLowerCase().includes(searchText) 
-  //  CATEGORY FILTER
-  const matchesCategory =
-    isChecked.length === 0 ||
-    isChecked.some((cat) => {
-      const value = cat.toLowerCase().trim();
+    // SEARCH
+    const matchesSearch =
+      !searchText || item.name?.toLowerCase().includes(searchText);
+    //  CATEGORY FILTER
+    const matchesCategory =
+      isChecked.length === 0 ||
+      isChecked.some((cat) => {
+        const value = cat.toLowerCase().trim();
 
-      if (Array.isArray(item.category)) {
-        return item.category.some(
-          (c) => c.toLowerCase().trim() === value
-        );
-      }
+        if (Array.isArray(item.category)) {
+          return item.category.some((c) => c.toLowerCase().trim() === value);
+        }
 
-      if (typeof item.category === "string") {
-        return item.category.toLowerCase().trim() === value;
-      }
-      
-      return false;
-    });
+        if (typeof item.category === "string") {
+          return item.category.toLowerCase().trim() === value;
+        }
 
-  //STOCK
-  const matchesStock =
-    !isStock || item.availability === isStock;
+        return false;
+      });
 
-  // QUANTITY
-  const matchesQuantity =
-    !selectedQuantity ||
-    (Array.isArray(item.quantity)
-      ? item.quantity.includes(selectedQuantity)
-      : item.quantity === selectedQuantity);
+    //STOCK
+    const matchesStock = !isStock || item.availability === isStock;
 
-  // PRICE
-  const matchesPrice =
-    item.price >= minVal && item.price <= maxVal;
+    // QUANTITY
+    const matchesQuantity =
+      !selectedQuantity ||
+      (Array.isArray(item.quantity)
+        ? item.quantity.includes(selectedQuantity)
+        : item.quantity === selectedQuantity);
 
-  return (
-    matchesSlug &&
-    matchesSearch &&
-    matchesCategory &&
-    matchesStock &&
-    matchesQuantity &&
-    matchesPrice
-  );
-});
+    // PRICE
+    const matchesPrice = item.price >= minVal && item.price <= maxVal;
+
+    return (
+      matchesSlug &&
+      matchesSearch &&
+      matchesCategory &&
+      matchesStock &&
+      matchesQuantity &&
+      matchesPrice
+    );
+  });
   // PAGINATION
   const itemsPerPage = 12;
 
@@ -103,9 +99,9 @@ export default function OurProduct() {
   );
 
   return (
-    <div className="bg-secondary py-10 md:py-16">
+    <div className="bg-secondary ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-10 py-10 md:py-16">
           <div>
             <FilterSidebar
               isChecked={isChecked}
@@ -146,12 +142,12 @@ export default function OurProduct() {
               <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 p-4 md:p-6 xl:p-8">
                 {currentProducts.map((item) => (
                   <Link key={item.id} href={`/product/${item.slug}`}>
-                  <ProductCard
-                    key={item.id}
-                    item={item}
-                    isWishlisted={wishlist.includes(item.id)}
-                    onWishlistToggle={() => toggleWishlist(item.id)}
-                  />
+                    <ProductCard
+                      key={item.id}
+                      item={item}
+                      isWishlisted={wishlist.includes(item.id)}
+                      onWishlistToggle={() => toggleWishlist(item.id)}
+                    />
                   </Link>
                 ))}
               </div>
@@ -244,6 +240,9 @@ export default function OurProduct() {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <GetInTouch selectedCategories={isChecked} />
         </div>
       </div>
     </div>

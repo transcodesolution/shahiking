@@ -196,7 +196,7 @@ export default function page() {
     />
       <Hero />
       <OurProduct />
-      <GetInTouch/>     
+      {/* <GetInTouch/>      */}
     </React.Fragment>
   )
 }
