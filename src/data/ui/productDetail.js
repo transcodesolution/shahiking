@@ -16,6 +16,36 @@ export const productsDetail = [
       "/Image/productpage/raw_makhana_img1.webp",
       "/Image/productpage/raw_makhana_img2.webp",
     ],
+    nutrition: [
+      { name: "Energy", value: "347 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.1 g" },
+      { name: "Calcium", value: "60 mg" },
+      { name: "Iron", value: "1.4 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "100% Premium Grade Raw Makhana(Foxnuts) | No added preservatives | No artificial flavors | No additives.",
+      },
+    ],
+    benefit: [
+      { detail: "Rich in plant-based protein" },
+      { detail: "Low-calorie healthy snack" },
+      { detail: "Gluten-free & cholesterol-free" },
+      { detail: "High in fiber for digestion support" },
+      { detail: "Ideal for fasting & diet-friendly meals" },
+      { detail: "Suitable for kids, adults & fitness enthusiasts" },
+    ],
+    storage: [
+      { detail: "Store in a cool, dry place" },
+      { detail: "Keep away from direct sunlight" },
+      { detail: "Once opened, store in an airtight container" },
+      { detail: "Consume within recommended period for best freshness" },
+    ],
+    usage: [],
   },
   {
     id: 2,
@@ -35,6 +65,37 @@ export const productsDetail = [
       "/Image/productpage/peri_peri_makhana_img2.webp",
       "/Image/productpage/peri_peri_makhana3.webp",
     ],
+    nutrition: [
+      { name: "Energy", value: "360 kcal" },
+      { name: "Protein", value: "9.5 g" },
+      { name: "Carbohydrates", value: "75 g" },
+      { name: "Dietary Fiber", value: "7.8 g" },
+      { name: "Fat", value: "1.5 g" },
+      { name: "Calcium", value: "65 mg" },
+      { name: "Iron", value: "1.3 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Premium Grade Raw Makhana(Foxnuts) | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
+      },
+    ],
+    benefit: [
+      { detail: "High-protein healthy snack for muscle recovery & fitness" },
+      { detail: "Low-calorie snack for weight loss & calorie-conscious diets" },
+      { detail: "Gluten-free roasted snack—perfect for clean eating" },
+      { detail: "Rich in antioxidants that support overall wellness" },
+      { detail: "Diabetic-friendly snack option with low glycemic load" },
+      { detail: "Supports digestion with natural dietary fiber" },
+      { detail: "Ideal for fasting (vrat), vegan diets & keto-friendly routines" },
+    ],
+    storage: [
+      { detail: "Store in a cool, dry place" },
+      { detail: "Keep away from direct sunlight" },
+      { detail: "Once opened, store in an airtight container" },
+      { detail: "Consume within recommended period for best freshness" },
+    ],
+    usage: [],
   },
   {
     id: 3,
@@ -54,6 +115,37 @@ export const productsDetail = [
       "/Image/productpage/himalayan_salt_3.webp",
       "/Image/productpage/himalayan_salt_5.webp",
     ],
+    nutrition: [
+      { name: "Energy", value: "340 kcal" },
+      { name: "Protein", value: "9.7 g" },
+      { name: "Carbohydrates", value: "76 g" },
+      { name: "Dietary Fiber", value: "7.6 g" },
+      { name: "Fat", value: "0.8 g" },
+      { name: "Calcium", value: "60 mg" },
+      { name: "Iron", value: "1.4 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Premium Grade Raw Makhana(Foxnuts) | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
+      },
+    ],
+    benefit: [
+      { detail: "Low-calorie healthy snack for weight management" },
+      { detail: "High-protein plant-based snack for daily nutrition" },
+      { detail: "High-protein plant-based snack for daily nutrition" },
+      { detail: "Gluten-free & roasted (not fried)" },
+      { detail: "Supports digestion & gut health" },
+      { detail: "Lightly salted—perfect for those avoiding spicy snacks" },
+      { detail: "Suitable for fasting (vrat), vegan & balanced diets" },
+    ],
+    storage: [
+      { detail: "Store in a cool, dry place" },
+      { detail: "Keep away from direct sunlight" },
+      { detail: "Once opened, store in an airtight container" },
+      { detail: "Consume within recommended period for best freshness" },
+    ],
+    usage: [],
   },
   {
     id: 4,
@@ -74,56 +166,6 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-  },
-];
-
-export const nutritionData = [
-  {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug: "premium-raw-makhana",
-    nutrition: [
-      { name: "Energy", value: "347 kcal" },
-      { name: "Protein", value: "9.7 g" },
-      { name: "Carbohydrates", value: "76 g" },
-      { name: "Dietary Fiber", value: "7.6 g" },
-      { name: "Fat", value: "0.1 g" },
-      { name: "Calcium", value: "60 mg" },
-      { name: "Iron", value: "1.4 mg" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Peri Peri Makhana (Foxnuts)",
-    slug: "peri-peri-makhana",
-    nutrition: [
-      { name: "Energy", value: "360 kcal" },
-      { name: "Protein", value: "9.5 g" },
-      { name: "Carbohydrates", value: "75 g" },
-      { name: "Dietary Fiber", value: "7.8 g" },
-      { name: "Fat", value: "1.5 g" },
-      { name: "Calcium", value: "65 mg" },
-      { name: "Iron", value: "1.3 mg" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug: "himalayan-salt-makhana",
-    nutrition: [
-      { name: "Energy", value: "340 kcal" },
-      { name: "Protein", value: "9.7 g" },
-      { name: "Carbohydrates", value: "76 g" },
-      { name: "Dietary Fiber", value: "7.6 g" },
-      { name: "Fat", value: "0.8 g" },
-      { name: "Calcium", value: "60 mg" },
-      { name: "Iron", value: "1.4 mg" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Firm Tofu",
-    slug: "pure-bean-fit-tofu",
     nutrition: [
       { name: "Energy", value: "169 kcal" },
       { name: "Protein", value: "15.04 g" },
@@ -137,101 +179,12 @@ export const nutritionData = [
       { name: "Calcium", value: "38 mg" },
       { name: "Iron", value: "2.4 mg" },
     ],
-  },
-];
-
-export const ingredientsData = [
-  {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug: "premium-raw-makhana",
-    ingredient: [
-      {
-        detail:
-          "100% Premium Grade Raw Makhana(Foxnuts) | No added preservatives | No artificial flavors | No additives.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Peri Peri Makhana (Foxnuts)",
-    slug: "peri-peri-makhana",
-    ingredient: [
-      {
-        detail:
-          "Premium Grade Raw Makhana(Foxnuts) | Peri Peri Seasoning | Olive Oil | Natural Spices | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug: "himalayan-salt-makhana",
-    ingredient: [
-      {
-        detail:
-          "Premium Grade Raw Makhana(Foxnuts) | Himalayan Pink Salt | Olive Oil | No added preservatives | No artificial colors | No artificial flavors | Non-fried & gluten-free",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Firm Tofu",
-    slug: "pure-bean-fit-tofu",
     ingredient: [
       {
         detail:
           "Soybeans ,Water ,Coagulant | No added preservatives | No artificial preservatives. |No added colors.",
       },
     ],
-  },
-];
-export const benefitData = [
-  {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug: "premium-raw-makhana",
-    benefit: [
-      { detail: "Rich in plant-based protein" },
-      { detail: "Low-calorie healthy snack" },
-      { detail: "Gluten-free & cholesterol-free" },
-      { detail: "High in fiber for digestion support" },
-      { detail: "Ideal for fasting & diet-friendly meals" },
-      { detail: "Suitable for kids, adults & fitness enthusiasts" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Per Peri Makhana (Foxnuts)",
-    slug: "peri-peri-makhana",
-    benefit: [
-      { detail: "High-protein healthy snack for muscle recovery & fitness" },
-      { detail: "Low-calorie snack for weight loss & calorie-conscious diets" },
-      { detail: "Gluten-free roasted snack—perfect for clean eating" },
-      { detail: "Rich in antioxidants that support overall wellness" },
-      { detail: "Diabetic-friendly snack option with low glycemic load" },
-      { detail: "Supports digestion with natural dietary fiber" },
-      { detail: "Ideal for fasting (vrat), vegan diets & keto-friendly routines" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug: "himalayan-salt-makhana",
-    benefit: [
-      { detail: "Low-calorie healthy snack for weight management" },
-      { detail: "High-protein plant-based snack for daily nutrition" },
-      { detail: "High-protein plant-based snack for daily nutrition" },
-      { detail: "Gluten-free & roasted (not fried)" },
-      { detail: "Supports digestion & gut health" },
-      { detail: "Lightly salted—perfect for those avoiding spicy snacks" },
-      { detail: "Suitable for fasting (vrat), vegan & balanced diets" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Firm Tofu",
-    slug: "pure-bean-fit-tofu",
     benefit: [
       { detail: "High-protein vegetarian food" },
       { detail: "100% vegan & cholesterol-free" },
@@ -241,47 +194,6 @@ export const benefitData = [
       { detail: "Supports muscle growth & weight management" },
       { detail: "Ideal for gym, fitness & clean eating diets" },
     ],
-  },
-];
-
-export const storageData = [
-  {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug: "premium-raw-makhana",
-    storage: [
-      { detail: "Store in a cool, dry place" },
-      { detail: "Keep away from direct sunlight" },
-      { detail: "Once opened, store in an airtight container" },
-      { detail: "Consume within recommended period for best freshness" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Peri Peri Makhana (Foxnuts)",
-    slug: "peri-peri-makhana",
-    storage: [
-      { detail: "Store in a cool, dry place" },
-      { detail: "Keep away from direct sunlight" },
-      { detail: "Once opened, store in an airtight container" },
-      { detail: "Consume within recommended period for best freshness" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug: "himalayan-salt-makhana",
-    storage: [
-      { detail: "Store in a cool, dry place" },
-      { detail: "Keep away from direct sunlight" },
-      { detail: "Once opened, store in an airtight container" },
-      { detail: "Consume within recommended period for best freshness" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Firm Tofu",
-    slug: "pure-bean-fit-tofu",
     storage: [
       { detail: "Keep refrigerated below 5°C" },
       { detail: "Do not freeze" },
@@ -289,36 +201,55 @@ export const storageData = [
       { detail: "Change water daily" },
       { detail: "Consume within 2 days after opening" },
     ],
-  },
-];
-
-export const usageData = [
-  {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug: "premium-raw-makhana",
-    usage: [],
-  },
-  { id: 2, name: "Peri Peri Makhana (Foxnuts)", slug: "peri-peri-makhana", usage: [] },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug: "himalayan-salt-makhana",
-    usage: [],
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Firm Tofu",
-    slug: "pure-bean-fit-tofu",
     usage: [
       { detail: "🔥 Grilling" },
       { detail: "🥗 Salads" },
       { detail: "🍳 Sauté" },
       { detail: "🍜 Stir Fry" },
-      { detail: " 🥘 Asian & Indian Recipes" },
+      { detail: "🥘 Asian & Indian Recipes" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Lemon Taste",
+    slug: "lemon-taste",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Lemon Taste Seasoning by Shahiking | Zesty Citrus Spice Blend | 100g",
+    details:
+      "Pure Bean Fit Firm Tofu is a premium plant-based protein made from high-quality non-GMO soybeans. With its firm texture and clean taste, it's perfect for grilling, stir-frying, salads, and everyday healthy meals — ideal for vegan, vegetarian, and high-protein diets.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "15 kcal" },
+      { name: "Protein", value: "0.1 g" },
+      { name: "Carbohydrates", value: "3.4 g" },
+      { name: "Sugar", value: "0.5 g" },
+      { name: "Total Fat", value: "0.05 g" },
+      { name: "Saturated Fat", value: "0.01 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.2 g" },
+      { name: "Sodium", value: "620 mg" },
+      { name: "Calcium", value: "4 mg" },
+      { name: "Iron", value: "0.1 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with high-quality whey powder, real lemon powder, mixed spices (including chili and black pepper), salt, sugar, acidity regulator E330, maltodextrin, nature-identical lemon flavouring substances, anti-caking agent (E551), and flavour enhancer (E627). Each ingredient contributes to a balanced profile — tangy citrus brightness from lemon powder, savoury depth from spices, and smooth texture ensured by the anti-caking agent for easy sprinkling.",
+      },
     ],
   },
 ];
+
+
 
 export const productsMetadata = [
   {

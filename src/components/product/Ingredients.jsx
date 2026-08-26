@@ -2,7 +2,7 @@
 import { IoIosArrowDown } from "react-icons/io";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import { ingredientsData } from "@/data/ui/productDetail";
+import { productsDetail } from "@/data/ui/productDetail";
 
 export default function Ingredients() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function Ingredients() {
   const params = useParams();
   const id = params?.id;
 
-  const product = ingredientsData.find((p) => p.slug === id);
+  const product = productsDetail.find((p) => p.slug === id);
   return (
     <div className="mt-4">
       <button

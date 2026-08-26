@@ -72,39 +72,39 @@ export default async function Page({ params }) {
     );
   }
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    image: [product.image],
-    description: product.metaDescription,
-    brand: {
-      "@type": "Brand",
-      name: "Shahiking",
-    },
+  // const schema = {
+  //   "@context": "https://schema.org",
+  //   "@type": "Product",
+  //   name: product.name,
+  //   image: [product.image],
+  //   description: product.metaDescription,
+  //   brand: {
+  //     "@type": "Brand",
+  //     name: "Shahiking",
+  //   },
 
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "INR",
-      price: product.price,
-      availability: "https://schema.org/InStock",
-    },
+  //   offers: {
+  //     "@type": "Offer",
+  //     priceCurrency: "INR",
+  //     price: product.price,
+  //     availability: "https://schema.org/InStock",
+  //   },
 
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: product.rating,
-      bestRating: "5",
-      ratingCount: "50",
-    },
-  };
+  //   aggregateRating: {
+  //     "@type": "AggregateRating",
+  //     ratingValue: product.rating,
+  //     bestRating: "5",
+  //     ratingCount: "50",
+  //   },
+  // };
   return (
     <>
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schema),
         }}
-      />
+      /> */}
 
       <div className="bg-secondary py-6 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,7 +121,7 @@ export default async function Page({ params }) {
               </li>
 
               <li className="flex items-center">
-                <span className="mx-1 body-md">/</span>
+                <span className="mx-1 body-md text-primary">/</span>
 
                 <span className="font-semibold text-primary font-heading body-md">
                   {productName}

@@ -1,6 +1,6 @@
 "use client";
 
-import { nutritionData } from "@/data/ui/productDetail";
+import { productsDetail } from "@/data/ui/productDetail";
 import { useParams } from "next/navigation";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -11,7 +11,7 @@ const NutritionTable = () => {
   const params = useParams();
   const id = params?.id;
 
-  const product = nutritionData.find((p) => p.slug === id);
+  const product = productsDetail.find((p) => p.slug === id);
 
   return (
     <div className="mt-4">

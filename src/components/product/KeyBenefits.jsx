@@ -1,7 +1,7 @@
 "use client";
 import { IoIosArrowDown } from "react-icons/io";
 import React, { useState } from "react";
-import { benefitData } from "@/data/ui/productDetail";
+import { productsDetail } from "@/data/ui/productDetail";
 import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "next/navigation";
 
@@ -11,7 +11,7 @@ export default function KeyBenefits() {
   const params = useParams();
   const id = params?.id;
 
-  const product = benefitData.find((p) => p.slug === id);
+  const product =productsDetail.find((p) => p.slug === id);
   return (
     <div className="mt-4">
       <button
