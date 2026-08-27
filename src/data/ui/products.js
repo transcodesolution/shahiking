@@ -57,7 +57,7 @@ export const products = [
   {
     id: 6,
     name: "Cheddar Cheese",
-    slug:"cheddar-Cheese",
+    slug:"cheddar-cheese",
     category:"Seasoning",
     availability: "In Stock", 
     quantity: ["100g"], 

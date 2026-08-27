@@ -218,7 +218,7 @@ export const productsDetail = [
     description:
       "Lemon Taste Seasoning by Shahiking | Zesty Citrus Spice Blend | 100g",
     details:
-      "Pure Bean Fit Firm Tofu is a premium plant-based protein made from high-quality non-GMO soybeans. With its firm texture and clean taste, it's perfect for grilling, stir-frying, salads, and everyday healthy meals — ideal for vegan, vegetarian, and high-protein diets.",
+      "Shahiking Lemon Taste Seasoning is a versatile 100g citrus and herb blend designed to add a bright, gourmet finish to chicken, seafood, and vegetables.",
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
@@ -245,6 +245,522 @@ export const productsDetail = [
         detail:
           "Made with high-quality whey powder, real lemon powder, mixed spices (including chili and black pepper), salt, sugar, acidity regulator E330, maltodextrin, nature-identical lemon flavouring substances, anti-caking agent (E551), and flavour enhancer (E627). Each ingredient contributes to a balanced profile — tangy citrus brightness from lemon powder, savoury depth from spices, and smooth texture ensured by the anti-caking agent for easy sprinkling.",
       },
+    ],
+    benefit: [
+      { detail: "Perfect for young, creative everyday home cooks" },
+      { detail: "Gives dishes a gourmet, restaurant-style finish" },
+      { detail: "Gently processed to retain natural flavour" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Seafoods and Vegetable dishes." },
+    ],
+  },
+  {
+    id: 6,
+    name: "Cheddar Cheese",
+    slug: "cheddar-cheese",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Cheddar Cheese Seasoning by Shahiking | Rich & Creamy Savoury Cheese Blend | 100g",
+    details:
+      "Shahiking Cheddar Cheese Seasoning (100 gm) is a smooth, savory cheese powder designed to add an instant cheddar flavor to popcorn, fries, pasta, and various snacks.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "22 kcal" },
+      { name: "Protein", value: "0.7 g" },
+      { name: "Carbohydrates", value: "2.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "1.2 g" },
+      { name: "Saturated Fat", value: "0.7 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.1 g" },
+      { name: "Sodium", value: "450 mg" },
+      { name: "Calcium", value: "30 mg" },
+      { name: "Iron", value: "0.1 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with premium cheese powder, salt, sugar, edible vegetable oil (soyabean oil), maltodextrin, acidity regulators (E270, E330), anti-caking agent (E551), flavour enhancers (E627), turmeric powder, and natural identical colour (E102). Carefully formulated to deliver rich, creamy, authentic cheddar flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Restaurant-style cheese flavour at home instantly" },
+      { detail: "Enhances snacks with rich, savoury, addictive taste" },
+      { detail: "Made with premium-quality natural cheese ingredients" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for popcorn, fries, pasta, and snacks." },
+    ],
+  },
+  {
+    id: 7,
+    name: "Tangy Tomato",
+    slug: "tangy-tomato",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Shahiking Tangy Tomato Seasoning – Bold & Zesty Tomato Flavour | 100g",
+    details:
+      "Tangy Tomato Seasoning by Shahiking is a zesty, anti-caking tomato-flavored seasoning blend crafted to add a vibrant, tangy kick to snacks like popcorn, chips, fries, pasta, and makhana.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "22 kcal" },
+      { name: "Protein", value: "0.3 g" },
+      { name: "Carbohydrates", value: "3.8 g" },
+      { name: "Sugar", value: "0.8 g" },
+      { name: "Total Fat", value: "0.4 g" },
+      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.4 g" },
+      { name: "Sodium", value: "540 mg" },
+      { name: "Calcium", value: "8 mg" },
+      { name: "Iron", value: "0.2 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with dried tomato, dried mango, corn starch, ginger, maltodextrin, iodised salt, black salt, sugar, edible oil, acidity regulators (E330, E262), flavour enhancer (E621), anti-caking agent (E551), and natural & nature-identical tomato flavour. Crafted to deliver a bold, tangy tomato profile with balanced spice and freshness.",
+      },
+    ],
+    benefit: [
+      { detail: "Adds instant tangy freshness to any hot dish" },
+      { detail: "Enhances food with vibrant tomato-rich taste" },
+      { detail: "Restaurant-style seasoning crafted for daily cooking" },
+      { detail: "Smooth, anti-caking blend for easy sprinkling" },
+      { detail: "Made from sun-ripened tomato and natural spices" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Popcorn, chips, sandwiches, fries, and daily cooking." },
+    ],
+  },
+  {
+    id: 8,
+    name: "Pudina Burst",
+    slug: "pudina-burst",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Pudina Seasoning 100g | Refreshing Mint Spice Blend | Shahiking Foods",
+    details:
+      "Shahiking Pudina Seasoning is a 100g balanced mint, herb, and spice blend designed to add a refreshing flavor to Indian dishes like chaats, salads, snacks, and raitas.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "13 kcal" },
+      { name: "Protein", value: "0.2 g" },
+      { name: "Carbohydrates", value: "3.0 g" },
+      { name: "Sugar", value: "0.4 g" },
+      { name: "Total Fat", value: "0.05 g" },
+      { name: "Saturated Fat", value: "0.01 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.3 g" },
+      { name: "Sodium", value: "680 mg" },
+      { name: "Calcium", value: "6 mg" },
+      { name: "Iron", value: "0.18 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made using premium pudina powder, salt, sugar, maltodextrin, dried mango powder, acidity regulator (E330), black salt, cumin powder, coriander powder, black pepper, anti-caking agent (E551), and flavour enhancer (E627). Each ingredient is carefully selected to create a cool, minty flavour balanced with tangy, savoury, and mildly spicy notes. The blend ensures smooth sprinkling and consistent taste in every use.",
+      },
+    ],
+    benefit: [
+      { detail: "Refreshing mint flavour for everyday Indian cooking" },
+      { detail: "Instant freshness with every sprinkle added" },
+      { detail: "Smooth texture with anti-caking for easy use" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for sprinkling over chaats, salads, snacks, and raitas" },
+    ],
+  },
+  {
+    id: 9,
+    name: "Pizza & Pasta",
+    slug: "pizza-and-pasta",
+    price: 300,
+    weight: "80 g",
+    description:
+      "Pizza and Pasta Seasoning | Italian Herb Mix by Shahiking | 80g",
+    details:
+      "80 g pack of Premium Pizza & Pasta Seasoning made with herbs and spices for restaurant-style Italian flavor.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "15 kcal" },
+      { name: "Protein", value: "0.4 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.2 g" },
+      { name: "Sodium", value: "420 mg" },
+      { name: "Calcium", value: "22 mg" },
+      { name: "Iron", value: "0.5 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Contains oregano, basil, parsley, garlic, onion, red chilli flakes, and salt — blended for authentic Italian aroma and flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Clean processing with no added artificial colors." },
+      { detail: "Made with High-Quality Herbs & Spices" },
+      { detail: "Restaurant-Style Italian Flavour at Home" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Suitable for cheesy pizzas, creamy pastas, and everyday snacks." },
+    ],
+  },
+  {
+    id: 10,
+    name: "Jain Peri Peri Masala",
+    slug: "jain-peri-peri-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Pizza and Pasta Seasoning | Italian Herb Mix by Shahiking | 80g",
+    details:
+      "80 g pack of Premium Pizza & Pasta Seasoning made with herbs and spices for restaurant-style Italian flavor.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "15 kcal" },
+      { name: "Protein", value: "0.4 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.2 g" },
+      { name: "Sodium", value: "420 mg" },
+      { name: "Calcium", value: "22 mg" },
+      { name: "Iron", value: "0.5 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Contains oregano, basil, parsley, garlic, onion, red chilli flakes, and salt — blended for authentic Italian aroma and flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Clean processing with no added artificial colors." },
+      { detail: "Made with High-Quality Herbs & Spices" },
+      { detail: "Restaurant-Style Italian Flavour at Home" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Suitable for cheesy pizzas, creamy pastas, and everyday snacks." },
+    ],
+  },
+  {
+    id: 11,
+    name: "Peri Peri Masala",
+    slug: "peri-peri-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Shahiking Peri Peri Seasoning – Spicy & Tangy Chilli Herb Blend | 100g",
+    details:
+      " Peri Peri spice blend or seasoning mix designed as a versatile, hot, and tangy sprinkler for foods like fries, pizza, pasta, snacks, marinades, and grills.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "20 kcal" },
+      { name: "Protein", value: "0.3 g" },
+      { name: "Carbohydrates", value: "3.6 g" },
+      { name: "Sugar", value: "0.6 g" },
+      { name: "Total Fat", value: "0.4 g" },
+      { name: "Saturated Fat", value: "0.08 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.9 g" },
+      { name: "Sodium", value: "620 mg" },
+      { name: "Calcium", value: "10 mg" },
+      { name: "Iron", value: "0.4 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with a premium blend of chilli powder, oregano, garlic powder, onion powder, salt, black pepper, basil, sugar, citric acid (INS 330), maltodextrin, anti-caking agent (E551), and flavour enhancers (E627). Each ingredient contributes to the seasoning’s signature heat, tang, and aromatic herb flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Made with premium-quality natural herbs and spices" },
+      { detail: "Enhances everyday meals with hot, tangy flavour" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect as a sprinkler or seasoning for french fries, pizza, pasta, snacks, marinades, grills, and roasted dishes." },
+    ],
+  },
+  {
+    id: 12,
+    name: "Garlic Bread",
+    slug: "garlic-bread",
+    price: 300,
+    weight: "90 g",
+    description:
+      "Shahiking Foods Garlic Bread Seasoning – Rich Garlic Herb Blend | 90g",
+    details:
+      "90g package of a versatile, vegetarian garlic bread seasoning blend featuring a mix of garlic and herbs designed for everyday cooking, snacking, and Italian-style dishes without artificial colors or preservatives.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "21 kcal" },
+      { name: "Protein", value: "0.5 g" },
+      { name: "Carbohydrates", value: "3.5 g" },
+      { name: "Sugar", value: "0.4 g" },
+      { name: "Total Fat", value: "0.7 g" },
+      { name: "Saturated Fat", value: "0.15 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.6 g" },
+      { name: "Sodium", value: "580 mg" },
+      { name: "Calcium", value: "14 mg" },
+      { name: "Iron", value: "0.32 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made from premium garlic, oregano, basil, rosemary, onion powder, red chili flakes and salt. The garlic provides rich savoury depth, while the blended herbs add warmth, aroma, and an authentic Italian-style flavour. Chili flakes contribute gentle heat, and onion powder enhances overall taste. Crafted with natural ingredients for purity, consistency, and aromatic freshness.",
+      },
+    ],
+    benefit: [
+      { detail: "Rich garlic and herb blend for everyday cooking" },
+      { detail: "Enhances everyday meals with hot, tangy flavour" },
+      { detail: "No artificial colors or preservatives included" },
+      { detail: "Enhances dishes with authentic Italian-style flavour" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for garlic bread, pizza, pasta, snacks, toasts, sauces, and marinades." },
+    ],
+  },
+  {
+    id: 13,
+    name: "Tomato Cheese",
+    slug: "tomato-cheese",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Shahiking Tomato Cheese Seasoning – Tangy Tomato & Creamy Cheese Blend | 100g",
+    details:
+      "100g pack of Shahiking Tomato Cheese Seasoning, a savory flavor blend featuring tangy tomato and creamy cheese notes designed for popcorn, pasta, fries, and snacks.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "24 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.1 g" },
+      { name: "Sugar", value: "0.6 g" },
+      { name: "Total Fat", value: "1.1 g" },
+      { name: "Saturated Fat", value: "0.6 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.3 g" },
+      { name: "Sodium", value: "520 mg" },
+      { name: "Calcium", value: "25 mg" },
+      { name: "Iron", value: "0.2 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with tomato powder, cheese powder, salt, sugar, onion powder, garlic powder, mixed spices (chili, turmeric), maltodextrin, acidity regulators (E270, E330), anti-caking agent (E551), and flavour enhancers (E627). Formulated to deliver a perfect balance of tangy tomato sweetness and rich, creamy cheese flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Made with premium natural tomato and cheese ingredients" },
+      { detail: "Delicious balance of sweetness, creaminess, and savouriness" },
+      { detail: "Ideal for sauces, dips, dressings, and snack coatings" },
+      { detail: "Adds instant cheesy-tomato twist to any hot dish" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for popcorn, pasta, fries, and snacks." },
+    ],
+  },
+  {
+    id: 14,
+    name: "Chaat Masala",
+    slug: "chaat-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Chaat Masala by Shahiking – Tangy & Spicy Indian Blend | 100g",
+    details:
+      "Shahiking Chat Masala is a tangy and spicy spice blend featuring a balanced sour, savory, and sharp flavor profile designed to add a refreshing twist to fruits, salads, snacks, chaats, and everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "15 kcal" },
+      { name: "Protein", value: "0.3 g" },
+      { name: "Carbohydrates", value: "3.0 g" },
+      { name: "Sugar", value: "0.5 g" },
+      { name: "Total Fat", value: "0.2 g" },
+      { name: "Saturated Fat", value: "0.04 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.8 g" },
+      { name: "Sodium", value: "900 mg" },
+      { name: "Calcium", value: "10 mg" },
+      { name: "Iron", value: "0.4 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with black salt, rock salt, dried mango powder, cumin, coriander, black pepper, mint leaves, chilli, iodised salt, ginger, citric acid, and compounded asafoetida for strong tangy and spicy flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Pure spices selected for natural aroma and sharpness" },
+      { detail: "Inspired by authentic Indian street-style flavours" },
+      { detail: "Enhances simple foods with bright, energetic taste" },
+      { detail: "Pure spices selected for natural aroma and sharpness" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:" Ideal for sprinkling over fresh fruits, salads, sandwiches, chaats, and quick snacks." },
+    ],
+  },
+  {
+    id: 15,
+    name: "Chhas Masala",
+    slug: "chhas-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Shahiking Chaas Masala | 100g | Refreshing & Tangy Buttermilk Spice Blend",
+    details:
+      "Shahiking Chaas Masala (100 gm) is a pure, natural spice blend containing cumin, mint, and ginger designed to enhance plain buttermilk (chaas) with a tangy, aromatic, and refreshing Indian flavor.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "13 kcal" },
+      { name: "Protein", value: "0.2 g" },
+      { name: "Carbohydrates", value: "2.6 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.15 g" },
+      { name: "Saturated Fat", value: "0.03 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.6 g" },
+      { name: "Sodium", value: "650 mg" },
+      { name: "Calcium", value: "10 mg" },
+      { name: "Iron", value: "0.35 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Made with regular salt, cumin, dried mint, coriander, dry ginger, black pepper, black salt, rock salt, and dry mango for fresh, tangy and aromatic buttermilk flavour.",
+      },
+    ],
+    benefit: [
+      { detail: "Made from fresh, carefully selected natural spices" },
+      { detail: "Enhances simple chaas into soothing cooling drink" },
+      { detail: "Instantly elevates buttermilk with tangy aromatic notes" },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal seasoning for summer beverages, digestion support, and daily refreshment." },
     ],
   },
 ];
