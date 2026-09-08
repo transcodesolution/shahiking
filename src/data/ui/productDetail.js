@@ -763,7 +763,659 @@ export const productsDetail = [
       { detail:"Ideal seasoning for summer beverages, digestion support, and daily refreshment." },
     ],
   },
+  {
+    id: 16,
+    name: "Chhole Masala",
+    slug: "chhole-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Authentic Chhole Masala – Rich, Spicy & Aromatic",
+    details:
+      "Shahiking Chhole Masala is a carefully blended mix of aromatic spices crafted to give your chhole a rich, authentic Indian taste. Perfect for creating flavorful, restaurant-style chhole at home.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "17 kcal" },
+      { name: "Protein", value: "0.5 g" },
+      { name: "Carbohydrates", value: "3.3 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.06 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.9 g" },
+      { name: "Sodium", value: "500 mg" },
+      { name: "Calcium", value: "14 mg" },
+      { name: "Iron", value: "0.44 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander, Cinnamon Leaves, Cumin, Black Pepper, Fennel Seeds, Red Chilli, Iodised Salt, Cassia, Clove Sticks, Big Cardamom, Cardamom, Mace, Star Anise.",
+      },
+    ],
+    benefit: [
+      { detail: "Mixed Masala Powder." },
+      { detail: "Spice content more than 80%." },
+      { detail: "No MSG, No Artificial Colour, Flavours and preservatives." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Punjabi Chole / Chana Masala – the primary use." },
+    ],
+  },
+  {
+    id: 17,
+    name: "Garam Masala",
+    slug: "garam-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Authentic Garam Masala – Aromatic, Rich & Flavorful",
+    details:
+      "Shahiking Garam Masala is a carefully crafted blend of aromatic spices that adds warmth, depth, and a delicious Indian flavor to everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18 kcal" },
+      { name: "Protein", value: "0.7 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "0.6 g" },
+      { name: "Saturated Fat", value: "0.12 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.5 g" },
+      { name: "Sodium", value: "3.5 mg" },
+      { name: "Calcium", value: "20 mg" },
+      { name: "Iron", value: "0.5 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "coriander, cumin, Chilli, bay leaf, black pepper, Cassia Bark, black cardamom, cloves, nutmeg, mace, fennel seeds, star anise, dry ginger, Salt.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds rich, warming spice notes." },
+      { detail: "Made for authentic Indian-style cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for curries, vegetables, dal, pulao, biryani, paneer, and gravies." },
+    ],
+  },
+  {
+    id: 18,
+    name: "Kitchen King Masala",
+    slug: "kitchen-king-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Kitchen King Masala – Rich, Aromatic & Versatile",
+    details:
+      "Shahiking Kitchen King Masala is a flavorful blend of aromatic spices crafted to add rich taste, color, and authentic Indian flavor to everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "16 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "0.25 g" },
+      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.0 g" },
+      { name: "Sodium", value: "350 mg" },
+      { name: "Calcium", value: "15 mg" },
+      { name: "Iron", value: "0.45 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "coriander, cumin, chili, Turmeric, Edible Common Salt, dry ginger, black pepper, Dry fenugreek leaves, Cassia bark, fennel, Garlic, cloves, bay leaf, Black Mustard, Green Cardamom, Black Cardamom, nutmeg .",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a rich, balanced spice flavor." },
+      { detail: "Perfect for everyday Indian cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for vegetable curries, paneer, mixed vegetables, dal, gravies, and masala dishes." },
+    ],
+  },
+  {
+    id: 19,
+    name: "Pav Bhaji Masala",
+    slug: "pav-bhaji-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Pani Puri Masala – Tangy, Spicy & Refreshing",
+    details:
+      "Shahiking Pani Puri Masala is a flavorful blend of spices that adds the perfect tangy, spicy, and refreshing taste to your pani puri and chaat.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "14 kcal" },
+      { name: "Protein", value: "0.3 g" },
+      { name: "Carbohydrates", value: "2.8 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.2 g" },
+      { name: "Saturated Fat", value: "0.04 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.8 g" },
+      { name: "Sodium", value: "720 mg" },
+      { name: "Calcium", value: "9 mg" },
+      { name: "Iron", value: "0.38 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Rock Salt, Dried mango, Cumin, black salt, Common salt, chilli, black pepper, mint leaves(Dried), Citric Acid, dry ginger, tamarind.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a tangy and spicy flavor." },
+      { detail: "Perfect for homemade street-style chaat." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for pani puri, golgappa, sev puri, bhel, chaat, and flavored water." },
+    ],
+  },
+   {
+    id: 20,
+    name: "Pani Puri Masala",
+    slug: "pani-puri-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Pav Bhaji Masala – Spicy, Aromatic & Flavorful",
+    details:
+      "Shahiking Pav Bhaji Masala is a delicious blend of aromatic spices crafted to give your pav bhaji a rich, authentic street-style taste and irresistible aroma.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "14 kcal" },
+      { name: "Protein", value: "0.3 g" },
+      { name: "Carbohydrates", value: "2.8 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.2 g" },
+      { name: "Saturated Fat", value: "0.04 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.8 g" },
+      { name: "Sodium", value: "720 mg" },
+      { name: "Calcium", value: "9 mg" },
+      { name: "Iron", value: "0.38 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander, cumin, chili, dry mango, bay leaf, black pepper, Cassia Bark, cloves, turmeric, star anise, Dry Ginger, fennel, Garlic, black cardamom, Salt, mace.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds rich, balanced spice flavor." },
+      { detail: "Perfect for authentic pav bhaji." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for pav bhaji, vegetable bhaji, masala pav, and other spicy vegetable dishes." },
+    ],
+  },
+  {
+    id: 21,
+    name: "Punjabi Gravy Masala",
+    slug: "punjabi-gravy-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Punjabi Gravy Masala – Rich, Aromatic & Authentic",
+    details:
+      "Shahiking Punjabi Gravy Masala is a flavorful blend of traditional spices crafted to create rich, aromatic, and authentic Punjabi-style gravies.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "20 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.6 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.4 g" },
+      { name: "Saturated Fat", value: "0.07 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.1 g" },
+      { name: "Sodium", value: "460 mg" },
+      { name: "Calcium", value: "14 mg" },
+      { name: "Iron", value: "0.43 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander, Chilli, cumin, turmeric, black pepper, cloves, Cassia Bark, bay leaf, nutmeg, mace, Large cardamom, fenugreek leaves, ginger.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds rich and balanced flavors." },
+      { detail: "Perfect for everyday Punjabi cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for paneer, vegetables, kofta, curry, dal makhani, and rich Punjabi gravies." },
+    ],
+  },
+  {
+    id: 22,
+    name: "Sambhar Masala",
+    slug: "sambhar-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Sambhar Masala – Aromatic, Spicy & Authentic",
+    details:
+      "Shahiking Sambhar Masala is a flavorful blend of traditional spices crafted to give your sambhar a rich, aromatic, and authentic South Indian taste.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.2 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.1 g" },
+      { name: "Sodium", value: "420 mg" },
+      { name: "Calcium", value: "16 mg" },
+      { name: "Iron", value: "0.5 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander, Cinnamon Leaves, Cumin, Black Pepper, Fennel Seeds, Red Chilli, Iodised Salt, Cassia, Clove Sticks, Big Cardamom, Cardamom, Mace, Star Anise.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a rich and balanced spice flavor." },
+      { detail: "Perfect for authentic South Indian cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for sambhar, idli, dosa, vada, and vegetable lentil dishes." },
+    ],
+  },
+  {
+    id: 23,
+    name: "Shahi Biryani Masala",
+    slug: "shahi-biryani-masala",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Shahi Biryani Masala – Rich, Aromatic & Flavorful",
+    details:
+      "Shahiking Shahi Biryani Masala is a fragrant blend of aromatic spices crafted to give your biryani a rich, royal taste and irresistible aroma.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "19 kcal" },
+      { name: "Protein", value: "0.5 g" },
+      { name: "Carbohydrates", value: "3.4 g" },
+      { name: "Sugar", value: "0.3 g" },
+      { name: "Total Fat", value: "0.4 g" },
+      { name: "Saturated Fat", value: "0.07 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.2 g" },
+      { name: "Sodium", value: "380 mg" },
+      { name: "Calcium", value: "18 mg" },
+      { name: "Iron", value: "0.47 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander, cumin, chili, turmeric, black pepper, fenugreek seeds, curry leaves dried, mustard seeds, cinnamon, cloves, Salt, Citric Acid, cardamom, dry ginger.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a rich and balanced spice flavor." },
+      { detail: "Helps create delicious restaurant-style biryani." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for chicken, mutton, vegetable, and paneer biryani." },
+    ],
+  },
+  {
+    id: 38,
+    name: "Chilli Flakes",
+    slug: "chilli-flakes",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Chilli Flakes – Spicy, Crunchy & Flavorful",
+    details:
+      "Shahiking Chilli Flakes are made from quality red chillies, adding a delicious spicy kick, vibrant flavor, and texture to your favorite dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "19 kcal" },
+      { name: "Protein", value: "0.7 g" },
+      { name: "Carbohydrates", value: "3.4 g" },
+      { name: "Sugar", value: "0.4 g" },
+      { name: "Total Fat", value: "0.8 g" },
+      { name: "Saturated Fat", value: "0.14 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.1 g" },
+      { name: "Sodium", value: "4 mg" },
+      { name: "Calcium", value: "17 mg" },
+      { name: "Iron", value: "0.35 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Crushed Red Chilli",
+      },
+    ],
+    benefit: [
+      { detail: "Adds spicy flavor and aroma." },
+      { detail: "Enhances the taste of everyday dishes." },
+      { detail: "Easy to use and versatile." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for pizza, pasta, noodles, sandwiches, soups, salads, and snacks." },
+    ],
+  },
+  {
+    id: 39,
+    name: "Garlic Powder",
+    slug: "garlic-powder",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Garlic Powder – Aromatic, Flavorful & Convenient",
+    details:
+      "Shahiking Garlic Powder is made from quality garlic, offering a rich garlic aroma and savory flavor in a convenient, easy-to-use form.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "16 kcal" },
+      { name: "Protein", value: "0.7 g" },
+      { name: "Carbohydrates", value: "3.6 g" },
+      { name: "Sugar", value: "0.1 g" },
+      { name: "Total Fat", value: "0.02 g" },
+      { name: "Saturated Fat", value: "0.01 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.4 g" },
+      { name: "Sodium", value: "3 mg" },
+      { name: "Calcium", value: "8 mg" },
+      { name: "Iron", value: "0.3 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Dried Garlic",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Convenient alternative to fresh garlic." },
+      { detail: "Perfect for everyday cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for soups, sauces, pasta, noodles, marinades, snacks, curries, and seasoning blends." },
+    ],
+  },
+  {
+    id: 40,
+    name: "Onion Powder",
+    slug: "onion-powder",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Onion Powder – Rich, Savory & Aromatic",
+    details:
+      "Shahiking Onion Powder is made from quality onions, delivering a rich, savory flavor and aroma in a convenient, easy-to-use form.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18 kcal" },
+      { name: "Protein", value: "0.5 g" },
+      { name: "Carbohydrates", value: "4.0 g" },
+      { name: "Sugar", value: "1.0 g" },
+      { name: "Total Fat", value: "0.05 g" },
+      { name: "Saturated Fat", value: "0.01 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.4 g" },
+      { name: "Sodium", value: "2 mg" },
+      { name: "Calcium", value: "9 mg" },
+      { name: "Iron", value: "0.2 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Dried Onion",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Convenient alternative to fresh onions." },
+      { detail: "Easy to blend into various recipes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for soups, sauces, gravies, marinades, snacks, burgers, fries, noodles, and seasoning blends." },
+    ],
+  },
+  {
+    id: 41,
+    name: "Oregano",
+    slug: "oregano",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Oregano – Aromatic, Herbaceous & Flavorful",
+    details:
+      "Shahiking Oregano is a fragrant herb that adds a fresh, earthy aroma and distinctive flavor to a variety of dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "16 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.0 g" },
+      { name: "Sugar", value: "0.1 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.08 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "2.1 g" },
+      { name: "Sodium", value: "2 mg" },
+      { name: "Calcium", value: "75 mg" },
+      { name: "Iron", value: "1.1 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Dried Oregano Leaves",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a delicious herbal flavor." },
+      { detail: "Versatile and easy to use." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for pizza, pasta, sandwiches, soups, salads, sauces, and baked dishes." },
+    ],
+  },
+  {
+    id: 42,
+    name: "Tomato Powder",
+    slug: "tomato-powder",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Tomato Powder – Tangy, Rich & Flavorful",
+    details:
+      "Shahiking Tomato Powder delivers the natural tangy taste and rich aroma of tomatoes in a convenient, easy-to-use form, perfect for enhancing everyday recipes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18 kcal" },
+      { name: "Protein", value: "0.8 g" },
+      { name: "Carbohydrates", value: "3.9 g" },
+      { name: "Sugar", value: "2.4 g" },
+      { name: "Total Fat", value: "0.1 g" },
+      { name: "Saturated Fat", value: "0.02 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "0.9 g" },
+      { name: "Sodium", value: "7 mg" },
+      { name: "Calcium", value: "10 mg" },
+      { name: "Iron", value: "0.3 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Tomato Powder",
+      },
+    ],
+    benefit: [
+      { detail: "Adds rich tomato flavor and aroma." },
+      { detail: "Convenient and easy to blend." },
+      { detail: "Enhances the taste of various dishes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for soups, sauces, gravies, pasta, pizza, noodles, marinades, dips, and seasoning blends." },
+    ],
+  },
 ];
+
+
 
 
 
