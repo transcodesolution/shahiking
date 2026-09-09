@@ -1164,11 +1164,543 @@ export const productsDetail = [
     ],
   },
   {
+    id: 24,
+    name: "Amchur",
+    slug: "amchur",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Amchur – Tangy, Fruity & Flavorful",
+    details:
+      "Shahiking Amchur adds a naturally tangy, fruity flavor to dishes, making it a perfect choice for enhancing the taste of Indian recipes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Dried Raw Mango (Amchur).",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds natural tanginess." },
+      { detail: "Great alternative to lemon or tamarind." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for chaat, chutneys, curries, marinades, dals, vegetables, and spice blends." },
+    ],
+  },
+  {
+    id: 25,
+    name: "Bay Leaves",
+    slug: "bay-leaves",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Bay Leaves – Aromatic, Fragrant & Flavorful",
+    details:
+      "Shahiking Bay Leaves are aromatic whole spices that add a warm, earthy fragrance and rich flavor to a variety of Indian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Bay Leaves.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a warm, earthy flavor." },
+      { detail: "Perfect for slow-cooked dishes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for biryani, pulao, curries, rice dishes, soups, stews, and gravies." },
+    ],
+  },
+  {
+    id: 26,
+    name: "Black Pepper",
+    slug: "black-pepper",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Black Pepper – Bold, Aromatic & Naturally Spicy",
+    details:
+      "Shahiking Black Pepper is a premium whole spice with a bold, warm flavor and distinctive aroma, perfect for adding a spicy touch to everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Black Pepper.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds natural warmth and spice." },
+      { detail: "Versatile for everyday cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for soups, curries, marinades, rice dishes, salads, sauces, and spice blends." },
+    ],
+  },
+  {
+    id: 27,
+    name: "Cigarette Cassia",
+    slug: "cigarette-cassia",
+    price: 300,
+    weight: "60 g",
+    description:
+      "Cigarette Cassia – Aromatic, Warm & Flavorful",
+    details:
+      "Shahiking Cigarette Cassia is a fragrant whole spice that adds a warm, sweet, and woody aroma to Indian and Asian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Cassia Bark.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, sweet-spicy notes." },
+      { detail: "Ideal for rich and aromatic recipes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for biryani, pulao, curries, rice dishes, gravies, tea, and spice blends." },
+    ],
+  },
+  {
+    id: 28,
+    name: "Clove",
+    slug: "clove",
+    price: 300,
+    weight: "60 g",
+    description:
+      "Clove – Aromatic, Warm & Intense",
+    details:
+      "Shahiking Clove is a premium whole spice with a warm, sweet, and distinctive aroma that adds depth and richness to a variety of dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Cloves.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, spicy flavor." },
+      { detail: "Ideal for traditional cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for biryani, pulao, curries, rice dishes, tea, desserts, and spice blends." },
+    ],
+  },
+  {
+    id: 29,
+    name: "Coriander Seeds",
+    slug: "coriander-seeds",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Coriander Seeds – Fresh, Aromatic & Flavorful",
+    details:
+      "Shahiking Coriander Seeds are aromatic whole spices with a mild, citrusy, and earthy flavor, perfect for adding authentic taste to Indian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Coriander Seeds.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds fresh, earthy flavor." },
+      { detail: "Versatile for everyday cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, pickles, chutneys, dals, spice blends, and vegetable dishes." },
+    ],
+  },
+  {
+    id: 30,
+    name: "Cumin Seeds",
+    slug: "cumin-seeds",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Cumin Seeds – Aromatic, Earthy & Flavorful",
+    details:
+      "Shahiking Cumin Seeds are premium whole spices with a warm, earthy aroma and distinctive flavor, perfect for adding authentic taste to Indian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Cumin Seeds.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds fresh, earthy flavor." },
+      { detail: "Perfect for everyday cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for dal, curries, rice dishes, tadka, pickles, vegetables, and spice blends." },
+    ],
+  },
+  {
+    id: 31,
+    name: "Dry Chilli",
+    slug: "dry-chilli",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Dry Chilli – Spicy, Aromatic & Flavorful",
+    details:
+      "Shahiking Dry Chilli is a quality whole spice that adds bold heat, rich color, and a distinctive aroma to a variety of dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Dried Red Chilli.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds spicy flavor and aroma." },
+      { detail: "Versatile for everyday cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, chutneys, pickles, tadka, sauces, marinades, and spice blends." },
+    ],
+  },
+  {
+    id: 32,
+    name: "Dry Ginger",
+    slug: "dry-ginger",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Dry Ginger – Warm, Aromatic & Flavorful",
+    details:
+      "Shahiking Dry Ginger is a quality whole spice with a warm, sharp, and aromatic flavor, perfect for adding depth to traditional recipes and beverages.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Dried Ginger.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, spicy flavor." },
+      { detail: "Versatile for cooking and beverages." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, spice blends, soups, tea, kadha, marinades, and traditional recipes." },
+    ],
+  },
+  {
+    id: 33,
+    name: "Fenugreek Seeds",
+    slug: "fenugreek-seeds",
+    price: 300,
+    weight: "100 g",
+    description:
+      "Fenugreek Seeds – Aromatic, Bitter & Flavorful",
+    details:
+      "Shahiking Fenugreek Seeds are quality whole spices with a distinctive earthy aroma and mildly bitter flavor, adding depth to traditional Indian recipes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Fenugreek Seeds.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds distinctive earthy flavor." },
+      { detail: "Ideal for traditional Indian cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for pickles, curries, dals, spice blends, vegetables, and tadka." },
+    ],
+  },
+  {
+    id: 34,
+    name: "Mustard Seeds",
+    slug: "mustard-seeds",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Mustard Seeds – Pungent, Aromatic & Flavorful",
+    details:
+      "Shahiking Mustard Seeds are quality whole spices with a distinctive pungent aroma and warm, slightly spicy flavor, perfect for enhancing traditional Indian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Mustard Seeds.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds a warm, spicy flavor." },
+      { detail: "Ideal for traditional Indian cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for tadka, curries, pickles, chutneys, vegetables, sauces, and spice blends." },
+    ],
+  },
+  {
+    id: 35,
+    name: "Nutmeg",
+    slug: "nutmeg",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Nutmeg – Warm, Aromatic & Distinctive",
+    details:
+      "Shahiking Nutmeg is a premium whole spice with a warm, sweet, and rich aroma, adding depth and a distinctive flavor to both sweet and savory dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Nutmeg.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, sweet-spicy flavor." },
+      { detail: "Versatile for sweet and savory recipes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for biryani, curries, gravies, desserts, baked dishes, sauces, and beverages." },
+    ],
+  },
+  {
+    id: 36,
+    name: "Split Cassia",
+    slug: "split-cassia",
+    price: 300,
+    weight: "60 g",
+    description:
+      "Split Cassia – Warm, Aromatic & Flavorful",
+    details:
+      "Shahiking Split Cassia is a fragrant whole spice with a warm, sweet, and woody flavor that adds richness and aroma to a variety of dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Cassia Bark.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, sweet-spicy flavor." },
+      { detail: "Ideal for aromatic recipes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for biryani, pulao, curries, rice dishes, gravies, tea, desserts, and spice blends." },
+    ],
+  },
+  {
+    id: 37,
+    name: "Star Anise",
+    slug: "star-anise",
+    price: 300,
+    weight: "50 g",
+    description:
+      "Star Anise – Aromatic, Warm & Distinctive",
+    details:
+      "Shahiking Star Anise is a fragrant whole spice with a naturally sweet, warm, and slightly licorice-like flavor, adding rich aroma to traditional recipes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [],
+    ingredient: [
+      {
+        detail:
+          "100% Star Anise.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds warm, sweet-spicy flavor." },
+      { detail: "Ideal for rich and aromatic dishes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for biryani, pulao, curries, gravies, soups, tea, desserts, and spice blends." },
+    ],
+  },
+  {
     id: 38,
     name: "Chilli Flakes",
     slug: "chilli-flakes",
     price: 300,
-    weight: "100 g",
+    weight: "70 g",
     description:
       "Chilli Flakes – Spicy, Crunchy & Flavorful",
     details:
@@ -1318,7 +1850,7 @@ export const productsDetail = [
     name: "Oregano",
     slug: "oregano",
     price: 300,
-    weight: "100 g",
+    weight: "80 g",
     description:
       "Oregano – Aromatic, Herbaceous & Flavorful",
     details:
@@ -1411,6 +1943,256 @@ export const productsDetail = [
     ],
     usage: [ 
       { detail:"Ideal for soups, sauces, gravies, pasta, pizza, noodles, marinades, dips, and seasoning blends." },
+    ],
+  },
+  {
+    id: 43,
+    name: "Coriander Cumin ",
+    slug: "coriander-cumin",
+    price: 300,
+    weight: "200 g",
+    description:
+      "Coriander Cumin Powder – Aromatic, Flavorful & Authentic",
+    details:
+      "Shahiking Coriander Cumin Powder is a balanced blend of coriander and cumin, adding a rich aroma, earthy flavor, and authentic Indian taste to everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "17 kcal" },
+      { name: "Protein", value: "0.8 g" },
+      { name: "Carbohydrates", value: "2.8 g" },
+      { name: "Sugar", value: "0.1 g" },
+      { name: "Total Fat", value: "0.9 g" },
+      { name: "Saturated Fat", value: "0.07 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "2.1 g" },
+      { name: "Sodium", value: "4 mg" },
+      { name: "Calcium", value: "35 mg" },
+      { name: "Iron", value: "1.2 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "Coriander Seeds, Cumin Seeds.",
+      },
+    ],
+    benefit: [
+      { detail: "Enhances taste and aroma." },
+      { detail: "Adds earthy, warm spice flavor." },
+      { detail: "Perfect for everyday Indian cooking." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for dal, vegetables, curries, kadhi, gravies, chaas, raita, and chutneys." },
+    ],
+  },
+  {
+    id: 44,
+    name: "Kashmiri Chilli",
+    slug: "kashmiri-chilli",
+    price: 300,
+    weight: "200 g",
+    description:
+      "Kashmiri Chilli Powder – Vibrant Color, Mild Heat & Rich Flavor",
+    details:
+      "Shahiking Kashmiri Chilli Powder adds a beautiful natural red color, mild spiciness, and rich aroma to your favorite dishes, making them more appetizing and flavorful.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "17.5 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Sugar", value: "0.4 g" },
+      { name: "Total Fat", value: "0.7 g" },
+      { name: "Saturated Fat", value: "0.13 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.2 g" },
+      { name: "Sodium", value: "3 mg" },
+      { name: "Calcium", value: "18 mg" },
+      { name: "Iron", value: "0.36 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "100% Kashmiri Red Chilli.",
+      },
+    ],
+    benefit: [
+      { detail: "Adds vibrant red color to dishes." },
+      { detail: "Provides mild, balanced heat." },
+      { detail: "Enhances taste and aroma." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, gravies, tandoori dishes, marinades, biryani, soups, and sauces." },
+    ],
+  },
+  {
+    id: 45,
+    name: "Red Chilli",
+    slug: "red-chilli",
+    price: 300,
+    weight: "200 g",
+    description:
+      "Red Chilli Powder – Spicy, Vibrant & Flavorful",
+    details:
+      "Shahiking Red Chilli Powder is made from quality red chillies, adding bold spiciness, rich color, and a delicious aroma to everyday dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18.75 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "2.8 g" },
+      { name: "Sugar", value: "0.515 g" },
+      { name: "Total Fat", value: "0.865 g" },
+      { name: "Saturated Fat", value: "0.165 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.36 g" },
+      { name: "Sodium", value: "1.5 mg" },
+      { name: "Calcium", value: "16.5 mg" },
+      { name: "Iron", value: "0.39 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "100% Red Chilli.",
+      },
+    ],
+    benefit: [
+      { detail: "Adds vibrant color and spicy flavor." },
+      { detail: "Ideal for everyday Indian cooking." },
+      { detail: "Enhances taste and aroma." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Perfect for curries, gravies, dals, marinades, chutneys, soups, and snacks." },
+    ],
+  },
+  {
+    id: 46,
+    name: "Spicy Red Chilli",
+    slug: "spicy-red-chilli",
+    price: 300,
+    weight: "200 g",
+    description:
+      "Spicy Red Chilli Powder – Bold, Hot & Flavorful",
+    details:
+      "Shahiking Spicy Red Chilli Powder is made from quality red chillies, delivering bold heat, vibrant color, and a rich spicy flavor to your favorite dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "18.75 kcal" },
+      { name: "Protein", value: "0.6 g" },
+      { name: "Carbohydrates", value: "2.8 g" },
+      { name: "Sugar", value: "0.515 g" },
+      { name: "Total Fat", value: "0.865 g" },
+      { name: "Saturated Fat", value: "0.165 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.36 g" },
+      { name: "Sodium", value: "1.5 mg" },
+      { name: "Calcium", value: "16.5 mg" },
+      { name: "Iron", value: "0.39 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "100% Red Chilli.",
+      },
+    ],
+    benefit: [
+      { detail: "Adds bold and spicy flavor." },
+      { detail: "Enhances taste and aroma." },
+      { detail: "Perfect for spicy Indian recipes." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, gravies, chutneys, marinades, snacks, noodles, sauces, and spicy dishes." },
+    ],
+  },
+  {
+    id: 47,
+    name: "Turmeric Powder",
+    slug: "turmeric-powder",
+    price: 300,
+    weight: "200 g",
+    description:
+      "Turmeric Powder – Pure, Vibrant & Aromatic",
+    details:
+      "Shahiking Turmeric Powder is made from quality turmeric, offering a vibrant golden color, earthy aroma, and authentic flavor to everyday Indian dishes.",
+    contact_detail:
+      "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
+    image: [
+      "/Image/productpage/tofu_img.webp",
+      "/Image/productpage/tofu_img1.webp",
+      "/Image/productpage/tofu_img2.webp",
+      "/Image/productpage/tofu_img4.webp",
+    ],
+    nutrition: [
+      { name: "Energy", value: "16 kcal" },
+      { name: "Protein", value: "0.5 g" },
+      { name: "Carbohydrates", value: "3.0 g" },
+      { name: "Sugar", value: "0.1 g" },
+      { name: "Total Fat", value: "0.3 g" },
+      { name: "Saturated Fat", value: "0.09 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "1.4 g" },
+      { name: "Sodium", value: "3 mg" },
+      { name: "Calcium", value: "12 mg" },
+      { name: "Iron", value: "1.65 mg" },
+    ],
+    ingredient: [
+      {
+        detail:
+          "100% Turmeric.",
+      },
+    ],
+    benefit: [
+      { detail: "Adds natural color and flavor." },
+      { detail: "Enhances taste and aroma." },
+      { detail: "A versatile kitchen essential." },
+    ],
+    storage: [
+      { detail: "Store in a cool & dry place." },
+      { detail: "Keep away from direct sunlight." },
+    ],
+    usage: [ 
+      { detail:"Ideal for curries, gravies, chutneys, marinades, snacks, noodles, sauces, and spicy dishes." },
     ],
   },
 ];
