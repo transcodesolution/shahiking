@@ -222,10 +222,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/lemon_taste_1.webp",
+      "/Image/productpage/lemon_taste_2.webp",
+      "/Image/productpage/lemon_taste_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -272,10 +272,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/cheddar_cheese_1.webp",
+      "/Image/productpage/cheddar_cheese_2.webp",
+      "/Image/productpage/cheddar_cheese_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "22 kcal" },
@@ -322,10 +322,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/tangy_tomato_1.webp",
+      "/Image/productpage/tangy_tomato_2.webp",
+      "/Image/productpage/tangy_tomato_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "22 kcal" },
@@ -374,10 +374,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/pudina_burst_1.webp",
+      "/Image/productpage/pudina_burst_2.webp",
+      "/Image/productpage/pudina_burst_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "13 kcal" },
@@ -424,10 +424,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/pizza_pasta_1.webp",
+      "/Image/productpage/pizza_pasta_2.webp",
+      "/Image/productpage/pizza_pasta_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -474,10 +474,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/jain_peri_peri_1.webp",
+      "/Image/productpage/jain_peri_peri_2.webp",
+      "/Image/productpage/jain_peri_peri_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -524,10 +524,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/peri_peri_1.webp",
+      "/Image/productpage/peri_peri_2.webp",
+      "/Image/productpage/peri_peri_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "20 kcal" },
@@ -573,10 +573,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/garlic_bread_1.webp",
+      "/Image/productpage/garlic_bread_2.webp",
+      "/Image/productpage/garlic_bread_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "21 kcal" },
@@ -624,10 +624,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/tomato_cheese_1.webp",
+      "/Image/productpage/tomato_cheese_2.webp",
+      "/Image/productpage/tomato_cheese_3.webp",
+      "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "24 kcal" },
@@ -1181,7 +1181,19 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "300 kcal" },
+      { name: "Protein", value: "4.0 g" },
+      { name: "Carbohydrates", value: "68.0 g" },
+      { name: "Sugar", value: "32.0 g" },
+      { name: "Total Fat", value: "1.0 g" },
+      { name: "Saturated Fat", value: "0.3 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "10.0 g" },
+      { name: "Sodium", value: "20 mg" },
+      { name: "Calcium", value: "60 mg" },
+      { name: "Iron", value: "1.5 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1219,7 +1231,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "313 kcal" },
+      { name: "Protein", value: "7.6 g" },
+      { name: "Carbohydrates", value: "75.0 g" },
+      { name: "Total Fat", value: "8.4 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Dietary Fibre", value: "26.0 g" },
+      { name: "Pottasium", value: "529 mg" },
+      { name: "Calcium", value: "834 mg" },
+      { name: "Iron", value: "43 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1257,7 +1279,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "255 kcal" },
+      { name: "Carbohydrates", value: "64.0 g" },
+      { name: "Dietary Fibre", value: "25.0 g" },
+      { name: "Protein", value: "11 g" },
+      { name: "Total Fat", value: "3.3 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "443 mg" },
+      { name: "Iron", value: "9.7 mg" },
+      { name: "Pottasium", value: "1330 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1295,7 +1327,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "247 kcal" },
+      { name: "Carbohydrates", value: "80.0 g" },
+      { name: "Dietary Fibre", value: "53.0 g" },
+      { name: "Protein", value: "4 g" },
+      { name: "Total Fat", value: "1.2 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "1000+ mg" },
+      { name: "Iron", value: "8 mg" },
+      { name: "Pottasium", value: "431 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1333,7 +1375,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "323 kcal" },
+      { name: "Carbohydrates", value: "61.0 g" },
+      { name: "Dietary Fibre", value: "34.0 g" },
+      { name: "Protein", value: "6 g" },
+      { name: "Total Fat", value: "20 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "632 mg" },
+      { name: "Iron", value: "11.8 mg" },
+      { name: "Pottasium", value: "1020 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1371,7 +1423,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "298 kcal" },
+      { name: "Carbohydrates", value: "55.0 g" },
+      { name: "Dietary Fibre", value: "42.0 g" },
+      { name: "Protein", value: "12 g" },
+      { name: "Total Fat", value: "18 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "709 mg" },
+      { name: "Iron", value: "16 mg" },
+      { name: "Sodium", value: "35 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1409,7 +1471,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "375 kcal" },
+      { name: "Carbohydrates", value: "44.0 g" },
+      { name: "Dietary Fibre", value: "11.0 g" },
+      { name: "Protein", value: "18 g" },
+      { name: "Total Fat", value: "22 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "931 mg" },
+      { name: "Iron", value: "66 mg" },
+      { name: "Sodium", value: "168 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1447,7 +1519,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "282 kcal" },
+      { name: "Carbohydrates", value: "50.0 g" },
+      { name: "Dietary Fibre", value: "35.0 g" },
+      { name: "Protein", value: "12 g" },
+      { name: "Total Fat", value: "14 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "0 mg" },
+      { name: "Iron", value: "0 mg" },
+      { name: "Sodium", value: "30 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1485,7 +1567,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "335 kcal" },
+      { name: "Carbohydrates", value: "72.0 g" },
+      { name: "Dietary Fibre", value: "14.0 g" },
+      { name: "Protein", value: "9.0 g" },
+      { name: "Total Fat", value: "4.2 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "114 mg" },
+      { name: "Iron", value: "19.8 mg" },
+      { name: "Sodium", value: "27 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1523,7 +1615,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "323 kcal" },
+      { name: "Carbohydrates", value: "58.0 g" },
+      { name: "Dietary Fibre", value: "25.0 g" },
+      { name: "Protein", value: "23.0 g" },
+      { name: "Total Fat", value: "6.4 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "176 mg" },
+      { name: "Iron", value: "33.5 mg" },
+      { name: "Pottasium", value: "770 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1561,7 +1663,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "508 kcal" },
+      { name: "Carbohydrates", value: "28.0 g" },
+      { name: "Dietary Fibre", value: "12.0 g" },
+      { name: "Protein", value: "26.0 g" },
+      { name: "Total Fat", value: "36.0 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "266 mg" },
+      { name: "Iron", value: "9.2 mg" },
+      { name: "Sodium", value: "5 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1599,7 +1711,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "525 kcal" },
+      { name: "Carbohydrates", value: "49.3 g" },
+      { name: "Dietary Fibre", value: "20.8 g" },
+      { name: "Protein", value: "5.8 g" },
+      { name: "Total Fat", value: "36.3 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "184 mg" },
+      { name: "Iron", value: "3.0 mg" },
+      { name: "Sodium", value: "16 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1637,7 +1759,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "247 kcal" },
+      { name: "Carbohydrates", value: "80 g" },
+      { name: "Dietary Fibre", value: "53 g" },
+      { name: "Protein", value: "4 g" },
+      { name: "Total Fat", value: "1.2 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "1000+ mg" },
+      { name: "Iron", value: "8.0 mg" },
+      { name: "Pottasium", value: "431 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1675,7 +1807,17 @@ export const productsDetail = [
       "/Image/productpage/tofu_img2.webp",
       "/Image/productpage/tofu_img4.webp",
     ],
-    nutrition: [],
+    nutrition: [
+      { name: "Energy", value: "337 kcal" },
+      { name: "Carbohydrates", value: "50 g" },
+      { name: "Dietary Fibre", value: "15 g" },
+      { name: "Protein", value: "18 g" },
+      { name: "Total Fat", value: "16 g" },
+      { name: "Trans Fat", value: "0.0 g" },
+      { name: "Calcium", value: "646 mg" },
+      { name: "Iron", value: "36 mg" },
+      { name: "Pottasium", value: "1440 mg" },
+    ],
     ingredient: [
       {
         detail:
@@ -1950,7 +2092,7 @@ export const productsDetail = [
     name: "Coriander Cumin ",
     slug: "coriander-cumin",
     price: 300,
-    weight: "200 g",
+    weight: "1 kg",
     description:
       "Coriander Cumin Powder – Aromatic, Flavorful & Authentic",
     details:
@@ -2000,7 +2142,7 @@ export const productsDetail = [
     name: "Kashmiri Chilli",
     slug: "kashmiri-chilli",
     price: 300,
-    weight: "200 g",
+    weight: "1 kg",
     description:
       "Kashmiri Chilli Powder – Vibrant Color, Mild Heat & Rich Flavor",
     details:
@@ -2050,7 +2192,7 @@ export const productsDetail = [
     name: "Red Chilli",
     slug: "red-chilli",
     price: 300,
-    weight: "200 g",
+    weight: "1 kg",
     description:
       "Red Chilli Powder – Spicy, Vibrant & Flavorful",
     details:
@@ -2100,7 +2242,7 @@ export const productsDetail = [
     name: "Spicy Red Chilli",
     slug: "spicy-red-chilli",
     price: 300,
-    weight: "200 g",
+    weight: "1 kg",
     description:
       "Spicy Red Chilli Powder – Bold, Hot & Flavorful",
     details:
@@ -2150,7 +2292,7 @@ export const productsDetail = [
     name: "Turmeric Powder",
     slug: "turmeric-powder",
     price: 300,
-    weight: "200 g",
+    weight: "1 kg",
     description:
       "Turmeric Powder – Pure, Vibrant & Aromatic",
     details:
