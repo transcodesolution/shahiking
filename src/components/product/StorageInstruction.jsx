@@ -1,13 +1,12 @@
 "use client";
+
 import { IoIosArrowDown } from "react-icons/io";
-import React, { useState } from "react";
-import { productsDetail} from "@/data/ui/productDetail";
+import React from "react";
+import { productsDetail } from "@/data/ui/productDetail";
 import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "next/navigation";
 
-export default function StorageInstruction() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+export default function StorageInstruction({ isOpen, onToggle }) {
   const params = useParams();
   const id = params?.id;
 
@@ -15,34 +14,60 @@ export default function StorageInstruction() {
 
   return (
     <div className="mt-4">
+      {/* Header */}
       <button
-        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+        onClick={onToggle}
         className="text-[18px] lg:text-[20px] xl:text-[24px] text-black font-heading font-semibold mb-3 flex justify-between items-center w-full cursor-pointer"
       >
         Storage Instructions
+
         <span
-          className={`text-[18px] transition-transform duration-300 ${
-            isDropdownOpen ? "rotate-180" : ""
+          className={`text-[18px] transition-transform duration-300 ease-in-out ${
+            isOpen ? "rotate-180" : "rotate-0"
           }`}
         >
           <IoIosArrowDown />
         </span>
       </button>
-      {isDropdownOpen && (
-        <div>
-          {product?.storage?.length > 0 &&
-            product.storage.map((item, index) => (
-              <div key={index}>
-                <div className="flex justify-start items-center gap-2 py-1">
-                  <span className="text-[18px] lg:text-[22px] text-primary">
-                    <GiCheckMark />
-                  </span>
-                  <span className="body-sm text-black">{item.detail}</span>
+
+      {/* Content */}
+      <div
+        className={`grid transition-all duration-500 ease-in-out ${
+          isOpen
+            ? "grid-rows-[1fr] opacity-100"
+            : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              isOpen
+                ? "translate-y-0 pb-2"
+                : "-translate-y-2 pb-0"
+            }`}
+          >
+            {product?.storage?.length > 0 ? (
+              product.storage.map((item, index) => (
+                <div key={`${item.detail}-${index}`}>
+                  <div className="flex justify-start items-center gap-2 py-1">
+                    <span className="text-[18px] lg:text-[22px] text-primary">
+                      <GiCheckMark />
+                    </span>
+
+                    <span className="body-sm text-black">
+                      {item.detail}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className="body-sm text-black">
+                No storage instructions available.
+              </p>
+            )}
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

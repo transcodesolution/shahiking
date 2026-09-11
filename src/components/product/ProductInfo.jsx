@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import NutritionTable from "./NutritionTable";
 import Ingredients from "./Ingredients";
 import KeyBenefits from "./KeyBenefits";
@@ -7,6 +8,11 @@ import StorageInstruction from "./StorageInstruction";
 import Usage from "./Usage";
 
 export default function ProductInfo({ product }) {
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setOpenSection((current) => (current === section ? null : section));
+  };
   return (
     <div className="bg-white p-6.5 rounded-[30px] shadow-brand">
       <h1 className="display-heading text-primary font-semibold">
@@ -38,23 +44,38 @@ export default function ProductInfo({ product }) {
       <p className="body-sm text-black mt-2 mb-4">{product.contact_detail}</p>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <NutritionTable />
+        <NutritionTable
+          isOpen={openSection === "nutrition"}
+          onToggle={() => toggleSection("nutrition")}
+        />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <Ingredients />
+        <Ingredients
+          isOpen={openSection === "ingredients"}
+          onToggle={() => toggleSection("ingredients")}
+        />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <KeyBenefits />
+        <KeyBenefits
+          isOpen={openSection === "benefits"}
+          onToggle={() => toggleSection("benefits")}
+        />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <StorageInstruction />
+        <StorageInstruction
+          isOpen={openSection === "storage"}
+          onToggle={() => toggleSection("storage")}
+        />
       </div>
 
       <div className="border-t border-[#AEAEAE] mb-2">
-        <Usage />
+        <Usage
+          isOpen={openSection === "usage"}
+          onToggle={() => toggleSection("usage")}
+        />
       </div>
     </div>
   );

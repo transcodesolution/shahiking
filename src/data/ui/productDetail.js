@@ -216,7 +216,7 @@ export const productsDetail = [
     price: 300,
     weight: "100 g",
     description:
-      "Lemon Taste Seasoning by Shahiking | Zesty Citrus Spice Blend | 100g",
+      "Lemon Taste Seasoning by Shahiking | Zesty Citrus Spice Blend",
     details:
       "Shahiking Lemon Taste Seasoning is a versatile 100g citrus and herb blend designed to add a bright, gourmet finish to chicken, seafood, and vegetables.",
     contact_detail:
@@ -266,7 +266,7 @@ export const productsDetail = [
     price: 300,
     weight: "100 g",
     description:
-      "Cheddar Cheese Seasoning by Shahiking | Rich & Creamy Savoury Cheese Blend | 100g",
+      "Cheddar Cheese Seasoning by Shahiking | Rich & Creamy Savoury Cheese Blend ",
     details:
       "Shahiking Cheddar Cheese Seasoning (100 gm) is a smooth, savory cheese powder designed to add an instant cheddar flavor to popcorn, fries, pasta, and various snacks.",
     contact_detail:
@@ -316,7 +316,7 @@ export const productsDetail = [
     price: 300,
     weight: "100 g",
     description:
-      "Shahiking Tangy Tomato Seasoning – Bold & Zesty Tomato Flavour | 100g",
+      "Shahiking Tangy Tomato Seasoning – Bold & Zesty Tomato Flavour",
     details:
       "Tangy Tomato Seasoning by Shahiking is a zesty, anti-caking tomato-flavored seasoning blend crafted to add a vibrant, tangy kick to snacks like popcorn, chips, fries, pasta, and makhana.",
     contact_detail:
@@ -418,7 +418,7 @@ export const productsDetail = [
     price: 300,
     weight: "80 g",
     description:
-      "Pizza and Pasta Seasoning | Italian Herb Mix by Shahiking | 80g",
+      "Pizza and Pasta Seasoning | Italian Herb Mix by Shahiking",
     details:
       "80 g pack of Premium Pizza & Pasta Seasoning made with herbs and spices for restaurant-style Italian flavor.",
     contact_detail:
@@ -468,9 +468,9 @@ export const productsDetail = [
     price: 300,
     weight: "100 g",
     description:
-      "Pizza and Pasta Seasoning | Italian Herb Mix by Shahiking | 80g",
+      "Shahiking Jain Peri Peri Seasoning – Spicy & Tangy Chilli Herb Blend",
     details:
-      "80 g pack of Premium Pizza & Pasta Seasoning made with herbs and spices for restaurant-style Italian flavor.",
+      "Jain Peri Peri spice blend or seasoning mix designed as a versatile, hot, and tangy sprinkler for foods like fries, pizza, pasta, snacks, marinades, and grills.",
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
@@ -480,35 +480,39 @@ export const productsDetail = [
       "/Image/productpage/seasoning_product.webp",
     ],
     nutrition: [
-      { name: "Energy", value: "15 kcal" },
-      { name: "Protein", value: "0.4 g" },
-      { name: "Carbohydrates", value: "3.2 g" },
+      { name: "Energy", value: "28 kcal" },
+      { name: "Protein", value: "8.0 g" },
+      { name: "Carbohydrates", value: "50 g" },
       { name: "Sugar", value: "0.2 g" },
-      { name: "Total Fat", value: "0.3 g" },
-      { name: "Saturated Fat", value: "0.05 g" },
+      { name: "Total Fat", value: "5.0 g" },
+      { name: "Saturated Fat", value: "1.0 g" },
       { name: "Trans Fat", value: "0.0 g" },
-      { name: "Dietary Fibre", value: "1.2 g" },
-      { name: "Sodium", value: "420 mg" },
-      { name: "Calcium", value: "22 mg" },
-      { name: "Iron", value: "0.5 mg" },
+      { name: "Dietary Fibre", value: "12.0 g" },
+      { name: "Sodium", value: "3500 mg" },
+      { name: "Calcium", value: "150 mg" },
+      { name: "Iron", value: "4.0 mg" },
     ],
     ingredient: [
       {
         detail:
-          "Contains oregano, basil, parsley, garlic, onion, red chilli flakes, and salt — blended for authentic Italian aroma and flavour.",
+          "Red Chilli, Dry Mango Powder (Amchur), Cumin, Coriander, Black Pepper, Garlic Substitute/approved Jain seasoning, Salt, Black Salt, Dried Herbs and other spices.",
       },
     ],
     benefit: [
-      { detail: "Clean processing with no added artificial colors." },
-      { detail: "Made with High-Quality Herbs & Spices" },
-      { detail: "Restaurant-Style Italian Flavour at Home" },
+      { detail: "Adds a spicy and tangy flavor to dishes." },
+      { detail: "Made with a flavorful blend of herbs and spices." },
+      { detail: "Great for enhancing snacks and meals." },
+      { detail: "Can add taste to vegetables, salads and roasted foods." },
     ],
     storage: [
       { detail: "Store in a cool & dry place." },
       { detail: "Keep away from direct sunlight." },
     ],
     usage: [ 
-      { detail:"Suitable for cheesy pizzas, creamy pastas, and everyday snacks." },
+      { detail:"Sprinkle over French fries, popcorn and roasted makhana." },
+      { detail:"Use on pizza, pasta and sandwiches." },
+      { detail:"Add to chaat, snacks and roasted vegetables." },
+      { detail:"Use as a seasoning for Jain-friendly recipes" },
     ],
   },
   {
@@ -518,7 +522,7 @@ export const productsDetail = [
     price: 300,
     weight: "100 g",
     description:
-      "Shahiking Peri Peri Seasoning – Spicy & Tangy Chilli Herb Blend | 100g",
+      "Shahiking Peri Peri Seasoning – Spicy & Tangy Chilli Herb Blend",
     details:
       " Peri Peri spice blend or seasoning mix designed as a versatile, hot, and tangy sprinkler for foods like fries, pizza, pasta, snacks, marinades, and grills.",
     contact_detail:

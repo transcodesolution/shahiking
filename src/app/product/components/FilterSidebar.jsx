@@ -5,7 +5,7 @@ import FilterOption from "./FilterOption";
 import PriceRangeFilter from "./PriceRangeFilter";
 import FilterDrawer from "./FilterDrawer";
 import { availability, productCategories, quantity } from "@/data/ui/filters";
-import Image from "next/image";
+import { IoOptionsOutline } from "react-icons/io5";
 
 export default function FilterSidebar({
   isChecked,
@@ -52,13 +52,7 @@ export default function FilterSidebar({
       <div className="relative flex justify-between p-4">
         <h2 className="hidden lg:flex items-center gap-2 body-md font-semibold text-primary cursor-pointer">
           <span>
-            <Image
-            src="/Image/productpage/filter_icon.webp"
-            alt="filter icon image"
-            width={24}
-            height={24}
-            className="w-6 h-6 object-contain"
-          />
+          <IoOptionsOutline className="text-3xl"/>
           </span>
           Filters
         </h2>
@@ -67,13 +61,7 @@ export default function FilterSidebar({
           onClick={() => setIsOpen(true)}
         >
           <span>
-            <Image
-            src="/Image/productpage/filter_icon.webp"
-            alt="filter icon image"
-            width={24}
-            height={24}
-            className="w-6 h-6 object-contain"
-          />
+           <IoOptionsOutline className="text-2xl md:text-3xl"/>
           </span>
           <span>Filters</span>
         </button>

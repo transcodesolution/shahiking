@@ -106,7 +106,7 @@ export default async function Page({ params }) {
         }}
       /> */}
 
-      <div className="bg-secondary py-6 overflow-hidden">
+      <div className="bg-secondary py-6">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="flex p-2">
@@ -132,11 +132,15 @@ export default async function Page({ params }) {
 
           {/* Product Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-4">
-            <div>
-              <ProductGallery product={productDetail} />
+            {/* Product Gallery*/}
+            <div className="min-w-0">
+              <div className="lg:sticky lg:top-24 lg:self-start">
+                <ProductGallery product={productDetail} />
+              </div>
             </div>
 
-            <div>
+            {/* Product Info*/}
+            <div className="min-w-0">
               <ProductInfo product={productDetail} />
             </div>
           </div>
@@ -144,7 +148,7 @@ export default async function Page({ params }) {
       </div>
 
       <div className="py-8">
-        <RelatedProducts currentSlug={id}/>
+        <RelatedProducts currentSlug={id} />
       </div>
 
       <Testimonials />
