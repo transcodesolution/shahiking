@@ -679,10 +679,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/chaat_masala_1.webp",
+      "/Image/productpage/chaat_masala_2.webp",
+      "/Image/productpage/chaat_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -730,10 +730,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/chhas_masala_1.webp",
+      "/Image/productpage/chhas_masala_2.webp",
+      "/Image/productpage/chhas_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "13 kcal" },
@@ -780,10 +780,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/chhole_masala_1.webp",
+      "/Image/productpage/chhole_masala_2.webp",
+      "/Image/productpage/chhole_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17 kcal" },
@@ -830,10 +830,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/garam_masala_1.webp",
+      "/Image/productpage/garam_masala_2.webp",
+      "/Image/productpage/garam_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -880,10 +880,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/kitchen_king_masala_1.webp",
+      "/Image/productpage/kitchen_king_masala_2.webp",
+      "/Image/productpage/kitchen_king_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -919,8 +919,8 @@ export const productsDetail = [
   },
   {
     id: 19,
-    name: "Pav Bhaji Masala",
-    slug: "pav-bhaji-masala",
+    name: "Pani Puri Masala",
+    slug: "pani-puri-masala",
     price: 300,
     weight: "100 g",
     description:
@@ -930,10 +930,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/panipuri_masala_1.webp",
+      "/Image/productpage/panipuri_masala_2.webp",
+      "/Image/productpage/panipuri_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "14 kcal" },
@@ -969,8 +969,8 @@ export const productsDetail = [
   },
    {
     id: 20,
-    name: "Pani Puri Masala",
-    slug: "pani-puri-masala",
+    name: "Pav Bhaji Masala",
+    slug: "pav-bhaji-masala",
     price: 300,
     weight: "100 g",
     description:
@@ -980,10 +980,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/pavbhaji_masala_1.webp",
+      "/Image/productpage/pavbhaji_masala_2.webp",
+      "/Image/productpage/pavbhaji_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "14 kcal" },
@@ -1030,10 +1030,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/punjabi_gravy_1.webp",
+      "/Image/productpage/punjabi_gravy_2.webp",
+      "/Image/productpage/punjabi_gravy_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "20 kcal" },
@@ -1080,10 +1080,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/sambhar_masala_1.webp",
+      "/Image/productpage/sambhar_masala_2.webp",
+      "/Image/productpage/sambhar_masala_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -1130,10 +1130,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/shahi_biryani_1.webp",
+      "/Image/productpage/shahi_biryani_2.webp",
+      "/Image/productpage/shahi_biryani_3.webp",
+      "/Image/productpage/blended_spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "19 kcal" },
