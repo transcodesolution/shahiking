@@ -571,7 +571,7 @@ export const products = [
       {
         id: 3,
         name: "Black Pepper",
-        slug:"black_pepper",
+        slug:"black-pepper",
         img: "/Image/productpage/black_pepper.webp",
       },
       {

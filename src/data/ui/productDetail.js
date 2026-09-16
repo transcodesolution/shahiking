@@ -1854,10 +1854,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/chilli_flakes_1.webp",
+      "/Image/productpage/chilli_flakes_2.webp",
+      "/Image/productpage/chilli_flakes_3.webp",
+      "/Image/productpage/exotic_range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "19 kcal" },
@@ -1904,10 +1904,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/garlic_powder_1.webp",
+      "/Image/productpage/garlic_powder_2.webp",
+      "/Image/productpage/garlic_powder_3.webp",
+      "/Image/productpage/exotic_range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -1954,10 +1954,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/onion_powder_1.webp",
+      "/Image/productpage/onion_powder_2.webp",
+      "/Image/productpage/onion_powder_3.webp",
+      "/Image/productpage/exotic_range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -2004,10 +2004,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/oregano_1.webp",
+      "/Image/productpage/oregano_2.webp",
+      "/Image/productpage/oregano_3.webp",
+      "/Image/productpage/exotic_range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -2054,10 +2054,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/productpage/tomato_powder_1.webp",
+      "/Image/productpage/tomato_powder_2.webp",
+      "/Image/productpage/tomato_powder_3.webp",
+      "/Image/productpage/exotic_range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
