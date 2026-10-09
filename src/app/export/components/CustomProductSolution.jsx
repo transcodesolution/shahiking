@@ -8,7 +8,7 @@ export default function CustomProductSolution() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="border border-[#C1C8C2] rounded-[20px] md:rounded-[30px] overflow-hidden">
           <Image
-            src="/Image/exportpage/custom_product_packaging.webp"
+            src="/Image/exportpage/product_packaging_banner.webp"
             alt="bg"
             width={1678}
             height={472}

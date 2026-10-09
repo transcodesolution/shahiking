@@ -7,19 +7,21 @@ import GlobalMarkets from "./components/GlobalMarkets";
 import OurExportProcess from "./components/OurExportProcess";
 import GetInTouch from "./components/GetInTouch";
 import GlobalDeliveryPartner from "./components/GlobalDeliveryPartner";
+import ExploreProducts from "./components/ExploreProducts";
 
 export default function page() {
   
   return (
     <React.Fragment>
        <Hero/>
+       <ExploreProducts/>
        <WhyOurPartner/>
-       <PackagingOptions />
        <CustomProductSolution />
+       <PackagingOptions />
        <GlobalMarkets />
+       <GlobalDeliveryPartner />
        <OurExportProcess />
        <GetInTouch />
-       <GlobalDeliveryPartner />
     </React.Fragment>
   );
 }

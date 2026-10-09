@@ -31,7 +31,7 @@ export default function GlobalMarkets() {
     { name: "New Zealand", code: "nz",image:"/Image/exportpage/new_zealand.webp" },
   ];
   return (
-    <div className="py-6 md:py-8">
+    <div className="bg-secondary py-6 md:py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-4">
           <h1 className="display-heading text-primary font-bold text-center mb-2">

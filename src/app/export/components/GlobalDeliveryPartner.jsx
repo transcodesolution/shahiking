@@ -4,7 +4,7 @@ import { RxDotFilled } from "react-icons/rx";
 
 export default function GlobalDeliveryPartner() {
   return (
-    <div className="bg-secondary py-8">
+    <div className="bg-[#F6F6F6] py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-6 py-6">
           <div className="w-full xl:max-w-150">

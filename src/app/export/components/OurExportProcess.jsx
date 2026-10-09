@@ -41,7 +41,7 @@ export default function OurExportProcess() {
     },
   ];
   return (
-    <div className="py-8 bg-secondary">
+    <div className="py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div>
           <h1 className="display-heading text-primary text-center font-bold">
