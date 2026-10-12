@@ -81,3 +81,78 @@ export const testimonialData = [
         "Paneer tikka masala ma use karyu ane honestly normal paneer karta pan better lagyu. Healthy ane light feel thayu. Service pan fast hati.",
     },
   ];
+
+  export const exportTestimonialData =[
+    {
+      id: 1,
+      name: "Julian Hoffmann",
+      role: "Wholesale Director, Hamburg",
+      avatar:"JH",
+      rating:4.0,
+      review:
+        "We have been sourcing bulk makhana for our European snack retail chain for 2 years. Zero moisture defects, crisp crunch every time, and transparent freight updates.",
+    },
+    {
+      id: 2,
+      name: "Sophie Laurent",
+      role: "Retail Category Manager, Toronto",
+      avatar:"SL",
+      rating:5.0,
+      review:
+        "Their team designed bespoke packaging with French and English nutritional labeling for our Canadian stores. Seamless compliance and fantastic flavor profiles.",
+    },
+    {
+      id: 3,
+      name: "Brendan Kelly",
+      role: "Managing Director, Melbourne",
+      avatar:"BK",
+      rating:4.0,
+      review:
+        "From our first enquiry to port container discharge at Sydney harbor, Shahiking handled all logistics smoothly. Exceptional quality spices and puffed snacks.",
+    },
+    {
+      id: 4,
+      name: "Julian Hoffmann",
+      role: "Wholesale Director, Hamburg",
+      avatar:"JH",
+      rating:4.0,
+      review:
+        "We have been sourcing bulk makhana for our European snack retail chain for 2 years. Zero moisture defects, crisp crunch every time, and transparent freight updates.",
+    },
+    {
+      id: 5,
+      name: "Sophie Laurent",
+      role: "Retail Category Manager, Toronto",
+      avatar:"SL",
+      rating:5.0,
+      review:
+        "Their team designed bespoke packaging with French and English nutritional labeling for our Canadian stores. Seamless compliance and fantastic flavor profiles.",
+    },
+    {
+      id: 6,
+      name: "Brendan Kelly",
+      role: "Managing Director, Melbourne",
+      avatar:"BK",
+      rating:4.0,
+      review:
+        "From our first enquiry to port container discharge at Sydney harbor, Shahiking handled all logistics smoothly. Exceptional quality spices and puffed snacks.",
+    },
+    {
+      id: 7,
+      name: "Julian Hoffmann",
+      role: "Wholesale Director, Hamburg",
+      avatar:"JH",
+      rating:4.0,
+      review:
+        "We have been sourcing bulk makhana for our European snack retail chain for 2 years. Zero moisture defects, crisp crunch every time, and transparent freight updates.",
+    },
+    {
+      id: 8,
+      name: "Sophie Laurent",
+      role: "Retail Category Manager, Toronto",
+      avatar:"SL",
+      rating:5.0,
+      review:
+        "Their team designed bespoke packaging with French and English nutritional labeling for our Canadian stores. Seamless compliance and fantastic flavor profiles.",
+    },
+  ]

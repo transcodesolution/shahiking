@@ -8,6 +8,8 @@ import OurExportProcess from "./components/OurExportProcess";
 import GetInTouch from "./components/GetInTouch";
 import GlobalDeliveryPartner from "./components/GlobalDeliveryPartner";
 import ExploreProducts from "./components/ExploreProducts";
+import RealStories from "./components/RealStories";
+import Testimonial from "./components/Testimonial";
 
 export default function page() {
   
@@ -21,7 +23,9 @@ export default function page() {
        <GlobalMarkets />
        <GlobalDeliveryPartner />
        <OurExportProcess />
-       <GetInTouch />
+       <RealStories />
+       <Testimonial />
+       {/* <GetInTouch /> */}
     </React.Fragment>
   );
 }

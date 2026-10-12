@@ -71,7 +71,7 @@ export default function OurExportProcess() {
                       transition-all duration-300
                       ${
                         item.active
-                          ? "border-primary text-primary"
+                          ? "border-primary text-primary shadow-[0_0_15px_rgba(124,96,19,0.60)]"
                           : "border-[#BFC3C0] text-black"
                       }
                     `}
@@ -122,7 +122,7 @@ export default function OurExportProcess() {
                         rounded-full border bg-white
                         ${
                           item.active
-                            ? "border-primary text-primary"
+                            ? "border-primary text-primary shadow-[0_0_15px_rgba(124,96,19,0.25)]"
                             : "border-[#BFC3C0] text-black"
                         }
                       `}
