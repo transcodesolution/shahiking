@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
+import { FiMail, FiPhone, FiSend, FiUser } from "react-icons/fi";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -89,78 +89,90 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="py-8 relative z-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* FORM */}
-        <div className="bg-secondary border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] p-4 md:p-8 rounded-[30px]">
+    <section className="relative z-10">
+      <div className="rounded-[20px] border border-stroke bg-secondary p-6 sm:p-8 lg:p-9 xl:p-10">
           <form onSubmit={handleSubmit}>
-            <h1 className="display-heading text-primary font-semibold border-b border-accent pb-2 md:pb-4">
+            <h2 className="font-heading text-[30px] font-semibold leading-tight text-primary md:text-[36px] xl:text-[40px]">
               Let&apos;s Get in Touch
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-1 md:py-2">
+            </h2>
+            <p className="mt-3 max-w-146.75 text-[14px] leading-6 text-[#5D594D] md:text-[16px]">Fill out the royal inquiry form below and our dedicated culinary advisors will respond with utmost promptness.</p>
+            <div className="grid grid-cols-1 gap-x-6 gap-y-4 pt-5 md:grid-cols-2">
               {/* Name */}
               <div>
-                <label className="block body-md text-black">Full Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Enter your fullname*"
-                  className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
-                />
+                  <label className="block text-[14px] text-[#0E0E0E]">Name<span className="text-red-600">*</span></label>
+                <div className="relative mt-2">
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Enter your name*"
+                    required
+                    className="block w-full rounded-full border border-[#E7DDBE] bg-[#FCFCFC] py-3 pl-5 pr-12 text-[14px] outline-none transition focus:border-primary"
+                  />
+                  <FiUser aria-hidden="true" className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#BDBDBD]" />
+                </div>
               </div>
               {/* Phone */}
               <div>
-                <label className="block body-md text-black">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Enter your phone number*"
-                  className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
-                />
+                  <label className="block text-[14px] text-[#0E0E0E]">Phone Number<span className="text-red-600">*</span></label>
+                <div className="relative mt-2">
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Enter your phone number*"
+                    required
+                    className="block w-full rounded-full border border-[#E7DDBE] bg-[#FCFCFC] py-3 pl-5 pr-12 text-[14px] outline-none transition focus:border-primary"
+                  />
+                  <FiPhone aria-hidden="true" className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#BDBDBD]" />
+                </div>
               </div>
             </div>
             {/* Email */}
-            <div className="mt-2">
-              <label className="block body-md text-black">Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your email*"
-                className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-full bg-white"
-              />
+            <div className="mt-4">
+              <label className="block text-[14px] text-[#0E0E0E]">Email<span className="text-red-600">*</span></label>
+              <div className="relative mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email*"
+                  required
+                  className="block w-full rounded-full border border-[#E7DDBE] bg-[#FCFCFC] py-3 pl-5 pr-12 text-[14px] outline-none transition focus:border-primary"
+                />
+                <FiMail aria-hidden="true" className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#BDBDBD]" />
+              </div>
             </div>
             {/* Message */}
-            <div className="mt-3">
-              <label className="block body-md text-black">Your Message</label>
+            <div className="mt-4">
+              <label className="block text-[14px] text-[#0E0E0E]">Your Message <span className="text-red-600">*</span></label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Leave us a message..."
                 rows={5}
-                className="w-full mt-2 py-2 md:py-3 px-6 block border-2 shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] border-secondary rounded-[30px] bg-white"
+                required
+                className="mt-2 block w-full resize-y rounded-3xl border border-[#E7DDBE] bg-[#FCFCFC] px-5 py-4 text-[14px] outline-none transition focus:border-primary"
               />
             </div>
             {/* Checkbox */}
-            <div className="flex items-center mt-3 mb-2">
+            <div className="mt-4 mb-1 flex items-center">
               <label className="flex items-center gap-3 cursor-pointer">
                 <input
                   type="checkbox"
                   name="agree"
                   checked={formData.agree}
                   onChange={handleChange}
-                  className="hidden peer"
+                  className="peer sr-only"
                 />
                 {/* Custom Checkbox Box */}
-                <div className="w-6 h-6 rounded-md border-2 border-gray-400 flex items-center justify-center peer-checked:bg-primary peer-checked:border-primary transition-all">
+                <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-sm border border-[#E7DDBE] bg-[#FCFCFC] transition-all peer-checked:border-primary peer-checked:bg-primary">
                   <svg
-                    className="w-5 h-5 text-secondary peer-checked:block"
+                    className="h-4 w-4 text-secondary"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="3"
@@ -169,7 +181,7 @@ export default function ContactForm() {
                     <path d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="body-md text-black">
+                <span className="text-[14px] text-[#5D594D]">
                   I agree to with friendly{" "}
                   <span className="underline underline-offset-4 decoration-accent decoration-1">
                     privacy policy.
@@ -182,23 +194,12 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-4 bg-primary text-secondary border border-primary px-6 py-2 rounded-full w-full max-w-85 hover:bg-secondary hover:text-primary duration-500 cursor-pointer"
+              className="mt-4 inline-flex min-w-54.75 items-center justify-center rounded-full border border-primary bg-primary px-7 py-3 text-[14px] font-semibold text-white shadow-md transition hover:bg-[#654D0F] disabled:cursor-wait disabled:opacity-70"
             >
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? "Sending..." : <>Send Message <FiSend aria-hidden="true" className="ml-2 text-[16px]" /></>}
             </button>
           </form>
         </div>
-
-        {/* IMAGE */}
-        <div className="flex justify-center items-center">
-          <Image
-            src="/Image/contactpage/contact_form.webp"
-            alt="contact"
-            width={600}
-            height={400}
-          />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }

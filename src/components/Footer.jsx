@@ -47,8 +47,8 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-primary py-12 md:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-primary px-5 py-15 md:px-10 xl:px-25">
+      <div className="mx-auto w-full max-w-360">
         <div className="bg-[#FCFCFC] relative rounded-2xl md:rounded-[30px] overflow-hidden">
           <Image
             src="/Image/footer_bg.webp"
@@ -58,7 +58,7 @@ export default function Footer() {
             className="object-cover"
           />
           {/* Content */}
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-0 gap-x-8 px-10 md:px-22.5 py-7.5 md:py-10 lg:py-15">
+          <div className="relative z-10 grid grid-cols-1 gap-x-8 gap-y-6 px-6 py-8 md:grid-cols-2 md:px-18.75 md:py-15 lg:grid-cols-4 lg:gap-y-0">
             <div className="w-full lg:max-w-68.75">
               <Image
                 src="/Image/footer_logo_brown.webp"

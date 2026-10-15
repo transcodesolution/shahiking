@@ -1,66 +1,45 @@
-import Image from "next/image";
 import React from "react";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 
 export default function ContactInformation() {
   return (
-    <div className="py-3 relative z-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-secondary p-4 md:p-8 border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040] rounded-[30px]">
-          <h1 className="display-heading text-primary font-semibold border-b border-accent pb-3">
-            Contact Information
-          </h1>
-          <div className="mt-4 flex flex-col space-y-3">
-            <div className="flex gap-3 group cursor-pointer">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
-                <span className="text-[24px] group-hover:text-white transition-colors">
-                  <FiMail />
-                </span>
-              </div>
-              <div>
-                <p className="body-md text-black font-medium">Email</p>
-                <p className="body-md text-black">info@shahiking.in</p>
-              </div>
-            </div>
-            <div className="flex gap-3 group cursor-pointer">
-              <div className="h-12.5 w-12.5 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
-                <span className="text-[24px] group-hover:text-white transition-colors">
-                  <FiPhone />
-                </span>
-              </div>
-              <div>
-                <p className="body-md text-black font-medium">Phone</p>
-                <p className="body-md text-black">+91 74359 17404</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 group cursor-pointer">
-              <div className="shrink-0 h-12 w-12 bg-white rounded-full border-2 border-secondary shadow-md inset-shadow-sm inset-shadow-[#00000040] flex justify-center items-center group-hover:border-primary group-hover:bg-primary transition-colors">
-                <span className="text-2xl group-hover:text-white transition-colors">
-                  <GrLocation />
-                </span>
-              </div>
-
-              <div className="flex-1">
-                <p className="body-md text-black font-medium">Location</p>
-                <p className="body-md text-black wrap-break-words">
-                  Ambika Pinnacle, 301, beside Lajamni Chowk, Mota Varachha,
-                  Surat, Gujarat 394101
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8364454633947!2d72.88551507600228!3d21.238333280546147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f1cf89aa199%3A0x51b7475766080238!2sShahiKing%20Foods!5e0!3m2!1sen!2sin!4v1777546816420!5m2!1sen!2sin"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="h-94 lg:h-full w-full rounded-[30px] border-2 border-secondary shadow-sm shadow-[#00000040] inset-shadow-sm inset-shadow-[#00000040]"
-          ></iframe>
+    <section className="relative z-10 rounded-[20px] border border-stroke bg-secondary p-6 sm:p-8 lg:p-9 xl:p-10">
+      <h2 className="border-b border-[#EAE8E0] pb-4 font-heading text-[30px] font-semibold leading-tight text-primary md:text-[36px] xl:text-[40px]">
+        Contact Information
+      </h2>
+      <div className="mt-5 flex flex-col gap-4">
+        <a href="mailto:info@shahiking.in" className="group flex items-center gap-3">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#E5E7EB] bg-white shadow-sm transition-colors group-hover:border-primary group-hover:bg-primary">
+            <FiMail className="text-[22px] text-black transition-colors group-hover:text-white" />
+          </span>
+          <span>
+            <span className="block text-[16px] font-medium text-[#0E0E0E]">Email</span>
+            <span className="block text-[16px] leading-6 text-[#7C7C7C]">info@shahiking.in</span>
+          </span>
+        </a>
+        <a href="tel:+917435917404" className="group flex items-center gap-3">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#E5E7EB] bg-white shadow-sm transition-colors group-hover:border-primary group-hover:bg-primary">
+            <FiPhone className="text-[22px] text-black transition-colors group-hover:text-white" />
+          </span>
+          <span>
+            <span className="block text-[16px] font-medium text-[#0E0E0E]">Phone</span>
+            <span className="block text-[16px] leading-6 text-[#7C7C7C]">+91 74359 17404</span>
+          </span>
+        </a>
+        <div className="group flex items-start gap-3">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#E5E7EB] bg-white shadow-sm transition-colors group-hover:border-primary group-hover:bg-primary">
+            <GrLocation className="text-[22px] text-black transition-colors group-hover:text-white" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-[16px] font-medium text-[#0E0E0E]">Location</span>
+            <span className="block wrap-break-word text-[16px] leading-5 text-[#7C7C7C]">
+              Ambika Pinnacle, 301, beside Lajamni Chowk, Mota Varachha,
+              Surat, Gujarat 394101
+            </span>
+          </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
