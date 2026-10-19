@@ -7,7 +7,7 @@ import GetInTouch from '@/components/common/GetInTouch'
 export const metadata = {
   title: "Healthy Snacks | Buy Plant-Based Foods",
   description:
-    "Shop healthy snacks, makhana & tofu online. Discover plant-based, protein-rich foods for a clean lifestyle. Fast delivery & premium quality.",
+    "Shop healthy snacks and plant-based foods for a clean lifestyle. Fast delivery and premium quality.",
   alternates: {
     canonical: "https://shahiking.in/product",
   },
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Healthy Snacks | Buy Plant-Based Foods",
     description:
-      "Shop healthy snacks, makhana & tofu online. Discover plant-based, protein-rich foods for a clean lifestyle.",
+      "Shop healthy snacks and plant-based foods for a clean lifestyle.",
     url: "https://shahiking.in/product",
     siteName: "Shahiking",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Healthy Snacks | Buy Plant-Based Foods",
     description:
-      "Shop healthy snacks, makhana & tofu online. Discover plant-based, protein-rich foods.",
+      "Shop healthy snacks and plant-based foods for a clean lifestyle.",
     images: [
       "https://shahiking.in/_next/image?url=%2FImage%2Flogo.webp&w=256&q=75",
     ],
@@ -77,89 +77,11 @@ export default function page() {
         url: "https://shahiking.in/product",
         name: "Healthy Snacks | Buy Plant-Based Foods",
         description:
-          "Shop healthy snacks, makhana & tofu online. Discover plant-based, protein-rich foods for a clean lifestyle.",
+          "Shop healthy snacks and plant-based foods for a clean lifestyle.",
         inLanguage: ["en", "hi"],
         isPartOf: {
           "@id": "https://shahiking.in/#website",
         },
-      },
-
-      {
-        "@type": "ItemList",
-        name: "Healthy Snacks Products",
-        url: "https://shahiking.in/product",
-        numberOfItems: 4,
-        itemListElement: [
-          {
-            "@type": "Product",
-            position: 1,
-            name: "Premium Raw Makhana",
-            image:
-              "https://shahiking.in/product/makhana1.jpg",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              bestRating: "5",
-              ratingCount: "50",
-            },
-
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "INR",
-              price: "250",
-              availability:
-                "https://schema.org/InStock",
-            },
-          },
-
-          {
-            "@type": "Product",
-            position: 2,
-            name: "Peri-Peri Makhana",
-            image:
-              "https://shahiking.in/product/makhana2.jpg",
-
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.7",
-              bestRating: "5",
-              ratingCount: "40",
-            },
-
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "INR",
-              price: "134",
-              availability:
-                "https://schema.org/InStock",
-            },
-          },
-        ],
-      },
-
-      {
-        "@type": "FAQPage",
-        "@id": "https://shahiking.in/product#faq",
-
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Are makhana snacks healthy?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, makhana is a low calorie and high protein snack rich in antioxidants.",
-            },
-          },
-
-          {
-            "@type": "Question",
-            name: "Is tofu a good protein source?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, tofu is an excellent plant-based protein source.",
-            },
-          },
-        ],
       },
 
       {

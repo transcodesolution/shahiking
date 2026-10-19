@@ -315,7 +315,7 @@ export default function Navbar() {
                     overflow-hidden py-2
                   "
                 >
-                  <ProductDropdown />
+                  <ProductDropdown isExport />
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ export default function GlobalDeliveryPartner() {
             <div>
               <h1 className="font-heading text-black font-bold leading-tight text-[32px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[72px]">
                 Global Delivery
-                <span className="xl:block text-primary"> Partners</span>
+                <span className="xl:block text-primary">Partners</span>
               </h1>
               <p className="flex items-center gap-2 body-md py-3 font-medium">
                 Reliable Shipping

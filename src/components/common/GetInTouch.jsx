@@ -57,11 +57,11 @@ import Link from "next/link";
 import React from "react";
 
 const categoryBanners = {
-  seasoning: "/Image/productpage/seasoning_banner.webp",
-  "blended spices": "/Image/productpage/blend_spice_banner.webp",
-  "whole spices": "/Image/productpage/whole_spice_banner.webp",
-  "exotic range": "/Image/productpage/exotic_range_banner.webp",
-  "pure powder spices": "/Image/productpage/pure_powder_spices_banner.webp",
+  seasoning: "/Image/product/buy/seasoning-banner.webp",
+  "blended spices": "/Image/product/buy/blend-spice-banner.webp",
+  "whole spices": "/Image/product/buy/whole-spice-banner.webp",
+  "exotic range": "/Image/product/buy/exotic-range-banner.webp",
+  "pure powder spices": "/Image/product/buy/pure-powder-spices-banner.webp",
 };
 
 export default function GetInTouch({ selectedCategories = [] }) {

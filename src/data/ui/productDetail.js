@@ -11,10 +11,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/homepage/product_1.webp",
-      "/Image/productpage/raw_makhana_img4.webp",
-      "/Image/productpage/raw_makhana_img1.webp",
-      "/Image/productpage/raw_makhana_img2.webp",
+      "/Image/product/buy/product-gallery-1.webp",
+      "/Image/product/buy/raw-makhana-img4.webp",
+      "/Image/product/buy/raw-makhana-img1.webp",
+      "/Image/product/buy/raw-makhana-img2.webp",
     ],
     nutrition: [
       { name: "Energy", value: "347 kcal" },
@@ -60,10 +60,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/homepage/product_3.webp",
-      "/Image/productpage/peri_peri_makhana_img1.webp",
-      "/Image/productpage/peri_peri_makhana_img2.webp",
-      "/Image/productpage/peri_peri_makhana3.webp",
+      "/Image/product/buy/product-gallery-3.webp",
+      "/Image/product/buy/peri-peri-makhana-img1.webp",
+      "/Image/product/buy/peri-peri-makhana-img2.webp",
+      "/Image/product/buy/peri-peri-makhana3.webp",
     ],
     nutrition: [
       { name: "Energy", value: "360 kcal" },
@@ -110,10 +110,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale & bulk packaging inquiries, please contact our distribution team.",
     image: [
-      "/Image/productpage/himalayan_salt_4.webp",
-      "/Image/productpage/himalayan_salt_2.webp",
-      "/Image/productpage/himalayan_salt_3.webp",
-      "/Image/productpage/himalayan_salt_5.webp",
+      "/Image/product/buy/himalayan-salt-4.webp",
+      "/Image/product/buy/himalayan-salt-2.webp",
+      "/Image/product/buy/himalayan-salt-3.webp",
+      "/Image/product/buy/himalayan-salt-5.webp",
     ],
     nutrition: [
       { name: "Energy", value: "340 kcal" },
@@ -161,10 +161,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "169 kcal" },
@@ -222,10 +222,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/lemon_taste_1.webp",
-      "/Image/productpage/lemon_taste_2.webp",
-      "/Image/productpage/lemon_taste_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/lemon-taste-1.webp",
+      "/Image/product/buy/lemon-taste-2.webp",
+      "/Image/product/buy/lemon-taste-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -272,10 +272,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/cheddar_cheese_1.webp",
-      "/Image/productpage/cheddar_cheese_2.webp",
-      "/Image/productpage/cheddar_cheese_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/cheddar-cheese-1.webp",
+      "/Image/product/buy/cheddar-cheese-2.webp",
+      "/Image/product/buy/cheddar-cheese-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "22 kcal" },
@@ -322,10 +322,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tangy_tomato_1.webp",
-      "/Image/productpage/tangy_tomato_2.webp",
-      "/Image/productpage/tangy_tomato_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/tangy-tomato-1.webp",
+      "/Image/product/buy/tangy-tomato-2.webp",
+      "/Image/product/buy/tangy-tomato-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "22 kcal" },
@@ -374,10 +374,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/pudina_burst_1.webp",
-      "/Image/productpage/pudina_burst_2.webp",
-      "/Image/productpage/pudina_burst_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/pudina-burst-1.webp",
+      "/Image/product/buy/pudina-burst-2.webp",
+      "/Image/product/buy/pudina-burst-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "13 kcal" },
@@ -424,10 +424,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/pizza_pasta_1.webp",
-      "/Image/productpage/pizza_pasta_2.webp",
-      "/Image/productpage/pizza_pasta_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/pizza-pasta-1.webp",
+      "/Image/product/buy/pizza-pasta-2.webp",
+      "/Image/product/buy/pizza-pasta-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -474,10 +474,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/jain_peri_peri_1.webp",
-      "/Image/productpage/jain_peri_peri_2.webp",
-      "/Image/productpage/jain_peri_peri_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/jain-peri-peri-1.webp",
+      "/Image/product/buy/jain-peri-peri-2.webp",
+      "/Image/product/buy/jain-peri-peri-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "28 kcal" },
@@ -528,10 +528,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/peri_peri_1.webp",
-      "/Image/productpage/peri_peri_2.webp",
-      "/Image/productpage/peri_peri_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/peri-peri-1.webp",
+      "/Image/product/buy/peri-peri-2.webp",
+      "/Image/product/buy/peri-peri-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "20 kcal" },
@@ -577,10 +577,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/garlic_bread_1.webp",
-      "/Image/productpage/garlic_bread_2.webp",
-      "/Image/productpage/garlic_bread_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/garlic-bread-1.webp",
+      "/Image/product/buy/garlic-bread-2.webp",
+      "/Image/product/buy/garlic-bread-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "21 kcal" },
@@ -628,10 +628,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tomato_cheese_1.webp",
-      "/Image/productpage/tomato_cheese_2.webp",
-      "/Image/productpage/tomato_cheese_3.webp",
-      "/Image/productpage/seasoning_product.webp",
+      "/Image/product/buy/tomato-cheese-1.webp",
+      "/Image/product/buy/tomato-cheese-2.webp",
+      "/Image/product/buy/tomato-cheese-3.webp",
+      "/Image/product/buy/seasoning-product.webp",
     ],
     nutrition: [
       { name: "Energy", value: "24 kcal" },
@@ -679,10 +679,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/chaat_masala_1.webp",
-      "/Image/productpage/chaat_masala_2.webp",
-      "/Image/productpage/chaat_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/chaat-masala-1.webp",
+      "/Image/product/buy/chaat-masala-2.webp",
+      "/Image/product/buy/chaat-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "15 kcal" },
@@ -730,10 +730,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/chhas_masala_1.webp",
-      "/Image/productpage/chhas_masala_2.webp",
-      "/Image/productpage/chhas_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/chhas-masala-1.webp",
+      "/Image/product/buy/chhas-masala-2.webp",
+      "/Image/product/buy/chhas-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "13 kcal" },
@@ -780,10 +780,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/chhole_masala_1.webp",
-      "/Image/productpage/chhole_masala_2.webp",
-      "/Image/productpage/chhole_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/chhole-masala-1.webp",
+      "/Image/product/buy/chhole-masala-2.webp",
+      "/Image/product/buy/chhole-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17 kcal" },
@@ -830,10 +830,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/garam_masala_1.webp",
-      "/Image/productpage/garam_masala_2.webp",
-      "/Image/productpage/garam_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/garam-masala-1.webp",
+      "/Image/product/buy/garam-masala-2.webp",
+      "/Image/product/buy/garam-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -880,10 +880,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/kitchen_king_masala_1.webp",
-      "/Image/productpage/kitchen_king_masala_2.webp",
-      "/Image/productpage/kitchen_king_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/kitchen-king-masala-1.webp",
+      "/Image/product/buy/kitchen-king-masala-2.webp",
+      "/Image/product/buy/kitchen-king-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -930,10 +930,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/panipuri_masala_1.webp",
-      "/Image/productpage/panipuri_masala_2.webp",
-      "/Image/productpage/panipuri_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/panipuri-masala-1.webp",
+      "/Image/product/buy/panipuri-masala-2.webp",
+      "/Image/product/buy/panipuri-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "14 kcal" },
@@ -980,10 +980,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/pavbhaji_masala_1.webp",
-      "/Image/productpage/pavbhaji_masala_2.webp",
-      "/Image/productpage/pavbhaji_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/pavbhaji-masala-1.webp",
+      "/Image/product/buy/pavbhaji-masala-2.webp",
+      "/Image/product/buy/pavbhaji-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "14 kcal" },
@@ -1030,10 +1030,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/punjabi_gravy_1.webp",
-      "/Image/productpage/punjabi_gravy_2.webp",
-      "/Image/productpage/punjabi_gravy_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/punjabi-gravy-1.webp",
+      "/Image/product/buy/punjabi-gravy-2.webp",
+      "/Image/product/buy/punjabi-gravy-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "20 kcal" },
@@ -1080,10 +1080,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/sambhar_masala_1.webp",
-      "/Image/productpage/sambhar_masala_2.webp",
-      "/Image/productpage/sambhar_masala_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/sambhar-masala-1.webp",
+      "/Image/product/buy/sambhar-masala-2.webp",
+      "/Image/product/buy/sambhar-masala-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -1130,10 +1130,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/shahi_biryani_1.webp",
-      "/Image/productpage/shahi_biryani_2.webp",
-      "/Image/productpage/shahi_biryani_3.webp",
-      "/Image/productpage/blended_spices.webp",
+      "/Image/product/buy/shahi-biryani-1.webp",
+      "/Image/product/buy/shahi-biryani-2.webp",
+      "/Image/product/buy/shahi-biryani-3.webp",
+      "/Image/product/buy/blended-spices.webp",
     ],
     nutrition: [
       { name: "Energy", value: "19 kcal" },
@@ -1180,10 +1180,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "300 kcal" },
@@ -1230,10 +1230,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "313 kcal" },
@@ -1278,10 +1278,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "255 kcal" },
@@ -1326,10 +1326,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "247 kcal" },
@@ -1374,10 +1374,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "323 kcal" },
@@ -1422,10 +1422,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "298 kcal" },
@@ -1470,10 +1470,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "375 kcal" },
@@ -1518,10 +1518,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "282 kcal" },
@@ -1566,10 +1566,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "335 kcal" },
@@ -1614,10 +1614,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "323 kcal" },
@@ -1662,10 +1662,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "508 kcal" },
@@ -1710,10 +1710,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "525 kcal" },
@@ -1758,10 +1758,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "247 kcal" },
@@ -1806,10 +1806,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "337 kcal" },
@@ -1854,10 +1854,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/chilli_flakes_1.webp",
-      "/Image/productpage/chilli_flakes_2.webp",
-      "/Image/productpage/chilli_flakes_3.webp",
-      "/Image/productpage/exotic_range.webp",
+      "/Image/product/buy/chilli-flakes-1.webp",
+      "/Image/product/buy/chilli-flakes-2.webp",
+      "/Image/product/buy/chilli-flakes-3.webp",
+      "/Image/product/buy/exotic-range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "19 kcal" },
@@ -1904,10 +1904,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/garlic_powder_1.webp",
-      "/Image/productpage/garlic_powder_2.webp",
-      "/Image/productpage/garlic_powder_3.webp",
-      "/Image/productpage/exotic_range.webp",
+      "/Image/product/buy/garlic-powder-1.webp",
+      "/Image/product/buy/garlic-powder-2.webp",
+      "/Image/product/buy/garlic-powder-3.webp",
+      "/Image/product/buy/exotic-range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -1954,10 +1954,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/onion_powder_1.webp",
-      "/Image/productpage/onion_powder_2.webp",
-      "/Image/productpage/onion_powder_3.webp",
-      "/Image/productpage/exotic_range.webp",
+      "/Image/product/buy/onion-powder-1.webp",
+      "/Image/product/buy/onion-powder-2.webp",
+      "/Image/product/buy/onion-powder-3.webp",
+      "/Image/product/buy/exotic-range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -2004,10 +2004,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/oregano_1.webp",
-      "/Image/productpage/oregano_2.webp",
-      "/Image/productpage/oregano_3.webp",
-      "/Image/productpage/exotic_range.webp",
+      "/Image/product/buy/oregano-1.webp",
+      "/Image/product/buy/oregano-2.webp",
+      "/Image/product/buy/oregano-3.webp",
+      "/Image/product/buy/exotic-range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },
@@ -2054,10 +2054,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tomato_powder_1.webp",
-      "/Image/productpage/tomato_powder_2.webp",
-      "/Image/productpage/tomato_powder_3.webp",
-      "/Image/productpage/exotic_range.webp",
+      "/Image/product/buy/tomato-powder-1.webp",
+      "/Image/product/buy/tomato-powder-2.webp",
+      "/Image/product/buy/tomato-powder-3.webp",
+      "/Image/product/buy/exotic-range.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18 kcal" },
@@ -2104,10 +2104,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17 kcal" },
@@ -2154,10 +2154,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17.5 kcal" },
@@ -2204,10 +2204,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18.75 kcal" },
@@ -2254,10 +2254,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18.75 kcal" },
@@ -2304,10 +2304,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/productpage/tofu_img.webp",
-      "/Image/productpage/tofu_img1.webp",
-      "/Image/productpage/tofu_img2.webp",
-      "/Image/productpage/tofu_img4.webp",
+      "/Image/product/buy/tofu-img.webp",
+      "/Image/product/buy/tofu-img1.webp",
+      "/Image/product/buy/product-gallery-2.webp",
+      "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },

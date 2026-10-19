@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
 import { productsDetail, productsMetadata } from "@/data/ui/productDetail";
-import { productsData } from "@/data/ui/categories";
+import { productsData } from "@/data/buy/categories";
 import RelatedProducts from "@/components/product/RelatedProducts";
 import Testimonials from "@/components/common/Testimonials";
 import GetInTouch from "@/components/common/GetInTouch";
@@ -51,6 +52,11 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { id } = await params;
+  const sellerOnlyMakhana = productsDetail.some(
+    (item) => item.slug === id && /makhana|foxnuts/i.test(item.name),
+  );
+  if (sellerOnlyMakhana) redirect("/export/products");
+
   // All products
   const allProducts = Object.values(productsData).flat();
 

@@ -2,17 +2,23 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import { products } from "../data/ui/products";
-import { useRouter } from "next/navigation";
+import { products } from "../data/buy/products";
+import { exportCatalogProducts } from "../data/export/products";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function SearchBar({ className = "", onSearch }) {
   const [search, setSearch] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
   const wrapperRef = useRef(null);
 
+  const isExport =
+    pathname === "/export" || pathname?.startsWith("/export/") || false;
+  const catalog = isExport ? exportCatalogProducts : products;
+
   // Filter products
-  const suggestions = products.filter(
+  const suggestions = catalog.filter(
     (item) =>
       item.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -36,9 +42,13 @@ export default function SearchBar({ className = "", onSearch }) {
     if (onSearch) onSearch();
 
     if (query) {
-      router.push(`/product?search=${query}`);
+      router.push(
+        isExport
+          ? `/export/products?search=${query}`
+          : `/product?search=${query}`,
+      );
     } else {
-      router.push(`/product`);
+      router.push(isExport ? "/export/products" : "/product");
     }
   };
 
@@ -65,7 +75,7 @@ export default function SearchBar({ className = "", onSearch }) {
             setShowSuggestions(false);
             setSearch("");
             if (onSearch) onSearch();
-            router.push("/product");
+            router.push(isExport ? "/export/products" : "/product");
           }}
           className="text-black text-xl px-3 py-2 cursor-pointer"
         >
@@ -91,7 +101,11 @@ export default function SearchBar({ className = "", onSearch }) {
                         setSearch("");
                         setShowSuggestions(false);
                         if (onSearch) onSearch();
-                        router.push(`/product/${item.slug}`);
+                        router.push(
+                          isExport
+                            ? "/export/products"
+                            : `/product/${item.slug}`,
+                        );
                       }}
                       className="w-full text-left px-3 py-3 hover:bg-gray-100 rounded-xl flex items-center justify-between transition-colors group mb-1"
                     >
@@ -116,7 +130,7 @@ export default function SearchBar({ className = "", onSearch }) {
               </ul>
             ) : (
               <div className="p-6 text-sm text-gray-500 text-center">
-                No products found for "{search}"
+                No products found for &quot;{search}&quot;
               </div>
             )}
           </div>

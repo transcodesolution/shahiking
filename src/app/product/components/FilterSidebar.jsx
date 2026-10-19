@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import FilterOption from "./FilterOption";
 import PriceRangeFilter from "./PriceRangeFilter";
 import FilterDrawer from "./FilterDrawer";
-import { availability, productCategories, quantity } from "@/data/ui/filters";
+import { availability, productCategories, quantity } from "@/data/buy/filters";
 import { IoOptionsOutline } from "react-icons/io5";
 
 export default function FilterSidebar({
@@ -18,15 +18,16 @@ export default function FilterSidebar({
   setMinVal,
   maxVal,
   setMaxVal,
+  onClear,
 }) {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isPriceOpen, setIsPriceOpen] = useState(false);
-  const [isQuantityOpen, setIsQuantityOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isPriceOpen, setIsPriceOpen] = useState(true);
+  const [isQuantityOpen, setIsQuantityOpen] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   const min = 0;
-  const max = 2000;
+  const max = 900;
   // handle min change
   const handleMinChange = (e) => {
     const value = Math.min(Number(e.target.value), maxVal - 10);
@@ -40,15 +41,16 @@ export default function FilterSidebar({
   };
 
   const handleClearAll = () => {
+    if (onClear) return onClear();
     setIsChecked([]);
     setIsStock(null);
     setSelectedQuantity("");
     setMinVal(0);
-    setMaxVal(2000);
+    setMaxVal(900);
   };
 
   return (
-    <div className="w-full lg:w-94 h-auto bg-secondary rounded-xl shadow-sm border border-[#C1C1C1]">
+    <div className="h-auto w-full rounded-lg border border-[#D8D5CC] bg-[#F6F6F6]">
       <div className="relative flex justify-between p-4">
         <h2 className="hidden lg:flex items-center gap-2 body-md font-semibold text-primary cursor-pointer">
           <span>
@@ -79,6 +81,7 @@ export default function FilterSidebar({
           setMinVal={setMinVal}
           maxVal={maxVal}
           setMaxVal={setMaxVal}
+          onClear={handleClearAll}
         />
 
         <button
@@ -89,7 +92,7 @@ export default function FilterSidebar({
         </button>
       </div>
 
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D8D5CC] p-4 hidden lg:block">
         {/* Header */}
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -127,7 +130,7 @@ export default function FilterSidebar({
         )}
       </div>
 
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D8D5CC] p-4 hidden lg:block">
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
           className="font-semibold mb-2 text-primary body-md flex justify-between items-center w-full cursor-pointer"
@@ -172,7 +175,7 @@ export default function FilterSidebar({
         />
       </div>
 
-      <div className="border-t border-[#D2D2D2] p-4 hidden lg:block">
+      <div className="border-t border-[#D8D5CC] p-4 hidden lg:block">
         <button
           onClick={() => setIsQuantityOpen(!isQuantityOpen)}
           className="font-semibold mb-2 body-md text-primary flex justify-between items-center w-full cursor-pointer"

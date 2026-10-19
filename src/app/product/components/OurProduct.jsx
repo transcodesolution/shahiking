@@ -4,10 +4,10 @@ import { useState } from "react";
 import FilterSidebar from "./FilterSidebar";
 import ProductCard from "./ProductCard";
 import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
-import { products } from "@/data/ui/products";
-import { useParams } from "next/navigation";
+import { products } from "@/data/buy/products";
 import Link from "next/link";
 import GetInTouch from "@/components/common/GetInTouch";
+import { matchesProductCategory } from "@/data/ui/productCategories";
 
 export default function OurProduct() {
   const [search, setSearch] = useState("");
@@ -17,234 +17,91 @@ export default function OurProduct() {
   const [isStock, setIsStock] = useState(null);
   const [selectedQuantity, setSelectedQuantity] = useState("");
   const [minVal, setMinVal] = useState(0);
-  const [maxVal, setMaxVal] = useState(2000);
+  const [maxVal, setMaxVal] = useState(900);
 
-  const { slug } = useParams();
-  const product = products.find((item) => item.slug === slug);
-
-  const toggleWishlist = (id) => {
-    setWishlist((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
-    );
-  };
-
-  const handlePrev = () => {
-    if (activePage > 1) setActivePage(activePage - 1);
-  };
-
-  const handleNext = () => {
-    if (activePage < totalPages) setActivePage(activePage + 1);
-  };
-
-  // FILTER
   const filteredProducts = products.filter((item) => {
-    const searchText = search?.toLowerCase().trim() || "";
-
-    // SLUG
-    const matchesSlug = !slug || item.slug === slug;
-
-    // SEARCH
-    const matchesSearch =
-      !searchText || item.name?.toLowerCase().includes(searchText);
-    //  CATEGORY FILTER
-    const matchesCategory =
-      isChecked.length === 0 ||
-      isChecked.some((cat) => {
-        const value = cat.toLowerCase().trim();
-
-        if (Array.isArray(item.category)) {
-          return item.category.some((c) => c.toLowerCase().trim() === value);
-        }
-
-        if (typeof item.category === "string") {
-          return item.category.toLowerCase().trim() === value;
-        }
-
-        return false;
-      });
-
-    //STOCK
-    const matchesStock = !isStock || item.availability === isStock;
-
-    // QUANTITY
-    const matchesQuantity =
-      !selectedQuantity ||
-      (Array.isArray(item.quantity)
-        ? item.quantity.includes(selectedQuantity)
-        : item.quantity === selectedQuantity);
-
-    // PRICE
-    const matchesPrice = item.price >= minVal && item.price <= maxVal;
-
-    return (
-      matchesSlug &&
-      matchesSearch &&
-      matchesCategory &&
-      matchesStock &&
-      matchesQuantity &&
-      matchesPrice
-    );
+    const term = search.trim().toLowerCase();
+    const categories = Array.isArray(item.category) ? item.category : [item.category];
+    const matchesCategory = matchesProductCategory(item, isChecked);
+    const matchesQuantity = !selectedQuantity ||
+      (Array.isArray(item.quantity) ? item.quantity.includes(selectedQuantity) : item.quantity === selectedQuantity);
+    return (!term || `${item.name} ${categories.join(" ")}`.toLowerCase().includes(term)) &&
+      matchesCategory && (!isStock || item.availability === isStock) && matchesQuantity &&
+      (item.price == null || (item.price >= minVal && item.price <= maxVal));
   });
-  // PAGINATION
+
   const itemsPerPage = 12;
-
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
-
-  const indexOfLastItem = activePage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-
-  const currentProducts = filteredProducts.slice(
-    indexOfFirstItem,
-    indexOfLastItem,
-  );
+  const currentPage = Math.min(activePage, Math.max(1, totalPages));
+  const currentProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const updateFilter = (setter) => (value) => {
+    setter(value);
+    setActivePage(1);
+  };
+  const clearFilters = () => {
+    setSearch(""); setIsChecked([]); setIsStock(null); setSelectedQuantity(""); setMinVal(0); setMaxVal(900); setActivePage(1);
+  };
 
   return (
-    <div className="bg-secondary ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-10 py-10 md:py-16">
-          <div>
-            <FilterSidebar
-              isChecked={isChecked}
-              setIsChecked={setIsChecked}
-              isStock={isStock}
-              setIsStock={setIsStock}
-              selectedQuantity={selectedQuantity}
-              setSelectedQuantity={setSelectedQuantity}
-              minVal={minVal}
-              setMinVal={setMinVal}
-              maxVal={maxVal}
-              setMaxVal={setMaxVal}
-            />
-          </div>
-          <div className="w-full max-w-300">
-            <div className="flex-1 border border-[#C1C1C1] rounded-xl shadow-sm bg-secondary min-h-screen">
-              <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-[#C1C1C1] p-6">
-                <p className="text-accent">
-                  Showing {filteredProducts.length} results
-                </p>
-
-                <div className="relative flex items-center border border-[#C1C1C1] rounded-full px-4 py-2 bg-[#FCFCFC] w-full sm:max-w-68.5">
-                  <input
-                    type="text"
-                    placeholder="Search product"
-                    className="outline-none w-full bg-transparent ml-6"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                  />
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <span className="text-[20px] text-accent">
-                      <IoMdSearch />
+    <>
+      <section className="bg-[#F6F6F6]">
+        <div className="mx-auto max-w-[1830px] px-4 py-4 sm:px-6 lg:px-[5.25%] lg:py-5">
+          <div className="flex flex-col gap-5 lg:flex-row lg:gap-[3.4%]">
+            <aside className="w-full shrink-0 lg:w-[27%]">
+              <FilterSidebar onClear={clearFilters} isChecked={isChecked} setIsChecked={updateFilter(setIsChecked)} isStock={isStock} setIsStock={updateFilter(setIsStock)}
+                selectedQuantity={selectedQuantity} setSelectedQuantity={updateFilter(setSelectedQuantity)}
+                minVal={minVal} setMinVal={updateFilter(setMinVal)} maxVal={maxVal} setMaxVal={updateFilter(setMaxVal)} />
+            </aside>
+            <div className="min-w-0 flex-1">
+              <div className="rounded-lg border border-[#D8D5CC] bg-[#F6F6F6]">
+                <div className="flex flex-col items-center justify-between gap-4 border-b border-[#D8D5CC] px-5 py-5 sm:flex-row md:px-7">
+                  <p className="text-sm text-accent" aria-live="polite">Showing {filteredProducts.length} {filteredProducts.length === 1 ? "result" : "results"}</p>
+                  <label className="relative flex w-full items-center rounded-full border border-[#D8D5CC] px-4 py-2.5 sm:max-w-70">
+                    <IoMdSearch className="absolute left-3 text-xl text-accent" />
+                    <input aria-label="Search products" type="search" placeholder="Search product" value={search}
+                      onChange={(e) => { setSearch(e.target.value); setActivePage(1); }} className="ml-6 w-full bg-transparent text-sm outline-none [&::-webkit-search-cancel-button]:cursor-pointer" />
+                  </label>
+                </div>
+                <div className="grid grid-cols-2 gap-3 p-4 sm:gap-5 sm:p-5 md:grid-cols-3 md:gap-5 md:p-6 xl:grid-cols-4 xl:gap-5 xl:p-6">
+                  {currentProducts.map((item) => (
+                    <Link key={item.id} href={`/product/${item.slug}`} className="min-w-0">
+                      <ProductCard item={item} isWishlisted={wishlist.includes(item.id)}
+                        onWishlistToggle={() => setWishlist((prev) => prev.includes(item.id) ? prev.filter((id) => id !== item.id) : [...prev, item.id])} />
+                    </Link>
+                  ))}
+                  {currentProducts.length === 0 && (
+                    <div className="col-span-full flex min-h-64 flex-col items-center justify-center px-4 text-center">
+                      <p className="font-heading text-xl font-semibold text-primary">No products available</p>
+                      <p className="mt-2 text-sm text-accent">Try another search or clear your filters to see more products.</p>
+                      <button type="button" onClick={clearFilters} className="mt-5 rounded-full bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-[#654d0e]">Clear search and filters</button>
+                    </div>
+                  )}
+                </div>
+              </div>
+              {totalPages > 1 && <nav aria-label="Product pages" className="mt-6 flex items-center justify-between gap-2 sm:mt-8">
+                <button type="button" onClick={() => setActivePage((page) => Math.max(1, Math.min(page, totalPages) - 1))} disabled={currentPage === 1}
+                  className="flex cursor-pointer items-center gap-1 rounded-full border border-primary px-3 py-2 text-sm text-primary disabled:cursor-not-allowed disabled:opacity-40 sm:px-5">
+                  <IoIosArrowBack /> <span className="hidden sm:inline">Previous</span>
+                </button>
+                <div className="flex items-center gap-1 sm:gap-2">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).filter((page) => totalPages <= 5 || page === 1 || page === totalPages || Math.abs(page - currentPage) <= 1).map((page, index, visible) => (
+                    <span key={page} className="flex items-center gap-1 sm:gap-2">
+                      {index > 0 && page - visible[index - 1] > 1 && <span className="px-1 text-accent">…</span>}
+                      <button type="button" aria-current={currentPage === page ? "page" : undefined} onClick={() => setActivePage(page)}
+                        className={`h-9 w-9 cursor-pointer rounded-full text-sm ${currentPage === page ? "bg-primary text-white" : "text-primary hover:bg-[#eee9dc]"}`}>{page}</button>
                     </span>
-                  </div>
+                  ))}
                 </div>
-              </div>
-
-              <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 p-4 md:p-6 xl:p-8">
-                {currentProducts.map((item) => (
-                  <Link key={item.id} href={`/product/${item.slug}`}>
-                    <ProductCard
-                      key={item.id}
-                      item={item}
-                      isWishlisted={wishlist.includes(item.id)}
-                      onWishlistToggle={() => toggleWishlist(item.id)}
-                    />
-                  </Link>
-                ))}
-              </div>
-            </div>
-            {/* pagination button */}
-            <div>
-              <div className="none xl:flex justify-between items-center mt-10 gap-4">
-                <div className="max-w-full flex justify-center mb-2">
-                  {/* Previous */}
-                  <button
-                    onClick={handlePrev}
-                    disabled={activePage === 1}
-                    className={`px-3 py-1 border rounded-full font-medium flex items-center gap-2 w-full max-w-35 cursor-pointer ${
-                      activePage === 1
-                        ? "text-accent border-accent cursor-not-allowed"
-                        : "text-primary"
-                    }`}
-                  >
-                    <IoIosArrowBack className="text-2xl" />
-                    Previous
-                  </button>
-                </div>
-
-                {/* Pages */}
-                <div className="flex justify-center items-center gap-3 max-w-full mb-2">
-                  {/* First Page */}
-                  {activePage > 3 && totalPages > 7 && (
-                    <>
-                      <button
-                        onClick={() => setActivePage(1)}
-                        className="w-10 h-10 flex items-center justify-center cursor-pointer"
-                      >
-                        1
-                      </button>
-                      <span>...</span>
-                    </>
-                  )}
-
-                  {/* Dynamic Middle Pages */}
-                  {Array.from({ length: totalPages }, (_, i) => i + 1)
-                    .filter((num) => {
-                      if (totalPages <= 7) return true;
-                      if (activePage <= 3) return num <= 5;
-                      if (activePage >= totalPages - 2)
-                        return num >= totalPages - 4;
-                      return num >= activePage - 1 && num <= activePage + 1;
-                    })
-                    .map((num) => (
-                      <button
-                        key={num}
-                        onClick={() => setActivePage(num)}
-                        className={`w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ${
-                          activePage === num
-                            ? "bg-primary text-secondary"
-                            : "text-black"
-                        }`}
-                      >
-                        {num}
-                      </button>
-                    ))}
-
-                  {/* Last Page */}
-                  {totalPages > 7 && activePage < totalPages - 2 && (
-                    <>
-                      <span>...</span>
-                      <button
-                        onClick={() => setActivePage(totalPages)}
-                        className="w-10 h-10 flex items-center justify-center cursor-pointer"
-                      >
-                        {totalPages}
-                      </button>
-                    </>
-                  )}
-                </div>
-                <div className="flex justify-center">
-                  {/* Next */}
-                  <button
-                    onClick={handleNext}
-                    disabled={activePage === totalPages}
-                    className={`px-7 py-1 border rounded-full font-medium flex items-center gap-2 w-full max-w-35 cursor-pointer ${
-                      activePage === totalPages
-                        ? "text-accent border-accent cursor-not-allowed"
-                        : "text-primary"
-                    }`}
-                  >
-                    Next
-                    <IoIosArrowForward className="text-2xl" />
-                  </button>
-                </div>
-              </div>
+                <button type="button" onClick={() => setActivePage((page) => Math.min(totalPages, Math.min(page, totalPages) + 1))} disabled={currentPage === totalPages}
+                  className="flex cursor-pointer items-center gap-1 rounded-full border border-primary px-3 py-2 text-sm text-primary disabled:cursor-not-allowed disabled:opacity-40 sm:px-5">
+                  <span className="hidden sm:inline">Next</span> <IoIosArrowForward />
+                </button>
+              </nav>}
             </div>
           </div>
         </div>
-        <div>
-          <GetInTouch selectedCategories={isChecked} />
-        </div>
-      </div>
-    </div>
+      </section>
+      <GetInTouch selectedCategories={isChecked} />
+    </>
   );
 }

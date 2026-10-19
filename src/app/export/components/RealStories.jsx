@@ -78,7 +78,7 @@ export default function RealStories() {
                 title={item.title || `Real story ${index + 1}`}
               />
 
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/80 to-transparent px-3 pb-3 pt-10">
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-linear-to-t from-black/80 to-transparent px-3 pb-3 pt-10">
                 <h2 className="text-sm font-semibold text-white">
                   {item.title}
                 </h2>

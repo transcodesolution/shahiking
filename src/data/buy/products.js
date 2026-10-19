@@ -1,49 +1,5 @@
 export const products = [
   {
-    id: 1,
-    name: "Premium Raw Makhana (Foxnuts)",
-    slug:"premium-raw-makhana",
-    category:["Makhana (Foxnuts)","Healthy Snacks"],
-    availability: "In Stock", 
-    quantity: "200g",
-    price: 250,
-    rating: 5.0,
-    img: "/Image/productpage/product_img1.webp",
-  },
-  {
-    id: 2,
-    name: "Peri-Peri Makhana (Foxnuts)",
-    slug:"peri-peri-makhana",
-    category:["Makhana (Foxnuts)","Healthy Snacks","Flavoured Makhana (Foxnuts)"],
-    availability: "In Stock", 
-    quantity: "55g",
-    price: 134,
-    rating: 5.0,
-    img: "/Image/productpage/product_img2.webp",
-  },
-  {
-    id: 3,
-    name: "Himalayan Salt Makhana (Foxnuts)",
-    slug:"himalayan-salt-makhana",
-    category:["Makhana (Foxnuts)","Healthy Snacks","Flavoured Makhana (Foxnuts)"],
-    availability: "In Stock", 
-    quantity: "55g",
-    price: 134,
-    rating: 5.0,
-    img: "/Image/productpage/product_img3.webp",
-  },
-  {
-    id: 4,
-    name: "Pure Bean Fit Tofu",
-    slug:"pure-bean-fit-tofu",
-    category:"Vegan Protein",
-    availability: "In Stock", 
-    quantity: ["200g", "500g"], 
-    price: 275,
-    rating: 5.0,
-    img: "/Image/productpage/protein_img1.webp",
-  },
-  {
     id: 5,
     name: "Lemon Taste",
     slug:"lemon-taste",
@@ -52,7 +8,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/lemon_taste_seasoning.webp",
+    img: "/Image/product/buy/lemon-taste-seasoning.webp",
   },
   {
     id: 6,
@@ -63,7 +19,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/cheddar_cheesy_seasoning.webp",
+    img: "/Image/product/buy/cheddar-cheesy-seasoning.webp",
   },
   {
     id: 7,
@@ -74,7 +30,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/tangy_tomato_seasoning.webp",
+    img: "/Image/product/buy/tangy-tomato-seasoning.webp",
   },
   {
     id: 8,
@@ -85,7 +41,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/pudina_burst_seasoning.webp",
+    img: "/Image/product/buy/pudina-burst-seasoning.webp",
   },
   {
     id: 9,
@@ -96,7 +52,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/pizza_pasta_seasoning.webp",
+    img: "/Image/product/buy/pizza-pasta-seasoning.webp",
   },
   {
     id: 10,
@@ -107,7 +63,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/jain_peri_peri_seasoning.webp",
+    img: "/Image/product/buy/jain-peri-peri-seasoning.webp",
   },
   {
     id: 11,
@@ -118,7 +74,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/peri_peri_seasoning.webp",
+    img: "/Image/product/buy/peri-peri-seasoning.webp",
   },
   {
     id: 12,
@@ -129,7 +85,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/garlic_bread_seasoning.webp",
+    img: "/Image/product/buy/garlic-bread-seasoning.webp",
   },
   {
     id: 13,
@@ -140,7 +96,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/tomato_cheese_seasoning.webp",
+    img: "/Image/product/buy/tomato-cheese-seasoning.webp",
   },
   {
     id: 14,
@@ -151,7 +107,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/chat_masala.webp",
+    img: "/Image/product/buy/chat-masala.webp",
   },
   {
     id: 15,
@@ -162,7 +118,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/chhas_masala.webp",
+    img: "/Image/product/buy/chhas-masala.webp",
   },
   {
     id: 16,
@@ -173,7 +129,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/chhole_masala.webp",
+    img: "/Image/product/buy/chhole-masala.webp",
   },
   {
     id: 17,
@@ -184,7 +140,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/garam_masala.webp",
+    img: "/Image/product/buy/garam-masala.webp",
   },
   {
     id: 18,
@@ -195,7 +151,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/kitchen_king_masala.webp",
+    img: "/Image/product/buy/kitchen-king-masala.webp",
   },
   {
     id: 19,
@@ -206,7 +162,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/pani_puri_masala.webp",
+    img: "/Image/product/buy/pani-puri-masala.webp",
   },
   {
     id: 20,
@@ -217,7 +173,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/pav_bhaji_masala.webp",
+    img: "/Image/product/buy/pav-bhaji-masala.webp",
   },
   {
     id: 21,
@@ -228,7 +184,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/punjabi_gravy_masala.webp",
+    img: "/Image/product/buy/punjabi-gravy-masala.webp",
   },
   {
     id: 22,
@@ -239,7 +195,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/sambhar_masala.webp",
+    img: "/Image/product/buy/sambhar-masala.webp",
   },
   {
     id: 23,
@@ -250,7 +206,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/shahi_biryani_masala.webp",
+    img: "/Image/product/buy/shahi-biryani-masala.webp",
   },
   {
     id: 24,
@@ -261,7 +217,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/amchur_spices.webp",
+    img: "/Image/product/buy/amchur-spices.webp",
   },
   {
     id: 25,
@@ -272,7 +228,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/bay_leaves.webp",
+    img: "/Image/product/buy/bay-leaves.webp",
   },
   {
     id: 26,
@@ -283,7 +239,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/black_pepper.webp",
+    img: "/Image/product/buy/black-pepper.webp",
   },
   {
     id: 27,
@@ -294,7 +250,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/cigarette_cassia.webp",
+    img: "/Image/product/buy/cigarette-cassia.webp",
   },
   {
     id: 28,
@@ -305,7 +261,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/clove_spices.webp",
+    img: "/Image/product/buy/clove-spices.webp",
   },
   {
     id: 29,
@@ -316,7 +272,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/coriander_seeds.webp",
+    img: "/Image/product/buy/coriander-seeds.webp",
   },
   {
     id: 30,
@@ -327,7 +283,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/cumin_seeds.webp",
+    img: "/Image/product/buy/cumin-seeds.webp",
   },
   {
     id: 31,
@@ -338,7 +294,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/cigarette_cassia.webp",
+    img: "/Image/product/buy/cigarette-cassia.webp",
   },
   {
     id: 32,
@@ -349,7 +305,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/dry_ginger.webp",
+    img: "/Image/product/buy/dry-ginger.webp",
   },
   {
     id: 33,
@@ -360,7 +316,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/fenugreek_seeds.webp",
+    img: "/Image/product/buy/fenugreek-seeds.webp",
   },
   {
     id: 34,
@@ -371,7 +327,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/mustard_seeds.webp",
+    img: "/Image/product/buy/mustard-seeds.webp",
   },
   {
     id: 35,
@@ -382,7 +338,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/nutmeg.webp",
+    img: "/Image/product/buy/nutmeg.webp",
   },
   {
     id: 36,
@@ -393,7 +349,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/split_cassia.webp",
+    img: "/Image/product/buy/split-cassia.webp",
   },
   {
     id: 37,
@@ -404,7 +360,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/star_anise.webp",
+    img: "/Image/product/buy/star-anise.webp",
   },
   {
     id: 38,
@@ -415,7 +371,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/chilli_flakes.webp",
+    img: "/Image/product/buy/chilli-flakes.webp",
   },
   {
     id: 39,
@@ -426,7 +382,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/garlic_powder.webp",
+    img: "/Image/product/buy/garlic-powder.webp",
   },
   {
     id: 40,
@@ -437,7 +393,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/onion_powder.webp",
+    img: "/Image/product/buy/onion-powder.webp",
   },
   {
     id: 41,
@@ -448,7 +404,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/oregano.webp",
+    img: "/Image/product/buy/oregano.webp",
   },
   {
     id: 42,
@@ -459,7 +415,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/tomato_powder.webp",
+    img: "/Image/product/buy/tomato-powder.webp",
   },
   {
     id: 43,
@@ -470,7 +426,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/coriander_cumin.webp",
+    img: "/Image/product/buy/coriander-cumin.webp",
   },
   {
     id: 44,
@@ -481,7 +437,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/kashmiri_chilli.webp",
+    img: "/Image/product/buy/kashmiri-chilli.webp",
   },
   {
     id: 45,
@@ -492,7 +448,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/red_chilli.webp",
+    img: "/Image/product/buy/red-chilli.webp",
   },
   {
     id: 46,
@@ -503,7 +459,7 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/spicy_red_chilli.webp",
+    img: "/Image/product/buy/spicy-red-chilli.webp",
   },
   {
     id: 47,
@@ -514,72 +470,36 @@ export const products = [
     quantity: ["100g"], 
     price: 300,
     rating: 5.0,
-    img: "/Image/productpage/turmeric_powder.webp",
+    img: "/Image/product/buy/turmeric-powder.webp",
   },
 ];
 
-{/* product menu dropdown data */}
+export const categoriesData = [
+  { id: "protein", name: "Plant-Based Protein" },
+  { id: "spices", name: "Spices" },
+];
 
- export const categoriesData = [
-    { id: "nuts", name: "Nuts & Snacks" },
-    { id: "protein", name: "Plant-Based Protein" },
-    { id: "spices", name: "Spices" }
-  ];
-  
-  export const productsItem = {
-    nuts: [
-      {
-        id: 1,
-        name: "Himalayan Salt Makhana (Foxnuts)",
-        slug:"himalayan-salt-makhana",
-        img: "/Image/productpage/product_img3.webp",
-      },
-      {
-        id: 2,
-        name: "Peri-Peri Makhana (Foxnuts)",
-        slug:"peri-peri-makhana",
-        img: "/Image/productpage/product_img2.webp",
-      },
-      {
-        id: 3,
-        name: "Premium Raw Makhana (Foxnuts)",
-        slug:"premium-raw-makhana",
-        img: "/Image/productpage/product_img1.webp",
-      },
-    ],
-    protein: [
-      {
-        id: 1,
-        name: "Pure Bean Fit Tofu",
-        slug:"pure-bean-fit-tofu",
-        img: "/Image/productpage/protein_img1.webp",
-      },
-    ],
-    spices: [
-      {
-        id: 1,
-        name: "Lemon Taste Seasoning",
-        slug:"lemon-taste",
-        img: "/Image/productpage/lemon_taste_seasoning.webp",
-      },
-      {
-        id: 2,
-        name: "Chaat Masala",
-        slug:"chaat-masala",
-        img: "/Image/productpage/chat_masala.webp",
-      },
-      {
-        id: 3,
-        name: "Black Pepper",
-        slug:"black-pepper",
-        img: "/Image/productpage/black_pepper.webp",
-      },
-      {
-        id: 4,
-        name: "Chilli Flakes",
-        slug:"chilli-flakes",
-        img: "/Image/productpage/chilli_flakes.webp",
-      },
-    ],
-  };
+const dropdownSpiceSlugs = [
+  "lemon-taste",
+  "chaat-masala",
+  "black-pepper",
+  "chilli-flakes",
+];
+
+export const productsItem = {
+  protein: [
+    {
+      id: 1,
+      name: "Pure Bean Fit Tofu",
+      slug: "pure-bean-fit-tofu",
+      img: "/Image/product/buy/protein-img1.webp",
+    },
+  ],
+  spices: dropdownSpiceSlugs
+    .map((slug, index) => {
+      const product = products.find((item) => item.slug === slug);
+      return product ? { id: index + 1, ...product } : null;
+    })
+    .filter(Boolean),
+};
 

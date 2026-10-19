@@ -1,5 +1,5 @@
 
-import { whychooseData } from "@/data/ui/categories";
+import { whychooseData } from "@/data/buy/categories";
 import Image from "next/image";
 import React from "react";
 import { SiTicktick } from "react-icons/si";

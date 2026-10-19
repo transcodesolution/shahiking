@@ -1,4 +1,4 @@
-import { productsData } from "@/data/ui/categories";
+import { productsData } from "@/data/buy/categories";
 import Image from "next/image";
 import ProductCard from "../ProductCard";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function RelatedProducts({currentSlug}) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Leaf Images */}
         <Image
-          src="/Image/productpage/product_leaf.webp"
+          src="/Image/product/buy/product-leaf.webp"
           alt="leaf"
           width={72}
           height={128}
@@ -25,7 +25,7 @@ export default function RelatedProducts({currentSlug}) {
         />
 
         <Image
-          src="/Image/productpage/product_leaf.webp"
+          src="/Image/product/buy/product-leaf.webp"
           alt="leaf"
           width={72}
           height={128}

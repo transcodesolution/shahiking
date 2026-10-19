@@ -4,10 +4,10 @@ import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import { categories, productsData } from "@/data/ui/categories";
+import { categories, productsData } from "@/data/buy/categories";
 
 export default function ShopCategory() {
-  const [activeCategory, setActiveCategory] = useState("nuts");
+  const [activeCategory, setActiveCategory] = useState("protein");
   const products = productsData[activeCategory] || [];
 
   return (

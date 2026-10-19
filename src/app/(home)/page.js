@@ -56,7 +56,7 @@ export default function Home() {
         image:
           "https://shahiking.in/_next/image?url=%2FImage%2Flogo.webp&w=256&q=75",
         description:
-          "Shahiking offers premium Dry Fruits, Flavored Makhana, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living across India.",
+          "Shahiking offers premium Dry Fruits, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living across India.",
         brand: {
           "@type": "Brand",
           name: "Shahiking",
@@ -78,7 +78,7 @@ export default function Home() {
         url: "https://shahiking.in/",
         logo: "https://shahiking.in/_next/image?url=%2FImage%2Flogo.webp&w=256&q=75",
         description:
-          "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Flavored Makhana, Plant-Based Protein, Superfoods, and Healthy Snack Mixes.",
+          "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Plant-Based Protein, Superfoods, and Healthy Snack Mixes.",
         sameAs: [
           "https://www.instagram.com/shahiking_foods/",
           "https://www.linkedin.com/company/shahiking/posts/?feedView=all",
@@ -144,7 +144,7 @@ export default function Home() {
         url: "https://shahiking.in/",
         name: "Shahiking - Healthy Snacks & Plant-Based Foods",
         description:
-          "Buy healthy snacks, makhana, dry fruits, plant-based protein, and superfoods online in India.",
+          "Buy healthy snacks, dry fruits, plant-based protein, and superfoods online in India.",
         inLanguage: ["en", "hi"],
         isPartOf: {
           "@id": "https://shahiking.in/#website",
@@ -160,7 +160,7 @@ export default function Home() {
             name: "What is Shahiking?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Flavored Makhana, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living.",
+              text: "Shahiking is a trusted online health food store in India offering premium Dry Fruits, Plant-Based Protein, Superfoods, and Healthy Snack Mixes for clean and healthy living.",
             },
           },
 
@@ -169,7 +169,7 @@ export default function Home() {
             name: "What healthy products can I buy online from Shahiking?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You can buy dry fruits, protein powders, healthy snacks, makhana, and more.",
+              text: "You can buy dry fruits, protein powders, healthy snacks, and more.",
             },
           },
 

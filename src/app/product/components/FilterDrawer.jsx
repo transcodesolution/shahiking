@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 import PriceRangeFilter from "./PriceRangeFilter";
 import FilterOption from "./FilterOption";
-import { availability, productCategories, quantity } from "@/data/ui/filters";
+import { availability, productCategories, quantity } from "@/data/buy/filters";
 
 export default function FilterDrawer({
   isChecked,
@@ -18,13 +18,14 @@ export default function FilterDrawer({
   setMaxVal,
   isOpen,
   onClose,
+  onClear,
 }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPriceOpen, setIsPriceOpen] = useState(false);
   const [isQuantityOpen, setIsQuantityOpen] = useState(false);
   const min = 0;
-  const max = 2000;
+  const max = 900;
 
   // handle min change
   const handleMinChange = (e) => {
@@ -47,8 +48,15 @@ export default function FilterDrawer({
         className={`fixed top-0 left-0 h-screen w-full max-w-137.5 bg-secondary z-50 overflow-auto transform transition-transform duration-500 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="flex justify-between items-center p-4">
+        <div className="flex items-center justify-between p-4">
           <h1 className="text-2xl font-semibold text-primary">Filter</h1>
+          <button
+            type="button"
+            className="mr-3 text-sm font-semibold text-primary underline"
+            onClick={() => { onClear?.(); onClose(); }}
+          >
+            Clear All
+          </button>
           <button className="text-xl" onClick={onClose}>
             <IoMdClose />
           </button>

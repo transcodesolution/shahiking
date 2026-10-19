@@ -13,7 +13,7 @@ export default function ProductCard({
   return (
     <div
       onClick={onClick}
-      className="bg-secondary flex flex-col h-full border border-[#C1C1C1] rounded-xl p-2 md:p-4 shadow-sm relative group cursor-pointer overflow-hidden"
+      className="flex flex-col h-full border border-[#C1C1C1] rounded-xl p-2 md:p-4 shadow-sm relative group cursor-pointer overflow-hidden"
     >
       {/* Hover Gradient */}
      <div className="absolute inset-0 bg-[radial-gradient(circle,var(--gradientStart)0%,var(--gradientEnd)100%)] opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
@@ -45,7 +45,7 @@ export default function ProductCard({
       </div>
 
       {/* Title */}
-      <h3 className="mt-2 text-[14px] md:text-[18px] font-heading font-medium text-primary group-hover:text-secondary relative z-10 flex-1 line-clamp-2">
+      <h3 className="mt-2 text-[14px] md:text-[18px] font-medium text-primary group-hover:text-secondary relative z-10 flex-1 line-clamp-2">
         {item.name}
       </h3>
 

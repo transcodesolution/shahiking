@@ -25,20 +25,6 @@ export default function sitemap() {
       priority: 0.7,
     },
 
-    // Products
-    {
-      url: "https://shahiking.in/product/peri-peri-makhana",
-      priority: 0.9,
-    },
-    {
-      url: "https://shahiking.in/product/himalayan-salt-makhana",
-      priority: 0.9,
-    },
-    {
-      url: "https://shahiking.in/product/premium-raw-makhana",
-      priority: 0.9,
-    },
-
     // Blog
     {
       url: "https://shahiking.in/blog/plant-based-protein",

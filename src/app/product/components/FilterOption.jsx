@@ -1,6 +1,6 @@
 export default function FilterOption({ label, value, checked, onChange }) {
   return (
-    <label className="flex gap-2 mb-2 items-center cursor-pointer">
+    <label className="flex gap-2 mb-3.5 items-center cursor-pointer">
       {/* Accessible Input */}
       <input
         type="checkbox"
@@ -12,12 +12,11 @@ export default function FilterOption({ label, value, checked, onChange }) {
 
       {/* Custom Checkbox */}
       <div
-        className="h-6 w-6 border border-gray-400 rounded-md 
-        flex items-center justify-center
+        className="flex h-5 w-5 items-center justify-center rounded-sm border border-gray-400
         peer-checked:bg-primary peer-checked:border-primary"
       >
         <svg
-          className="w-5 h-5 text-secondary peer-checked:block"
+          className="h-4 w-4 text-secondary peer-checked:block"
           fill="none"
           stroke="currentColor"
           strokeWidth="3"
@@ -28,7 +27,7 @@ export default function FilterOption({ label, value, checked, onChange }) {
       </div>
 
       {/* Label */}
-      <span className="text-[18px] text-accent">{label}</span>
+      <span className="text-sm text-accent">{label}</span>
     </label>
   );
 }

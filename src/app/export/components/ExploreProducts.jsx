@@ -1,5 +1,5 @@
 "use client"
-import { exportCategories, productsData } from '@/data/ui/exportCategories';
+import { exportCategories, productsData } from '@/data/export/categories';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
@@ -120,7 +120,7 @@ export default function ExploreProducts() {
         {/* See All Products */}
         <div className="mt-8 text-center">
           <Link
-            href="/export/Product"
+            href="/export/products"
             className="inline-flex items-center gap-2 body-sm font-medium text-[#89630B] underline underline-offset-4 transition-colors"
           >
             See All Products
