@@ -16,7 +16,7 @@ export const exportCategories =[
   {
     id: "spices",
     label: "Spices",
-    image: "/Image/product/export/indian-spices-export-hero.webp",
+    image: "/Image/product/buy/spices-category.webp",
   },
   {
     id: "coming",
@@ -89,13 +89,13 @@ export const productsData = {
     {
       name: "Peri Peri",
       description: "Peri Peri Fox Nuts with a Bold & Spicy Crunch.",
-      image: "/Image/product/export/peri-peri-makhana.webp",
+      image: "/Image/product/export/savory-makhana-export.webp",
       slug: "peri-peri-makhana",
     },
     {
       name: "Himalayan Salted",
       description: "Himalayan Salted Fox Nuts for a Light & Satisfying Crunch.",
-      image: "/Image/product/export/himalayan-salt-makhana.webp",
+      image: "/Image/product/export/premium-raw-makhana.webp",
       slug: "himalayan-salt-makhana",
     },
     {
@@ -107,7 +107,7 @@ export const productsData = {
     {
       name: "Mint Pudina",
       description: "Refreshing Mint Fox Nuts with a Crisp & Savoury Crunch.",
-      image: "/Image/product/export/raw-makhana.webp",
+      image: "/Image/product/export/jain-peri-peri-masala.webp",
       slug: "mint-pudina-makhana",
     },
   ],

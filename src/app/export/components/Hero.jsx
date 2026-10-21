@@ -1,107 +1,153 @@
+
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import "swiper/css";
+import "swiper/css/effect-fade";
+
+const bannerSlides = [
+  {
+    id: 1,
+    image: "/Image/product/export/export-home-hero-woman.webp",
+    mobileImage: "/Image/product/export/export-home-hero-mobile.webp",
+    alt: "Indian woman holding a basket of Indian spices",
+    showContent: true,
+  },
+  {
+    id: 2,
+    image: "/Image/product/export/export-home-hero.webp",
+    mobileImage: "/Image/product/export/export-home-hero.webp",
+    alt: "Export trucks carrying parcels against a mountain landscape",
+    showContent: false,
+  },
+];
 
 export default function Hero() {
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src="/Image/product/export/export-products-hero.webp"
-        alt="Hero Background"
-        fill
-        priority
-        className="object-cover"
-      />
+    <section className="relative h-[75svh] min-h-130 overflow-hidden bg-secondary sm:h-[85svh] md:h-screen md:min-h-162.5">
+      <Swiper
+        modules={[Autoplay, EffectFade]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        loop
+        speed={900}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        onBeforeInit={(swiper) => (swiperRef.current = swiper)}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        className="h-full w-full"
+      >
+        {bannerSlides.map((slide) => (
+          <SwiperSlide key={slide.id} className="h-full">
+            <div className="relative h-full min-h-130 w-full overflow-hidden md:min-h-162.5">
+              {/* Desktop Image */}
+              <Image
+                src={slide.image}
+                alt={slide.alt}
+                fill
+                priority={slide.id === 1}
+                sizes="100vw"
+                className="hidden object-cover object-center md:block"
+              />
 
-      {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 bg-black/35"></div> */}
+              {/* Mobile Image */}
+              <Image
+                src={slide.mobileImage}
+                alt={slide.alt}
+                fill
+                priority={slide.id === 1}
+                sizes="100vw"
+                className="object-cover object-center md:hidden"
+              />
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto min-h-screen flex items-center px-5 sm:px-8 lg:px-12">
-        <div className="w-full max-w-3xl">
-          <div className="max-w-25 mb-1">
-            <h6 className="bg-[#7C601333] border border-primary rounded-3xl font-semibold py-1 px-4 text-center">EXPORT</h6>
-          </div>
-          <h1 className="font-heading text-black font-bold leading-tight text-[32px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[72px]">
-            Bringing India's Finest
-            <span className="block">
-              <span className="text-primary">Healthy Foods</span> to
-            </span>
-            Global Markets
-          </h1>
+              {/* First Slide Content */}
+              {slide.showContent && (
+                <div className="container relative z-10 mx-auto flex h-full min-h-130 items-center px-5 pb-12 pt-16 sm:px-8 md:min-h-162.5 md:px-8 md:pb-12 md:pt-20 lg:px-12">
+                  <div className="w-full max-w-3xl">
+                    <p className="text-base font-medium text-black sm:text-xl lg:text-[30px]">
+                      PREMIUM SPICE EXPORTS
+                    </p>
 
-          <p className="mt-4 max-w-xl text-[#414844] text-sm sm:text-base md:text-lg leading-7">
-            Premium-quality Makhana (Fox Nuts) and plant-based food products,
-            proudly manufactured in India and trusted by international buyers.
-          </p>
+                    <h1 className="font-heading text-[clamp(35px,5vw,65px)] font-bold leading-tight text-black">
+                      Rooted in India.
+                      <span className="block text-primary">
+                        Ready for the World.
+                      </span>
+                    </h1>
 
-          <div className="flex flex-wrap gap-1 md:gap-3 pt-2 mt-6">
-             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3 backdrop-blur-sm">
-                <div className="flex justify-center">
-                <Image
-                 src="/Image/exportpage/premium_quality_icon.webp"
-                 alt="premium quality"
-                 width={30}
-                 height={30} 
-                />
+                    <p className="text-[clamp(17px,2.5vw,35px)] font-medium text-black">
+                      Authentic origin. Assured quality.
+                    </p>
+
+                    <a
+                      href="/export/products"
+                      className="mt-6 inline-flex w-full max-w-59 items-center justify-center gap-2 rounded-[20px] bg-primary px-4  py-2 md:py-3 text-base font-medium text-secondary transition duration-300 hover:border hover:border-primary hover:bg-secondary hover:text-primary md:mt-8"
+                    >
+                      Explore Spices
+                      <FaArrowRightLong />
+                    </a>
+                  </div>
                 </div>
-                <p className="text-[14px] md:text-[18px] font-bold text-[#414844] text-center mt-2 pt-2">PREMIUM QUALITY</p>
-             </div>
-             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3.5 backdrop-blur-sm">
-                <div className="flex justify-center">
-                <Image
-                 src="/Image/exportpage/export_ready_icon.webp"
-                 alt="premium quality"
-                 width={30}
-                 height={30} 
-                />
-                </div>
-                <p className="text-[14px] md:text-[18px] font-bold text-[#414844] text-center mt-2 pt-2">EXPORT READY</p>
-             </div>
-             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3 backdrop-blur-sm">
-                <div className="flex justify-center">
-                <Image
-                 src="/Image/exportpage/international_stds_icon.webp"
-                 alt="premium quality"
-                 width={30}
-                 height={30} 
-                />
-                </div>
-                <p className="text-[14px] md:text-[18px] font-bold text-[#414844] text-center mt-2 pt-2">INTERNATIONAL STDS</p>
-             </div>
-             <div className="bg-[#FFFFFF5A] border-2 border-primary rounded-xl w-full max-w-42 p-3 backdrop-blur-sm">
-                <div className="flex justify-center">
-                <Image
-                 src="/Image/exportpage/global_trusted_icon.webp"
-                 alt="premium quality"
-                 width={30}
-                 height={30} 
-                />
-                </div>
-                <p className="text-[14px] md:text-[18px] font-bold text-[#414844] text-center mt-2 pt-2">GLOBAL TRUSTED</p>
-             </div>
-          </div>
+              )}
 
-          <div className="flex flex-wrap gap-1 md:gap-3 pt-2 mt-8">
-            <button className="text-secondary bg-primary px-1 py-2 rounded-full w-full max-w-59 mb-2 md:mb-0 hover:bg-secondary hover:text-primary hover:border hover:border-primary duration-500 cursor-pointer">
-              <a
-                href="#"
-                className="text-[16px] font-medium flex justify-center items-center gap-2"
-              >
-                Get Export Quote{" "}
-                <span>
-                  <FaArrowRightLong />
-                </span>
-              </a>
-            </button>
-            <button className="bg-secondary text-primary border border-primary px-1 py-2 rounded-full w-full max-w-56 mb-2 md:mb-0 hover:bg-primary hover:text-secondary duration-500 cursor-pointer">
-              <a href="#" className="text-[16px] font-medium">
-                Become a Distributor
-              </a>
-            </button>
-          </div>
-        </div>
+              {/* Second Slide Title */}
+              {!slide.showContent && (
+                <div className="absolute inset-x-0 top-[40%] z-10 flex justify-center px-4 sm:top-[15%] md:top-[25%] md:px-8">
+                  <h2 className="font-heading text-center text-[40px] font-bold uppercase leading-[1.15] text-black lg:text-[50px] xl:text-[80px]">
+                    From <span className="text-primary">India</span> To
+                    <span className="block"> 
+                       the <span className="text-primary">World</span>
+                    </span>
+                  </h2>
+                </div>
+              )}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Desktop Previous Arrow */}
+      <button
+        type="button"
+        aria-label="Previous banner"
+        onClick={() => swiperRef.current?.slidePrev()}
+        className="absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary md:left-6 lg:block md:p-3"
+      >
+        <IoIosArrowBack className="text-xl" />
+      </button>
+
+      {/* Desktop Next Arrow */}
+      <button
+        type="button"
+        aria-label="Next banner"
+        onClick={() => swiperRef.current?.slideNext()}
+        className="absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary md:right-6 lg:block md:p-3"
+      >
+        <IoIosArrowForward className="text-xl" />
+      </button>
+
+      {/* Pagination Dots */}
+      <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 rounded-full bg-white/40 px-3 py-1.5 backdrop-blur-sm">
+        {bannerSlides.map((slide, index) => (
+          <button
+            key={slide.id}
+            type="button"
+            aria-label={`Go to banner ${index + 1}`}
+            aria-current={activeIndex === index ? "true" : undefined}
+            onClick={() => swiperRef.current?.slideToLoop(index)}
+            className={`h-2.5 cursor-pointer rounded-full transition-all duration-500 ${activeIndex === index
+                ? "w-8 bg-primary"
+                : "w-2.5 bg-primary/40 hover:bg-primary/70"
+              }`}
+          />
+        ))}
       </div>
     </section>
   );

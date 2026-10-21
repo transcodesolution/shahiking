@@ -74,16 +74,17 @@ export default function ExploreProducts() {
               className="group overflow-hidden rounded-[20px] border border-[#C0C0C0] bg-secondary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               {/* Product Image */}
-              <div className="relative aspect-square overflow-hidden bg-[#EAE7E0]">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+              <div className="flex h-44 items-center justify-center overflow-hidden bg-[#EAE7E0] p-4 sm:h-48 md:h-66">
+                <div className="relative h-full w-full max-w-40">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(max-width: 639px) 160px, 176px"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
               </div>
-
               {/* Product Information */}
               <div className="flex min-h-33 flex-col p-5">
                 <h3 className="body-md font-semibold text-[#222222]">
