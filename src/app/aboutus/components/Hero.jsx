@@ -1,10 +1,10 @@
+
 import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Background Image */}
+    <section className="relative h-[84vh] sm:h-[86vh] lg:h-[87vh] min-h-[540px] max-h-[800px] overflow-hidden">
       <Image
         src="/Image/aboutpage/about_hero_bg_img.webp"
         alt="Hero Background"
@@ -13,11 +13,9 @@ export default function Hero() {
         className="object-cover"
       />
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/35"></div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto min-h-screen flex items-center px-5 sm:px-8 lg:px-12">
+      <div className="relative z-10 container mx-auto h-full flex items-center px-5 sm:px-8 lg:px-12 pt-20 sm:pt-24 md:pt-28">
         <div className="max-w-3xl">
           <h1 className="font-heading text-secondary font-bold leading-tight text-[32px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[72px]">
             Nourishing Modern
@@ -34,17 +32,19 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2 mt-8">
-            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-20 md:w-29.75 mb-2 md:mb-0 hover:bg-primary hover:text-white duration-500 cursor-pointer">
+            <button className="bg-secondary text-primary border border-secondary px-3 py-2 rounded-full whitespace-nowrap hover:bg-primary hover:text-white duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Healthy
               </a>
             </button>
-            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-20 md:w-31 mb-2 md:mb-0 hover:bg-primary hover:text-white duration-500 cursor-pointer">
+
+            <button className="bg-secondary text-primary border border-secondary px-3 py-2 rounded-full whitespace-nowrap hover:bg-primary hover:text-white duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Premium
               </a>
             </button>
-            <button className="bg-secondary text-primary border border-secondary px-1 py-2 rounded-full w-25 md:w-35 mb-2 md:mb-0 hover:bg-primary hover:text-white duration-500 cursor-pointer">
+
+            <button className="bg-secondary text-primary border border-secondary px-3 py-2 rounded-full whitespace-nowrap hover:bg-primary hover:text-white duration-500 cursor-pointer">
               <a href="#" className="text-[16px] font-medium">
                 Consistent
               </a>

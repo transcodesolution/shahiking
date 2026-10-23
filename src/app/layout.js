@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Inter } from "next/font/google";
 import ToastProvider from "@/components/common/ToastProvider";
+import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 import Script from "next/script";
 
 export const metadata = {
@@ -36,6 +37,8 @@ export default function RootLayout({ children }) {
         <Footer/>
 
         <ToastProvider/>
+
+        <WhatsAppFloat/>
       </body>
     </html>
   );

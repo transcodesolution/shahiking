@@ -32,7 +32,8 @@ export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative h-[75svh] min-h-130 overflow-hidden bg-secondary sm:h-[85svh] md:h-screen md:min-h-162.5">
+
+    <section className="relative h-[84svh] min-h-[540px] max-h-[800px] overflow-hidden bg-secondary sm:h-[86svh] md:h-[87svh] md:min-h-[650px]">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -118,7 +119,8 @@ export default function Hero() {
         type="button"
         aria-label="Previous banner"
         onClick={() => swiperRef.current?.slidePrev()}
-        className="absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary md:left-6 lg:block md:p-3"
+        className="absolute left-[6%] top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary xl:block md:p-3"
+
       >
         <IoIosArrowBack className="text-xl" />
       </button>
@@ -128,7 +130,8 @@ export default function Hero() {
         type="button"
         aria-label="Next banner"
         onClick={() => swiperRef.current?.slideNext()}
-        className="absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary md:right-6 lg:block md:p-3"
+        className="absolute right-[6%] top-1/2 z-20 hidden -translate-y-1/2 cursor-pointer rounded-full border border-secondary bg-[#D9D9D933] p-2.5 shadow-sm backdrop-blur-sm transition hover:border-primary hover:bg-primary hover:text-secondary xl:block md:p-3"
+
       >
         <IoIosArrowForward className="text-xl" />
       </button>
