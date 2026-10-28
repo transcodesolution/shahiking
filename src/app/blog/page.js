@@ -113,7 +113,6 @@ export default function page() {
       <Hero />
       <OurBlog />
       <FAQ />
-      <GetInTouch />
     </React.Fragment>
   );
 }

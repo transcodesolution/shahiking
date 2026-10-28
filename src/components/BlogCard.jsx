@@ -1,72 +1,73 @@
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function BlogCard({ item }) {
   if (!item) return null;
+
   return (
-    <div className="bg-secondary rounded-[40px] border border-secondary shadow-sm h-150 md:h-169 w-full flex flex-col">
-      <div className="overflow-hidden rounded-t-[40px] border-2 border-secondary shadow-sm">
-      {/* Image */}
-      <Image
-        src={item.img}
-        alt={item.title}
-        width={546}
-        height={310}
-        className="w-full h-77.5 object-cover rounded-t-[40px] shadow-sm hover:scale-110 transition-transform duration-500 cursor-pointer"
-      />
-      </div>
-      {/* Content */}
-      <div className="p-3 md:p-5 xl:p-6 border border-secondary inset-shadow-sm inset-shadow-[#BABABA40] rounded-b-[40px] flex flex-col flex-1">
-        <div className="flex flex-col flex-1">
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <p className="flex items-center gap-2 text-black">
-              <span>
-                <Image
-                  src="/Image/blogpage/read_icon.webp"
-                  alt="read icon"
-                  width={20}
-                  height={20}
-                />
-              </span>
-              <span className="text-[14px]">{item.time} Min Read</span>
-            </p>
-            <p className="flex items-center gap-2 text-black">
-              <span>
-                <Image
-                  src="/Image/blogpage/update_icon.webp"
-                  alt="update icon"
-                  width={20}
-                  height={20}
-                />
-              </span>
-              <span className="text-[14px]">{item.date}</span>
-            </p>
-            <p className="flex items-center gap-2 text-black">
-              <span>
-                <Image
-                  src="/Image/blogpage/admin_icon.webp"
-                  alt="admin icon"
-                  width={20}
-                  height={20}
-                />
-              </span>
-              <span className="text-[14px]">By Shahiking Team</span>
-            </p>
-          </div>
-          {/* Title */}
-          <h3 className="text-[18px] md:text-[20px] xl:text-[24px] font-heading font-semibold text-black leading-5 md:leading-7">{item.title}</h3>
-          {/* Description */}
-          <p className="text-black mt-3 body-md mb-6">{item.description}</p>
+    <article className="group flex h-full min-w-0 flex-col overflow-hidden rounded-[20px] border border-[#F5F3EC] bg-white shadow-[0px_1px_2px_0px_#0000000D] transition-shadow duration-300 hover:shadow-md">
+      {/* Article Image */}
+      <Link
+        href={`/blog/${item.slug}`}
+        className="relative block h-[180px] shrink-0 overflow-hidden sm:h-[200px] xl:h-[240px]"
+        aria-label={`Read ${item.title}`}
+      >
+        <Image
+          src={item.img}
+          alt={item.title}
+          width={546}
+          height={310}
+          sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 33vw"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+
+        {/* Category Badge */}
+        <span className="absolute bottom-2 left-2 rounded-full bg-[#FFFFFFF2] px-4 py-1 text-[12px] font-medium text-primary shadow-sm">
+          Dietary Science
+        </span>
+      </Link>
+
+      {/* Article Content */}
+      <div className="flex flex-1 flex-col px-4 pb-4 pt-3 sm:px-4 sm:pb-4">
+        {/* Metadata */}
+        <div className="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] leading-[20px] text-[#858585] sm:text-sm">
+          <span>{item.time} Min Read</span>
+          <span aria-hidden="true">•</span>
+          <span>{item.date}</span>
+          <span aria-hidden="true">•</span>
+          <span>By Shahiking Team</span>
         </div>
-        {/* Button */}
-        <Link
-          href={`/blog/${item.slug}`}
-          className="bg-primary text-secondary body-sm flex justify-center items-center gap-4 border border-primary font-medium py-2 px-4 max-w-39.5 rounded-full hover:bg-secondary hover:text-primary duration-500"
-        >
-          Read More <FaArrowRightLong />
-        </Link>
+
+        {/* Title */}
+        <h3 className="font-heading text-lg sm:text-[20px] font-semibold leading-[26px] text-primary">
+          <Link
+            href={`/blog/${item.slug}`}
+            className="transition-colors]"
+          >
+            {item.title}
+          </Link>
+        </h3>
+
+        {/* Description */}
+        <p className="mt-1.5 line-clamp-2 text-[12px] sm:text-[14px] leading-[22px] text-[#858585]">
+          {item.description}
+        </p>
+
+        {/* Read More */}
+        <div className="mt-auto pt-3">
+          <Link
+            href={`/blog/${item.slug}`}
+            className="inline-flex items-center gap-1.5 text-sm sm:text-[16px] font-medium text-[#896811] transition-colors hover:text-[#5F470B]"
+          >
+            Read More
+            <span className="flex h-[24px] w-[24px] items-center justify-center rounded-full border border-[#896811]">
+              <FaArrowRight className="text-[8px]" />
+            </span>
+          </Link>
+        </div>
       </div>
-    </div>
+    </article>
   );
 }

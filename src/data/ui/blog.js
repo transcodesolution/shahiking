@@ -18,19 +18,31 @@ export const faqData = [
     id: 1,
     question: "Is plant-based protein effective for weight loss?",
     answer:
-      "Absolutely. A high-protein diet helps control hunger and boosts metabolism.",
+      "Yes, plant-based protein can support weight management by helping you feel fuller for longer and maintain muscle mass. Combined with a balanced diet and regular exercise, it can be a valuable part of your weight-loss journey. Shahiking's plant-based protein offers a convenient way to increase your daily protein intake.",
   },
   {
     id: 2,
-    question: "Is plant-based protein good for muscle growth?",
+    question: "Is plant-based protein effective for weight loss?",
     answer:
-      "Yes. When consumed in adequate amounts, plant-based protein supports muscle repair and lean muscle gain.",
+      "Yes, plant-based protein can be an effective option for weight management. It helps support satiety and muscle maintenance while fitting into a balanced diet. For the best results, combine adequate protein intake with regular physical activity and healthy eating habits.",
   },
   {
     id: 3,
-    question: "Are dry fruits good for protein?",
+    question: "Does Shahiking protein contain all essential amino acids?",
     answer:
-      "Yes. Dry fruits provide protein along with healthy fats and essential micronutrients.",
+      "Shahiking's plant-based protein is designed to help support your daily protein needs. Whether it provides all nine essential amino acids in sufficient amounts depends on its specific protein blend and formulation. Check the product label for its amino acid profile to confirm its completeness.",
+  },
+  {
+    id: 4,
+    question: "How does plant protein compare to traditional whey in muscle synthesis?",
+    answer:
+      "Plant-based protein and whey protein can both support muscle growth and recovery when consumed in adequate amounts. Whey is naturally rich in essential amino acids, while plant proteins can provide similar benefits when appropriately blended and consumed in sufficient quantities. Shahiking's plant-based protein is an option for those seeking a dairy-free alternative to support their fitness goals.",
+  },
+  {
+    id: 5,
+    question: "Are Shahiking products suitable for gluten-free and vegan lifestyles?",
+    answer:
+      "Shahiking's plant-based protein may suit vegan lifestyles if all ingredients and processing aids are plant-derived. Gluten-free suitability depends on the product's ingredients, manufacturing practices, and cross-contamination controls. Please check the packaging or official product information to confirm whether your chosen product meets your dietary requirements.",
   },
 ];
 
