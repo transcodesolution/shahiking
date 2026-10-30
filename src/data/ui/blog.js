@@ -2,14 +2,15 @@ export const blogCardData = [
   {
     id: 1,
     img: "/Image/blogpage/blog_1.webp",
-    name:"Plant-Based Protein",
-    slug:"plant-based-protein",
+    name: "Nutrition",
+    slug: "nutrition",
+    category: "Dietary Science",
     title:
       "Plant-Based Protein: The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
     description:
       "Learn how plant-based protein supports muscle recovery, weight loss, and overall wellness.",
     time: 5,
-    date:"May 01, 2026",
+    date: "May 01, 2026",
   },
 ];
 
@@ -49,14 +50,14 @@ export const faqData = [
 export const blogDetailData = [
   {
     id: 1,
-    name:"Plant-Based Protein",
-    slug:"plant-based-protein",
+    name: "Nutrition",
+    slug: "nutrition",
     image: "/Image/blogpage/blog_detail_1.webp",
     title: "Plant-Based Protein:",
     subtitle:
-    "The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
+      "The Ultimate Guide for Muscle Growth, Weight Loss & Clean Nutrition",
     time: "5",
-    date:"May 01, 2026",
+    date: "May 01, 2026",
     detail_1:
       "Looking for a high-protein diet that supports muscle growth, weight loss, and overall health — without relying on animal products?",
     detail_2:
@@ -68,8 +69,8 @@ export const blogDetailData = [
 
 export const blogContentData = {
   id: 1,
-  name:"Plant-Based Protein",
-  slug:"plant-based-protein",
+  name: "Nutrition",
+  slug: "nutrition",
   sections: [
     {
       type: "text",
@@ -167,8 +168,6 @@ export const blogContentData = {
     },
   ],
 };
-
-
 
 export const blogMetadata = [
   {

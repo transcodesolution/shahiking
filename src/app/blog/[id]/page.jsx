@@ -1,13 +1,19 @@
 import BlogContent from "@/components/blogDetail/BlogContent";
 import BlogHero from "@/components/blogDetail/BlogHero";
-import BlogSection from "@/components/blogDetail/BlogSection";
-import { blogContentData, blogDetailData, blogMetadata } from "@/data/ui/blog";
+import BlogFeaturedImage from "@/components/blogDetail/BlogFeaturedImage";
+import BlogRelated from "@/components/blogDetail/BlogRelated";
+import { blogDetailData, blogMetadata } from "@/data/ui/blog";
 import React from "react";
 import GetInTouch from "@/components/common/GetInTouch";
 import BlogFaq from "@/components/blogDetail/BlogFaq";
 
 export async function generateMetadata({ params }) {
-  const blog = blogMetadata.find((item) => item.id === params.slug);
+  const resolvedParams = await Promise.resolve(params);
+  const currentSlug = resolvedParams?.id || resolvedParams?.slug;
+  const blog =
+    blogMetadata.find(
+      (item) => item.slug === currentSlug || item.id === currentSlug
+    ) || blogMetadata[0];
 
   if (!blog) {
     return {
@@ -45,12 +51,22 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function page({ params }) {
-  const blog = blogMetadata.find((item) => item.id === params.slug);
+export default async function page({ params }) {
+  const resolvedParams = await Promise.resolve(params);
+  const currentSlug = resolvedParams?.id || resolvedParams?.slug;
+  const blog =
+    blogMetadata.find(
+      (item) => item.slug === currentSlug || item.id === currentSlug
+    ) || blogMetadata[0];
 
   if (!blog) {
     return <div>Blog Not Found</div>;
   }
+
+  const currentItem =
+    blogDetailData.find(
+      (item) => item.slug === currentSlug || item.id === currentSlug
+    ) || blogDetailData[0];
 
   const schema = {
     "@context": "https://schema.org",
@@ -90,11 +106,11 @@ export default function page({ params }) {
           __html: JSON.stringify(schema),
         }}
       />
-      <BlogHero />
-      <BlogSection item={blogDetailData[0]} />
-      <BlogContent item={blogContentData} />
+      <BlogHero item={currentItem} />
+      <BlogFeaturedImage item={currentItem} />
+      <BlogContent />
+      <BlogRelated />
       <BlogFaq />
-      <GetInTouch />
     </div>
   );
 }

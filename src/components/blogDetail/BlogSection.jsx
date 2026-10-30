@@ -25,10 +25,10 @@ export default function BlogSection({ item }) {
             )}
           </div>
           <div>
-            <h1 className="display-heading text-primary font-bold md:leading:13 xl:leading-14 w-full max-w-150">
+            <h2 className="display-heading text-primary font-bold md:leading-tight xl:leading-14 w-full max-w-150">
               {item?.title}
               <span className="block">{item?.subtitle}</span>
-            </h1>
+            </h2>
             <div className="flex flex-wrap items-center gap-6 py-4">
               <p className="flex items-center gap-2 text-black">
                 <span>

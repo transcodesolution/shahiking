@@ -4,7 +4,7 @@ import FaqAccordion from "./FaqAccordion";
 
 export default function FAQ() {
   return (
-    <section className="relative isolate overflow-hidden bg-secondary py-12 md:py-25">
+    <section className="relative isolate overflow-hidden py-12 md:py-25">
 
       <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
