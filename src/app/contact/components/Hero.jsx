@@ -7,7 +7,7 @@ import { FiCheckCircle, FiClock, FiGlobe } from "react-icons/fi";
 export default function Hero() {
   return (
     <main className="relative z-0 bg-[#FCFCFC] px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20 lg:pt-32">
-      <div className="mx-auto max-w-322.5">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-10 text-center md:mb-14">
           <h1 className="font-heading text-[40px] font-semibold leading-tight text-primary md:text-[48px] xl:text-[64px]">
             Contact Us
@@ -38,7 +38,7 @@ export default function Hero() {
                 className="h-auto w-full object-cover"
               />
             </div>
-            <div className="h-65 overflow-hidden rounded-2xl border border-stroke bg-secondary sm:h-75 lg:75">
+            <div className="h-65 overflow-hidden rounded-2xl border border-stroke bg-secondary sm:h-75 lg:h-75">
               <iframe
                 title="Shahiking Foods location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8364454633947!2d72.88551507600228!3d21.238333280546147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f1cf89aa199%3A0x51b7475766080238!2sShahiKing%20Foods!5e0!3m2!1sen!2sin!4v1777546816420!5m2!1sen!2sin"
