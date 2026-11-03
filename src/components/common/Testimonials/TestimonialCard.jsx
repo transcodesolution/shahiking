@@ -1,69 +1,61 @@
+
+import React from "react";
 import Image from "next/image";
-import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
-export default function TestimonialCard({ item, isActive }) {
+export default function TestimonialCard({ item }) {
+  const rating = Math.min(5, Math.max(0, Number(item.rating ?? 5)));
+
   return (
-    <div
-      className={`bg-white rounded-[40px] p-3 xl:p-5 border border-accent transition-all duration-300
-      ${isActive ? "h-62 md:h-108 xl:h-76" : "h-60 md:h-104 xl:h-74 mt-4 xl:mt-2"}`}
-    >
-      {/* User */}
-      <div className="xl:flex items-start gap-4 mb-3">
-        <div className="rounded-full overflow-hidden border-2 border-primary w-15 md:w-17 xl:w-20 h-15 md:h-17 xl:h-20">
-          <Image
-            src={item.img}
-            alt={item.name}
-            width={100}
-            height={100}
-            className="object-cover w-full h-full"
-          />
-        </div>
-        <div>
-          <h4 className="body-md font-medium text-black">{item.name}</h4>
-          <p className="text-[14px] md:text-[16px] xl:text-[18px] text-accent">
-            {item.date}
-          </p>
-      <div className="flex items-center gap-1">
-        {[...Array(5)].map((_, i) => {
-          const star = i + 1;
-
-          if (item.rating >= star) {
-            return (
-              <FaStar
-                key={i}
-                className="text-[#FFC107] w-4.5 md:w-5.5 h-4.5 md:h-5.5"
-              />
-            );
-          } else if (item.rating >= star - 0.5) {
-            return (
-              <FaStarHalfAlt
-                key={i}
-                className="text-[#FFC107] w-4.5 md:w-5.5 h-4.5 md:h-5.5"
-              />
-            );
-          } else {
-            return (
-              <FaRegStar
-                key={i}
-                className="text-[#FFC107] w-4.5 md:w-5.5 h-4.5 md:h-5.5"
-              />
-            );
-          }
-        })}
-
-        <span className="text-accent text-[14px] md:text-[18px] ml-2">
-          {Number(item.rating).toFixed(1)}
-        </span>
-      </div>
-        </div>
-      </div>
+    <article className="flex h-62 w-full flex-col overflow-hidden rounded-lg border border-[#E8E2D5] bg-secondary p-6 transition-shadow duration-300 hover:shadow-sm">
 
       {/* Rating */}
+      <div className="mb-2 flex shrink-0 items-center gap-0.5">
+        {[...Array(5)].map((_, index) => (
+          <FaStar
+            key={index}
+            className={`text-[14px] ${index < rating ? "text-[#C59B27]" : "text-[#0E0E0E]"
+              }`}
+          />
+        ))}
+      </div>
 
       {/* Review */}
-      <p className="text-accent text-[14px] md:text-[18px] leading-5 md:leading-6">
-        {`"${item.review}"`}
+      <p className="mb-2.5 line-clamp-4 overflow-hidden text-[14px] leading-[1.45] font-normal italic text-[#68645C] sm:text-[16px]">
+        &ldquo;{item.review}&rdquo;
       </p>
-    </div>
+
+      {/* Author */}
+      <div className="mt-auto flex shrink-0 items-center gap-1.5 border-t border-[#E5E0D5] pt-2">
+
+        {/* Avatar */}
+        {item.img ? (
+          <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-[#D5CBB0]">
+            <Image
+              src={item.img}
+              alt={item.name || "Customer"}
+              fill
+              sizes="40px"
+              className="object-cover"
+            />
+          </div>
+        ) : (
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#C59B2733] text-[14px] font-semibold text-[#C59B27]">
+            {item.avatar || item.name?.slice(0, 2).toUpperCase()}
+          </div>
+        )}
+
+        {/* Name and Role */}
+        <div className="min-w-0">
+          <h4 className="truncate text-[14px] leading-tight font-bold text-[#25231F]">
+            {item.name}
+          </h4>
+
+          <p className="mt-0.5 truncate text-[12px] leading-tight font-normal text-[#68645C]">
+            {item.role || item.date}
+          </p>
+        </div>
+      </div>
+    </article>
   );
 }

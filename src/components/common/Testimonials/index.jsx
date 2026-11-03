@@ -1,82 +1,105 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
-import { testimonialData } from "@/data/ui/testimonial";
+import './Testimonials.css';
+import {
+  exportTestimonialData,
+  testimonialData,
+} from "@/data/ui/testimonial";
 import TestimonialCard from "./TestimonialCard";
 
-export default function Testimonials({bg="bg-secondary"}) {
+export default function Testimonials({
+  bg = "bg-[#FAF8F5]",
+  data = exportTestimonialData || testimonialData,
+}) {
   const swiperRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isBeginning, setIsBeginning] = useState(true);
-  const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className={`${bg} py-10 md:py-16 overflow-hidden`}>
-      <div className="container mx-auto px-4 text-center">
-        <h5 className="body-sm bg-primary text-white rounded-full px-4 py-1 inline-block">
-          Testimonials
-        </h5>
-        <h1 className="display-heading text-primary font-bold mt-3">
-          Read Our Creative People Story
-        </h1>
-        <p className="body-md text-black mt-2">
-          Real stories from real people!
-        </p>
-      </div>
+    <section className={`${bg} overflow-hidden py-5 sm:py-25`}>
+      <div className="mx-auto w-full">
+        {/* Section Header */}
+        <div className="text-center sm:mb-25">
+          <h2 className="font-heading text-4xl font-bold leading-tight text-[#0E0E0E] sm:text-5xl">
+            What Our{" "}
+            <span className="text-primary">Customers Say</span>
+          </h2>
 
-      {/* Swiper */}
-      <div className="py-6 px-2 md:px-0">
+          <p className="mt-1.5 text-sm text-[#7C7C7E] sm:text-base lg:text-xl">
+            Feedback from people who have experienced Shahiking Foods.
+          </p>
+        </div>
+
+        {/* Testimonial Slider */}
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          loop={data.length > 4}
           centeredSlides
-          loop
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          onBeforeInit={(swiper) => (swiperRef.current = swiper)}
-          onSlideChange={(swiper) => {
-            setActiveIndex(swiper.realIndex);
-            setIsBeginning(swiper.isBeginning);
-            setIsEnd(swiper.isEnd);
+          slidesPerView={1.35}
+          spaceBetween={10}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
           }}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            480: {
+              slidesPerView: 1.8,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 2.5,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3.2,
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 24,
+            },
           }}
+          className="testimonials-swiper overflow-visible!"
         >
-          {testimonialData.map((item, index) => (
-            <SwiperSlide key={item.id}>
-              <TestimonialCard
-                item={item}
-                isActive={activeIndex === index}
-              />
+          {data.map((item, index) => (
+            <SwiperSlide key={item.id || index} className="h-auto!">
+              <TestimonialCard item={item} />
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
 
-      {/* Navigation */}
-      <div className="flex justify-center gap-5 mt-2 md:mt-10">
-        <button 
-         onClick={() => swiperRef.current?.slidePrev()}
-         className="bg-white p-3 rounded-full border-2 border-secondary shadow-sm shadow-[#0000004D] transition cursor-pointer"
-        >
-          <IoIosArrowBack className="text-[18px] md:text-[24px]"/>
-        </button>
-        <button 
-         onClick={() => swiperRef.current?.slideNext()}
-         className="bg-white p-3 rounded-full border-2 border-secondary shadow-sm shadow-[#0000004D] transition cursor-pointer"
-        >
-          <IoIosArrowForward className="text-[18px] md:text-[24px]"/>
-        </button>
+        {/* Navigation */}
+        <div className="mt-7 flex items-center justify-center gap-2.5 sm:mt-12.5">
+          <button
+            type="button"
+            onClick={() => swiperRef.current?.slidePrev()}
+            aria-label="Previous testimonial"
+            className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border border-[#D5CBB0] bg-white text-[#18181B] transition hover:bg-secondary sm:h-8 sm:w-8"
+          >
+            <IoIosArrowBack size={15} />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => swiperRef.current?.slideNext()}
+            aria-label="Next testimonial"
+            className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border border-[#D5CBB0] bg-white text-[#18181B] transition hover:bg-secondary sm:h-8 sm:w-8"
+          >
+            <IoIosArrowForward size={15} />
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
