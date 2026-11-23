@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +15,28 @@ import { getProductSpecification } from "@/data/productSpecifications";
 const FALLBACK_IMAGE = "/Image/product/export/product-export-hero.webp";
 const WHATSAPP_NUMBER = "917435917404";
 const EXPORT_EMAIL = "export@shahiking.in";
+
+const displaySpecValue = (value) => {
+  if (value === null || value === undefined || value === "") return "-";
+  return typeof value === "string" ? value.trim() || "-" : value;
+};
+
+const getFallbackProductDescription = (product, spec) => {
+  const name = spec.name || product.name || "This product";
+  const category = String(spec.category || product.category || "").toLowerCase();
+  const productText = `${name} ${category}`.toLowerCase();
+
+  if (/makhana|foxnuts/.test(productText)) {
+    return `${name} is a crisp fox nuts snack to enjoy on its own or add to your favourite snack mix.`;
+  }
+  if (/seasoning/.test(productText)) {
+    return `${name} adds a savoury, flavourful touch to snacks and everyday recipes.`;
+  }
+  if (/spice|masala|chilli|chili|turmeric|pepper|cumin|coriander/.test(productText)) {
+    return `${name} brings a distinctive spice flavour to curries, sauces, and everyday cooking.`;
+  }
+  return `${name} is a versatile ingredient for adding its distinctive character to everyday cooking.`;
+};
 
 const getGalleryImages = (product) => {
   if (typeof product.img === "string" && product.img.trim()) {
@@ -36,83 +58,131 @@ const getGalleryImages = (product) => {
   return validImages.length > 0 ? validImages : [FALLBACK_IMAGE];
 };
 
-const getInfoCards = (spec, product) => {
-  const topCards = [
-    { label: "HSN Code", value: spec.hsnCode },
-    { label: "Shelf Life", value: spec.shelfLife },
-    { label: "Quality Grade", value: spec.qualityGrade },
-    { label: "Variety", value: spec.variety },
-  ].filter((card) => Boolean(card.value));
+const getInfoCards = (spec) => [
+    { label: "Product Name", value: displaySpecValue(spec.name) },
+    { label: "Product Category", value: displaySpecValue(spec.category) },
+    { label: "HSN Code", value: displaySpecValue(spec.hsnCode) },
+    { label: "Shelf Life", value: displaySpecValue(spec.shelfLife) },
+    { label: "Quality Grade", value: displaySpecValue(spec.qualityGrade) },
+    { label: "Variety", value: displaySpecValue(spec.variety) },
+    { label: "SKUs", value: displaySpecValue(spec.skus) },
+    { label: "Packaging Option", value: displaySpecValue(spec.packagingOption) },
+  ];
 
-  const skuValue =
-    spec.skus ||
-    (Array.isArray(product.quantity)
-      ? product.quantity.join(", ")
-      : product.quantity);
-
-  const bottomCards = [
-    { label: "Packaging Option", value: spec.packagingOption },
-    { label: "SKUs", value: skuValue },
-  ].filter((card) => Boolean(card.value));
-
-  return { topCards, bottomCards };
-};
-
-const getAccordionItems = (spec, product) =>
+const getAccordionItems = (spec) =>
   [
     {
       key: "description",
       title: "Description",
-      content: spec.description || product.description,
+      content: displaySpecValue(spec.description),
     },
     {
       key: "container-capacity",
       title: "Container capacity",
-      content: spec.containerCapacity,
+      content: displaySpecValue(spec.containerCapacity),
     },
     {
       key: "cultivation-type",
       title: "Cultivation Type",
-      content: spec.cultivationType,
+      content: displaySpecValue(spec.cultivationType),
     },
     {
       key: "packaging-solutions",
       title: "Packaging Solutions",
-      content: spec.packagingSolutions,
+      content: displaySpecValue(spec.packagingSolutions),
     },
     {
       key: "health-benefits",
       title: "Health Benefits",
-      content: spec.healthBenefits,
+      content: displaySpecValue(spec.healthBenefits),
     },
     {
       key: "storage-tips",
       title: "Storage Tips",
-      content: spec.storageTips,
+      content: displaySpecValue(spec.storageTips),
     },
-  ].filter((item) => Boolean(item.content));
+  ];
 
-const getProductInfoCard = (card) => (
-  <div
-    key={card.label}
-    className="flex items-center gap-2.5 p-3 rounded-xl border border-stroke bg-white"
-  >
-    <LuFileText className="w-6 h-6 text-primary shrink-0" />
+const getProductInfoCard = (
+  card,
+  isTruncated,
+  activeTooltip,
+  infoValueRefs,
+  setActiveTooltip,
+) => {
+  const tooltipOpen = isTruncated && activeTooltip === card.label;
+  const tooltipId = `export-info-${card.label
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")}`;
 
-    <div className="min-w-0">
-      <span className="block text-[12px] text-[#7C7C7E]">
-        {card.label}
-      </span>
+  return (
+    <div
+      key={card.label}
+      className="relative flex h-full items-center gap-2.5 p-3 rounded-xl border border-stroke bg-white"
+    >
+      <LuFileText className="w-6 h-6 text-primary shrink-0" />
 
-      <span
-        className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
-        title={String(card.value)}
-      >
-        {card.value}
-      </span>
+      <div className={`min-w-0 flex-1 ${isTruncated ? "relative group" : ""}`}>
+        <span className="block text-[12px] text-[#7C7C7E]">
+          {card.label}
+        </span>
+
+        {isTruncated ? (
+          <button
+            type="button"
+            title={String(card.value)}
+            aria-label={`${card.label}: ${card.value}`}
+            aria-expanded={tooltipOpen}
+            aria-describedby={isTruncated ? tooltipId : undefined}
+            onClick={() =>
+              setActiveTooltip((current) =>
+                current === card.label ? null : card.label,
+              )
+            }
+            onBlur={() => setActiveTooltip(null)}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") setActiveTooltip(null);
+            }}
+            className="block w-full border-0 bg-transparent p-0 text-left cursor-pointer"
+          >
+            <span
+              ref={(element) => {
+                if (element) infoValueRefs.current.set(card.label, element);
+                else infoValueRefs.current.delete(card.label);
+              }}
+              className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
+            >
+              {card.value}
+            </span>
+          </button>
+        ) : (
+          <span
+            ref={(element) => {
+              if (element) infoValueRefs.current.set(card.label, element);
+              else infoValueRefs.current.delete(card.label);
+            }}
+            className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
+          >
+            {card.value}
+          </span>
+        )}
+        {isTruncated && (
+          <span
+            id={tooltipId}
+            role="tooltip"
+            className={`absolute left-0 top-full z-40 mt-1 w-max max-w-[min(18rem,80vw)] rounded-lg bg-[#0E0E0E] px-3 py-2 text-xs text-white shadow-lg whitespace-normal break-words ${
+              tooltipOpen
+                ? "block"
+                : "hidden group-focus-within:block"
+            }`}
+          >
+            {card.value}
+          </span>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function ExportProductHero({
   product,
@@ -121,6 +191,36 @@ export default function ExportProductHero({
 }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [openAccordion, setOpenAccordion] = useState("description");
+  const [activeInfoTooltip, setActiveInfoTooltip] = useState(null);
+  const [truncatedInfoValues, setTruncatedInfoValues] = useState({});
+  const infoValueRefs = useRef(new Map());
+
+  useEffect(() => {
+    const measureValues = () => {
+      const next = {};
+      infoValueRefs.current.forEach((element, label) => {
+        next[label] = element.scrollWidth > element.clientWidth + 1;
+      });
+
+      setTruncatedInfoValues((current) => {
+        const labels = Object.keys(next);
+        if (
+          labels.length === Object.keys(current).length &&
+          labels.every((label) => current[label] === next[label])
+        ) {
+          return current;
+        }
+        return next;
+      });
+    };
+
+    measureValues();
+    window.addEventListener("resize", measureValues);
+
+    return () => {
+      window.removeEventListener("resize", measureValues);
+    };
+  }, [product?.slug]);
 
   const accordionId = useId();
 
@@ -132,10 +232,13 @@ export default function ExportProductHero({
   const activeImage =
     galleryImages[activeImageIndex] || galleryImages[0];
 
-  const shortDescription = product.description || spec.description;
+  const shortDescription =
+    spec.description ||
+    product.description ||
+    getFallbackProductDescription(product, spec);
 
-  const { topCards, bottomCards } = getInfoCards(spec, product);
-  const accordionItems = getAccordionItems(spec, product);
+  const infoCards = getInfoCards(spec);
+  const accordionItems = getAccordionItems(spec);
 
   const toggleAccordion = (key) => {
     setOpenAccordion((previous) => (previous === key ? null : key));
@@ -266,11 +369,9 @@ export default function ExportProductHero({
             </h1>
 
             {/* Short Description */}
-            {shortDescription && (
-              <p className="text-sm sm:text-base text-[#7C7C7E] leading-relaxed mt-2 font-medium">
-                {shortDescription}
-              </p>
-            )}
+            <p className="text-sm sm:text-base text-[#7C7C7E] leading-relaxed mt-2 font-medium line-clamp-2">
+              {shortDescription}
+            </p>
 
             {/* Quality Badges */}
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-4">
@@ -290,25 +391,23 @@ export default function ExportProductHero({
             </div>
 
             {/* Product Information Cards */}
-            {(topCards.length > 0 || bottomCards.length > 0) && (
+            {infoCards.length > 0 && (
               <div className="mt-7">
                 <h2 className="text-lg sm:text-xl xl:text-2xl font-semibold text-primary mb-3">
                   Product Information
                 </h2>
 
-                {/* Top Information Cards */}
-                {topCards.length > 0 && (
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
-                    {topCards.map(getProductInfoCard)}
-                  </div>
-                )}
-
-                {/* Bottom Information Cards */}
-                {bottomCards.length > 0 && (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 mt-2.5">
-                    {bottomCards.map(getProductInfoCard)}
-                  </div>
-                )}
+                <div className="grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
+                  {infoCards.map((card) =>
+                    getProductInfoCard(
+                      card,
+                      truncatedInfoValues[card.label] === true,
+                      activeInfoTooltip,
+                      infoValueRefs,
+                      setActiveInfoTooltip,
+                    ),
+                  )}
+                </div>
               </div>
             )}
 

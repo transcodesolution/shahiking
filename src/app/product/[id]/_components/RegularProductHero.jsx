@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
@@ -9,6 +9,31 @@ import { IoIosArrowDown } from "react-icons/io";
 import { WhatsAppIcon } from "@/components/common/WhatsAppFloat";
 import { getProductSpecification } from "@/data/productSpecifications";
 
+const displaySpecValue = (value) => {
+  if (value === null || value === undefined || value === "") return "-";
+  return typeof value === "string" ? value.trim() || "-" : value;
+};
+
+const getFallbackProductDescription = (product, spec) => {
+  const name = spec.name || product.name || "This product";
+  const category = String(spec.category || product.category || "").toLowerCase();
+  const productText = `${name} ${category}`.toLowerCase();
+
+  if (/makhana|foxnuts/.test(productText)) {
+    return `${name} is a crisp fox nuts snack to enjoy on its own or add to your favourite snack mix.`;
+  }
+  if (/seasoning/.test(productText)) {
+    return `${name} adds a savoury, flavourful touch to snacks and everyday recipes.`;
+  }
+  if (/tofu|protein/.test(productText)) {
+    return `${name} is a versatile plant-based option for curries, stir-fries, salads, and everyday meals.`;
+  }
+  if (/spice|masala|chilli|chili|turmeric|pepper|cumin|coriander/.test(productText)) {
+    return `${name} brings a distinctive spice flavour to curries, sauces, and everyday cooking.`;
+  }
+  return `${name} is a versatile ingredient for adding its distinctive character to everyday cooking.`;
+};
+
 export default function RegularProductHero({
   product,
   categoryName = "All Categories",
@@ -16,6 +41,36 @@ export default function RegularProductHero({
 }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [openAccordion, setOpenAccordion] = useState("description");
+  const [activeInfoTooltip, setActiveInfoTooltip] = useState(null);
+  const [truncatedInfoValues, setTruncatedInfoValues] = useState({});
+  const infoValueRefs = useRef(new Map());
+
+  useEffect(() => {
+    const measureValues = () => {
+      const next = {};
+      infoValueRefs.current.forEach((element, label) => {
+        next[label] = element.scrollWidth > element.clientWidth + 1;
+      });
+
+      setTruncatedInfoValues((current) => {
+        const labels = Object.keys(next);
+        if (
+          labels.length === Object.keys(current).length &&
+          labels.every((label) => current[label] === next[label])
+        ) {
+          return current;
+        }
+        return next;
+      });
+    };
+
+    measureValues();
+    window.addEventListener("resize", measureValues);
+
+    return () => {
+      window.removeEventListener("resize", measureValues);
+    };
+  }, [product?.slug]);
 
   if (!product) return null;
 
@@ -42,12 +97,10 @@ export default function RegularProductHero({
     setOpenAccordion((prev) => (prev === key ? null : key));
   };
 
-  // Product description for regular products
   const shortDescription =
-    product.description ||
-    product.details ||
     spec.description ||
-    "";
+    product.description ||
+    getFallbackProductDescription(product, spec);
 
   // Product information cards tailored for regular retail/buy products
   const packageSize =
@@ -56,23 +109,24 @@ export default function RegularProductHero({
       : null) ||
     (Array.isArray(product.quantity)
       ? product.quantity.join(", ")
-      : product.quantity) ||
-    spec.skus;
+      : product.quantity) || "-";
 
-  const topInfoCards = [
-    { label: "HSN Code", value: spec.hsnCode },
-    { label: "Shelf Life", value: spec.shelfLife || "12 Months" },
-    { label: "Category", value: product.category || spec.variety },
-    { label: "Availability", value: product.availability || "In Stock" },
-  ].filter((c) => Boolean(c.value));
-
-  const bottomInfoCards = [
+  const infoCards = [
+    { label: "Product Name", value: displaySpecValue(spec.name) },
+    { label: "Product Category", value: displaySpecValue(spec.category) },
+    { label: "HSN Code", value: displaySpecValue(spec.hsnCode) },
+    { label: "Shelf Life", value: displaySpecValue(spec.shelfLife) },
+    { label: "Quality Grade", value: displaySpecValue(spec.qualityGrade) },
+    { label: "Variety", value: displaySpecValue(spec.variety) },
+    { label: "Availability", value: product.availability || "-" },
+    { label: "SKUs", value: displaySpecValue(spec.skus) },
+    { label: "Packaging Option", value: displaySpecValue(spec.packagingOption) },
     { label: "Package Size", value: packageSize },
     {
-      label: product.price ? "Price" : "Packaging",
-      value: product.price ? `₹${product.price}` : spec.packagingOption,
+      label: "Price",
+      value: product.price ? `\u20B9${product.price}` : "-",
     },
-  ].filter((c) => Boolean(c.value));
+  ];
 
   // Build accordion items for regular products
   const formattedIngredients =
@@ -83,21 +137,9 @@ export default function RegularProductHero({
           .join(" • ")
       : null;
 
-  const formattedBenefits =
-    Array.isArray(product.benefit) && product.benefit.length > 0
-      ? product.benefit
-          .map((b) => (typeof b === "object" ? b.detail : b))
-          .filter(Boolean)
-          .join(" • ")
-      : spec.healthBenefits;
+  const formattedBenefits = displaySpecValue(spec.healthBenefits);
 
-  const formattedStorage =
-    Array.isArray(product.storage) && product.storage.length > 0
-      ? product.storage
-          .map((s) => (typeof s === "object" ? s.detail : s))
-          .filter(Boolean)
-          .join(" • ")
-      : spec.storageTips;
+  const formattedStorage = displaySpecValue(spec.storageTips);
 
   const formattedUsage =
     Array.isArray(product.usage) && product.usage.length > 0
@@ -111,7 +153,22 @@ export default function RegularProductHero({
     {
       key: "description",
       title: "Description",
-      content: product.details || product.description || spec.description,
+      content: displaySpecValue(spec.description),
+    },
+    {
+      key: "container-capacity",
+      title: "Container Capacity",
+      content: displaySpecValue(spec.containerCapacity),
+    },
+    {
+      key: "cultivation-type",
+      title: "Cultivation Type",
+      content: displaySpecValue(spec.cultivationType),
+    },
+    {
+      key: "packaging-solutions",
+      title: "Packaging Solutions",
+      content: displaySpecValue(spec.packagingSolutions),
     },
     {
       key: "ingredients",
@@ -138,12 +195,12 @@ export default function RegularProductHero({
     },
     {
       key: "health-benefits",
-      title: "Key Benefits",
+      title: "Health Benefits",
       content: formattedBenefits,
     },
     {
       key: "storage-tips",
-      title: "Storage Instructions",
+      title: "Storage Tips",
       content: formattedStorage,
     },
     {
@@ -241,11 +298,9 @@ export default function RegularProductHero({
             </h1>
 
             {/* Short Description */}
-            {shortDescription && (
-              <p className="text-sm sm:text-base text-[#7C7C7E] leading-relaxed mt-2 font-medium">
-                {shortDescription}
-              </p>
-            )}
+            <p className="text-sm sm:text-base text-[#7C7C7E] leading-relaxed mt-2 font-medium line-clamp-2">
+              {shortDescription}
+            </p>
 
             {/* Quality Badges */}
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-4">
@@ -264,61 +319,90 @@ export default function RegularProductHero({
             </div>
 
             {/* Product Information Cards Grid */}
-            {(topInfoCards.length > 0 || bottomInfoCards.length > 0) && (
+            {infoCards.length > 0 && (
               <div className="mt-7">
                 <h2 className="text-lg sm:text-xl xl:text-2xl font-semibold text-primary mb-3">
                   Product Information
                 </h2>
 
-                {/* Top Cards Grid */}
-                {topInfoCards.length > 0 && (
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
-                    {topInfoCards.map((card, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-2.5 p-3 rounded-xl border border-stroke bg-white"
-                      >
-                        <LuFileText className="w-6 h-6 text-primary shrink-0" />
-                        <div className="min-w-0">
-                          <span className="block text-[12px] text-[#7C7C7E]">
-                            {card.label}
-                          </span>
-                          <span
-                            className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
-                            title={card.value}
-                          >
-                            {card.value}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
+                <div className="grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3">
+                  {infoCards.map((card) => {
+                    const isTruncated = truncatedInfoValues[card.label] === true;
+                    const tooltipOpen =
+                      isTruncated && activeInfoTooltip === card.label;
+                    const tooltipId = `regular-info-${card.label
+                      .toLowerCase()
+                      .replace(/[^a-z0-9]+/g, "-")}`;
 
-                {/* Bottom Cards Grid */}
-                {bottomInfoCards.length > 0 && (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 mt-2.5">
-                    {bottomInfoCards.map((card, idx) => (
+                    return (
                       <div
-                        key={idx}
-                        className="flex items-center gap-2.5 p-3 rounded-xl border border-stroke bg-white"
+                        key={card.label}
+                        className="relative flex h-full items-center gap-2.5 p-3 rounded-xl border border-stroke bg-white"
                       >
                         <LuFileText className="w-6 h-6 text-primary shrink-0" />
-                        <div className="min-w-0">
+                        <div className={`min-w-0 flex-1 ${isTruncated ? "relative group" : ""}`}>
                           <span className="block text-[12px] text-[#7C7C7E]">
                             {card.label}
                           </span>
-                          <span
-                            className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
-                            title={card.value}
-                          >
-                            {card.value}
-                          </span>
+                          {isTruncated ? (
+                            <button
+                              type="button"
+                              title={String(card.value)}
+                              aria-label={`${card.label}: ${card.value}`}
+                              aria-expanded={tooltipOpen}
+                              aria-describedby={isTruncated ? tooltipId : undefined}
+                              onClick={() =>
+                                setActiveInfoTooltip((current) =>
+                                  current === card.label ? null : card.label,
+                                )
+                              }
+                              onBlur={() => setActiveInfoTooltip(null)}
+                              onKeyDown={(event) => {
+                                if (event.key === "Escape") {
+                                  setActiveInfoTooltip(null);
+                                }
+                              }}
+                              className="block w-full border-0 bg-transparent p-0 text-left cursor-pointer"
+                            >
+                              <span
+                                ref={(element) => {
+                                  if (element) infoValueRefs.current.set(card.label, element);
+                                  else infoValueRefs.current.delete(card.label);
+                                }}
+                                className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
+                              >
+                                {card.value}
+                              </span>
+                            </button>
+                          ) : (
+                            <span
+                              ref={(element) => {
+                                if (element) infoValueRefs.current.set(card.label, element);
+                                else infoValueRefs.current.delete(card.label);
+                              }}
+                              className="block text-xs sm:text-sm font-medium text-[#0E0E0E] truncate"
+                            >
+                              {card.value}
+                            </span>
+                          )}
+                          {isTruncated && (
+                            <span
+                              id={tooltipId}
+                              role="tooltip"
+                              className={`absolute left-0 top-full z-40 mt-1 w-max max-w-[min(18rem,80vw)] rounded-lg bg-[#0E0E0E] px-3 py-2 text-xs text-white shadow-lg whitespace-normal break-words ${
+                                tooltipOpen
+                                  ? "block"
+                                  : "hidden group-focus-within:block"
+                              }`}
+                            >
+                              {card.value}
+                            </span>
+                          )}
                         </div>
                       </div>
-                    ))}
-                  </div>
-                )}
+                    );
+                  })}
+                </div>
               </div>
             )}
 
