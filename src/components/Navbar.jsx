@@ -181,22 +181,27 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { usePathname } from "next/navigation";
 
-import ProductDropdown from "@/app/product/components/ProductDropdown";
+import ProductDropdown from "@/app/product/_components/ProductDropdown";
 import SearchBar from "./SearchBar";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const productCloseTimer = useRef(null);
 
   const pathname = usePathname();
+
+  const isProductDetailPage =
+    /^\/product\/[^/]+\/?$/.test(pathname) ||
+    /^\/export\/products\/[^/]+\/?$/.test(pathname);
 
   // Detect E-Commerce or Export mode
   const isExportMode =
@@ -208,6 +213,26 @@ export default function Navbar() {
 
   const actionHref = isExportMode ? "/" : "/export";
   const actionLabel = isExportMode ? "Buy Online" : "Global Exports";
+
+  const clearProductCloseTimer = () => {
+    if (productCloseTimer.current) {
+      clearTimeout(productCloseTimer.current);
+      productCloseTimer.current = null;
+    }
+  };
+
+  const scheduleProductClose = () => {
+    clearProductCloseTimer();
+    productCloseTimer.current = setTimeout(() => {
+      setProductOpen(false);
+      productCloseTimer.current = null;
+    }, 180);
+  };
+
+  const handleProductPointerEnter = (event) => {
+    clearProductCloseTimer();
+    if (event.pointerType !== "touch") setProductOpen(true);
+  };
 
   // Scroll effect
   useEffect(() => {
@@ -221,6 +246,12 @@ export default function Navbar() {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (productCloseTimer.current) clearTimeout(productCloseTimer.current);
     };
   }, []);
 
@@ -244,18 +275,24 @@ export default function Navbar() {
 
   // Close mobile menu
   const closeMobileMenu = () => {
+    clearProductCloseTimer();
     setMenuOpen(false);
     setProductOpen(false);
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/50 backdrop-blur-xl shadow-lg shadow-black/5"
-          : "py-4"
-      }`}
-    >
+    <>
+      <header
+        onPointerEnter={clearProductCloseTimer}
+        onPointerLeave={(event) => {
+          if (event.pointerType !== "touch") scheduleProductClose();
+        }}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-white/50 backdrop-blur-xl shadow-lg shadow-black/5"
+            : "py-4"
+        }`}
+      >
       <div
         className={`container mx-auto px-4 sm:px-6 lg:px-8
         flex items-center justify-between transition-all duration-500 ${
@@ -287,26 +324,39 @@ export default function Navbar() {
           {/* PRODUCTS */}
          
           {isExportMode ? (
-            <div className="relative group">
+            <div
+              className={`relative group flex items-center ${navClass("/export/products")}`}
+              onPointerEnter={handleProductPointerEnter}
+            >
               <Link
                 href="/export/products"
-                className={`${navClass("/export/products")} flex items-center gap-1`}
+                className="flex items-center"
               >
                 Products
-                <IoIosArrowDown className="transition-transform duration-300 group-hover:rotate-180" />
               </Link>
+              <button
+                type="button"
+                aria-label={productOpen ? "Close products menu" : "Open products menu"}
+                aria-expanded={productOpen}
+                onClick={() => {
+                  clearProductCloseTimer();
+                  setProductOpen((prev) => !prev);
+                }}
+                className="cursor-pointer"
+              >
+                <IoIosArrowDown
+                  className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
+                />
+              </button>
 
               {/* Export Products Dropdown */}
               <div
-                className="
-                  fixed left-0 top-20 z-50 w-full pt-2
-                  invisible opacity-0 translate-y-2
-                  pointer-events-none
-                  group-hover:visible group-hover:opacity-100
-                  group-hover:translate-y-0
-                  group-hover:pointer-events-auto
-                  transition-all duration-300
-                "
+                onPointerEnter={clearProductCloseTimer}
+                className={`fixed left-0 top-20 z-50 w-full pt-2 transition-all duration-300 ${
+                  productOpen
+                    ? "visible opacity-100 translate-y-0 pointer-events-auto"
+                    : "invisible opacity-0 translate-y-2 pointer-events-none"
+                }`}
               >
                 <div
                   className="
@@ -320,26 +370,39 @@ export default function Navbar() {
               </div>
             </div>
           ) : (
-            <div className="relative group">
+            <div
+              className={`relative group flex items-center ${navClass("/product")}`}
+              onPointerEnter={handleProductPointerEnter}
+            >
               <Link
                 href="/product"
-                className={`${navClass("/product")} flex items-center gap-1`}
+                className="flex items-center"
               >
                 Product
-                <IoIosArrowDown className="transition-transform duration-300 group-hover:rotate-180" />
               </Link>
+              <button
+                type="button"
+                aria-label={productOpen ? "Close product menu" : "Open product menu"}
+                aria-expanded={productOpen}
+                onClick={() => {
+                  clearProductCloseTimer();
+                  setProductOpen((prev) => !prev);
+                }}
+                className="cursor-pointer"
+              >
+                <IoIosArrowDown
+                  className={`transition-transform duration-300 ${productOpen ? "rotate-180" : ""}`}
+                />
+              </button>
 
               {/* E-Commerce Product Dropdown */}
               <div
-                className="
-                  fixed left-0 top-20 z-50 w-full pt-2
-                  invisible opacity-0 translate-y-2
-                  pointer-events-none
-                  group-hover:visible group-hover:opacity-100
-                  group-hover:translate-y-0
-                  group-hover:pointer-events-auto
-                  transition-all duration-300
-                "
+                onPointerEnter={clearProductCloseTimer}
+                className={`fixed left-0 top-20 z-50 w-full pt-2 transition-all duration-300 ${
+                  productOpen
+                    ? "visible opacity-100 translate-y-0 pointer-events-auto"
+                    : "invisible opacity-0 translate-y-2 pointer-events-none"
+                }`}
               >
                 <div
                   className="
@@ -587,6 +650,13 @@ export default function Navbar() {
           </nav>
         </div>
       </div>
-    </header>
+      </header>
+      {isProductDetailPage && (
+        <div
+          aria-hidden="true"
+          className="h-24 xl:h-[100px] bg-[#F6F6F6]"
+        />
+      )}
+    </>
   );
 }

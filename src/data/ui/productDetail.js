@@ -1180,10 +1180,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/amchur-powder.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "300 kcal" },
@@ -1230,10 +1230,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/bay-leaves-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "313 kcal" },
@@ -1278,10 +1278,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/black-pepper-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "255 kcal" },
@@ -1326,10 +1326,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/cigarette-cassia-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "247 kcal" },
@@ -1374,10 +1374,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/clove-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "323 kcal" },
@@ -1614,10 +1614,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/fenugreek-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "323 kcal" },
@@ -1662,10 +1662,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/mustard-seeds-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "508 kcal" },
@@ -1710,10 +1710,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/nutmeg-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "525 kcal" },
@@ -1758,10 +1758,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/split-cassia-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "247 kcal" },
@@ -1806,10 +1806,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/star-anise-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "337 kcal" },
@@ -2104,10 +2104,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/coriander-cumin-powder.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17 kcal" },
@@ -2154,10 +2154,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/kashmiri-chilli-powder.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "17.5 kcal" },
@@ -2204,10 +2204,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/red-chilli-powder.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18.75 kcal" },
@@ -2254,10 +2254,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/spicy-red-chilli-powder.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "18.75 kcal" },
@@ -2304,10 +2304,10 @@ export const productsDetail = [
     contact_detail:
       "For wholesale supply, bulk orders, or distributor partnership, please contact our sales team.",
     image: [
-      "/Image/product/buy/tofu-img.webp",
-      "/Image/product/buy/tofu-img1.webp",
-      "/Image/product/buy/product-gallery-2.webp",
-      "/Image/product/buy/tofu-img4.webp",
+      "/Image/product/buy/turmeric-powder-pack.webp",
+      // "/Image/product/buy/tofu-img1.webp",
+      // "/Image/product/buy/product-gallery-2.webp",
+      // "/Image/product/buy/tofu-img4.webp",
     ],
     nutrition: [
       { name: "Energy", value: "16 kcal" },

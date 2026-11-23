@@ -1,4 +1,5 @@
 "use client";
+
 import { categoriesData, productsItem } from "@/data/buy/products";
 import {
   exportDropdownCategories,
@@ -16,7 +17,6 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
   const dropdownItems = isExport ? exportDropdownItems : productsItem;
   const [active, setActive] = useState(categories[0]?.id ?? "protein");
   const [openIndex, setOpenIndex] = useState(null);
-
   const router = useRouter();
   const productLink = (slug) =>
     isExport ? "/export/products" : `/product/${slug}`;
@@ -24,7 +24,6 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
   return (
     <>
       <div className="hidden md:block w-full">
-        {/* Tabs */}
         <div
           role="tablist"
           aria-label="Product Categories"
@@ -46,17 +45,14 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
               >
                 {cat.name}
                 <IoIosArrowDown />
-
-                {/* Active Border */}
                 {isActive && (
-                  <span className="absolute left-0 right-0 -bottom-2 h-px bg-black"></span>
+                  <span className="absolute left-0 right-0 -bottom-2 h-px bg-black" />
                 )}
               </div>
             );
           })}
         </div>
 
-        {/* Panels */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {categories.map((cat) => (
             <div
@@ -71,9 +67,7 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
                   {dropdownItems[cat.id]?.map((item) => (
                     <div
                       key={item.id}
-                      onClick={() => {
-                        router.push(productLink(item.slug));
-                      }}
+                      onClick={() => router.push(productLink(item.slug))}
                       className="text-center border-b border-[#D2D2D2] pb-2 cursor-pointer"
                     >
                       <div className="flex justify-center">
@@ -85,16 +79,15 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
                           className="w-58 h-45 object-contain"
                         />
                       </div>
-
-                      <p className="body-sm mt-3 font-heading font-medium">{item.name}</p>
+                      <p className="body-sm mt-3 font-heading font-medium">
+                        {item.name}
+                      </p>
                     </div>
                   ))}
                 </div>
               )}
             </div>
           ))}
-
-          {/* See All */}
           <div className="flex justify-end">
             <Link
               href={isExport ? "/export/products" : "/product"}
@@ -106,13 +99,10 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
         </div>
       </div>
 
-      {/* mobile screen in product dropdown  */}
-
       <div className="md:hidden">
         <div className="flex flex-col gap-2 p-4">
           {categories.map((cat, index) => (
             <div key={cat.id} className="border-b pb-2">
-              {/* Category Button */}
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex justify-between items-center w-full text-primary"
@@ -122,11 +112,10 @@ export default function ProductDropdown({ closeMenu, isExport = false }) {
                   {openIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </span>
               </button>
-              {/* Products */}
               {openIndex === index && (
                 <div className="flex flex-col gap-3 mt-3">
                   {Array.isArray(dropdownItems[cat.id]) &&
-                    dropdownItems[cat.id]?.map((item) => (
+                    dropdownItems[cat.id].map((item) => (
                       <Link
                         key={item.id}
                         onClick={closeMenu}

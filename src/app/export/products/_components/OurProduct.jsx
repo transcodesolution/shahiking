@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import FilterSidebar from "./FilterSidebar";
 import ProductCard from "./ProductCard";
 import { IoIosArrowBack, IoIosArrowForward, IoMdSearch } from "react-icons/io";
@@ -14,7 +15,11 @@ import { matchesProductCategory } from "@/data/ui/productCategories";
 
 export default function OurProduct() {
   const [search, setSearch] = useState("");
-  const [activePage, setActivePage] = useState(1);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const listingQuery = searchParams.toString();
+  const requestedPage = Number(searchParams.get("page")) || 1;
   const [wishlist, setWishlist] = useState([]);
   const [isChecked, setIsChecked] = useState([]);
   const [isStock, setIsStock] = useState(null);
@@ -32,8 +37,15 @@ export default function OurProduct() {
 
   const itemsPerPage = 12;
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
-  const currentPage = Math.min(activePage, Math.max(1, totalPages));
+  const currentPage = Math.min(Math.max(1, requestedPage), Math.max(1, totalPages));
   const currentProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const setActivePage = (page) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (page <= 1) params.delete("page");
+    else params.set("page", String(page));
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+  };
   const updateFilter = (setter) => (value) => {
     setter(value);
     setActivePage(1);
@@ -63,7 +75,7 @@ export default function OurProduct() {
               </div>
               <div className="grid grid-cols-2 gap-3 p-4 sm:gap-5 sm:p-5 md:grid-cols-3 md:gap-5 md:p-6 xl:grid-cols-4 xl:gap-5 xl:p-6">
                 {currentProducts.map((item) => (
-                  <Link key={`${item.id}-${item.slug}`} href={makhanaSlugs.has(item.slug) ? "/export" : `/product/${item.slug}`} className="min-w-0">
+                  <Link key={`${item.id}-${item.slug}`} href={`/export/products/${item.slug}${listingQuery ? `?${listingQuery}` : ""}`} className="min-w-0">
                     <ProductCard item={item} isWishlisted={wishlist.includes(item.id)}
                       onWishlistToggle={() => setWishlist((prev) => prev.includes(item.id) ? prev.filter((id) => id !== item.id) : [...prev, item.id])} />
                   </Link>
@@ -78,7 +90,7 @@ export default function OurProduct() {
               </div>
             </div>
             {totalPages > 1 && <nav aria-label="Product pages" className="mt-6 flex items-center justify-between gap-2 sm:mt-8">
-              <button type="button" onClick={() => setActivePage((page) => Math.max(1, Math.min(page, totalPages) - 1))} disabled={currentPage === 1}
+              <button type="button" onClick={() => setActivePage(Math.max(1, currentPage - 1))} disabled={currentPage === 1}
                   className="flex items-center cursor-pointer gap-1 rounded-full border border-primary px-3 py-2 text-sm text-primary disabled:cursor-not-allowed disabled:opacity-40 sm:px-5">
                 <IoIosArrowBack /> <span className="hidden sm:inline">Previous</span>
               </button>
@@ -91,7 +103,7 @@ export default function OurProduct() {
                   </span>
                 ))}
               </div>
-              <button type="button" onClick={() => setActivePage((page) => Math.min(totalPages, Math.min(page, totalPages) + 1))} disabled={currentPage === totalPages}
+              <button type="button" onClick={() => setActivePage(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages}
                   className="flex items-center cursor-pointer gap-1 rounded-full border border-primary px-3 py-2 text-sm text-primary disabled:cursor-not-allowed disabled:opacity-40 sm:px-5">
                 <span className="hidden sm:inline">Next</span> <IoIosArrowForward />
               </button>

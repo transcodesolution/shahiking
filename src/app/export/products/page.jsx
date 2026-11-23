@@ -1,5 +1,6 @@
-import Hero from "./components/Hero";
-import OurProduct from "./components/OurProduct";
+import Hero from "./_components/Hero";
+import OurProduct from "./_components/OurProduct";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Export Products | Shahiking",
@@ -10,7 +11,7 @@ export default function ExportProductsPage() {
   return (
     <>
       <Hero />
-      <OurProduct />
+      <Suspense fallback={null}><OurProduct /></Suspense>
     </>
   );
 }

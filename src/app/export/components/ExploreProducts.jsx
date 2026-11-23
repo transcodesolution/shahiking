@@ -161,7 +161,7 @@ export default function ExploreProducts() {
 
                     {product.slug ? (
                       <Link
-                        href={`/product/${product.slug}`}
+                        href={`/export/products/${product.slug}`}
                         className="mt-auto inline-flex w-fit items-center gap-2 pt-3 body-md font-medium text-[#89630B] transition-colors"
                       >
                         View Details

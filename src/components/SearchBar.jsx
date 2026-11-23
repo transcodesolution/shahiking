@@ -103,7 +103,7 @@ export default function SearchBar({ className = "", onSearch }) {
                         if (onSearch) onSearch();
                         router.push(
                           isExport
-                            ? "/export/products"
+                            ? `/export/products/${item.slug}`
                             : `/product/${item.slug}`,
                         );
                       }}

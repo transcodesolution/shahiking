@@ -1,7 +1,8 @@
 import React from 'react'
-import Hero from './components/Hero'
-import OurProduct from './components/OurProduct'
+import Hero from './_components/Hero'
+import OurProduct from './_components/OurProduct'
 import GetInTouch from '@/components/common/GetInTouch'
+import { Suspense } from 'react'
 // import ProductSchema from './schema';
 
 export const metadata = {
@@ -117,7 +118,7 @@ export default function page() {
       }}
     />
       <Hero />
-      <OurProduct />
+      <Suspense fallback={null}><OurProduct /></Suspense>
       {/* <GetInTouch/>      */}
     </React.Fragment>
   )

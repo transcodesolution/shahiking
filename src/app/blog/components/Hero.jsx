@@ -14,7 +14,7 @@ const categories = [
 
 export default function Hero() {
   return (
-    <section className="overflow-hidden bg-[#FCFCFC]">
+    <section className="overflow-hidden bg-[#F6F6F6]">
       <div className="mx-auto max-w-[1720px] px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24 xl:py-28">
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-10 xl:gap-14 py-8">
           {/* Left: Editorial Introduction */}
