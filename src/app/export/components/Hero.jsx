@@ -33,7 +33,7 @@ export default function Hero() {
 
   return (
 
-    <section className="relative h-[84svh] min-h-[540px] max-h-[800px] overflow-hidden bg-secondary sm:h-[86svh] md:h-[87svh] md:min-h-[650px]">
+    <section className="relative h-[84svh] min-h-135 max-h-200 overflow-hidden bg-secondary sm:h-[86svh] md:h-[87svh] md:min-h-162.5">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"

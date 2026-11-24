@@ -22,7 +22,7 @@ export default function BlogCard({ item }) {
       {/* Article Image */}
       <Link
         href={`/blog/${slug}`}
-        className="relative block h-[190px] shrink-0 overflow-hidden sm:h-[210px] xl:h-[235px]"
+        className="relative block h-47.5 shrink-0 overflow-hidden sm:h-52.5 xl:h-58.75"
         aria-label={`Read ${title}`}
       >
         <Image

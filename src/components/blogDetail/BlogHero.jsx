@@ -18,7 +18,7 @@ export default function BlogHero({ item }) {
 
   return (
     <section className="bg-[#FCFCFC] pt-28 pb-8 sm:pt-32 sm:pb-10 md:pt-36 md:pb-12 lg:pt-40 lg:pb-14">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1240px]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-310">
         {/* Breadcrumb Navigation */}
         <nav
           aria-label="Breadcrumb"
@@ -49,7 +49,7 @@ export default function BlogHero({ item }) {
         </div>
 
         {/* Centered Article Title */}
-        <h1 className="mx-auto mt-5 max-w-[1040px] text-center font-heading text-[30px] font-bold leading-[1.14] tracking-[-0.01em] text-primary sm:mt-6 sm:text-[40px] md:text-[50px] lg:text-[58px] xl:text-[64px]">
+        <h1 className="mx-auto mt-5 max-w-260 text-center font-heading text-[30px] font-bold leading-[1.14] tracking-[-0.01em] text-primary sm:mt-6 sm:text-[40px] md:text-[50px] lg:text-[58px] xl:text-[64px]">
           {title}
         </h1>
 

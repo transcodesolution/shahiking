@@ -15,20 +15,20 @@ const categories = [
 export default function Hero() {
   return (
     <section className="overflow-hidden bg-[#F6F6F6]">
-      <div className="mx-auto max-w-[1720px] px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24 xl:py-28">
+      <div className="mx-auto max-w-340 px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24 xl:py-28">
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-10 xl:gap-14 py-8">
           {/* Left: Editorial Introduction */}
           <div className="flex w-full min-w-0 flex-col items-start gap-3 lg:flex-1">
-            <p className="inline-flex items-center gap-2 rounded-full border border-[#E3DCC4] bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#876510] sm:text-sm">
+            <p className="inline-flex items-center gap-2 rounded-full border border-[#E3DCC4] bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-primary sm:text-sm">
               <span className="h-2 w-2 rounded-full bg-secondary" />
               The Shahiking Journal
             </p>
 
-            <h1 className="max-w-[700px] font-heading text-4xl font-bold leading-[1.08] text-[#927015] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[60px]">
+            <h1 className="max-w-175 font-heading text-4xl font-bold leading-[1.08] text-[#927015] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[60px]">
               Fresh Reads for a Healthier, Stronger You
             </h1>
 
-            <p className="max-w-[640px] text-base leading-7 text-[#7C7C7E] sm:text-lg sm:leading-8">
+            <p className="max-w-160 text-base leading-7 text-[#7C7C7E] sm:text-lg sm:leading-8">
               Healthy recipes, nutrition tips, and clean eating inspiration
               crafted with royal botanical purity.
             </p>
@@ -55,7 +55,7 @@ export default function Hero() {
           </div>
 
           {/* Right: Featured Article Card */}
-          <div className="w-full min-w-0 lg:w-[48%] lg:flex-none xl:w-[817px] xl:max-w-[55%]">
+          <div className="w-full min-w-0 lg:w-[48%] lg:flex-none xl:w-204.25 xl:max-w-[55%]">
             <article className="rounded-[26px] border border-[#E8E0CD] bg-white p-3 shadow-[0_12px_35px_rgba(137,104,17,0.25)] sm:p-4 lg:p-5">
               {/* Featured Image */}
               <div className="relative overflow-hidden rounded-[18px]">
@@ -66,10 +66,10 @@ export default function Hero() {
                   height={937}
                   priority
                   sizes="(max-width: 1279px) 100vw, 45vw"
-                  className="h-[230px] w-full object-cover sm:h-[300px] lg:h-[320px] xl:h-[340px]"
+                  className="h-57.5 w-full object-cover sm:h-75 lg:h-80 xl:h-85"
                 />
 
-                <span className="absolute left-4 top-4 rounded-full bg-[#F8F5EB] px-4 py-[6px] text-sm font-semibold text-[#0E0E0E] shadow-sm">
+                <span className="absolute left-4 top-4 rounded-full bg-[#F8F5EB] px-4 py-1.5 text-sm font-semibold text-[#0E0E0E] shadow-sm">
                   Featured
                 </span>
               </div>
@@ -95,7 +95,7 @@ export default function Hero() {
                   Bioavailability &amp; Vitality
                 </h2>
 
-                <p className="mt-2.5 text-sm leading-6 text-[#7C7C7E] sm:text-base sm:leading-[26px]">
+                <p className="mt-2.5 text-sm leading-6 text-[#7C7C7E] sm:text-base sm:leading-6.5">
                   Unpack how combining sprouted legumes with golden pea
                   isolates triggers superior muscle protein synthesis
                   without bloating or heavy gut load.

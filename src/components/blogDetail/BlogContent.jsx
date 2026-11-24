@@ -49,10 +49,10 @@ export default function BlogContent() {
 
   return (
     <section className="bg-[#FCFCFC] pb-16 pt-2 lg:pb-24">
-      <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        <div className="flex flex-col items-start gap-8 lg:flex-row lg:gap-12 xl:gap-[72px]">
+      <div className="mx-auto max-w-430 px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="flex flex-col items-start gap-8 lg:flex-row lg:gap-12 xl:gap-18">
           {/* ================= LEFT STICKY SIDEBAR (~320px) ================= */}
-          <aside className="w-full shrink-0 space-y-6 lg:sticky lg:top-28 lg:w-[320px] xl:w-[325px]">
+          <aside className="w-full shrink-0 space-y-6 lg:sticky lg:top-28 lg:w-[320px] xl:w-81.25">
             {/* Card 1: In This Guide (TOC) */}
             <div className="rounded-[20px] border border-[#EBE4D5] bg-white p-5 shadow-xs sm:p-6">
               <h3 className="font-heading text-xl font-bold text-primary pb-3 border-b border-[#EBE4D5]">
@@ -317,7 +317,7 @@ export default function BlogContent() {
             </section>
 
             {/* Pull Quote Block */}
-            <div className="rounded-[20px] border-l-4 border-primary bg-[#F7F4EB] p-6 shadow-xs sm:rounded-[24px] sm:p-8 md:p-10">
+            <div className="rounded-[20px] border-l-4 border-primary bg-[#F7F4EB] p-6 shadow-xs sm:rounded-3xl sm:p-8 md:p-10">
               <blockquote className="font-heading text-xl italic leading-[1.48] text-primary sm:text-2xl md:text-[26px]">
                 “Small daily changes can significantly improve your nutrition.
                 True strength isn&apos;t rushed—it is cultivated with pristine
@@ -524,7 +524,7 @@ export default function BlogContent() {
             </section>
 
             {/* Inline CTA Card */}
-            <div className="rounded-[24px] border-2 border-primary bg-white p-6 shadow-sm sm:rounded-[30px] sm:p-8 md:p-10">
+            <div className="rounded-3xl border-2 border-primary bg-white p-6 shadow-sm sm:rounded-[30px] sm:p-8 md:p-10">
               <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                 <div>
                   <span className="mb-3 inline-block rounded-full bg-[#F5EFE6] px-4 py-1 text-xs font-bold uppercase tracking-[0.14em] text-primary">
@@ -533,7 +533,7 @@ export default function BlogContent() {
                   <h3 className="mb-2 font-heading text-2xl font-bold text-primary sm:text-[28px] md:text-[32px]">
                     Upgrade Your High-Protein Diet Today
                   </h3>
-                  <p className="max-w-[620px] text-[14px] sm:text-[15px] leading-[1.65] text-[#666666]">
+                  <p className="max-w-155 text-[14px] sm:text-[15px] leading-[1.65] text-[#666666]">
                     Discover Shahiking&apos;s royal botanical protein
                     isolates—lab-verified purity, 25g complete amino acids per
                     serving, and 100% dairy-free lightness.

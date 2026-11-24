@@ -4,7 +4,7 @@ export default function FAQ() {
   return (
     <section className="relative isolate overflow-hidden py-12 md:py-25 bg-secondary">
 
-      <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-430 px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
           {/* FAQ Introduction */}
           <div className="w-full lg:sticky lg:top-24 lg:w-1/3 lg:shrink-0">

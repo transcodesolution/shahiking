@@ -57,7 +57,7 @@ export default function OurProduct() {
   return (
     <>
       <section className="bg-[#F6F6F6]">
-        <div className="mx-auto max-w-[1830px] px-4 py-4 sm:px-6 lg:px-[5.25%] lg:py-5">
+        <div className="mx-auto max-w-457.5 px-4 py-4 sm:px-6 lg:px-[5.25%] lg:py-5">
           <div className="flex flex-col gap-5 lg:flex-row lg:gap-[3.4%]">
             <aside className="w-full shrink-0 lg:w-[27%]">
               <FilterSidebar onClear={clearFilters} isChecked={isChecked} setIsChecked={updateFilter(setIsChecked)} isStock={isStock} setIsStock={updateFilter(setIsStock)}

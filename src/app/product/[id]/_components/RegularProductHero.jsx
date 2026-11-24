@@ -389,7 +389,7 @@ export default function RegularProductHero({
                             <span
                               id={tooltipId}
                               role="tooltip"
-                              className={`absolute left-0 top-full z-40 mt-1 w-max max-w-[min(18rem,80vw)] rounded-lg bg-[#0E0E0E] px-3 py-2 text-xs text-white shadow-lg whitespace-normal break-words ${
+                              className={`absolute left-0 top-full z-40 mt-1 w-max max-w-[min(18rem,80vw)] rounded-lg bg-[#0E0E0E] px-3 py-2 text-xs text-white shadow-lg whitespace-normal wrap-break-words ${
                                 tooltipOpen
                                   ? "block"
                                   : "hidden group-focus-within:block"

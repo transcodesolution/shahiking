@@ -11,7 +11,7 @@ export default function OurBlog() {
       id="latest-articles"
       className="relative overflow-hidden bg-[#FCFCFC] pb-10 md:pb-12"
     >
-      <div className="relative z-10 mx-auto max-w-[1720px] px-5 sm:px-8 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-430 px-5 sm:px-8 lg:px-10">
         {/* Section Heading */}
         <div className="mb-3 flex items-center justify-between border-b border-[#E8E1D3] pb-5">
           <h2 className="font-heading text-xl md:text-[24px] font-semibold text-primary">
@@ -28,7 +28,7 @@ export default function OurBlog() {
         </div>
 
         {/* Article Grid */}
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-0 sm:grid-cols-2 xl:grid-cols-3 xl:gap-x-7 xl:gap-y-[68px]">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-0 sm:grid-cols-2 xl:grid-cols-3 xl:gap-x-7 xl:gap-y-17">
           {blogCardData.slice(0, 6).map((item) => (
             <BlogCard key={item.id} item={item} />
           ))}

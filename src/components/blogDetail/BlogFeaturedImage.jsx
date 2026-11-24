@@ -12,7 +12,7 @@ export default function BlogFeaturedImage({ item }) {
 
   return (
     <section className="bg-[#FCFCFC] pb-10 sm:pb-14 md:pb-16 lg:pb-20">
-      <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-8 xl:px-10">
+      <div className="mx-auto max-w-430 px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="relative overflow-hidden rounded-[20px] sm:rounded-[28px] md:rounded-[36px] lg:rounded-[40px] shadow-sm">
           <Image
             src={imageSrc}
@@ -21,7 +21,7 @@ export default function BlogFeaturedImage({ item }) {
             height={778}
             priority
             sizes="(max-width: 1720px) 100vw, 1720px"
-            className="w-full h-auto aspect-[16/9] sm:aspect-[2.2/1] lg:aspect-[2.5/1] object-cover"
+            className="w-full h-auto aspect-video sm:aspect-[2.2/1] lg:aspect-2.5/1 object-cover"
           />
 
           {/* Editorial Badge Overlay */}

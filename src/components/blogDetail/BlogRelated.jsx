@@ -8,7 +8,7 @@ export default function BlogRelated() {
 
   return (
     <section className="bg-secondary py-14 sm:py-16 md:py-20 lg:py-24">
-      <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-8 xl:px-10">
+      <div className="mx-auto max-w-430 px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* Header */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4 sm:mb-10 lg:mb-12">
           <div className="flex items-center gap-3 sm:gap-4">

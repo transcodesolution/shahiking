@@ -552,7 +552,7 @@ export default function Navbar() {
                     overflow-hidden transition-all duration-300
                     ${
                       productOpen
-                        ? "max-h-[500px] opacity-100 pb-3"
+                        ? "max-h-125 opacity-100 pb-3"
                         : "max-h-0 opacity-0"
                     }
                   `}
@@ -654,7 +654,7 @@ export default function Navbar() {
       {isProductDetailPage && (
         <div
           aria-hidden="true"
-          className="h-24 xl:h-[100px] bg-[#F6F6F6]"
+          className="h-24 xl:h-25 bg-[#F6F6F6]"
         />
       )}
     </>

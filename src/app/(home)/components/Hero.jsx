@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative z-0 overflow-hidden flex flex-col items-center justify-center w-full h-[84vh] sm:h-[86vh] lg:h-[87vh] min-h-[540px] max-h-[800px]">
+    <section className="relative z-0 overflow-hidden flex flex-col items-center justify-center w-full h-[84vh] sm:h-[86vh] lg:h-[87vh] min-h-135 max-h-200">
       <Image
         src="/Image/homepage/hero_bg.webp"
         alt="Hero Background"
@@ -13,7 +13,7 @@ export default function Hero() {
         priority
         className="object-cover"
       />
-      <span className="absolute inset-0 bg-[#00000050] z-[1]"></span>
+      <span className="absolute inset-0 bg-[#00000050] z-1"></span>
 
       <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 md:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-28">
         <h1 className="font-heading text-[32px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-semibold text-secondary mx-auto leading-[1.2]">
